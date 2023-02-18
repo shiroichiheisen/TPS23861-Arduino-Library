@@ -1,0 +1,49 @@
+\hypertarget{union_t_p_s238x___port___current___register__u}{\section{T\-P\-S238x\-\_\-\-Port\-\_\-\-Current\-\_\-\-Register\-\_\-u Union Reference}
+\label{union_t_p_s238x___port___current___register__u}\index{T\-P\-S238x\-\_\-\-Port\-\_\-\-Current\-\_\-\-Register\-\_\-u@{T\-P\-S238x\-\_\-\-Port\-\_\-\-Current\-\_\-\-Register\-\_\-u}}
+}
+
+
+{\ttfamily \#include $<$T\-P\-S23861.\-h$>$}
+
+\subsection*{Data Structures}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{struct_t_p_s238x___port___current___register__u_1_1_port___current___char__t}{Port\-\_\-\-Current\-\_\-\-Char\-\_\-t}
+\item 
+struct \hyperlink{struct_t_p_s238x___port___current___register__u_1_1_port___current___short__t}{Port\-\_\-\-Current\-\_\-\-Short\-\_\-t}
+\end{DoxyCompactItemize}
+\subsection*{Data Fields}
+\begin{DoxyCompactItemize}
+\item 
+struct \\*
+\hyperlink{struct_t_p_s238x___port___current___register__u_1_1_port___current___short__t}{T\-P\-S238x\-\_\-\-Port\-\_\-\-Current\-\_\-\-Register\-\_\-u\-::\-Port\-\_\-\-Current\-\_\-\-Short\-\_\-t} \hyperlink{union_t_p_s238x___port___current___register__u_a8933f24a22a253977e265c3cd3e1d258}{Port\-\_\-\-Current\-\_\-\-Short}
+\item 
+struct \\*
+\hyperlink{struct_t_p_s238x___port___current___register__u_1_1_port___current___char__t}{T\-P\-S238x\-\_\-\-Port\-\_\-\-Current\-\_\-\-Register\-\_\-u\-::\-Port\-\_\-\-Current\-\_\-\-Char\-\_\-t} \hyperlink{union_t_p_s238x___port___current___register__u_a219a9ef00640068359f9c4f54693eee3}{Port\-\_\-\-Current\-\_\-\-Char}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Port 1 Current Register -\/ Software gets this value using \hyperlink{_t_p_s23861_8c_aea33e295bb735809ad2edf78ed8b2543}{tps\-\_\-\-Get\-Port\-Measurements()} \par
+ Hardware -\/ Command 30h; 2 data byte (L\-S\-B followed by M\-S\-B); read only \par
+ Port 2 Current Register \par
+ Hardware -\/ Command 34h; 2 data byte (L\-S\-B followed by M\-S\-B); read only \par
+ Port 3 Current Register \par
+ Hardware -\/ Command 38h; 2 data byte (L\-S\-B followed by M\-S\-B); read only \par
+ Port 4 Current Register \par
+ Hardware -\/ Command 3\-Ch; 2 data byte (L\-S\-B followed by M\-S\-B); read only \par
+\par
+ 14 bit data conversion result of the current for the port. The L\-S\-B is 63.\-360u\-A 
+
+\subsection{Field Documentation}
+\hypertarget{union_t_p_s238x___port___current___register__u_a219a9ef00640068359f9c4f54693eee3}{\index{T\-P\-S238x\-\_\-\-Port\-\_\-\-Current\-\_\-\-Register\-\_\-u@{T\-P\-S238x\-\_\-\-Port\-\_\-\-Current\-\_\-\-Register\-\_\-u}!Port\-\_\-\-Current\-\_\-\-Char@{Port\-\_\-\-Current\-\_\-\-Char}}
+\index{Port\-\_\-\-Current\-\_\-\-Char@{Port\-\_\-\-Current\-\_\-\-Char}!TPS238x_Port_Current_Register_u@{T\-P\-S238x\-\_\-\-Port\-\_\-\-Current\-\_\-\-Register\-\_\-u}}
+\subsubsection[{Port\-\_\-\-Current\-\_\-\-Char}]{\setlength{\rightskip}{0pt plus 5cm}struct {\bf T\-P\-S238x\-\_\-\-Port\-\_\-\-Current\-\_\-\-Register\-\_\-u\-::\-Port\-\_\-\-Current\-\_\-\-Char\-\_\-t}  T\-P\-S238x\-\_\-\-Port\-\_\-\-Current\-\_\-\-Register\-\_\-u\-::\-Port\-\_\-\-Current\-\_\-\-Char}}\label{union_t_p_s238x___port___current___register__u_a219a9ef00640068359f9c4f54693eee3}
+\hypertarget{union_t_p_s238x___port___current___register__u_a8933f24a22a253977e265c3cd3e1d258}{\index{T\-P\-S238x\-\_\-\-Port\-\_\-\-Current\-\_\-\-Register\-\_\-u@{T\-P\-S238x\-\_\-\-Port\-\_\-\-Current\-\_\-\-Register\-\_\-u}!Port\-\_\-\-Current\-\_\-\-Short@{Port\-\_\-\-Current\-\_\-\-Short}}
+\index{Port\-\_\-\-Current\-\_\-\-Short@{Port\-\_\-\-Current\-\_\-\-Short}!TPS238x_Port_Current_Register_u@{T\-P\-S238x\-\_\-\-Port\-\_\-\-Current\-\_\-\-Register\-\_\-u}}
+\subsubsection[{Port\-\_\-\-Current\-\_\-\-Short}]{\setlength{\rightskip}{0pt plus 5cm}struct {\bf T\-P\-S238x\-\_\-\-Port\-\_\-\-Current\-\_\-\-Register\-\_\-u\-::\-Port\-\_\-\-Current\-\_\-\-Short\-\_\-t}  T\-P\-S238x\-\_\-\-Port\-\_\-\-Current\-\_\-\-Register\-\_\-u\-::\-Port\-\_\-\-Current\-\_\-\-Short}}\label{union_t_p_s238x___port___current___register__u_a8933f24a22a253977e265c3cd3e1d258}
+
+
+The documentation for this union was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+C\-:/\-Users/a0207881/workspace\-\_\-v5\-\_\-3/\-Power\-Over\-Ethernet/\hyperlink{_t_p_s23861_8h}{T\-P\-S23861.\-h}\end{DoxyCompactItemize}

@@ -1,0 +1,100 @@
+\hypertarget{struct_t_p_s238_x___detection___event___register__t}{\section{T\-P\-S238\-X\-\_\-\-Detection\-\_\-\-Event\-\_\-\-Register\-\_\-t Struct Reference}
+\label{struct_t_p_s238_x___detection___event___register__t}\index{T\-P\-S238\-X\-\_\-\-Detection\-\_\-\-Event\-\_\-\-Register\-\_\-t@{T\-P\-S238\-X\-\_\-\-Detection\-\_\-\-Event\-\_\-\-Register\-\_\-t}}
+}
+
+
+{\ttfamily \#include $<$T\-P\-S23861.\-h$>$}
+
+\subsection*{Data Fields}
+\begin{DoxyCompactItemize}
+\item 
+unsigned char \hyperlink{struct_t_p_s238_x___detection___event___register__t_a011cc3bd169bafe68ad33d8e244f3ada}{D\-E\-T\-C1\-\_\-\-Detection\-\_\-\-Cycle\-\_\-\-Port\-\_\-1\-\_\-\-Event}\-: 1
+\begin{DoxyCompactList}\small\item\em Detection cycle occurred on port 1. \end{DoxyCompactList}\item 
+unsigned char \hyperlink{struct_t_p_s238_x___detection___event___register__t_a814b81c501397d981c38a70ae9245b58}{D\-E\-T\-C2\-\_\-\-Detection\-\_\-\-Cycle\-\_\-\-Port\-\_\-2\-\_\-\-Event}\-: 1
+\begin{DoxyCompactList}\small\item\em Detection cycle occurred on port 2. \end{DoxyCompactList}\item 
+unsigned char \hyperlink{struct_t_p_s238_x___detection___event___register__t_a28041048d9aa8a3c11259d3d17c29bc6}{D\-E\-T\-C3\-\_\-\-Detection\-\_\-\-Cycle\-\_\-\-Port\-\_\-3\-\_\-\-Event}\-: 1
+\begin{DoxyCompactList}\small\item\em Detection cycle occurred on port 3. \end{DoxyCompactList}\item 
+unsigned char \hyperlink{struct_t_p_s238_x___detection___event___register__t_aa544d43273d1b5dad75dd742d372c6b4}{D\-E\-T\-C4\-\_\-\-Detection\-\_\-\-Cycle\-\_\-\-Port\-\_\-4\-\_\-\-Event}\-: 1
+\begin{DoxyCompactList}\small\item\em Detection cycle occurred on port 4. \end{DoxyCompactList}\item 
+unsigned char \hyperlink{struct_t_p_s238_x___detection___event___register__t_a2a502b29ff4533fccf5f2276141a6791}{C\-L\-S\-C1\-\_\-\-Classification\-\_\-\-Cycle\-\_\-\-Port\-\_\-1\-\_\-\-Event}\-: 1
+\begin{DoxyCompactList}\small\item\em Classification cycle occurred on port 1. \end{DoxyCompactList}\item 
+unsigned char \hyperlink{struct_t_p_s238_x___detection___event___register__t_aa30d16f88685ec04c3b2732dd6087d3b}{C\-L\-S\-C2\-\_\-\-Classification\-\_\-\-Cycle\-\_\-\-Port\-\_\-2\-\_\-\-Event}\-: 1
+\begin{DoxyCompactList}\small\item\em Classification cycle occurred on port 2. \end{DoxyCompactList}\item 
+unsigned char \hyperlink{struct_t_p_s238_x___detection___event___register__t_a336c681e10cf5d2703a4a5447e776808}{C\-L\-S\-C3\-\_\-\-Classification\-\_\-\-Cycle\-\_\-\-Port\-\_\-3\-\_\-\-Event}\-: 1
+\begin{DoxyCompactList}\small\item\em Classification cycle occurred on port 3. \end{DoxyCompactList}\item 
+unsigned char \hyperlink{struct_t_p_s238_x___detection___event___register__t_a544064aea682e303b2ac89e604e4c069}{C\-L\-S\-C4\-\_\-\-Classification\-\_\-\-Cycle\-\_\-\-Port\-\_\-4\-\_\-\-Event}\-: 1
+\begin{DoxyCompactList}\small\item\em Classification cycle occurred on port 4. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Detection Event Register -\/ Software A\-P\-I uses T\-P\-S238x\-\_\-\-Ports\-\_\-t; Software retrieves these events as part of tps\-\_\-\-Get\-All\-Interrupt\-Events() \par
+ Hardware -\/ Command 04h; 1 data byte; read only \par
+
+\begin{DoxyItemize}
+\item Command 05h; 1 data byte; Clear on read \par
+\par
+ Detection and/or classification cycles occurred on at least one port 
+\end{DoxyItemize}
+
+\subsection{Field Documentation}
+\hypertarget{struct_t_p_s238_x___detection___event___register__t_a2a502b29ff4533fccf5f2276141a6791}{\index{T\-P\-S238\-X\-\_\-\-Detection\-\_\-\-Event\-\_\-\-Register\-\_\-t@{T\-P\-S238\-X\-\_\-\-Detection\-\_\-\-Event\-\_\-\-Register\-\_\-t}!C\-L\-S\-C1\-\_\-\-Classification\-\_\-\-Cycle\-\_\-\-Port\-\_\-1\-\_\-\-Event@{C\-L\-S\-C1\-\_\-\-Classification\-\_\-\-Cycle\-\_\-\-Port\-\_\-1\-\_\-\-Event}}
+\index{C\-L\-S\-C1\-\_\-\-Classification\-\_\-\-Cycle\-\_\-\-Port\-\_\-1\-\_\-\-Event@{C\-L\-S\-C1\-\_\-\-Classification\-\_\-\-Cycle\-\_\-\-Port\-\_\-1\-\_\-\-Event}!TPS238X_Detection_Event_Register_t@{T\-P\-S238\-X\-\_\-\-Detection\-\_\-\-Event\-\_\-\-Register\-\_\-t}}
+\subsubsection[{C\-L\-S\-C1\-\_\-\-Classification\-\_\-\-Cycle\-\_\-\-Port\-\_\-1\-\_\-\-Event}]{\setlength{\rightskip}{0pt plus 5cm}unsigned char T\-P\-S238\-X\-\_\-\-Detection\-\_\-\-Event\-\_\-\-Register\-\_\-t\-::\-C\-L\-S\-C1\-\_\-\-Classification\-\_\-\-Cycle\-\_\-\-Port\-\_\-1\-\_\-\-Event}}\label{struct_t_p_s238_x___detection___event___register__t_a2a502b29ff4533fccf5f2276141a6791}
+
+
+Classification cycle occurred on port 1. 
+
+\hypertarget{struct_t_p_s238_x___detection___event___register__t_aa30d16f88685ec04c3b2732dd6087d3b}{\index{T\-P\-S238\-X\-\_\-\-Detection\-\_\-\-Event\-\_\-\-Register\-\_\-t@{T\-P\-S238\-X\-\_\-\-Detection\-\_\-\-Event\-\_\-\-Register\-\_\-t}!C\-L\-S\-C2\-\_\-\-Classification\-\_\-\-Cycle\-\_\-\-Port\-\_\-2\-\_\-\-Event@{C\-L\-S\-C2\-\_\-\-Classification\-\_\-\-Cycle\-\_\-\-Port\-\_\-2\-\_\-\-Event}}
+\index{C\-L\-S\-C2\-\_\-\-Classification\-\_\-\-Cycle\-\_\-\-Port\-\_\-2\-\_\-\-Event@{C\-L\-S\-C2\-\_\-\-Classification\-\_\-\-Cycle\-\_\-\-Port\-\_\-2\-\_\-\-Event}!TPS238X_Detection_Event_Register_t@{T\-P\-S238\-X\-\_\-\-Detection\-\_\-\-Event\-\_\-\-Register\-\_\-t}}
+\subsubsection[{C\-L\-S\-C2\-\_\-\-Classification\-\_\-\-Cycle\-\_\-\-Port\-\_\-2\-\_\-\-Event}]{\setlength{\rightskip}{0pt plus 5cm}unsigned char T\-P\-S238\-X\-\_\-\-Detection\-\_\-\-Event\-\_\-\-Register\-\_\-t\-::\-C\-L\-S\-C2\-\_\-\-Classification\-\_\-\-Cycle\-\_\-\-Port\-\_\-2\-\_\-\-Event}}\label{struct_t_p_s238_x___detection___event___register__t_aa30d16f88685ec04c3b2732dd6087d3b}
+
+
+Classification cycle occurred on port 2. 
+
+\hypertarget{struct_t_p_s238_x___detection___event___register__t_a336c681e10cf5d2703a4a5447e776808}{\index{T\-P\-S238\-X\-\_\-\-Detection\-\_\-\-Event\-\_\-\-Register\-\_\-t@{T\-P\-S238\-X\-\_\-\-Detection\-\_\-\-Event\-\_\-\-Register\-\_\-t}!C\-L\-S\-C3\-\_\-\-Classification\-\_\-\-Cycle\-\_\-\-Port\-\_\-3\-\_\-\-Event@{C\-L\-S\-C3\-\_\-\-Classification\-\_\-\-Cycle\-\_\-\-Port\-\_\-3\-\_\-\-Event}}
+\index{C\-L\-S\-C3\-\_\-\-Classification\-\_\-\-Cycle\-\_\-\-Port\-\_\-3\-\_\-\-Event@{C\-L\-S\-C3\-\_\-\-Classification\-\_\-\-Cycle\-\_\-\-Port\-\_\-3\-\_\-\-Event}!TPS238X_Detection_Event_Register_t@{T\-P\-S238\-X\-\_\-\-Detection\-\_\-\-Event\-\_\-\-Register\-\_\-t}}
+\subsubsection[{C\-L\-S\-C3\-\_\-\-Classification\-\_\-\-Cycle\-\_\-\-Port\-\_\-3\-\_\-\-Event}]{\setlength{\rightskip}{0pt plus 5cm}unsigned char T\-P\-S238\-X\-\_\-\-Detection\-\_\-\-Event\-\_\-\-Register\-\_\-t\-::\-C\-L\-S\-C3\-\_\-\-Classification\-\_\-\-Cycle\-\_\-\-Port\-\_\-3\-\_\-\-Event}}\label{struct_t_p_s238_x___detection___event___register__t_a336c681e10cf5d2703a4a5447e776808}
+
+
+Classification cycle occurred on port 3. 
+
+\hypertarget{struct_t_p_s238_x___detection___event___register__t_a544064aea682e303b2ac89e604e4c069}{\index{T\-P\-S238\-X\-\_\-\-Detection\-\_\-\-Event\-\_\-\-Register\-\_\-t@{T\-P\-S238\-X\-\_\-\-Detection\-\_\-\-Event\-\_\-\-Register\-\_\-t}!C\-L\-S\-C4\-\_\-\-Classification\-\_\-\-Cycle\-\_\-\-Port\-\_\-4\-\_\-\-Event@{C\-L\-S\-C4\-\_\-\-Classification\-\_\-\-Cycle\-\_\-\-Port\-\_\-4\-\_\-\-Event}}
+\index{C\-L\-S\-C4\-\_\-\-Classification\-\_\-\-Cycle\-\_\-\-Port\-\_\-4\-\_\-\-Event@{C\-L\-S\-C4\-\_\-\-Classification\-\_\-\-Cycle\-\_\-\-Port\-\_\-4\-\_\-\-Event}!TPS238X_Detection_Event_Register_t@{T\-P\-S238\-X\-\_\-\-Detection\-\_\-\-Event\-\_\-\-Register\-\_\-t}}
+\subsubsection[{C\-L\-S\-C4\-\_\-\-Classification\-\_\-\-Cycle\-\_\-\-Port\-\_\-4\-\_\-\-Event}]{\setlength{\rightskip}{0pt plus 5cm}unsigned char T\-P\-S238\-X\-\_\-\-Detection\-\_\-\-Event\-\_\-\-Register\-\_\-t\-::\-C\-L\-S\-C4\-\_\-\-Classification\-\_\-\-Cycle\-\_\-\-Port\-\_\-4\-\_\-\-Event}}\label{struct_t_p_s238_x___detection___event___register__t_a544064aea682e303b2ac89e604e4c069}
+
+
+Classification cycle occurred on port 4. 
+
+\hypertarget{struct_t_p_s238_x___detection___event___register__t_a011cc3bd169bafe68ad33d8e244f3ada}{\index{T\-P\-S238\-X\-\_\-\-Detection\-\_\-\-Event\-\_\-\-Register\-\_\-t@{T\-P\-S238\-X\-\_\-\-Detection\-\_\-\-Event\-\_\-\-Register\-\_\-t}!D\-E\-T\-C1\-\_\-\-Detection\-\_\-\-Cycle\-\_\-\-Port\-\_\-1\-\_\-\-Event@{D\-E\-T\-C1\-\_\-\-Detection\-\_\-\-Cycle\-\_\-\-Port\-\_\-1\-\_\-\-Event}}
+\index{D\-E\-T\-C1\-\_\-\-Detection\-\_\-\-Cycle\-\_\-\-Port\-\_\-1\-\_\-\-Event@{D\-E\-T\-C1\-\_\-\-Detection\-\_\-\-Cycle\-\_\-\-Port\-\_\-1\-\_\-\-Event}!TPS238X_Detection_Event_Register_t@{T\-P\-S238\-X\-\_\-\-Detection\-\_\-\-Event\-\_\-\-Register\-\_\-t}}
+\subsubsection[{D\-E\-T\-C1\-\_\-\-Detection\-\_\-\-Cycle\-\_\-\-Port\-\_\-1\-\_\-\-Event}]{\setlength{\rightskip}{0pt plus 5cm}unsigned char T\-P\-S238\-X\-\_\-\-Detection\-\_\-\-Event\-\_\-\-Register\-\_\-t\-::\-D\-E\-T\-C1\-\_\-\-Detection\-\_\-\-Cycle\-\_\-\-Port\-\_\-1\-\_\-\-Event}}\label{struct_t_p_s238_x___detection___event___register__t_a011cc3bd169bafe68ad33d8e244f3ada}
+
+
+Detection cycle occurred on port 1. 
+
+\hypertarget{struct_t_p_s238_x___detection___event___register__t_a814b81c501397d981c38a70ae9245b58}{\index{T\-P\-S238\-X\-\_\-\-Detection\-\_\-\-Event\-\_\-\-Register\-\_\-t@{T\-P\-S238\-X\-\_\-\-Detection\-\_\-\-Event\-\_\-\-Register\-\_\-t}!D\-E\-T\-C2\-\_\-\-Detection\-\_\-\-Cycle\-\_\-\-Port\-\_\-2\-\_\-\-Event@{D\-E\-T\-C2\-\_\-\-Detection\-\_\-\-Cycle\-\_\-\-Port\-\_\-2\-\_\-\-Event}}
+\index{D\-E\-T\-C2\-\_\-\-Detection\-\_\-\-Cycle\-\_\-\-Port\-\_\-2\-\_\-\-Event@{D\-E\-T\-C2\-\_\-\-Detection\-\_\-\-Cycle\-\_\-\-Port\-\_\-2\-\_\-\-Event}!TPS238X_Detection_Event_Register_t@{T\-P\-S238\-X\-\_\-\-Detection\-\_\-\-Event\-\_\-\-Register\-\_\-t}}
+\subsubsection[{D\-E\-T\-C2\-\_\-\-Detection\-\_\-\-Cycle\-\_\-\-Port\-\_\-2\-\_\-\-Event}]{\setlength{\rightskip}{0pt plus 5cm}unsigned char T\-P\-S238\-X\-\_\-\-Detection\-\_\-\-Event\-\_\-\-Register\-\_\-t\-::\-D\-E\-T\-C2\-\_\-\-Detection\-\_\-\-Cycle\-\_\-\-Port\-\_\-2\-\_\-\-Event}}\label{struct_t_p_s238_x___detection___event___register__t_a814b81c501397d981c38a70ae9245b58}
+
+
+Detection cycle occurred on port 2. 
+
+\hypertarget{struct_t_p_s238_x___detection___event___register__t_a28041048d9aa8a3c11259d3d17c29bc6}{\index{T\-P\-S238\-X\-\_\-\-Detection\-\_\-\-Event\-\_\-\-Register\-\_\-t@{T\-P\-S238\-X\-\_\-\-Detection\-\_\-\-Event\-\_\-\-Register\-\_\-t}!D\-E\-T\-C3\-\_\-\-Detection\-\_\-\-Cycle\-\_\-\-Port\-\_\-3\-\_\-\-Event@{D\-E\-T\-C3\-\_\-\-Detection\-\_\-\-Cycle\-\_\-\-Port\-\_\-3\-\_\-\-Event}}
+\index{D\-E\-T\-C3\-\_\-\-Detection\-\_\-\-Cycle\-\_\-\-Port\-\_\-3\-\_\-\-Event@{D\-E\-T\-C3\-\_\-\-Detection\-\_\-\-Cycle\-\_\-\-Port\-\_\-3\-\_\-\-Event}!TPS238X_Detection_Event_Register_t@{T\-P\-S238\-X\-\_\-\-Detection\-\_\-\-Event\-\_\-\-Register\-\_\-t}}
+\subsubsection[{D\-E\-T\-C3\-\_\-\-Detection\-\_\-\-Cycle\-\_\-\-Port\-\_\-3\-\_\-\-Event}]{\setlength{\rightskip}{0pt plus 5cm}unsigned char T\-P\-S238\-X\-\_\-\-Detection\-\_\-\-Event\-\_\-\-Register\-\_\-t\-::\-D\-E\-T\-C3\-\_\-\-Detection\-\_\-\-Cycle\-\_\-\-Port\-\_\-3\-\_\-\-Event}}\label{struct_t_p_s238_x___detection___event___register__t_a28041048d9aa8a3c11259d3d17c29bc6}
+
+
+Detection cycle occurred on port 3. 
+
+\hypertarget{struct_t_p_s238_x___detection___event___register__t_aa544d43273d1b5dad75dd742d372c6b4}{\index{T\-P\-S238\-X\-\_\-\-Detection\-\_\-\-Event\-\_\-\-Register\-\_\-t@{T\-P\-S238\-X\-\_\-\-Detection\-\_\-\-Event\-\_\-\-Register\-\_\-t}!D\-E\-T\-C4\-\_\-\-Detection\-\_\-\-Cycle\-\_\-\-Port\-\_\-4\-\_\-\-Event@{D\-E\-T\-C4\-\_\-\-Detection\-\_\-\-Cycle\-\_\-\-Port\-\_\-4\-\_\-\-Event}}
+\index{D\-E\-T\-C4\-\_\-\-Detection\-\_\-\-Cycle\-\_\-\-Port\-\_\-4\-\_\-\-Event@{D\-E\-T\-C4\-\_\-\-Detection\-\_\-\-Cycle\-\_\-\-Port\-\_\-4\-\_\-\-Event}!TPS238X_Detection_Event_Register_t@{T\-P\-S238\-X\-\_\-\-Detection\-\_\-\-Event\-\_\-\-Register\-\_\-t}}
+\subsubsection[{D\-E\-T\-C4\-\_\-\-Detection\-\_\-\-Cycle\-\_\-\-Port\-\_\-4\-\_\-\-Event}]{\setlength{\rightskip}{0pt plus 5cm}unsigned char T\-P\-S238\-X\-\_\-\-Detection\-\_\-\-Event\-\_\-\-Register\-\_\-t\-::\-D\-E\-T\-C4\-\_\-\-Detection\-\_\-\-Cycle\-\_\-\-Port\-\_\-4\-\_\-\-Event}}\label{struct_t_p_s238_x___detection___event___register__t_aa544d43273d1b5dad75dd742d372c6b4}
+
+
+Detection cycle occurred on port 4. 
+
+
+
+The documentation for this struct was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+C\-:/\-Users/a0207881/workspace\-\_\-v5\-\_\-3/\-Power\-Over\-Ethernet/\hyperlink{_t_p_s23861_8h}{T\-P\-S23861.\-h}\end{DoxyCompactItemize}

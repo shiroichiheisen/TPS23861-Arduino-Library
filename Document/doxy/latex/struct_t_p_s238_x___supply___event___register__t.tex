@@ -1,0 +1,65 @@
+\hypertarget{struct_t_p_s238_x___supply___event___register__t}{\section{T\-P\-S238\-X\-\_\-\-Supply\-\_\-\-Event\-\_\-\-Register\-\_\-t Struct Reference}
+\label{struct_t_p_s238_x___supply___event___register__t}\index{T\-P\-S238\-X\-\_\-\-Supply\-\_\-\-Event\-\_\-\-Register\-\_\-t@{T\-P\-S238\-X\-\_\-\-Supply\-\_\-\-Event\-\_\-\-Register\-\_\-t}}
+}
+
+
+{\ttfamily \#include $<$T\-P\-S23861.\-h$>$}
+
+\subsection*{Data Fields}
+\begin{DoxyCompactItemize}
+\item 
+unsigned char \hyperlink{struct_t_p_s238_x___supply___event___register__t_a6e678b8bd6c99ccdb80b015ffd83a53c}{Reserved\-\_\-1}\-: 4
+\item 
+unsigned char \hyperlink{struct_t_p_s238_x___supply___event___register__t_ac6fcee7fc4bb8175466aebc576b07772}{V\-P\-U\-V\-\_\-\-V\-Power\-\_\-\-Undervoltage\-\_\-\-Event}\-: 1
+\begin{DoxyCompactList}\small\item\em V\-P\-W\-R Undervoltage. \end{DoxyCompactList}\item 
+unsigned char \hyperlink{struct_t_p_s238_x___supply___event___register__t_abab65a098bb6bdcb452e96dbf4aca4e6}{V\-D\-U\-V\-\_\-\-Vdd\-\_\-\-U\-V\-L\-O\-\_\-\-Event}\-: 1
+\begin{DoxyCompactList}\small\item\em V\-D\-D U\-V\-L\-O Occurred. Power on reset happened. \end{DoxyCompactList}\item 
+unsigned char \hyperlink{struct_t_p_s238_x___supply___event___register__t_aaa18a578d997b01aeb1c13f83d0d2dcb}{Reserved\-\_\-2}\-: 1
+\item 
+unsigned char \hyperlink{struct_t_p_s238_x___supply___event___register__t_a67952a82b6fc18287db34835bd8dbdf9}{T\-S\-D\-\_\-\-Thermal\-\_\-\-Shutdown\-\_\-\-Event}\-: 1
+\begin{DoxyCompactList}\small\item\em Thermal shutdown occurred. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Supply Event Register -\/ Software retrieves these events as part of tps\-\_\-\-Get\-All\-Interrupt\-Events() \par
+ Hardware -\/ Command 0\-Ah; 1 data byte; read only \par
+
+\begin{DoxyItemize}
+\item Command 0\-Bh; 1 data byte; Clear on read \par
+\par
+ Identifies events with the system power supply 
+\end{DoxyItemize}
+
+\subsection{Field Documentation}
+\hypertarget{struct_t_p_s238_x___supply___event___register__t_a6e678b8bd6c99ccdb80b015ffd83a53c}{\index{T\-P\-S238\-X\-\_\-\-Supply\-\_\-\-Event\-\_\-\-Register\-\_\-t@{T\-P\-S238\-X\-\_\-\-Supply\-\_\-\-Event\-\_\-\-Register\-\_\-t}!Reserved\-\_\-1@{Reserved\-\_\-1}}
+\index{Reserved\-\_\-1@{Reserved\-\_\-1}!TPS238X_Supply_Event_Register_t@{T\-P\-S238\-X\-\_\-\-Supply\-\_\-\-Event\-\_\-\-Register\-\_\-t}}
+\subsubsection[{Reserved\-\_\-1}]{\setlength{\rightskip}{0pt plus 5cm}unsigned char T\-P\-S238\-X\-\_\-\-Supply\-\_\-\-Event\-\_\-\-Register\-\_\-t\-::\-Reserved\-\_\-1}}\label{struct_t_p_s238_x___supply___event___register__t_a6e678b8bd6c99ccdb80b015ffd83a53c}
+\hypertarget{struct_t_p_s238_x___supply___event___register__t_aaa18a578d997b01aeb1c13f83d0d2dcb}{\index{T\-P\-S238\-X\-\_\-\-Supply\-\_\-\-Event\-\_\-\-Register\-\_\-t@{T\-P\-S238\-X\-\_\-\-Supply\-\_\-\-Event\-\_\-\-Register\-\_\-t}!Reserved\-\_\-2@{Reserved\-\_\-2}}
+\index{Reserved\-\_\-2@{Reserved\-\_\-2}!TPS238X_Supply_Event_Register_t@{T\-P\-S238\-X\-\_\-\-Supply\-\_\-\-Event\-\_\-\-Register\-\_\-t}}
+\subsubsection[{Reserved\-\_\-2}]{\setlength{\rightskip}{0pt plus 5cm}unsigned char T\-P\-S238\-X\-\_\-\-Supply\-\_\-\-Event\-\_\-\-Register\-\_\-t\-::\-Reserved\-\_\-2}}\label{struct_t_p_s238_x___supply___event___register__t_aaa18a578d997b01aeb1c13f83d0d2dcb}
+\hypertarget{struct_t_p_s238_x___supply___event___register__t_a67952a82b6fc18287db34835bd8dbdf9}{\index{T\-P\-S238\-X\-\_\-\-Supply\-\_\-\-Event\-\_\-\-Register\-\_\-t@{T\-P\-S238\-X\-\_\-\-Supply\-\_\-\-Event\-\_\-\-Register\-\_\-t}!T\-S\-D\-\_\-\-Thermal\-\_\-\-Shutdown\-\_\-\-Event@{T\-S\-D\-\_\-\-Thermal\-\_\-\-Shutdown\-\_\-\-Event}}
+\index{T\-S\-D\-\_\-\-Thermal\-\_\-\-Shutdown\-\_\-\-Event@{T\-S\-D\-\_\-\-Thermal\-\_\-\-Shutdown\-\_\-\-Event}!TPS238X_Supply_Event_Register_t@{T\-P\-S238\-X\-\_\-\-Supply\-\_\-\-Event\-\_\-\-Register\-\_\-t}}
+\subsubsection[{T\-S\-D\-\_\-\-Thermal\-\_\-\-Shutdown\-\_\-\-Event}]{\setlength{\rightskip}{0pt plus 5cm}unsigned char T\-P\-S238\-X\-\_\-\-Supply\-\_\-\-Event\-\_\-\-Register\-\_\-t\-::\-T\-S\-D\-\_\-\-Thermal\-\_\-\-Shutdown\-\_\-\-Event}}\label{struct_t_p_s238_x___supply___event___register__t_a67952a82b6fc18287db34835bd8dbdf9}
+
+
+Thermal shutdown occurred. 
+
+\hypertarget{struct_t_p_s238_x___supply___event___register__t_abab65a098bb6bdcb452e96dbf4aca4e6}{\index{T\-P\-S238\-X\-\_\-\-Supply\-\_\-\-Event\-\_\-\-Register\-\_\-t@{T\-P\-S238\-X\-\_\-\-Supply\-\_\-\-Event\-\_\-\-Register\-\_\-t}!V\-D\-U\-V\-\_\-\-Vdd\-\_\-\-U\-V\-L\-O\-\_\-\-Event@{V\-D\-U\-V\-\_\-\-Vdd\-\_\-\-U\-V\-L\-O\-\_\-\-Event}}
+\index{V\-D\-U\-V\-\_\-\-Vdd\-\_\-\-U\-V\-L\-O\-\_\-\-Event@{V\-D\-U\-V\-\_\-\-Vdd\-\_\-\-U\-V\-L\-O\-\_\-\-Event}!TPS238X_Supply_Event_Register_t@{T\-P\-S238\-X\-\_\-\-Supply\-\_\-\-Event\-\_\-\-Register\-\_\-t}}
+\subsubsection[{V\-D\-U\-V\-\_\-\-Vdd\-\_\-\-U\-V\-L\-O\-\_\-\-Event}]{\setlength{\rightskip}{0pt plus 5cm}unsigned char T\-P\-S238\-X\-\_\-\-Supply\-\_\-\-Event\-\_\-\-Register\-\_\-t\-::\-V\-D\-U\-V\-\_\-\-Vdd\-\_\-\-U\-V\-L\-O\-\_\-\-Event}}\label{struct_t_p_s238_x___supply___event___register__t_abab65a098bb6bdcb452e96dbf4aca4e6}
+
+
+V\-D\-D U\-V\-L\-O Occurred. Power on reset happened. 
+
+\hypertarget{struct_t_p_s238_x___supply___event___register__t_ac6fcee7fc4bb8175466aebc576b07772}{\index{T\-P\-S238\-X\-\_\-\-Supply\-\_\-\-Event\-\_\-\-Register\-\_\-t@{T\-P\-S238\-X\-\_\-\-Supply\-\_\-\-Event\-\_\-\-Register\-\_\-t}!V\-P\-U\-V\-\_\-\-V\-Power\-\_\-\-Undervoltage\-\_\-\-Event@{V\-P\-U\-V\-\_\-\-V\-Power\-\_\-\-Undervoltage\-\_\-\-Event}}
+\index{V\-P\-U\-V\-\_\-\-V\-Power\-\_\-\-Undervoltage\-\_\-\-Event@{V\-P\-U\-V\-\_\-\-V\-Power\-\_\-\-Undervoltage\-\_\-\-Event}!TPS238X_Supply_Event_Register_t@{T\-P\-S238\-X\-\_\-\-Supply\-\_\-\-Event\-\_\-\-Register\-\_\-t}}
+\subsubsection[{V\-P\-U\-V\-\_\-\-V\-Power\-\_\-\-Undervoltage\-\_\-\-Event}]{\setlength{\rightskip}{0pt plus 5cm}unsigned char T\-P\-S238\-X\-\_\-\-Supply\-\_\-\-Event\-\_\-\-Register\-\_\-t\-::\-V\-P\-U\-V\-\_\-\-V\-Power\-\_\-\-Undervoltage\-\_\-\-Event}}\label{struct_t_p_s238_x___supply___event___register__t_ac6fcee7fc4bb8175466aebc576b07772}
+
+
+V\-P\-W\-R Undervoltage. 
+
+
+
+The documentation for this struct was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+C\-:/\-Users/a0207881/workspace\-\_\-v5\-\_\-3/\-Power\-Over\-Ethernet/\hyperlink{_t_p_s23861_8h}{T\-P\-S23861.\-h}\end{DoxyCompactItemize}

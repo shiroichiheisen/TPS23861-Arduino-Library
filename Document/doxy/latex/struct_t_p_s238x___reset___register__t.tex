@@ -1,0 +1,92 @@
+\hypertarget{struct_t_p_s238x___reset___register__t}{\section{T\-P\-S238x\-\_\-\-Reset\-\_\-\-Register\-\_\-t Struct Reference}
+\label{struct_t_p_s238x___reset___register__t}\index{T\-P\-S238x\-\_\-\-Reset\-\_\-\-Register\-\_\-t@{T\-P\-S238x\-\_\-\-Reset\-\_\-\-Register\-\_\-t}}
+}
+
+
+{\ttfamily \#include $<$T\-P\-S23861.\-h$>$}
+
+\subsection*{Data Fields}
+\begin{DoxyCompactItemize}
+\item 
+unsigned char \hyperlink{struct_t_p_s238x___reset___register__t_a5bcee8c1cd44415f485845eb7964f2ae}{R\-E\-S\-P1\-\_\-\-Reset\-\_\-\-Port\-\_\-1}\-: 1
+\begin{DoxyCompactList}\small\item\em Reset port 1. \end{DoxyCompactList}\item 
+unsigned char \hyperlink{struct_t_p_s238x___reset___register__t_ad5f09b2704d684ae547215218791bbad}{R\-E\-S\-P1\-\_\-\-Reset\-\_\-\-Port\-\_\-2}\-: 1
+\begin{DoxyCompactList}\small\item\em Reset port 2. \end{DoxyCompactList}\item 
+unsigned char \hyperlink{struct_t_p_s238x___reset___register__t_a46d253541c9691222b3a5382f9f57442}{R\-E\-S\-P1\-\_\-\-Reset\-\_\-\-Port\-\_\-3}\-: 1
+\begin{DoxyCompactList}\small\item\em Reset port 3. \end{DoxyCompactList}\item 
+unsigned char \hyperlink{struct_t_p_s238x___reset___register__t_ac65e7d88e6728a818a270f4e7d82a269}{R\-E\-S\-P1\-\_\-\-Reset\-\_\-\-Port\-\_\-4}\-: 1
+\begin{DoxyCompactList}\small\item\em Reset port 4. \end{DoxyCompactList}\item 
+unsigned char \hyperlink{struct_t_p_s238x___reset___register__t_ad0b5086b9fae842561d092c1ef650295}{R\-E\-S\-A\-L\-\_\-\-Reset\-\_\-\-Registers}\-: 1
+\begin{DoxyCompactList}\small\item\em Reset register bits; Equivalent to power up reset. \end{DoxyCompactList}\item 
+unsigned char \hyperlink{struct_t_p_s238x___reset___register__t_af7fd9450f6fa5ef01b577d6be2d6a81d}{Reserved\-\_\-7}\-: 1
+\item 
+unsigned char \hyperlink{struct_t_p_s238x___reset___register__t_a549bf7bbecaa4cde4bd183948a6580a6}{C\-L\-I\-N\-P\-\_\-\-Clear\-\_\-\-Interrupt\-\_\-\-Pin}\-: 1
+\begin{DoxyCompactList}\small\item\em Note this does not affect any of the interrupt status bits. \end{DoxyCompactList}\item 
+unsigned char \hyperlink{struct_t_p_s238x___reset___register__t_ab752db3abb368003735ed08064993e74}{C\-L\-R\-A\-I\-N\-\_\-\-Clear\-\_\-\-Interrupt\-\_\-\-Bits}\-: 1
+\begin{DoxyCompactList}\small\item\em Note this also releases the Interrupt Pin. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Reset Register -\/ Software A\-P\-I uses T\-P\-S238x\-\_\-\-Ports\-\_\-t in tps\-\_\-\-Reset\-Ports() and \hyperlink{_t_p_s23861_8c_a67d54410671804cb8499e86fd091aac7}{tps\-\_\-\-Reset\-Port()}\par
+ Hardware -\/ Command 1\-Ah; 1 data byte; write only \par
+\par
+ Forces reset events to occur. 
+
+\subsection{Field Documentation}
+\hypertarget{struct_t_p_s238x___reset___register__t_a549bf7bbecaa4cde4bd183948a6580a6}{\index{T\-P\-S238x\-\_\-\-Reset\-\_\-\-Register\-\_\-t@{T\-P\-S238x\-\_\-\-Reset\-\_\-\-Register\-\_\-t}!C\-L\-I\-N\-P\-\_\-\-Clear\-\_\-\-Interrupt\-\_\-\-Pin@{C\-L\-I\-N\-P\-\_\-\-Clear\-\_\-\-Interrupt\-\_\-\-Pin}}
+\index{C\-L\-I\-N\-P\-\_\-\-Clear\-\_\-\-Interrupt\-\_\-\-Pin@{C\-L\-I\-N\-P\-\_\-\-Clear\-\_\-\-Interrupt\-\_\-\-Pin}!TPS238x_Reset_Register_t@{T\-P\-S238x\-\_\-\-Reset\-\_\-\-Register\-\_\-t}}
+\subsubsection[{C\-L\-I\-N\-P\-\_\-\-Clear\-\_\-\-Interrupt\-\_\-\-Pin}]{\setlength{\rightskip}{0pt plus 5cm}unsigned char T\-P\-S238x\-\_\-\-Reset\-\_\-\-Register\-\_\-t\-::\-C\-L\-I\-N\-P\-\_\-\-Clear\-\_\-\-Interrupt\-\_\-\-Pin}}\label{struct_t_p_s238x___reset___register__t_a549bf7bbecaa4cde4bd183948a6580a6}
+
+
+Note this does not affect any of the interrupt status bits. 
+
+\hypertarget{struct_t_p_s238x___reset___register__t_ab752db3abb368003735ed08064993e74}{\index{T\-P\-S238x\-\_\-\-Reset\-\_\-\-Register\-\_\-t@{T\-P\-S238x\-\_\-\-Reset\-\_\-\-Register\-\_\-t}!C\-L\-R\-A\-I\-N\-\_\-\-Clear\-\_\-\-Interrupt\-\_\-\-Bits@{C\-L\-R\-A\-I\-N\-\_\-\-Clear\-\_\-\-Interrupt\-\_\-\-Bits}}
+\index{C\-L\-R\-A\-I\-N\-\_\-\-Clear\-\_\-\-Interrupt\-\_\-\-Bits@{C\-L\-R\-A\-I\-N\-\_\-\-Clear\-\_\-\-Interrupt\-\_\-\-Bits}!TPS238x_Reset_Register_t@{T\-P\-S238x\-\_\-\-Reset\-\_\-\-Register\-\_\-t}}
+\subsubsection[{C\-L\-R\-A\-I\-N\-\_\-\-Clear\-\_\-\-Interrupt\-\_\-\-Bits}]{\setlength{\rightskip}{0pt plus 5cm}unsigned char T\-P\-S238x\-\_\-\-Reset\-\_\-\-Register\-\_\-t\-::\-C\-L\-R\-A\-I\-N\-\_\-\-Clear\-\_\-\-Interrupt\-\_\-\-Bits}}\label{struct_t_p_s238x___reset___register__t_ab752db3abb368003735ed08064993e74}
+
+
+Note this also releases the Interrupt Pin. 
+
+\hypertarget{struct_t_p_s238x___reset___register__t_ad0b5086b9fae842561d092c1ef650295}{\index{T\-P\-S238x\-\_\-\-Reset\-\_\-\-Register\-\_\-t@{T\-P\-S238x\-\_\-\-Reset\-\_\-\-Register\-\_\-t}!R\-E\-S\-A\-L\-\_\-\-Reset\-\_\-\-Registers@{R\-E\-S\-A\-L\-\_\-\-Reset\-\_\-\-Registers}}
+\index{R\-E\-S\-A\-L\-\_\-\-Reset\-\_\-\-Registers@{R\-E\-S\-A\-L\-\_\-\-Reset\-\_\-\-Registers}!TPS238x_Reset_Register_t@{T\-P\-S238x\-\_\-\-Reset\-\_\-\-Register\-\_\-t}}
+\subsubsection[{R\-E\-S\-A\-L\-\_\-\-Reset\-\_\-\-Registers}]{\setlength{\rightskip}{0pt plus 5cm}unsigned char T\-P\-S238x\-\_\-\-Reset\-\_\-\-Register\-\_\-t\-::\-R\-E\-S\-A\-L\-\_\-\-Reset\-\_\-\-Registers}}\label{struct_t_p_s238x___reset___register__t_ad0b5086b9fae842561d092c1ef650295}
+
+
+Reset register bits; Equivalent to power up reset. 
+
+\hypertarget{struct_t_p_s238x___reset___register__t_af7fd9450f6fa5ef01b577d6be2d6a81d}{\index{T\-P\-S238x\-\_\-\-Reset\-\_\-\-Register\-\_\-t@{T\-P\-S238x\-\_\-\-Reset\-\_\-\-Register\-\_\-t}!Reserved\-\_\-7@{Reserved\-\_\-7}}
+\index{Reserved\-\_\-7@{Reserved\-\_\-7}!TPS238x_Reset_Register_t@{T\-P\-S238x\-\_\-\-Reset\-\_\-\-Register\-\_\-t}}
+\subsubsection[{Reserved\-\_\-7}]{\setlength{\rightskip}{0pt plus 5cm}unsigned char T\-P\-S238x\-\_\-\-Reset\-\_\-\-Register\-\_\-t\-::\-Reserved\-\_\-7}}\label{struct_t_p_s238x___reset___register__t_af7fd9450f6fa5ef01b577d6be2d6a81d}
+\hypertarget{struct_t_p_s238x___reset___register__t_a5bcee8c1cd44415f485845eb7964f2ae}{\index{T\-P\-S238x\-\_\-\-Reset\-\_\-\-Register\-\_\-t@{T\-P\-S238x\-\_\-\-Reset\-\_\-\-Register\-\_\-t}!R\-E\-S\-P1\-\_\-\-Reset\-\_\-\-Port\-\_\-1@{R\-E\-S\-P1\-\_\-\-Reset\-\_\-\-Port\-\_\-1}}
+\index{R\-E\-S\-P1\-\_\-\-Reset\-\_\-\-Port\-\_\-1@{R\-E\-S\-P1\-\_\-\-Reset\-\_\-\-Port\-\_\-1}!TPS238x_Reset_Register_t@{T\-P\-S238x\-\_\-\-Reset\-\_\-\-Register\-\_\-t}}
+\subsubsection[{R\-E\-S\-P1\-\_\-\-Reset\-\_\-\-Port\-\_\-1}]{\setlength{\rightskip}{0pt plus 5cm}unsigned char T\-P\-S238x\-\_\-\-Reset\-\_\-\-Register\-\_\-t\-::\-R\-E\-S\-P1\-\_\-\-Reset\-\_\-\-Port\-\_\-1}}\label{struct_t_p_s238x___reset___register__t_a5bcee8c1cd44415f485845eb7964f2ae}
+
+
+Reset port 1. 
+
+\hypertarget{struct_t_p_s238x___reset___register__t_ad5f09b2704d684ae547215218791bbad}{\index{T\-P\-S238x\-\_\-\-Reset\-\_\-\-Register\-\_\-t@{T\-P\-S238x\-\_\-\-Reset\-\_\-\-Register\-\_\-t}!R\-E\-S\-P1\-\_\-\-Reset\-\_\-\-Port\-\_\-2@{R\-E\-S\-P1\-\_\-\-Reset\-\_\-\-Port\-\_\-2}}
+\index{R\-E\-S\-P1\-\_\-\-Reset\-\_\-\-Port\-\_\-2@{R\-E\-S\-P1\-\_\-\-Reset\-\_\-\-Port\-\_\-2}!TPS238x_Reset_Register_t@{T\-P\-S238x\-\_\-\-Reset\-\_\-\-Register\-\_\-t}}
+\subsubsection[{R\-E\-S\-P1\-\_\-\-Reset\-\_\-\-Port\-\_\-2}]{\setlength{\rightskip}{0pt plus 5cm}unsigned char T\-P\-S238x\-\_\-\-Reset\-\_\-\-Register\-\_\-t\-::\-R\-E\-S\-P1\-\_\-\-Reset\-\_\-\-Port\-\_\-2}}\label{struct_t_p_s238x___reset___register__t_ad5f09b2704d684ae547215218791bbad}
+
+
+Reset port 2. 
+
+\hypertarget{struct_t_p_s238x___reset___register__t_a46d253541c9691222b3a5382f9f57442}{\index{T\-P\-S238x\-\_\-\-Reset\-\_\-\-Register\-\_\-t@{T\-P\-S238x\-\_\-\-Reset\-\_\-\-Register\-\_\-t}!R\-E\-S\-P1\-\_\-\-Reset\-\_\-\-Port\-\_\-3@{R\-E\-S\-P1\-\_\-\-Reset\-\_\-\-Port\-\_\-3}}
+\index{R\-E\-S\-P1\-\_\-\-Reset\-\_\-\-Port\-\_\-3@{R\-E\-S\-P1\-\_\-\-Reset\-\_\-\-Port\-\_\-3}!TPS238x_Reset_Register_t@{T\-P\-S238x\-\_\-\-Reset\-\_\-\-Register\-\_\-t}}
+\subsubsection[{R\-E\-S\-P1\-\_\-\-Reset\-\_\-\-Port\-\_\-3}]{\setlength{\rightskip}{0pt plus 5cm}unsigned char T\-P\-S238x\-\_\-\-Reset\-\_\-\-Register\-\_\-t\-::\-R\-E\-S\-P1\-\_\-\-Reset\-\_\-\-Port\-\_\-3}}\label{struct_t_p_s238x___reset___register__t_a46d253541c9691222b3a5382f9f57442}
+
+
+Reset port 3. 
+
+\hypertarget{struct_t_p_s238x___reset___register__t_ac65e7d88e6728a818a270f4e7d82a269}{\index{T\-P\-S238x\-\_\-\-Reset\-\_\-\-Register\-\_\-t@{T\-P\-S238x\-\_\-\-Reset\-\_\-\-Register\-\_\-t}!R\-E\-S\-P1\-\_\-\-Reset\-\_\-\-Port\-\_\-4@{R\-E\-S\-P1\-\_\-\-Reset\-\_\-\-Port\-\_\-4}}
+\index{R\-E\-S\-P1\-\_\-\-Reset\-\_\-\-Port\-\_\-4@{R\-E\-S\-P1\-\_\-\-Reset\-\_\-\-Port\-\_\-4}!TPS238x_Reset_Register_t@{T\-P\-S238x\-\_\-\-Reset\-\_\-\-Register\-\_\-t}}
+\subsubsection[{R\-E\-S\-P1\-\_\-\-Reset\-\_\-\-Port\-\_\-4}]{\setlength{\rightskip}{0pt plus 5cm}unsigned char T\-P\-S238x\-\_\-\-Reset\-\_\-\-Register\-\_\-t\-::\-R\-E\-S\-P1\-\_\-\-Reset\-\_\-\-Port\-\_\-4}}\label{struct_t_p_s238x___reset___register__t_ac65e7d88e6728a818a270f4e7d82a269}
+
+
+Reset port 4. 
+
+
+
+The documentation for this struct was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+C\-:/\-Users/a0207881/workspace\-\_\-v5\-\_\-3/\-Power\-Over\-Ethernet/\hyperlink{_t_p_s23861_8h}{T\-P\-S23861.\-h}\end{DoxyCompactItemize}

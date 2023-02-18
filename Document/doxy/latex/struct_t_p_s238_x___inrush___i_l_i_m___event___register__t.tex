@@ -1,0 +1,100 @@
+\hypertarget{struct_t_p_s238_x___inrush___i_l_i_m___event___register__t}{\section{T\-P\-S238\-X\-\_\-\-Inrush\-\_\-\-I\-L\-I\-M\-\_\-\-Event\-\_\-\-Register\-\_\-t Struct Reference}
+\label{struct_t_p_s238_x___inrush___i_l_i_m___event___register__t}\index{T\-P\-S238\-X\-\_\-\-Inrush\-\_\-\-I\-L\-I\-M\-\_\-\-Event\-\_\-\-Register\-\_\-t@{T\-P\-S238\-X\-\_\-\-Inrush\-\_\-\-I\-L\-I\-M\-\_\-\-Event\-\_\-\-Register\-\_\-t}}
+}
+
+
+{\ttfamily \#include $<$T\-P\-S23861.\-h$>$}
+
+\subsection*{Data Fields}
+\begin{DoxyCompactItemize}
+\item 
+unsigned char \hyperlink{struct_t_p_s238_x___inrush___i_l_i_m___event___register__t_a8cde8ccf9b1643b13c88ed7ed34773b3}{I\-N\-R1\-\_\-\-Inrush\-\_\-\-Fault\-\_\-\-Port\-\_\-1\-\_\-\-Event}\-: 1
+\begin{DoxyCompactList}\small\item\em Inrush fault occurred at port 1. \end{DoxyCompactList}\item 
+unsigned char \hyperlink{struct_t_p_s238_x___inrush___i_l_i_m___event___register__t_a94c4d37935255dc16de9cf33e3654a7e}{I\-N\-R2\-\_\-\-Inrush\-\_\-\-Fault\-\_\-\-Port\-\_\-2\-\_\-\-Event}\-: 1
+\begin{DoxyCompactList}\small\item\em Inrush fault occurred at port 2. \end{DoxyCompactList}\item 
+unsigned char \hyperlink{struct_t_p_s238_x___inrush___i_l_i_m___event___register__t_ac4fada19ba45f3760febeff734622be7}{I\-N\-R3\-\_\-\-Inrush\-\_\-\-Fault\-\_\-\-Port\-\_\-3\-\_\-\-Event}\-: 1
+\begin{DoxyCompactList}\small\item\em Inrush fault occurred at port 3. \end{DoxyCompactList}\item 
+unsigned char \hyperlink{struct_t_p_s238_x___inrush___i_l_i_m___event___register__t_aa5849aefe6b84d6550b06ee3ce05f4fc}{I\-N\-R4\-\_\-\-Inrush\-\_\-\-Fault\-\_\-\-Port\-\_\-4\-\_\-\-Event}\-: 1
+\begin{DoxyCompactList}\small\item\em Inrush fault occurred at port 4. \end{DoxyCompactList}\item 
+unsigned char \hyperlink{struct_t_p_s238_x___inrush___i_l_i_m___event___register__t_aa2bcf32772bcafe662455aaffee49a00}{I\-L\-I\-M1\-\_\-\-Limit\-\_\-\-Output\-\_\-\-Current\-\_\-\-Port\-\_\-1\-\_\-\-Event}\-: 1
+\begin{DoxyCompactList}\small\item\em I\-L\-I\-M fault occurred at port 1. \end{DoxyCompactList}\item 
+unsigned char \hyperlink{struct_t_p_s238_x___inrush___i_l_i_m___event___register__t_ae417ee0ed8cf4847a85204a278e14223}{I\-L\-I\-M2\-\_\-\-Limit\-\_\-\-Output\-\_\-\-Current\-\_\-\-Port\-\_\-2\-\_\-\-Event}\-: 1
+\begin{DoxyCompactList}\small\item\em I\-L\-I\-M fault occurred at port 2. \end{DoxyCompactList}\item 
+unsigned char \hyperlink{struct_t_p_s238_x___inrush___i_l_i_m___event___register__t_a3810ac1638f0e8a19243a2e7159048b8}{I\-L\-I\-M3\-\_\-\-Limit\-\_\-\-Output\-\_\-\-Current\-\_\-\-Port\-\_\-3\-\_\-\-Event}\-: 1
+\begin{DoxyCompactList}\small\item\em I\-L\-I\-M fault occurred at port 3. \end{DoxyCompactList}\item 
+unsigned char \hyperlink{struct_t_p_s238_x___inrush___i_l_i_m___event___register__t_a3ef5c63d20211197037ce86d5d1f0600}{I\-L\-I\-M4\-\_\-\-Limit\-\_\-\-Output\-\_\-\-Current\-\_\-\-Port\-\_\-4\-\_\-\-Event}\-: 1
+\begin{DoxyCompactList}\small\item\em I\-L\-I\-M fault occurred at port 4. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Inrush/\-I\-L\-I\-M Event Register -\/ Software A\-P\-I uses T\-P\-S238x\-\_\-\-Ports\-\_\-t; Software retrieves these events as part of tps\-\_\-\-Get\-All\-Interrupt\-Events() \par
+ Hardware -\/ Command 08h; 1 data byte; read only \par
+
+\begin{DoxyItemize}
+\item Command 09h; 1 data byte; Clear on read \par
+\par
+ Inrush and I\-L\-I\-M fault events have occurred for at least one port 
+\end{DoxyItemize}
+
+\subsection{Field Documentation}
+\hypertarget{struct_t_p_s238_x___inrush___i_l_i_m___event___register__t_aa2bcf32772bcafe662455aaffee49a00}{\index{T\-P\-S238\-X\-\_\-\-Inrush\-\_\-\-I\-L\-I\-M\-\_\-\-Event\-\_\-\-Register\-\_\-t@{T\-P\-S238\-X\-\_\-\-Inrush\-\_\-\-I\-L\-I\-M\-\_\-\-Event\-\_\-\-Register\-\_\-t}!I\-L\-I\-M1\-\_\-\-Limit\-\_\-\-Output\-\_\-\-Current\-\_\-\-Port\-\_\-1\-\_\-\-Event@{I\-L\-I\-M1\-\_\-\-Limit\-\_\-\-Output\-\_\-\-Current\-\_\-\-Port\-\_\-1\-\_\-\-Event}}
+\index{I\-L\-I\-M1\-\_\-\-Limit\-\_\-\-Output\-\_\-\-Current\-\_\-\-Port\-\_\-1\-\_\-\-Event@{I\-L\-I\-M1\-\_\-\-Limit\-\_\-\-Output\-\_\-\-Current\-\_\-\-Port\-\_\-1\-\_\-\-Event}!TPS238X_Inrush_ILIM_Event_Register_t@{T\-P\-S238\-X\-\_\-\-Inrush\-\_\-\-I\-L\-I\-M\-\_\-\-Event\-\_\-\-Register\-\_\-t}}
+\subsubsection[{I\-L\-I\-M1\-\_\-\-Limit\-\_\-\-Output\-\_\-\-Current\-\_\-\-Port\-\_\-1\-\_\-\-Event}]{\setlength{\rightskip}{0pt plus 5cm}unsigned char T\-P\-S238\-X\-\_\-\-Inrush\-\_\-\-I\-L\-I\-M\-\_\-\-Event\-\_\-\-Register\-\_\-t\-::\-I\-L\-I\-M1\-\_\-\-Limit\-\_\-\-Output\-\_\-\-Current\-\_\-\-Port\-\_\-1\-\_\-\-Event}}\label{struct_t_p_s238_x___inrush___i_l_i_m___event___register__t_aa2bcf32772bcafe662455aaffee49a00}
+
+
+I\-L\-I\-M fault occurred at port 1. 
+
+\hypertarget{struct_t_p_s238_x___inrush___i_l_i_m___event___register__t_ae417ee0ed8cf4847a85204a278e14223}{\index{T\-P\-S238\-X\-\_\-\-Inrush\-\_\-\-I\-L\-I\-M\-\_\-\-Event\-\_\-\-Register\-\_\-t@{T\-P\-S238\-X\-\_\-\-Inrush\-\_\-\-I\-L\-I\-M\-\_\-\-Event\-\_\-\-Register\-\_\-t}!I\-L\-I\-M2\-\_\-\-Limit\-\_\-\-Output\-\_\-\-Current\-\_\-\-Port\-\_\-2\-\_\-\-Event@{I\-L\-I\-M2\-\_\-\-Limit\-\_\-\-Output\-\_\-\-Current\-\_\-\-Port\-\_\-2\-\_\-\-Event}}
+\index{I\-L\-I\-M2\-\_\-\-Limit\-\_\-\-Output\-\_\-\-Current\-\_\-\-Port\-\_\-2\-\_\-\-Event@{I\-L\-I\-M2\-\_\-\-Limit\-\_\-\-Output\-\_\-\-Current\-\_\-\-Port\-\_\-2\-\_\-\-Event}!TPS238X_Inrush_ILIM_Event_Register_t@{T\-P\-S238\-X\-\_\-\-Inrush\-\_\-\-I\-L\-I\-M\-\_\-\-Event\-\_\-\-Register\-\_\-t}}
+\subsubsection[{I\-L\-I\-M2\-\_\-\-Limit\-\_\-\-Output\-\_\-\-Current\-\_\-\-Port\-\_\-2\-\_\-\-Event}]{\setlength{\rightskip}{0pt plus 5cm}unsigned char T\-P\-S238\-X\-\_\-\-Inrush\-\_\-\-I\-L\-I\-M\-\_\-\-Event\-\_\-\-Register\-\_\-t\-::\-I\-L\-I\-M2\-\_\-\-Limit\-\_\-\-Output\-\_\-\-Current\-\_\-\-Port\-\_\-2\-\_\-\-Event}}\label{struct_t_p_s238_x___inrush___i_l_i_m___event___register__t_ae417ee0ed8cf4847a85204a278e14223}
+
+
+I\-L\-I\-M fault occurred at port 2. 
+
+\hypertarget{struct_t_p_s238_x___inrush___i_l_i_m___event___register__t_a3810ac1638f0e8a19243a2e7159048b8}{\index{T\-P\-S238\-X\-\_\-\-Inrush\-\_\-\-I\-L\-I\-M\-\_\-\-Event\-\_\-\-Register\-\_\-t@{T\-P\-S238\-X\-\_\-\-Inrush\-\_\-\-I\-L\-I\-M\-\_\-\-Event\-\_\-\-Register\-\_\-t}!I\-L\-I\-M3\-\_\-\-Limit\-\_\-\-Output\-\_\-\-Current\-\_\-\-Port\-\_\-3\-\_\-\-Event@{I\-L\-I\-M3\-\_\-\-Limit\-\_\-\-Output\-\_\-\-Current\-\_\-\-Port\-\_\-3\-\_\-\-Event}}
+\index{I\-L\-I\-M3\-\_\-\-Limit\-\_\-\-Output\-\_\-\-Current\-\_\-\-Port\-\_\-3\-\_\-\-Event@{I\-L\-I\-M3\-\_\-\-Limit\-\_\-\-Output\-\_\-\-Current\-\_\-\-Port\-\_\-3\-\_\-\-Event}!TPS238X_Inrush_ILIM_Event_Register_t@{T\-P\-S238\-X\-\_\-\-Inrush\-\_\-\-I\-L\-I\-M\-\_\-\-Event\-\_\-\-Register\-\_\-t}}
+\subsubsection[{I\-L\-I\-M3\-\_\-\-Limit\-\_\-\-Output\-\_\-\-Current\-\_\-\-Port\-\_\-3\-\_\-\-Event}]{\setlength{\rightskip}{0pt plus 5cm}unsigned char T\-P\-S238\-X\-\_\-\-Inrush\-\_\-\-I\-L\-I\-M\-\_\-\-Event\-\_\-\-Register\-\_\-t\-::\-I\-L\-I\-M3\-\_\-\-Limit\-\_\-\-Output\-\_\-\-Current\-\_\-\-Port\-\_\-3\-\_\-\-Event}}\label{struct_t_p_s238_x___inrush___i_l_i_m___event___register__t_a3810ac1638f0e8a19243a2e7159048b8}
+
+
+I\-L\-I\-M fault occurred at port 3. 
+
+\hypertarget{struct_t_p_s238_x___inrush___i_l_i_m___event___register__t_a3ef5c63d20211197037ce86d5d1f0600}{\index{T\-P\-S238\-X\-\_\-\-Inrush\-\_\-\-I\-L\-I\-M\-\_\-\-Event\-\_\-\-Register\-\_\-t@{T\-P\-S238\-X\-\_\-\-Inrush\-\_\-\-I\-L\-I\-M\-\_\-\-Event\-\_\-\-Register\-\_\-t}!I\-L\-I\-M4\-\_\-\-Limit\-\_\-\-Output\-\_\-\-Current\-\_\-\-Port\-\_\-4\-\_\-\-Event@{I\-L\-I\-M4\-\_\-\-Limit\-\_\-\-Output\-\_\-\-Current\-\_\-\-Port\-\_\-4\-\_\-\-Event}}
+\index{I\-L\-I\-M4\-\_\-\-Limit\-\_\-\-Output\-\_\-\-Current\-\_\-\-Port\-\_\-4\-\_\-\-Event@{I\-L\-I\-M4\-\_\-\-Limit\-\_\-\-Output\-\_\-\-Current\-\_\-\-Port\-\_\-4\-\_\-\-Event}!TPS238X_Inrush_ILIM_Event_Register_t@{T\-P\-S238\-X\-\_\-\-Inrush\-\_\-\-I\-L\-I\-M\-\_\-\-Event\-\_\-\-Register\-\_\-t}}
+\subsubsection[{I\-L\-I\-M4\-\_\-\-Limit\-\_\-\-Output\-\_\-\-Current\-\_\-\-Port\-\_\-4\-\_\-\-Event}]{\setlength{\rightskip}{0pt plus 5cm}unsigned char T\-P\-S238\-X\-\_\-\-Inrush\-\_\-\-I\-L\-I\-M\-\_\-\-Event\-\_\-\-Register\-\_\-t\-::\-I\-L\-I\-M4\-\_\-\-Limit\-\_\-\-Output\-\_\-\-Current\-\_\-\-Port\-\_\-4\-\_\-\-Event}}\label{struct_t_p_s238_x___inrush___i_l_i_m___event___register__t_a3ef5c63d20211197037ce86d5d1f0600}
+
+
+I\-L\-I\-M fault occurred at port 4. 
+
+\hypertarget{struct_t_p_s238_x___inrush___i_l_i_m___event___register__t_a8cde8ccf9b1643b13c88ed7ed34773b3}{\index{T\-P\-S238\-X\-\_\-\-Inrush\-\_\-\-I\-L\-I\-M\-\_\-\-Event\-\_\-\-Register\-\_\-t@{T\-P\-S238\-X\-\_\-\-Inrush\-\_\-\-I\-L\-I\-M\-\_\-\-Event\-\_\-\-Register\-\_\-t}!I\-N\-R1\-\_\-\-Inrush\-\_\-\-Fault\-\_\-\-Port\-\_\-1\-\_\-\-Event@{I\-N\-R1\-\_\-\-Inrush\-\_\-\-Fault\-\_\-\-Port\-\_\-1\-\_\-\-Event}}
+\index{I\-N\-R1\-\_\-\-Inrush\-\_\-\-Fault\-\_\-\-Port\-\_\-1\-\_\-\-Event@{I\-N\-R1\-\_\-\-Inrush\-\_\-\-Fault\-\_\-\-Port\-\_\-1\-\_\-\-Event}!TPS238X_Inrush_ILIM_Event_Register_t@{T\-P\-S238\-X\-\_\-\-Inrush\-\_\-\-I\-L\-I\-M\-\_\-\-Event\-\_\-\-Register\-\_\-t}}
+\subsubsection[{I\-N\-R1\-\_\-\-Inrush\-\_\-\-Fault\-\_\-\-Port\-\_\-1\-\_\-\-Event}]{\setlength{\rightskip}{0pt plus 5cm}unsigned char T\-P\-S238\-X\-\_\-\-Inrush\-\_\-\-I\-L\-I\-M\-\_\-\-Event\-\_\-\-Register\-\_\-t\-::\-I\-N\-R1\-\_\-\-Inrush\-\_\-\-Fault\-\_\-\-Port\-\_\-1\-\_\-\-Event}}\label{struct_t_p_s238_x___inrush___i_l_i_m___event___register__t_a8cde8ccf9b1643b13c88ed7ed34773b3}
+
+
+Inrush fault occurred at port 1. 
+
+\hypertarget{struct_t_p_s238_x___inrush___i_l_i_m___event___register__t_a94c4d37935255dc16de9cf33e3654a7e}{\index{T\-P\-S238\-X\-\_\-\-Inrush\-\_\-\-I\-L\-I\-M\-\_\-\-Event\-\_\-\-Register\-\_\-t@{T\-P\-S238\-X\-\_\-\-Inrush\-\_\-\-I\-L\-I\-M\-\_\-\-Event\-\_\-\-Register\-\_\-t}!I\-N\-R2\-\_\-\-Inrush\-\_\-\-Fault\-\_\-\-Port\-\_\-2\-\_\-\-Event@{I\-N\-R2\-\_\-\-Inrush\-\_\-\-Fault\-\_\-\-Port\-\_\-2\-\_\-\-Event}}
+\index{I\-N\-R2\-\_\-\-Inrush\-\_\-\-Fault\-\_\-\-Port\-\_\-2\-\_\-\-Event@{I\-N\-R2\-\_\-\-Inrush\-\_\-\-Fault\-\_\-\-Port\-\_\-2\-\_\-\-Event}!TPS238X_Inrush_ILIM_Event_Register_t@{T\-P\-S238\-X\-\_\-\-Inrush\-\_\-\-I\-L\-I\-M\-\_\-\-Event\-\_\-\-Register\-\_\-t}}
+\subsubsection[{I\-N\-R2\-\_\-\-Inrush\-\_\-\-Fault\-\_\-\-Port\-\_\-2\-\_\-\-Event}]{\setlength{\rightskip}{0pt plus 5cm}unsigned char T\-P\-S238\-X\-\_\-\-Inrush\-\_\-\-I\-L\-I\-M\-\_\-\-Event\-\_\-\-Register\-\_\-t\-::\-I\-N\-R2\-\_\-\-Inrush\-\_\-\-Fault\-\_\-\-Port\-\_\-2\-\_\-\-Event}}\label{struct_t_p_s238_x___inrush___i_l_i_m___event___register__t_a94c4d37935255dc16de9cf33e3654a7e}
+
+
+Inrush fault occurred at port 2. 
+
+\hypertarget{struct_t_p_s238_x___inrush___i_l_i_m___event___register__t_ac4fada19ba45f3760febeff734622be7}{\index{T\-P\-S238\-X\-\_\-\-Inrush\-\_\-\-I\-L\-I\-M\-\_\-\-Event\-\_\-\-Register\-\_\-t@{T\-P\-S238\-X\-\_\-\-Inrush\-\_\-\-I\-L\-I\-M\-\_\-\-Event\-\_\-\-Register\-\_\-t}!I\-N\-R3\-\_\-\-Inrush\-\_\-\-Fault\-\_\-\-Port\-\_\-3\-\_\-\-Event@{I\-N\-R3\-\_\-\-Inrush\-\_\-\-Fault\-\_\-\-Port\-\_\-3\-\_\-\-Event}}
+\index{I\-N\-R3\-\_\-\-Inrush\-\_\-\-Fault\-\_\-\-Port\-\_\-3\-\_\-\-Event@{I\-N\-R3\-\_\-\-Inrush\-\_\-\-Fault\-\_\-\-Port\-\_\-3\-\_\-\-Event}!TPS238X_Inrush_ILIM_Event_Register_t@{T\-P\-S238\-X\-\_\-\-Inrush\-\_\-\-I\-L\-I\-M\-\_\-\-Event\-\_\-\-Register\-\_\-t}}
+\subsubsection[{I\-N\-R3\-\_\-\-Inrush\-\_\-\-Fault\-\_\-\-Port\-\_\-3\-\_\-\-Event}]{\setlength{\rightskip}{0pt plus 5cm}unsigned char T\-P\-S238\-X\-\_\-\-Inrush\-\_\-\-I\-L\-I\-M\-\_\-\-Event\-\_\-\-Register\-\_\-t\-::\-I\-N\-R3\-\_\-\-Inrush\-\_\-\-Fault\-\_\-\-Port\-\_\-3\-\_\-\-Event}}\label{struct_t_p_s238_x___inrush___i_l_i_m___event___register__t_ac4fada19ba45f3760febeff734622be7}
+
+
+Inrush fault occurred at port 3. 
+
+\hypertarget{struct_t_p_s238_x___inrush___i_l_i_m___event___register__t_aa5849aefe6b84d6550b06ee3ce05f4fc}{\index{T\-P\-S238\-X\-\_\-\-Inrush\-\_\-\-I\-L\-I\-M\-\_\-\-Event\-\_\-\-Register\-\_\-t@{T\-P\-S238\-X\-\_\-\-Inrush\-\_\-\-I\-L\-I\-M\-\_\-\-Event\-\_\-\-Register\-\_\-t}!I\-N\-R4\-\_\-\-Inrush\-\_\-\-Fault\-\_\-\-Port\-\_\-4\-\_\-\-Event@{I\-N\-R4\-\_\-\-Inrush\-\_\-\-Fault\-\_\-\-Port\-\_\-4\-\_\-\-Event}}
+\index{I\-N\-R4\-\_\-\-Inrush\-\_\-\-Fault\-\_\-\-Port\-\_\-4\-\_\-\-Event@{I\-N\-R4\-\_\-\-Inrush\-\_\-\-Fault\-\_\-\-Port\-\_\-4\-\_\-\-Event}!TPS238X_Inrush_ILIM_Event_Register_t@{T\-P\-S238\-X\-\_\-\-Inrush\-\_\-\-I\-L\-I\-M\-\_\-\-Event\-\_\-\-Register\-\_\-t}}
+\subsubsection[{I\-N\-R4\-\_\-\-Inrush\-\_\-\-Fault\-\_\-\-Port\-\_\-4\-\_\-\-Event}]{\setlength{\rightskip}{0pt plus 5cm}unsigned char T\-P\-S238\-X\-\_\-\-Inrush\-\_\-\-I\-L\-I\-M\-\_\-\-Event\-\_\-\-Register\-\_\-t\-::\-I\-N\-R4\-\_\-\-Inrush\-\_\-\-Fault\-\_\-\-Port\-\_\-4\-\_\-\-Event}}\label{struct_t_p_s238_x___inrush___i_l_i_m___event___register__t_aa5849aefe6b84d6550b06ee3ce05f4fc}
+
+
+Inrush fault occurred at port 4. 
+
+
+
+The documentation for this struct was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+C\-:/\-Users/a0207881/workspace\-\_\-v5\-\_\-3/\-Power\-Over\-Ethernet/\hyperlink{_t_p_s23861_8h}{T\-P\-S23861.\-h}\end{DoxyCompactItemize}

@@ -1,0 +1,49 @@
+\hypertarget{union_t_p_s238x___port___detect___resistance___register__u}{\section{T\-P\-S238x\-\_\-\-Port\-\_\-\-Detect\-\_\-\-Resistance\-\_\-\-Register\-\_\-u Union Reference}
+\label{union_t_p_s238x___port___detect___resistance___register__u}\index{T\-P\-S238x\-\_\-\-Port\-\_\-\-Detect\-\_\-\-Resistance\-\_\-\-Register\-\_\-u@{T\-P\-S238x\-\_\-\-Port\-\_\-\-Detect\-\_\-\-Resistance\-\_\-\-Register\-\_\-u}}
+}
+
+
+{\ttfamily \#include $<$T\-P\-S23861.\-h$>$}
+
+\subsection*{Data Structures}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{struct_t_p_s238x___port___detect___resistance___register__u_1_1_detect___resistance___char__t}{Detect\-\_\-\-Resistance\-\_\-\-Char\-\_\-t}
+\item 
+struct \hyperlink{struct_t_p_s238x___port___detect___resistance___register__u_1_1_port___detect___resistance___short__t}{Port\-\_\-\-Detect\-\_\-\-Resistance\-\_\-\-Short\-\_\-t}
+\end{DoxyCompactItemize}
+\subsection*{Data Fields}
+\begin{DoxyCompactItemize}
+\item 
+struct \\*
+\hyperlink{struct_t_p_s238x___port___detect___resistance___register__u_1_1_port___detect___resistance___short__t}{T\-P\-S238x\-\_\-\-Port\-\_\-\-Detect\-\_\-\-Resistance\-\_\-\-Register\-\_\-u\-::\-Port\-\_\-\-Detect\-\_\-\-Resistance\-\_\-\-Short\-\_\-t} \hyperlink{union_t_p_s238x___port___detect___resistance___register__u_a7ce5b3c8a626eb76dc3218be69a3af03}{Port\-\_\-\-Detect\-\_\-\-Resistance\-\_\-\-Short}
+\item 
+struct \\*
+\hyperlink{struct_t_p_s238x___port___detect___resistance___register__u_1_1_detect___resistance___char__t}{T\-P\-S238x\-\_\-\-Port\-\_\-\-Detect\-\_\-\-Resistance\-\_\-\-Register\-\_\-u\-::\-Detect\-\_\-\-Resistance\-\_\-\-Char\-\_\-t} \hyperlink{union_t_p_s238x___port___detect___resistance___register__u_abf4ff3f2dbb13bacf1cb9a1f392921e8}{Port\-\_\-\-Detect\-\_\-\-Resistance\-\_\-\-Char}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Port 1 Detect Resistance Register -\/ Software gets these values using tps\-\_\-\-Get\-Detect\-Resistance() \par
+ Hardware -\/ Command 60h; 2 data byte (L\-S\-B followed by M\-S\-B); read only \par
+ Port 2 Detect Resistance Register \par
+ Hardware -\/ Command 62h; 2 data byte (L\-S\-B followed by M\-S\-B); read only \par
+ Port 3 Detect Resistance Register \par
+ Hardware -\/ Command 64h; 2 data byte (L\-S\-B followed by M\-S\-B); read only \par
+ Port 4 Detect Resistance Register \par
+ Hardware -\/ Command 66h; 2 data byte (L\-S\-B followed by M\-S\-B); read only \par
+\par
+ The most recent 2 point Detection Resistance measurement result. The value is only good when the status does not indicate a fault A\-N\-D at least one detection operation has taken place on the port. The L\-S\-B is 11.\-0966 ohms. 
+
+\subsection{Field Documentation}
+\hypertarget{union_t_p_s238x___port___detect___resistance___register__u_abf4ff3f2dbb13bacf1cb9a1f392921e8}{\index{T\-P\-S238x\-\_\-\-Port\-\_\-\-Detect\-\_\-\-Resistance\-\_\-\-Register\-\_\-u@{T\-P\-S238x\-\_\-\-Port\-\_\-\-Detect\-\_\-\-Resistance\-\_\-\-Register\-\_\-u}!Port\-\_\-\-Detect\-\_\-\-Resistance\-\_\-\-Char@{Port\-\_\-\-Detect\-\_\-\-Resistance\-\_\-\-Char}}
+\index{Port\-\_\-\-Detect\-\_\-\-Resistance\-\_\-\-Char@{Port\-\_\-\-Detect\-\_\-\-Resistance\-\_\-\-Char}!TPS238x_Port_Detect_Resistance_Register_u@{T\-P\-S238x\-\_\-\-Port\-\_\-\-Detect\-\_\-\-Resistance\-\_\-\-Register\-\_\-u}}
+\subsubsection[{Port\-\_\-\-Detect\-\_\-\-Resistance\-\_\-\-Char}]{\setlength{\rightskip}{0pt plus 5cm}struct {\bf T\-P\-S238x\-\_\-\-Port\-\_\-\-Detect\-\_\-\-Resistance\-\_\-\-Register\-\_\-u\-::\-Detect\-\_\-\-Resistance\-\_\-\-Char\-\_\-t}  T\-P\-S238x\-\_\-\-Port\-\_\-\-Detect\-\_\-\-Resistance\-\_\-\-Register\-\_\-u\-::\-Port\-\_\-\-Detect\-\_\-\-Resistance\-\_\-\-Char}}\label{union_t_p_s238x___port___detect___resistance___register__u_abf4ff3f2dbb13bacf1cb9a1f392921e8}
+\hypertarget{union_t_p_s238x___port___detect___resistance___register__u_a7ce5b3c8a626eb76dc3218be69a3af03}{\index{T\-P\-S238x\-\_\-\-Port\-\_\-\-Detect\-\_\-\-Resistance\-\_\-\-Register\-\_\-u@{T\-P\-S238x\-\_\-\-Port\-\_\-\-Detect\-\_\-\-Resistance\-\_\-\-Register\-\_\-u}!Port\-\_\-\-Detect\-\_\-\-Resistance\-\_\-\-Short@{Port\-\_\-\-Detect\-\_\-\-Resistance\-\_\-\-Short}}
+\index{Port\-\_\-\-Detect\-\_\-\-Resistance\-\_\-\-Short@{Port\-\_\-\-Detect\-\_\-\-Resistance\-\_\-\-Short}!TPS238x_Port_Detect_Resistance_Register_u@{T\-P\-S238x\-\_\-\-Port\-\_\-\-Detect\-\_\-\-Resistance\-\_\-\-Register\-\_\-u}}
+\subsubsection[{Port\-\_\-\-Detect\-\_\-\-Resistance\-\_\-\-Short}]{\setlength{\rightskip}{0pt plus 5cm}struct {\bf T\-P\-S238x\-\_\-\-Port\-\_\-\-Detect\-\_\-\-Resistance\-\_\-\-Register\-\_\-u\-::\-Port\-\_\-\-Detect\-\_\-\-Resistance\-\_\-\-Short\-\_\-t}  T\-P\-S238x\-\_\-\-Port\-\_\-\-Detect\-\_\-\-Resistance\-\_\-\-Register\-\_\-u\-::\-Port\-\_\-\-Detect\-\_\-\-Resistance\-\_\-\-Short}}\label{union_t_p_s238x___port___detect___resistance___register__u_a7ce5b3c8a626eb76dc3218be69a3af03}
+
+
+The documentation for this union was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+C\-:/\-Users/a0207881/workspace\-\_\-v5\-\_\-3/\-Power\-Over\-Ethernet/\hyperlink{_t_p_s23861_8h}{T\-P\-S23861.\-h}\end{DoxyCompactItemize}

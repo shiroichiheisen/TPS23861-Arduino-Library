@@ -1,0 +1,100 @@
+\hypertarget{struct_t_p_s238_x___power___enable___register__t}{\section{T\-P\-S238\-X\-\_\-\-Power\-\_\-\-Enable\-\_\-\-Register\-\_\-t Struct Reference}
+\label{struct_t_p_s238_x___power___enable___register__t}\index{T\-P\-S238\-X\-\_\-\-Power\-\_\-\-Enable\-\_\-\-Register\-\_\-t@{T\-P\-S238\-X\-\_\-\-Power\-\_\-\-Enable\-\_\-\-Register\-\_\-t}}
+}
+
+
+{\ttfamily \#include $<$T\-P\-S23861.\-h$>$}
+
+\subsection*{Data Fields}
+\begin{DoxyCompactItemize}
+\item 
+unsigned char \hyperlink{struct_t_p_s238_x___power___enable___register__t_ae0d521373d262abb63f58a6d71f73a6b}{P\-E\-C1\-\_\-\-Power\-\_\-\-Enable\-\_\-\-Port\-\_\-1\-\_\-\-Event}\-: 1
+\begin{DoxyCompactList}\small\item\em Change to power enable status for port 1. \end{DoxyCompactList}\item 
+unsigned char \hyperlink{struct_t_p_s238_x___power___enable___register__t_a389cb85ad5f0f7b1ad023f6ca956943d}{P\-E\-C2\-\_\-\-Power\-\_\-\-Enable\-\_\-\-Port\-\_\-2\-\_\-\-Event}\-: 1
+\begin{DoxyCompactList}\small\item\em Change to power enable status for port 2. \end{DoxyCompactList}\item 
+unsigned char \hyperlink{struct_t_p_s238_x___power___enable___register__t_a3b9fd7ce28f7e21e18a9580b26f7d17a}{P\-E\-C3\-\_\-\-Power\-\_\-\-Enable\-\_\-\-Port\-\_\-3\-\_\-\-Event}\-: 1
+\begin{DoxyCompactList}\small\item\em Change to power enable status for port 3. \end{DoxyCompactList}\item 
+unsigned char \hyperlink{struct_t_p_s238_x___power___enable___register__t_a242d83c5460b4ddd91109c54517f61a1}{P\-E\-C4\-\_\-\-Power\-\_\-\-Enable\-\_\-\-Port\-\_\-4\-\_\-\-Event}\-: 1
+\begin{DoxyCompactList}\small\item\em Change to power enable status for port 4. \end{DoxyCompactList}\item 
+unsigned char \hyperlink{struct_t_p_s238_x___power___enable___register__t_af6eb30a420cb334f7098a611a948fdef}{P\-G\-C1\-\_\-\-Power\-\_\-\-Good\-\_\-\-Port\-\_\-1\-\_\-\-Event}\-: 1
+\begin{DoxyCompactList}\small\item\em Change to power good status for port 1. \end{DoxyCompactList}\item 
+unsigned char \hyperlink{struct_t_p_s238_x___power___enable___register__t_a017a37a7fb9a75c0f03a143cd650871e}{P\-G\-C2\-\_\-\-Power\-\_\-\-Good\-\_\-\-Port\-\_\-2\-\_\-\-Event}\-: 1
+\begin{DoxyCompactList}\small\item\em Change to power good status for port 2. \end{DoxyCompactList}\item 
+unsigned char \hyperlink{struct_t_p_s238_x___power___enable___register__t_a2391ef3673f7408e577f7dc93ebf4002}{P\-G\-C3\-\_\-\-Power\-\_\-\-Good\-\_\-\-Port\-\_\-3\-\_\-\-Event}\-: 1
+\begin{DoxyCompactList}\small\item\em Change to power good status for port 3. \end{DoxyCompactList}\item 
+unsigned char \hyperlink{struct_t_p_s238_x___power___enable___register__t_abd6d5d7b0657dd074bac96118960234c}{P\-G\-C4\-\_\-\-Power\-\_\-\-Good\-\_\-\-Port\-\_\-4\-\_\-\-Event}\-: 1
+\begin{DoxyCompactList}\small\item\em Change to power good status for port 4. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Power Event Register -\/ Software A\-P\-I uses T\-P\-S238x\-\_\-\-Ports\-\_\-t; Software retrieves these events as part of tps\-\_\-\-Get\-All\-Interrupt\-Events() \par
+ Hardware -\/ Command 02h; 1 data byte; read only \par
+
+\begin{DoxyItemize}
+\item Command 03h; 1 data byte; Clear on read \par
+\par
+ Changes to the power enable or power good status occurred for at least one port 
+\end{DoxyItemize}
+
+\subsection{Field Documentation}
+\hypertarget{struct_t_p_s238_x___power___enable___register__t_ae0d521373d262abb63f58a6d71f73a6b}{\index{T\-P\-S238\-X\-\_\-\-Power\-\_\-\-Enable\-\_\-\-Register\-\_\-t@{T\-P\-S238\-X\-\_\-\-Power\-\_\-\-Enable\-\_\-\-Register\-\_\-t}!P\-E\-C1\-\_\-\-Power\-\_\-\-Enable\-\_\-\-Port\-\_\-1\-\_\-\-Event@{P\-E\-C1\-\_\-\-Power\-\_\-\-Enable\-\_\-\-Port\-\_\-1\-\_\-\-Event}}
+\index{P\-E\-C1\-\_\-\-Power\-\_\-\-Enable\-\_\-\-Port\-\_\-1\-\_\-\-Event@{P\-E\-C1\-\_\-\-Power\-\_\-\-Enable\-\_\-\-Port\-\_\-1\-\_\-\-Event}!TPS238X_Power_Enable_Register_t@{T\-P\-S238\-X\-\_\-\-Power\-\_\-\-Enable\-\_\-\-Register\-\_\-t}}
+\subsubsection[{P\-E\-C1\-\_\-\-Power\-\_\-\-Enable\-\_\-\-Port\-\_\-1\-\_\-\-Event}]{\setlength{\rightskip}{0pt plus 5cm}unsigned char T\-P\-S238\-X\-\_\-\-Power\-\_\-\-Enable\-\_\-\-Register\-\_\-t\-::\-P\-E\-C1\-\_\-\-Power\-\_\-\-Enable\-\_\-\-Port\-\_\-1\-\_\-\-Event}}\label{struct_t_p_s238_x___power___enable___register__t_ae0d521373d262abb63f58a6d71f73a6b}
+
+
+Change to power enable status for port 1. 
+
+\hypertarget{struct_t_p_s238_x___power___enable___register__t_a389cb85ad5f0f7b1ad023f6ca956943d}{\index{T\-P\-S238\-X\-\_\-\-Power\-\_\-\-Enable\-\_\-\-Register\-\_\-t@{T\-P\-S238\-X\-\_\-\-Power\-\_\-\-Enable\-\_\-\-Register\-\_\-t}!P\-E\-C2\-\_\-\-Power\-\_\-\-Enable\-\_\-\-Port\-\_\-2\-\_\-\-Event@{P\-E\-C2\-\_\-\-Power\-\_\-\-Enable\-\_\-\-Port\-\_\-2\-\_\-\-Event}}
+\index{P\-E\-C2\-\_\-\-Power\-\_\-\-Enable\-\_\-\-Port\-\_\-2\-\_\-\-Event@{P\-E\-C2\-\_\-\-Power\-\_\-\-Enable\-\_\-\-Port\-\_\-2\-\_\-\-Event}!TPS238X_Power_Enable_Register_t@{T\-P\-S238\-X\-\_\-\-Power\-\_\-\-Enable\-\_\-\-Register\-\_\-t}}
+\subsubsection[{P\-E\-C2\-\_\-\-Power\-\_\-\-Enable\-\_\-\-Port\-\_\-2\-\_\-\-Event}]{\setlength{\rightskip}{0pt plus 5cm}unsigned char T\-P\-S238\-X\-\_\-\-Power\-\_\-\-Enable\-\_\-\-Register\-\_\-t\-::\-P\-E\-C2\-\_\-\-Power\-\_\-\-Enable\-\_\-\-Port\-\_\-2\-\_\-\-Event}}\label{struct_t_p_s238_x___power___enable___register__t_a389cb85ad5f0f7b1ad023f6ca956943d}
+
+
+Change to power enable status for port 2. 
+
+\hypertarget{struct_t_p_s238_x___power___enable___register__t_a3b9fd7ce28f7e21e18a9580b26f7d17a}{\index{T\-P\-S238\-X\-\_\-\-Power\-\_\-\-Enable\-\_\-\-Register\-\_\-t@{T\-P\-S238\-X\-\_\-\-Power\-\_\-\-Enable\-\_\-\-Register\-\_\-t}!P\-E\-C3\-\_\-\-Power\-\_\-\-Enable\-\_\-\-Port\-\_\-3\-\_\-\-Event@{P\-E\-C3\-\_\-\-Power\-\_\-\-Enable\-\_\-\-Port\-\_\-3\-\_\-\-Event}}
+\index{P\-E\-C3\-\_\-\-Power\-\_\-\-Enable\-\_\-\-Port\-\_\-3\-\_\-\-Event@{P\-E\-C3\-\_\-\-Power\-\_\-\-Enable\-\_\-\-Port\-\_\-3\-\_\-\-Event}!TPS238X_Power_Enable_Register_t@{T\-P\-S238\-X\-\_\-\-Power\-\_\-\-Enable\-\_\-\-Register\-\_\-t}}
+\subsubsection[{P\-E\-C3\-\_\-\-Power\-\_\-\-Enable\-\_\-\-Port\-\_\-3\-\_\-\-Event}]{\setlength{\rightskip}{0pt plus 5cm}unsigned char T\-P\-S238\-X\-\_\-\-Power\-\_\-\-Enable\-\_\-\-Register\-\_\-t\-::\-P\-E\-C3\-\_\-\-Power\-\_\-\-Enable\-\_\-\-Port\-\_\-3\-\_\-\-Event}}\label{struct_t_p_s238_x___power___enable___register__t_a3b9fd7ce28f7e21e18a9580b26f7d17a}
+
+
+Change to power enable status for port 3. 
+
+\hypertarget{struct_t_p_s238_x___power___enable___register__t_a242d83c5460b4ddd91109c54517f61a1}{\index{T\-P\-S238\-X\-\_\-\-Power\-\_\-\-Enable\-\_\-\-Register\-\_\-t@{T\-P\-S238\-X\-\_\-\-Power\-\_\-\-Enable\-\_\-\-Register\-\_\-t}!P\-E\-C4\-\_\-\-Power\-\_\-\-Enable\-\_\-\-Port\-\_\-4\-\_\-\-Event@{P\-E\-C4\-\_\-\-Power\-\_\-\-Enable\-\_\-\-Port\-\_\-4\-\_\-\-Event}}
+\index{P\-E\-C4\-\_\-\-Power\-\_\-\-Enable\-\_\-\-Port\-\_\-4\-\_\-\-Event@{P\-E\-C4\-\_\-\-Power\-\_\-\-Enable\-\_\-\-Port\-\_\-4\-\_\-\-Event}!TPS238X_Power_Enable_Register_t@{T\-P\-S238\-X\-\_\-\-Power\-\_\-\-Enable\-\_\-\-Register\-\_\-t}}
+\subsubsection[{P\-E\-C4\-\_\-\-Power\-\_\-\-Enable\-\_\-\-Port\-\_\-4\-\_\-\-Event}]{\setlength{\rightskip}{0pt plus 5cm}unsigned char T\-P\-S238\-X\-\_\-\-Power\-\_\-\-Enable\-\_\-\-Register\-\_\-t\-::\-P\-E\-C4\-\_\-\-Power\-\_\-\-Enable\-\_\-\-Port\-\_\-4\-\_\-\-Event}}\label{struct_t_p_s238_x___power___enable___register__t_a242d83c5460b4ddd91109c54517f61a1}
+
+
+Change to power enable status for port 4. 
+
+\hypertarget{struct_t_p_s238_x___power___enable___register__t_af6eb30a420cb334f7098a611a948fdef}{\index{T\-P\-S238\-X\-\_\-\-Power\-\_\-\-Enable\-\_\-\-Register\-\_\-t@{T\-P\-S238\-X\-\_\-\-Power\-\_\-\-Enable\-\_\-\-Register\-\_\-t}!P\-G\-C1\-\_\-\-Power\-\_\-\-Good\-\_\-\-Port\-\_\-1\-\_\-\-Event@{P\-G\-C1\-\_\-\-Power\-\_\-\-Good\-\_\-\-Port\-\_\-1\-\_\-\-Event}}
+\index{P\-G\-C1\-\_\-\-Power\-\_\-\-Good\-\_\-\-Port\-\_\-1\-\_\-\-Event@{P\-G\-C1\-\_\-\-Power\-\_\-\-Good\-\_\-\-Port\-\_\-1\-\_\-\-Event}!TPS238X_Power_Enable_Register_t@{T\-P\-S238\-X\-\_\-\-Power\-\_\-\-Enable\-\_\-\-Register\-\_\-t}}
+\subsubsection[{P\-G\-C1\-\_\-\-Power\-\_\-\-Good\-\_\-\-Port\-\_\-1\-\_\-\-Event}]{\setlength{\rightskip}{0pt plus 5cm}unsigned char T\-P\-S238\-X\-\_\-\-Power\-\_\-\-Enable\-\_\-\-Register\-\_\-t\-::\-P\-G\-C1\-\_\-\-Power\-\_\-\-Good\-\_\-\-Port\-\_\-1\-\_\-\-Event}}\label{struct_t_p_s238_x___power___enable___register__t_af6eb30a420cb334f7098a611a948fdef}
+
+
+Change to power good status for port 1. 
+
+\hypertarget{struct_t_p_s238_x___power___enable___register__t_a017a37a7fb9a75c0f03a143cd650871e}{\index{T\-P\-S238\-X\-\_\-\-Power\-\_\-\-Enable\-\_\-\-Register\-\_\-t@{T\-P\-S238\-X\-\_\-\-Power\-\_\-\-Enable\-\_\-\-Register\-\_\-t}!P\-G\-C2\-\_\-\-Power\-\_\-\-Good\-\_\-\-Port\-\_\-2\-\_\-\-Event@{P\-G\-C2\-\_\-\-Power\-\_\-\-Good\-\_\-\-Port\-\_\-2\-\_\-\-Event}}
+\index{P\-G\-C2\-\_\-\-Power\-\_\-\-Good\-\_\-\-Port\-\_\-2\-\_\-\-Event@{P\-G\-C2\-\_\-\-Power\-\_\-\-Good\-\_\-\-Port\-\_\-2\-\_\-\-Event}!TPS238X_Power_Enable_Register_t@{T\-P\-S238\-X\-\_\-\-Power\-\_\-\-Enable\-\_\-\-Register\-\_\-t}}
+\subsubsection[{P\-G\-C2\-\_\-\-Power\-\_\-\-Good\-\_\-\-Port\-\_\-2\-\_\-\-Event}]{\setlength{\rightskip}{0pt plus 5cm}unsigned char T\-P\-S238\-X\-\_\-\-Power\-\_\-\-Enable\-\_\-\-Register\-\_\-t\-::\-P\-G\-C2\-\_\-\-Power\-\_\-\-Good\-\_\-\-Port\-\_\-2\-\_\-\-Event}}\label{struct_t_p_s238_x___power___enable___register__t_a017a37a7fb9a75c0f03a143cd650871e}
+
+
+Change to power good status for port 2. 
+
+\hypertarget{struct_t_p_s238_x___power___enable___register__t_a2391ef3673f7408e577f7dc93ebf4002}{\index{T\-P\-S238\-X\-\_\-\-Power\-\_\-\-Enable\-\_\-\-Register\-\_\-t@{T\-P\-S238\-X\-\_\-\-Power\-\_\-\-Enable\-\_\-\-Register\-\_\-t}!P\-G\-C3\-\_\-\-Power\-\_\-\-Good\-\_\-\-Port\-\_\-3\-\_\-\-Event@{P\-G\-C3\-\_\-\-Power\-\_\-\-Good\-\_\-\-Port\-\_\-3\-\_\-\-Event}}
+\index{P\-G\-C3\-\_\-\-Power\-\_\-\-Good\-\_\-\-Port\-\_\-3\-\_\-\-Event@{P\-G\-C3\-\_\-\-Power\-\_\-\-Good\-\_\-\-Port\-\_\-3\-\_\-\-Event}!TPS238X_Power_Enable_Register_t@{T\-P\-S238\-X\-\_\-\-Power\-\_\-\-Enable\-\_\-\-Register\-\_\-t}}
+\subsubsection[{P\-G\-C3\-\_\-\-Power\-\_\-\-Good\-\_\-\-Port\-\_\-3\-\_\-\-Event}]{\setlength{\rightskip}{0pt plus 5cm}unsigned char T\-P\-S238\-X\-\_\-\-Power\-\_\-\-Enable\-\_\-\-Register\-\_\-t\-::\-P\-G\-C3\-\_\-\-Power\-\_\-\-Good\-\_\-\-Port\-\_\-3\-\_\-\-Event}}\label{struct_t_p_s238_x___power___enable___register__t_a2391ef3673f7408e577f7dc93ebf4002}
+
+
+Change to power good status for port 3. 
+
+\hypertarget{struct_t_p_s238_x___power___enable___register__t_abd6d5d7b0657dd074bac96118960234c}{\index{T\-P\-S238\-X\-\_\-\-Power\-\_\-\-Enable\-\_\-\-Register\-\_\-t@{T\-P\-S238\-X\-\_\-\-Power\-\_\-\-Enable\-\_\-\-Register\-\_\-t}!P\-G\-C4\-\_\-\-Power\-\_\-\-Good\-\_\-\-Port\-\_\-4\-\_\-\-Event@{P\-G\-C4\-\_\-\-Power\-\_\-\-Good\-\_\-\-Port\-\_\-4\-\_\-\-Event}}
+\index{P\-G\-C4\-\_\-\-Power\-\_\-\-Good\-\_\-\-Port\-\_\-4\-\_\-\-Event@{P\-G\-C4\-\_\-\-Power\-\_\-\-Good\-\_\-\-Port\-\_\-4\-\_\-\-Event}!TPS238X_Power_Enable_Register_t@{T\-P\-S238\-X\-\_\-\-Power\-\_\-\-Enable\-\_\-\-Register\-\_\-t}}
+\subsubsection[{P\-G\-C4\-\_\-\-Power\-\_\-\-Good\-\_\-\-Port\-\_\-4\-\_\-\-Event}]{\setlength{\rightskip}{0pt plus 5cm}unsigned char T\-P\-S238\-X\-\_\-\-Power\-\_\-\-Enable\-\_\-\-Register\-\_\-t\-::\-P\-G\-C4\-\_\-\-Power\-\_\-\-Good\-\_\-\-Port\-\_\-4\-\_\-\-Event}}\label{struct_t_p_s238_x___power___enable___register__t_abd6d5d7b0657dd074bac96118960234c}
+
+
+Change to power good status for port 4. 
+
+
+
+The documentation for this struct was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+C\-:/\-Users/a0207881/workspace\-\_\-v5\-\_\-3/\-Power\-Over\-Ethernet/\hyperlink{_t_p_s23861_8h}{T\-P\-S23861.\-h}\end{DoxyCompactItemize}

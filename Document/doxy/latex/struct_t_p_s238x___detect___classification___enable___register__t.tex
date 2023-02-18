@@ -1,0 +1,103 @@
+\hypertarget{struct_t_p_s238x___detect___classification___enable___register__t}{\section{T\-P\-S238x\-\_\-\-Detect\-\_\-\-Classification\-\_\-\-Enable\-\_\-\-Register\-\_\-t Struct Reference}
+\label{struct_t_p_s238x___detect___classification___enable___register__t}\index{T\-P\-S238x\-\_\-\-Detect\-\_\-\-Classification\-\_\-\-Enable\-\_\-\-Register\-\_\-t@{T\-P\-S238x\-\_\-\-Detect\-\_\-\-Classification\-\_\-\-Enable\-\_\-\-Register\-\_\-t}}
+}
+
+
+{\ttfamily \#include $<$T\-P\-S23861.\-h$>$}
+
+\subsection*{Data Fields}
+\begin{DoxyCompactItemize}
+\item 
+unsigned char \hyperlink{struct_t_p_s238x___detect___classification___enable___register__t_ada3c8b1d5c22dde5c1c73e4d45fd7169}{D\-E\-T\-E1\-\_\-\-Detection\-\_\-\-Enable\-\_\-\-Port\-\_\-1}\-: 1
+\begin{DoxyCompactList}\small\item\em Enable detections for port 1. \end{DoxyCompactList}\item 
+unsigned char \hyperlink{struct_t_p_s238x___detect___classification___enable___register__t_a79ff41b9318535ab21f6f0d007962a54}{D\-E\-T\-E2\-\_\-\-Detection\-\_\-\-Enable\-\_\-\-Port\-\_\-2}\-: 1
+\begin{DoxyCompactList}\small\item\em Enable detections for port 2. \end{DoxyCompactList}\item 
+unsigned char \hyperlink{struct_t_p_s238x___detect___classification___enable___register__t_a8261125ffcc2ac69b12038fe26208d27}{D\-E\-T\-E3\-\_\-\-Detection\-\_\-\-Enable\-\_\-\-Port\-\_\-3}\-: 1
+\begin{DoxyCompactList}\small\item\em Enable detections for port 3. \end{DoxyCompactList}\item 
+unsigned char \hyperlink{struct_t_p_s238x___detect___classification___enable___register__t_afd0cd227bdef1ffe4822c8f74eb32099}{D\-E\-T\-E4\-\_\-\-Detection\-\_\-\-Enable\-\_\-\-Port\-\_\-4}\-: 1
+\begin{DoxyCompactList}\small\item\em Enable detections for port 4. \end{DoxyCompactList}\item 
+unsigned char \hyperlink{struct_t_p_s238x___detect___classification___enable___register__t_a1515f49bb40c304d2c60d5b2d7cb9997}{C\-L\-E1\-\_\-\-Classification\-\_\-\-Enable\-\_\-\-Port\-\_\-1}\-: 1
+\begin{DoxyCompactList}\small\item\em Enable classifications for port 1. \end{DoxyCompactList}\item 
+unsigned char \hyperlink{struct_t_p_s238x___detect___classification___enable___register__t_ab8a6cd70cba3506667363b0863afb14c}{C\-L\-E2\-\_\-\-Classification\-\_\-\-Enable\-\_\-\-Port\-\_\-2}\-: 1
+\begin{DoxyCompactList}\small\item\em Enable classifications for port 2. \end{DoxyCompactList}\item 
+unsigned char \hyperlink{struct_t_p_s238x___detect___classification___enable___register__t_a12fc84c5940eb1236125bde36f6c0895}{C\-L\-E3\-\_\-\-Classification\-\_\-\-Enable\-\_\-\-Port\-\_\-3}\-: 1
+\begin{DoxyCompactList}\small\item\em Enable classifications for port 3. \end{DoxyCompactList}\item 
+unsigned char \hyperlink{struct_t_p_s238x___detect___classification___enable___register__t_ad1efcac7c9fab4012689abadffdce167}{C\-L\-E4\-\_\-\-Classification\-\_\-\-Enable\-\_\-\-Port\-\_\-4}\-: 1
+\begin{DoxyCompactList}\small\item\em Enable classifications for port 4. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Detect/\-Class Enable Register -\/ Software A\-P\-I uses T\-P\-S238x\-\_\-\-Ports\-\_\-t; Configured in tps\-\_\-\-Set\-Detect\-Class\-Enable() and \hyperlink{_t_p_s23861_8c_a60e64452aad48caf62d2e2e590471666}{tps\-\_\-\-Set\-Port\-Detect\-Class\-Enable()} \par
+ Hardware -\/ Command 14h; 1 data byte; read/write \par
+\par
+ Enables detection and classification for each port. Behave differently in Manual, Semi-\/auto and auto modes. \par
+ In manual mode, setting a bit means one cycle of detection or classification is performed for the indicated port. The bit is cleared automatically when the cycle is complete. This is similar to the restart commands\par
+ In semi-\/auto mode, detection and classifications are performed continuously as long as the port is not powered up. Classifications will follow valid detections. \par
+ In auto mode, classifications will follow valid detections, and power up will follow valid classifications. \par
+ \begin{DoxyNote}{Note}
+During cool down time following a fault, execution of this command will be delayed till the end of the cool down period. 
+\end{DoxyNote}
+
+
+\subsection{Field Documentation}
+\hypertarget{struct_t_p_s238x___detect___classification___enable___register__t_a1515f49bb40c304d2c60d5b2d7cb9997}{\index{T\-P\-S238x\-\_\-\-Detect\-\_\-\-Classification\-\_\-\-Enable\-\_\-\-Register\-\_\-t@{T\-P\-S238x\-\_\-\-Detect\-\_\-\-Classification\-\_\-\-Enable\-\_\-\-Register\-\_\-t}!C\-L\-E1\-\_\-\-Classification\-\_\-\-Enable\-\_\-\-Port\-\_\-1@{C\-L\-E1\-\_\-\-Classification\-\_\-\-Enable\-\_\-\-Port\-\_\-1}}
+\index{C\-L\-E1\-\_\-\-Classification\-\_\-\-Enable\-\_\-\-Port\-\_\-1@{C\-L\-E1\-\_\-\-Classification\-\_\-\-Enable\-\_\-\-Port\-\_\-1}!TPS238x_Detect_Classification_Enable_Register_t@{T\-P\-S238x\-\_\-\-Detect\-\_\-\-Classification\-\_\-\-Enable\-\_\-\-Register\-\_\-t}}
+\subsubsection[{C\-L\-E1\-\_\-\-Classification\-\_\-\-Enable\-\_\-\-Port\-\_\-1}]{\setlength{\rightskip}{0pt plus 5cm}unsigned char T\-P\-S238x\-\_\-\-Detect\-\_\-\-Classification\-\_\-\-Enable\-\_\-\-Register\-\_\-t\-::\-C\-L\-E1\-\_\-\-Classification\-\_\-\-Enable\-\_\-\-Port\-\_\-1}}\label{struct_t_p_s238x___detect___classification___enable___register__t_a1515f49bb40c304d2c60d5b2d7cb9997}
+
+
+Enable classifications for port 1. 
+
+\hypertarget{struct_t_p_s238x___detect___classification___enable___register__t_ab8a6cd70cba3506667363b0863afb14c}{\index{T\-P\-S238x\-\_\-\-Detect\-\_\-\-Classification\-\_\-\-Enable\-\_\-\-Register\-\_\-t@{T\-P\-S238x\-\_\-\-Detect\-\_\-\-Classification\-\_\-\-Enable\-\_\-\-Register\-\_\-t}!C\-L\-E2\-\_\-\-Classification\-\_\-\-Enable\-\_\-\-Port\-\_\-2@{C\-L\-E2\-\_\-\-Classification\-\_\-\-Enable\-\_\-\-Port\-\_\-2}}
+\index{C\-L\-E2\-\_\-\-Classification\-\_\-\-Enable\-\_\-\-Port\-\_\-2@{C\-L\-E2\-\_\-\-Classification\-\_\-\-Enable\-\_\-\-Port\-\_\-2}!TPS238x_Detect_Classification_Enable_Register_t@{T\-P\-S238x\-\_\-\-Detect\-\_\-\-Classification\-\_\-\-Enable\-\_\-\-Register\-\_\-t}}
+\subsubsection[{C\-L\-E2\-\_\-\-Classification\-\_\-\-Enable\-\_\-\-Port\-\_\-2}]{\setlength{\rightskip}{0pt plus 5cm}unsigned char T\-P\-S238x\-\_\-\-Detect\-\_\-\-Classification\-\_\-\-Enable\-\_\-\-Register\-\_\-t\-::\-C\-L\-E2\-\_\-\-Classification\-\_\-\-Enable\-\_\-\-Port\-\_\-2}}\label{struct_t_p_s238x___detect___classification___enable___register__t_ab8a6cd70cba3506667363b0863afb14c}
+
+
+Enable classifications for port 2. 
+
+\hypertarget{struct_t_p_s238x___detect___classification___enable___register__t_a12fc84c5940eb1236125bde36f6c0895}{\index{T\-P\-S238x\-\_\-\-Detect\-\_\-\-Classification\-\_\-\-Enable\-\_\-\-Register\-\_\-t@{T\-P\-S238x\-\_\-\-Detect\-\_\-\-Classification\-\_\-\-Enable\-\_\-\-Register\-\_\-t}!C\-L\-E3\-\_\-\-Classification\-\_\-\-Enable\-\_\-\-Port\-\_\-3@{C\-L\-E3\-\_\-\-Classification\-\_\-\-Enable\-\_\-\-Port\-\_\-3}}
+\index{C\-L\-E3\-\_\-\-Classification\-\_\-\-Enable\-\_\-\-Port\-\_\-3@{C\-L\-E3\-\_\-\-Classification\-\_\-\-Enable\-\_\-\-Port\-\_\-3}!TPS238x_Detect_Classification_Enable_Register_t@{T\-P\-S238x\-\_\-\-Detect\-\_\-\-Classification\-\_\-\-Enable\-\_\-\-Register\-\_\-t}}
+\subsubsection[{C\-L\-E3\-\_\-\-Classification\-\_\-\-Enable\-\_\-\-Port\-\_\-3}]{\setlength{\rightskip}{0pt plus 5cm}unsigned char T\-P\-S238x\-\_\-\-Detect\-\_\-\-Classification\-\_\-\-Enable\-\_\-\-Register\-\_\-t\-::\-C\-L\-E3\-\_\-\-Classification\-\_\-\-Enable\-\_\-\-Port\-\_\-3}}\label{struct_t_p_s238x___detect___classification___enable___register__t_a12fc84c5940eb1236125bde36f6c0895}
+
+
+Enable classifications for port 3. 
+
+\hypertarget{struct_t_p_s238x___detect___classification___enable___register__t_ad1efcac7c9fab4012689abadffdce167}{\index{T\-P\-S238x\-\_\-\-Detect\-\_\-\-Classification\-\_\-\-Enable\-\_\-\-Register\-\_\-t@{T\-P\-S238x\-\_\-\-Detect\-\_\-\-Classification\-\_\-\-Enable\-\_\-\-Register\-\_\-t}!C\-L\-E4\-\_\-\-Classification\-\_\-\-Enable\-\_\-\-Port\-\_\-4@{C\-L\-E4\-\_\-\-Classification\-\_\-\-Enable\-\_\-\-Port\-\_\-4}}
+\index{C\-L\-E4\-\_\-\-Classification\-\_\-\-Enable\-\_\-\-Port\-\_\-4@{C\-L\-E4\-\_\-\-Classification\-\_\-\-Enable\-\_\-\-Port\-\_\-4}!TPS238x_Detect_Classification_Enable_Register_t@{T\-P\-S238x\-\_\-\-Detect\-\_\-\-Classification\-\_\-\-Enable\-\_\-\-Register\-\_\-t}}
+\subsubsection[{C\-L\-E4\-\_\-\-Classification\-\_\-\-Enable\-\_\-\-Port\-\_\-4}]{\setlength{\rightskip}{0pt plus 5cm}unsigned char T\-P\-S238x\-\_\-\-Detect\-\_\-\-Classification\-\_\-\-Enable\-\_\-\-Register\-\_\-t\-::\-C\-L\-E4\-\_\-\-Classification\-\_\-\-Enable\-\_\-\-Port\-\_\-4}}\label{struct_t_p_s238x___detect___classification___enable___register__t_ad1efcac7c9fab4012689abadffdce167}
+
+
+Enable classifications for port 4. 
+
+\hypertarget{struct_t_p_s238x___detect___classification___enable___register__t_ada3c8b1d5c22dde5c1c73e4d45fd7169}{\index{T\-P\-S238x\-\_\-\-Detect\-\_\-\-Classification\-\_\-\-Enable\-\_\-\-Register\-\_\-t@{T\-P\-S238x\-\_\-\-Detect\-\_\-\-Classification\-\_\-\-Enable\-\_\-\-Register\-\_\-t}!D\-E\-T\-E1\-\_\-\-Detection\-\_\-\-Enable\-\_\-\-Port\-\_\-1@{D\-E\-T\-E1\-\_\-\-Detection\-\_\-\-Enable\-\_\-\-Port\-\_\-1}}
+\index{D\-E\-T\-E1\-\_\-\-Detection\-\_\-\-Enable\-\_\-\-Port\-\_\-1@{D\-E\-T\-E1\-\_\-\-Detection\-\_\-\-Enable\-\_\-\-Port\-\_\-1}!TPS238x_Detect_Classification_Enable_Register_t@{T\-P\-S238x\-\_\-\-Detect\-\_\-\-Classification\-\_\-\-Enable\-\_\-\-Register\-\_\-t}}
+\subsubsection[{D\-E\-T\-E1\-\_\-\-Detection\-\_\-\-Enable\-\_\-\-Port\-\_\-1}]{\setlength{\rightskip}{0pt plus 5cm}unsigned char T\-P\-S238x\-\_\-\-Detect\-\_\-\-Classification\-\_\-\-Enable\-\_\-\-Register\-\_\-t\-::\-D\-E\-T\-E1\-\_\-\-Detection\-\_\-\-Enable\-\_\-\-Port\-\_\-1}}\label{struct_t_p_s238x___detect___classification___enable___register__t_ada3c8b1d5c22dde5c1c73e4d45fd7169}
+
+
+Enable detections for port 1. 
+
+\hypertarget{struct_t_p_s238x___detect___classification___enable___register__t_a79ff41b9318535ab21f6f0d007962a54}{\index{T\-P\-S238x\-\_\-\-Detect\-\_\-\-Classification\-\_\-\-Enable\-\_\-\-Register\-\_\-t@{T\-P\-S238x\-\_\-\-Detect\-\_\-\-Classification\-\_\-\-Enable\-\_\-\-Register\-\_\-t}!D\-E\-T\-E2\-\_\-\-Detection\-\_\-\-Enable\-\_\-\-Port\-\_\-2@{D\-E\-T\-E2\-\_\-\-Detection\-\_\-\-Enable\-\_\-\-Port\-\_\-2}}
+\index{D\-E\-T\-E2\-\_\-\-Detection\-\_\-\-Enable\-\_\-\-Port\-\_\-2@{D\-E\-T\-E2\-\_\-\-Detection\-\_\-\-Enable\-\_\-\-Port\-\_\-2}!TPS238x_Detect_Classification_Enable_Register_t@{T\-P\-S238x\-\_\-\-Detect\-\_\-\-Classification\-\_\-\-Enable\-\_\-\-Register\-\_\-t}}
+\subsubsection[{D\-E\-T\-E2\-\_\-\-Detection\-\_\-\-Enable\-\_\-\-Port\-\_\-2}]{\setlength{\rightskip}{0pt plus 5cm}unsigned char T\-P\-S238x\-\_\-\-Detect\-\_\-\-Classification\-\_\-\-Enable\-\_\-\-Register\-\_\-t\-::\-D\-E\-T\-E2\-\_\-\-Detection\-\_\-\-Enable\-\_\-\-Port\-\_\-2}}\label{struct_t_p_s238x___detect___classification___enable___register__t_a79ff41b9318535ab21f6f0d007962a54}
+
+
+Enable detections for port 2. 
+
+\hypertarget{struct_t_p_s238x___detect___classification___enable___register__t_a8261125ffcc2ac69b12038fe26208d27}{\index{T\-P\-S238x\-\_\-\-Detect\-\_\-\-Classification\-\_\-\-Enable\-\_\-\-Register\-\_\-t@{T\-P\-S238x\-\_\-\-Detect\-\_\-\-Classification\-\_\-\-Enable\-\_\-\-Register\-\_\-t}!D\-E\-T\-E3\-\_\-\-Detection\-\_\-\-Enable\-\_\-\-Port\-\_\-3@{D\-E\-T\-E3\-\_\-\-Detection\-\_\-\-Enable\-\_\-\-Port\-\_\-3}}
+\index{D\-E\-T\-E3\-\_\-\-Detection\-\_\-\-Enable\-\_\-\-Port\-\_\-3@{D\-E\-T\-E3\-\_\-\-Detection\-\_\-\-Enable\-\_\-\-Port\-\_\-3}!TPS238x_Detect_Classification_Enable_Register_t@{T\-P\-S238x\-\_\-\-Detect\-\_\-\-Classification\-\_\-\-Enable\-\_\-\-Register\-\_\-t}}
+\subsubsection[{D\-E\-T\-E3\-\_\-\-Detection\-\_\-\-Enable\-\_\-\-Port\-\_\-3}]{\setlength{\rightskip}{0pt plus 5cm}unsigned char T\-P\-S238x\-\_\-\-Detect\-\_\-\-Classification\-\_\-\-Enable\-\_\-\-Register\-\_\-t\-::\-D\-E\-T\-E3\-\_\-\-Detection\-\_\-\-Enable\-\_\-\-Port\-\_\-3}}\label{struct_t_p_s238x___detect___classification___enable___register__t_a8261125ffcc2ac69b12038fe26208d27}
+
+
+Enable detections for port 3. 
+
+\hypertarget{struct_t_p_s238x___detect___classification___enable___register__t_afd0cd227bdef1ffe4822c8f74eb32099}{\index{T\-P\-S238x\-\_\-\-Detect\-\_\-\-Classification\-\_\-\-Enable\-\_\-\-Register\-\_\-t@{T\-P\-S238x\-\_\-\-Detect\-\_\-\-Classification\-\_\-\-Enable\-\_\-\-Register\-\_\-t}!D\-E\-T\-E4\-\_\-\-Detection\-\_\-\-Enable\-\_\-\-Port\-\_\-4@{D\-E\-T\-E4\-\_\-\-Detection\-\_\-\-Enable\-\_\-\-Port\-\_\-4}}
+\index{D\-E\-T\-E4\-\_\-\-Detection\-\_\-\-Enable\-\_\-\-Port\-\_\-4@{D\-E\-T\-E4\-\_\-\-Detection\-\_\-\-Enable\-\_\-\-Port\-\_\-4}!TPS238x_Detect_Classification_Enable_Register_t@{T\-P\-S238x\-\_\-\-Detect\-\_\-\-Classification\-\_\-\-Enable\-\_\-\-Register\-\_\-t}}
+\subsubsection[{D\-E\-T\-E4\-\_\-\-Detection\-\_\-\-Enable\-\_\-\-Port\-\_\-4}]{\setlength{\rightskip}{0pt plus 5cm}unsigned char T\-P\-S238x\-\_\-\-Detect\-\_\-\-Classification\-\_\-\-Enable\-\_\-\-Register\-\_\-t\-::\-D\-E\-T\-E4\-\_\-\-Detection\-\_\-\-Enable\-\_\-\-Port\-\_\-4}}\label{struct_t_p_s238x___detect___classification___enable___register__t_afd0cd227bdef1ffe4822c8f74eb32099}
+
+
+Enable detections for port 4. 
+
+
+
+The documentation for this struct was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+C\-:/\-Users/a0207881/workspace\-\_\-v5\-\_\-3/\-Power\-Over\-Ethernet/\hyperlink{_t_p_s23861_8h}{T\-P\-S23861.\-h}\end{DoxyCompactItemize}

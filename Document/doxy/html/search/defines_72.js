@@ -1,0 +1,22 @@
+var searchData=
+[
+  ['rcl1',['RCL1',['../_t_p_s23861_8h.html#ae55ceba20053641eb4b2a4576c2c5384',1,'TPS23861.h']]],
+  ['rcl2',['RCL2',['../_t_p_s23861_8h.html#a2d59f06a618eea73958e96a68b5bd935',1,'TPS23861.h']]],
+  ['rcl3',['RCL3',['../_t_p_s23861_8h.html#a4ac32b167eccee0cd154a693eace7966',1,'TPS23861.h']]],
+  ['rcl4',['RCL4',['../_t_p_s23861_8h.html#ab98659694db101a26460b0fbb43df99b',1,'TPS23861.h']]],
+  ['rdet1',['RDET1',['../_t_p_s23861_8h.html#ae541509cbe023ec27621aae336623e35',1,'TPS23861.h']]],
+  ['rdet2',['RDET2',['../_t_p_s23861_8h.html#a78ec0c13f5ec5f4fce438f356f046655',1,'TPS23861.h']]],
+  ['rdet3',['RDET3',['../_t_p_s23861_8h.html#a48eaf81b27610a8399de76a328004c8b',1,'TPS23861.h']]],
+  ['rdet4',['RDET4',['../_t_p_s23861_8h.html#ae8c16ceface565736e2ad3b0f0dc2ef7',1,'TPS23861.h']]],
+  ['resal',['RESAL',['../_t_p_s23861_8h.html#aa5d22c806cd283229b905a995c091e12',1,'TPS23861.h']]],
+  ['resp1',['RESP1',['../_t_p_s23861_8h.html#a71dd191cd7066cc6af4e177bb4ae25c4',1,'TPS23861.h']]],
+  ['resp2',['RESP2',['../_t_p_s23861_8h.html#a685a6713c9121bb00105c6d4a763bcc0',1,'TPS23861.h']]],
+  ['resp3',['RESP3',['../_t_p_s23861_8h.html#af398394a54ed847ba0054dcba9e46dde',1,'TPS23861.h']]],
+  ['resp4',['RESP4',['../_t_p_s23861_8h.html#a55a18cf5ca32af5d2d777a66401c02c8',1,'TPS23861.h']]],
+  ['restart_5fclassifcation_5fmask',['RESTART_CLASSIFCATION_MASK',['../_t_p_s23861_8h.html#a81083821c601c078169c2486cddd6b15',1,'TPS23861.h']]],
+  ['restart_5fclassifcation_5fshift',['RESTART_CLASSIFCATION_SHIFT',['../_t_p_s23861_8h.html#ad5dc9ba128441a45ab1c2444d8ba5727',1,'TPS23861.h']]],
+  ['restart_5fdetection_5fmask',['RESTART_DETECTION_MASK',['../_t_p_s23861_8h.html#ac78a7a39a5f716fbeeccb77cddf966d7',1,'TPS23861.h']]],
+  ['restart_5fdetection_5fshift',['RESTART_DETECTION_SHIFT',['../_t_p_s23861_8h.html#a37e188b849fbef05d000bc1b58525b85',1,'TPS23861.h']]],
+  ['rs_5fmask_5fshort',['RS_MASK_SHORT',['../_t_p_s23861_8h.html#a90ca842eb98984cd6194ff17174f28c3',1,'TPS23861.h']]],
+  ['rs_5fshift_5fshort',['RS_SHIFT_SHORT',['../_t_p_s23861_8h.html#ad244a6d04fb05357ddef8965177182a8',1,'TPS23861.h']]]
+];

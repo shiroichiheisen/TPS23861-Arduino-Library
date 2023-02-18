@@ -1,0 +1,96 @@
+\hypertarget{struct_t_p_s238x___power___stauts___register__t}{\section{T\-P\-S238x\-\_\-\-Power\-\_\-\-Stauts\-\_\-\-Register\-\_\-t Struct Reference}
+\label{struct_t_p_s238x___power___stauts___register__t}\index{T\-P\-S238x\-\_\-\-Power\-\_\-\-Stauts\-\_\-\-Register\-\_\-t@{T\-P\-S238x\-\_\-\-Power\-\_\-\-Stauts\-\_\-\-Register\-\_\-t}}
+}
+
+
+{\ttfamily \#include $<$T\-P\-S23861.\-h$>$}
+
+\subsection*{Data Fields}
+\begin{DoxyCompactItemize}
+\item 
+unsigned char \hyperlink{struct_t_p_s238x___power___stauts___register__t_a6f3c7e594685c77b574357445f71346d}{P\-E1\-\_\-\-Power\-\_\-\-Enable\-\_\-\-Port\-\_\-1\-\_\-\-Status}\-: 1
+\begin{DoxyCompactList}\small\item\em Port 1 has power enabled. \end{DoxyCompactList}\item 
+unsigned char \hyperlink{struct_t_p_s238x___power___stauts___register__t_aca4b4d5f38c03d86cda3f05626f12818}{P\-E2\-\_\-\-Power\-\_\-\-Enable\-\_\-\-Port\-\_\-2\-\_\-\-Status}\-: 1
+\begin{DoxyCompactList}\small\item\em Port 2 has power enabled. \end{DoxyCompactList}\item 
+unsigned char \hyperlink{struct_t_p_s238x___power___stauts___register__t_a216e4575a70e0af53bb0e16857147f66}{P\-E3\-\_\-\-Power\-\_\-\-Enable\-\_\-\-Port\-\_\-3\-\_\-\-Status}\-: 1
+\begin{DoxyCompactList}\small\item\em Port 3 has power enabled. \end{DoxyCompactList}\item 
+unsigned char \hyperlink{struct_t_p_s238x___power___stauts___register__t_a34ab6a8aba08405ec0c0bfd15a419746}{P\-E4\-\_\-\-Power\-\_\-\-Enable\-\_\-\-Port\-\_\-4\-\_\-\-Status}\-: 1
+\begin{DoxyCompactList}\small\item\em Port 4 has power enabled. \end{DoxyCompactList}\item 
+unsigned char \hyperlink{struct_t_p_s238x___power___stauts___register__t_aa576d69a47b1aecb02df4efee5f39497}{P\-G1\-\_\-\-Power\-\_\-\-Good\-\_\-\-Port\-\_\-1\-\_\-\-Status}\-: 1
+\begin{DoxyCompactList}\small\item\em Port 1 is powered on with good voltage levels. \end{DoxyCompactList}\item 
+unsigned char \hyperlink{struct_t_p_s238x___power___stauts___register__t_a168286e95b81ee2bbb4e1be7b6d5a150}{P\-G2\-\_\-\-Power\-\_\-\-Good\-\_\-\-Port\-\_\-2\-\_\-\-Status}\-: 1
+\begin{DoxyCompactList}\small\item\em Port 2 is powered on with good voltage levels. \end{DoxyCompactList}\item 
+unsigned char \hyperlink{struct_t_p_s238x___power___stauts___register__t_a8bd40ecb8603bf9c320cd61a0b1cb0ad}{P\-G3\-\_\-\-Power\-\_\-\-Good\-\_\-\-Port\-\_\-3\-\_\-\-Status}\-: 1
+\begin{DoxyCompactList}\small\item\em Port 3 is powered on with good voltage levels. \end{DoxyCompactList}\item 
+unsigned char \hyperlink{struct_t_p_s238x___power___stauts___register__t_a66ca44d4b7146b2a5e01f79042f18162}{P\-G4\-\_\-\-Power\-\_\-\-Good\-\_\-\-Port\-\_\-4\-\_\-\-Status}\-: 1
+\begin{DoxyCompactList}\small\item\em Port 4 is powered on with good voltage levels. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Power Status Register -\/ Software A\-P\-I uses T\-P\-S238x\-\_\-\-Ports\-\_\-t; Status returned in the tps\-\_\-\-Get\-Power\-Status(), tps\-\_\-\-Get\-Power\-Enable\-Status(), and tps\-\_\-\-Get\-Power\-Good\-Status () \par
+ Hardware -\/ Command 10h; 1 data byte; read only \par
+\par
+ Provides status for each port about the power enable and power good settings 
+
+\subsection{Field Documentation}
+\hypertarget{struct_t_p_s238x___power___stauts___register__t_a6f3c7e594685c77b574357445f71346d}{\index{T\-P\-S238x\-\_\-\-Power\-\_\-\-Stauts\-\_\-\-Register\-\_\-t@{T\-P\-S238x\-\_\-\-Power\-\_\-\-Stauts\-\_\-\-Register\-\_\-t}!P\-E1\-\_\-\-Power\-\_\-\-Enable\-\_\-\-Port\-\_\-1\-\_\-\-Status@{P\-E1\-\_\-\-Power\-\_\-\-Enable\-\_\-\-Port\-\_\-1\-\_\-\-Status}}
+\index{P\-E1\-\_\-\-Power\-\_\-\-Enable\-\_\-\-Port\-\_\-1\-\_\-\-Status@{P\-E1\-\_\-\-Power\-\_\-\-Enable\-\_\-\-Port\-\_\-1\-\_\-\-Status}!TPS238x_Power_Stauts_Register_t@{T\-P\-S238x\-\_\-\-Power\-\_\-\-Stauts\-\_\-\-Register\-\_\-t}}
+\subsubsection[{P\-E1\-\_\-\-Power\-\_\-\-Enable\-\_\-\-Port\-\_\-1\-\_\-\-Status}]{\setlength{\rightskip}{0pt plus 5cm}unsigned char T\-P\-S238x\-\_\-\-Power\-\_\-\-Stauts\-\_\-\-Register\-\_\-t\-::\-P\-E1\-\_\-\-Power\-\_\-\-Enable\-\_\-\-Port\-\_\-1\-\_\-\-Status}}\label{struct_t_p_s238x___power___stauts___register__t_a6f3c7e594685c77b574357445f71346d}
+
+
+Port 1 has power enabled. 
+
+\hypertarget{struct_t_p_s238x___power___stauts___register__t_aca4b4d5f38c03d86cda3f05626f12818}{\index{T\-P\-S238x\-\_\-\-Power\-\_\-\-Stauts\-\_\-\-Register\-\_\-t@{T\-P\-S238x\-\_\-\-Power\-\_\-\-Stauts\-\_\-\-Register\-\_\-t}!P\-E2\-\_\-\-Power\-\_\-\-Enable\-\_\-\-Port\-\_\-2\-\_\-\-Status@{P\-E2\-\_\-\-Power\-\_\-\-Enable\-\_\-\-Port\-\_\-2\-\_\-\-Status}}
+\index{P\-E2\-\_\-\-Power\-\_\-\-Enable\-\_\-\-Port\-\_\-2\-\_\-\-Status@{P\-E2\-\_\-\-Power\-\_\-\-Enable\-\_\-\-Port\-\_\-2\-\_\-\-Status}!TPS238x_Power_Stauts_Register_t@{T\-P\-S238x\-\_\-\-Power\-\_\-\-Stauts\-\_\-\-Register\-\_\-t}}
+\subsubsection[{P\-E2\-\_\-\-Power\-\_\-\-Enable\-\_\-\-Port\-\_\-2\-\_\-\-Status}]{\setlength{\rightskip}{0pt plus 5cm}unsigned char T\-P\-S238x\-\_\-\-Power\-\_\-\-Stauts\-\_\-\-Register\-\_\-t\-::\-P\-E2\-\_\-\-Power\-\_\-\-Enable\-\_\-\-Port\-\_\-2\-\_\-\-Status}}\label{struct_t_p_s238x___power___stauts___register__t_aca4b4d5f38c03d86cda3f05626f12818}
+
+
+Port 2 has power enabled. 
+
+\hypertarget{struct_t_p_s238x___power___stauts___register__t_a216e4575a70e0af53bb0e16857147f66}{\index{T\-P\-S238x\-\_\-\-Power\-\_\-\-Stauts\-\_\-\-Register\-\_\-t@{T\-P\-S238x\-\_\-\-Power\-\_\-\-Stauts\-\_\-\-Register\-\_\-t}!P\-E3\-\_\-\-Power\-\_\-\-Enable\-\_\-\-Port\-\_\-3\-\_\-\-Status@{P\-E3\-\_\-\-Power\-\_\-\-Enable\-\_\-\-Port\-\_\-3\-\_\-\-Status}}
+\index{P\-E3\-\_\-\-Power\-\_\-\-Enable\-\_\-\-Port\-\_\-3\-\_\-\-Status@{P\-E3\-\_\-\-Power\-\_\-\-Enable\-\_\-\-Port\-\_\-3\-\_\-\-Status}!TPS238x_Power_Stauts_Register_t@{T\-P\-S238x\-\_\-\-Power\-\_\-\-Stauts\-\_\-\-Register\-\_\-t}}
+\subsubsection[{P\-E3\-\_\-\-Power\-\_\-\-Enable\-\_\-\-Port\-\_\-3\-\_\-\-Status}]{\setlength{\rightskip}{0pt plus 5cm}unsigned char T\-P\-S238x\-\_\-\-Power\-\_\-\-Stauts\-\_\-\-Register\-\_\-t\-::\-P\-E3\-\_\-\-Power\-\_\-\-Enable\-\_\-\-Port\-\_\-3\-\_\-\-Status}}\label{struct_t_p_s238x___power___stauts___register__t_a216e4575a70e0af53bb0e16857147f66}
+
+
+Port 3 has power enabled. 
+
+\hypertarget{struct_t_p_s238x___power___stauts___register__t_a34ab6a8aba08405ec0c0bfd15a419746}{\index{T\-P\-S238x\-\_\-\-Power\-\_\-\-Stauts\-\_\-\-Register\-\_\-t@{T\-P\-S238x\-\_\-\-Power\-\_\-\-Stauts\-\_\-\-Register\-\_\-t}!P\-E4\-\_\-\-Power\-\_\-\-Enable\-\_\-\-Port\-\_\-4\-\_\-\-Status@{P\-E4\-\_\-\-Power\-\_\-\-Enable\-\_\-\-Port\-\_\-4\-\_\-\-Status}}
+\index{P\-E4\-\_\-\-Power\-\_\-\-Enable\-\_\-\-Port\-\_\-4\-\_\-\-Status@{P\-E4\-\_\-\-Power\-\_\-\-Enable\-\_\-\-Port\-\_\-4\-\_\-\-Status}!TPS238x_Power_Stauts_Register_t@{T\-P\-S238x\-\_\-\-Power\-\_\-\-Stauts\-\_\-\-Register\-\_\-t}}
+\subsubsection[{P\-E4\-\_\-\-Power\-\_\-\-Enable\-\_\-\-Port\-\_\-4\-\_\-\-Status}]{\setlength{\rightskip}{0pt plus 5cm}unsigned char T\-P\-S238x\-\_\-\-Power\-\_\-\-Stauts\-\_\-\-Register\-\_\-t\-::\-P\-E4\-\_\-\-Power\-\_\-\-Enable\-\_\-\-Port\-\_\-4\-\_\-\-Status}}\label{struct_t_p_s238x___power___stauts___register__t_a34ab6a8aba08405ec0c0bfd15a419746}
+
+
+Port 4 has power enabled. 
+
+\hypertarget{struct_t_p_s238x___power___stauts___register__t_aa576d69a47b1aecb02df4efee5f39497}{\index{T\-P\-S238x\-\_\-\-Power\-\_\-\-Stauts\-\_\-\-Register\-\_\-t@{T\-P\-S238x\-\_\-\-Power\-\_\-\-Stauts\-\_\-\-Register\-\_\-t}!P\-G1\-\_\-\-Power\-\_\-\-Good\-\_\-\-Port\-\_\-1\-\_\-\-Status@{P\-G1\-\_\-\-Power\-\_\-\-Good\-\_\-\-Port\-\_\-1\-\_\-\-Status}}
+\index{P\-G1\-\_\-\-Power\-\_\-\-Good\-\_\-\-Port\-\_\-1\-\_\-\-Status@{P\-G1\-\_\-\-Power\-\_\-\-Good\-\_\-\-Port\-\_\-1\-\_\-\-Status}!TPS238x_Power_Stauts_Register_t@{T\-P\-S238x\-\_\-\-Power\-\_\-\-Stauts\-\_\-\-Register\-\_\-t}}
+\subsubsection[{P\-G1\-\_\-\-Power\-\_\-\-Good\-\_\-\-Port\-\_\-1\-\_\-\-Status}]{\setlength{\rightskip}{0pt plus 5cm}unsigned char T\-P\-S238x\-\_\-\-Power\-\_\-\-Stauts\-\_\-\-Register\-\_\-t\-::\-P\-G1\-\_\-\-Power\-\_\-\-Good\-\_\-\-Port\-\_\-1\-\_\-\-Status}}\label{struct_t_p_s238x___power___stauts___register__t_aa576d69a47b1aecb02df4efee5f39497}
+
+
+Port 1 is powered on with good voltage levels. 
+
+\hypertarget{struct_t_p_s238x___power___stauts___register__t_a168286e95b81ee2bbb4e1be7b6d5a150}{\index{T\-P\-S238x\-\_\-\-Power\-\_\-\-Stauts\-\_\-\-Register\-\_\-t@{T\-P\-S238x\-\_\-\-Power\-\_\-\-Stauts\-\_\-\-Register\-\_\-t}!P\-G2\-\_\-\-Power\-\_\-\-Good\-\_\-\-Port\-\_\-2\-\_\-\-Status@{P\-G2\-\_\-\-Power\-\_\-\-Good\-\_\-\-Port\-\_\-2\-\_\-\-Status}}
+\index{P\-G2\-\_\-\-Power\-\_\-\-Good\-\_\-\-Port\-\_\-2\-\_\-\-Status@{P\-G2\-\_\-\-Power\-\_\-\-Good\-\_\-\-Port\-\_\-2\-\_\-\-Status}!TPS238x_Power_Stauts_Register_t@{T\-P\-S238x\-\_\-\-Power\-\_\-\-Stauts\-\_\-\-Register\-\_\-t}}
+\subsubsection[{P\-G2\-\_\-\-Power\-\_\-\-Good\-\_\-\-Port\-\_\-2\-\_\-\-Status}]{\setlength{\rightskip}{0pt plus 5cm}unsigned char T\-P\-S238x\-\_\-\-Power\-\_\-\-Stauts\-\_\-\-Register\-\_\-t\-::\-P\-G2\-\_\-\-Power\-\_\-\-Good\-\_\-\-Port\-\_\-2\-\_\-\-Status}}\label{struct_t_p_s238x___power___stauts___register__t_a168286e95b81ee2bbb4e1be7b6d5a150}
+
+
+Port 2 is powered on with good voltage levels. 
+
+\hypertarget{struct_t_p_s238x___power___stauts___register__t_a8bd40ecb8603bf9c320cd61a0b1cb0ad}{\index{T\-P\-S238x\-\_\-\-Power\-\_\-\-Stauts\-\_\-\-Register\-\_\-t@{T\-P\-S238x\-\_\-\-Power\-\_\-\-Stauts\-\_\-\-Register\-\_\-t}!P\-G3\-\_\-\-Power\-\_\-\-Good\-\_\-\-Port\-\_\-3\-\_\-\-Status@{P\-G3\-\_\-\-Power\-\_\-\-Good\-\_\-\-Port\-\_\-3\-\_\-\-Status}}
+\index{P\-G3\-\_\-\-Power\-\_\-\-Good\-\_\-\-Port\-\_\-3\-\_\-\-Status@{P\-G3\-\_\-\-Power\-\_\-\-Good\-\_\-\-Port\-\_\-3\-\_\-\-Status}!TPS238x_Power_Stauts_Register_t@{T\-P\-S238x\-\_\-\-Power\-\_\-\-Stauts\-\_\-\-Register\-\_\-t}}
+\subsubsection[{P\-G3\-\_\-\-Power\-\_\-\-Good\-\_\-\-Port\-\_\-3\-\_\-\-Status}]{\setlength{\rightskip}{0pt plus 5cm}unsigned char T\-P\-S238x\-\_\-\-Power\-\_\-\-Stauts\-\_\-\-Register\-\_\-t\-::\-P\-G3\-\_\-\-Power\-\_\-\-Good\-\_\-\-Port\-\_\-3\-\_\-\-Status}}\label{struct_t_p_s238x___power___stauts___register__t_a8bd40ecb8603bf9c320cd61a0b1cb0ad}
+
+
+Port 3 is powered on with good voltage levels. 
+
+\hypertarget{struct_t_p_s238x___power___stauts___register__t_a66ca44d4b7146b2a5e01f79042f18162}{\index{T\-P\-S238x\-\_\-\-Power\-\_\-\-Stauts\-\_\-\-Register\-\_\-t@{T\-P\-S238x\-\_\-\-Power\-\_\-\-Stauts\-\_\-\-Register\-\_\-t}!P\-G4\-\_\-\-Power\-\_\-\-Good\-\_\-\-Port\-\_\-4\-\_\-\-Status@{P\-G4\-\_\-\-Power\-\_\-\-Good\-\_\-\-Port\-\_\-4\-\_\-\-Status}}
+\index{P\-G4\-\_\-\-Power\-\_\-\-Good\-\_\-\-Port\-\_\-4\-\_\-\-Status@{P\-G4\-\_\-\-Power\-\_\-\-Good\-\_\-\-Port\-\_\-4\-\_\-\-Status}!TPS238x_Power_Stauts_Register_t@{T\-P\-S238x\-\_\-\-Power\-\_\-\-Stauts\-\_\-\-Register\-\_\-t}}
+\subsubsection[{P\-G4\-\_\-\-Power\-\_\-\-Good\-\_\-\-Port\-\_\-4\-\_\-\-Status}]{\setlength{\rightskip}{0pt plus 5cm}unsigned char T\-P\-S238x\-\_\-\-Power\-\_\-\-Stauts\-\_\-\-Register\-\_\-t\-::\-P\-G4\-\_\-\-Power\-\_\-\-Good\-\_\-\-Port\-\_\-4\-\_\-\-Status}}\label{struct_t_p_s238x___power___stauts___register__t_a66ca44d4b7146b2a5e01f79042f18162}
+
+
+Port 4 is powered on with good voltage levels. 
+
+
+
+The documentation for this struct was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+C\-:/\-Users/a0207881/workspace\-\_\-v5\-\_\-3/\-Power\-Over\-Ethernet/\hyperlink{_t_p_s23861_8h}{T\-P\-S23861.\-h}\end{DoxyCompactItemize}

@@ -1,0 +1,60 @@
+\hypertarget{struct_t_p_s238x___timing___configuration___register__t}{\section{T\-P\-S238x\-\_\-\-Timing\-\_\-\-Configuration\-\_\-\-Register\-\_\-t Struct Reference}
+\label{struct_t_p_s238x___timing___configuration___register__t}\index{T\-P\-S238x\-\_\-\-Timing\-\_\-\-Configuration\-\_\-\-Register\-\_\-t@{T\-P\-S238x\-\_\-\-Timing\-\_\-\-Configuration\-\_\-\-Register\-\_\-t}}
+}
+
+
+{\ttfamily \#include $<$T\-P\-S23861.\-h$>$}
+
+\subsection*{Data Fields}
+\begin{DoxyCompactItemize}
+\item 
+unsigned char \hyperlink{struct_t_p_s238x___timing___configuration___register__t_a125cc8ba8c1d5ed16d952646256c9120}{T\-D\-I\-S\-\_\-\-Time\-\_\-\-Disconnect\-\_\-\-Delay}\-: 2
+\begin{DoxyCompactList}\small\item\em Disconnect delay, which is the time to turn off a port once there is a disconnect condition. \end{DoxyCompactList}\item 
+unsigned char \hyperlink{struct_t_p_s238x___timing___configuration___register__t_a6adbf61b88c9a0c9b6a1d108afa55e93}{T\-I\-C\-U\-T\-\_\-\-I\-C\-U\-T\-\_\-\-Fault\-\_\-\-Timing}\-: 2
+\begin{DoxyCompactList}\small\item\em I\-C\-U\-T Fault Timing period, which is the overcurrent time duration before port turn off. \end{DoxyCompactList}\item 
+unsigned char \hyperlink{struct_t_p_s238x___timing___configuration___register__t_aef10bd8d63cf53434ef90a8d135e9760}{T\-S\-T\-A\-R\-T\-\_\-\-Start\-\_\-\-Time}\-: 2
+\begin{DoxyCompactList}\small\item\em T\-S\-T\-A\-R\-T period, which is the maximum allowed overcurrent time during inrush. \end{DoxyCompactList}\item 
+unsigned char \hyperlink{struct_t_p_s238x___timing___configuration___register__t_a2635690243edb947f167f83c38c42e13}{T\-L\-I\-M\-\_\-\-I\-L\-I\-M\-\_\-\-Fault\-\_\-\-Timing}\-: 2
+\begin{DoxyCompactList}\small\item\em I\-L\-I\-M fault timing, which is the foldback current time limit duration before port turn off. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Timing Configuration Register -\/ Software configured in tps\-\_\-\-Set\-Timing() \par
+ Hardware -\/ Command 16h; 1 data byte; read/write \par
+\par
+ Set the timing configurations used by all four ports 
+
+\subsection{Field Documentation}
+\hypertarget{struct_t_p_s238x___timing___configuration___register__t_a125cc8ba8c1d5ed16d952646256c9120}{\index{T\-P\-S238x\-\_\-\-Timing\-\_\-\-Configuration\-\_\-\-Register\-\_\-t@{T\-P\-S238x\-\_\-\-Timing\-\_\-\-Configuration\-\_\-\-Register\-\_\-t}!T\-D\-I\-S\-\_\-\-Time\-\_\-\-Disconnect\-\_\-\-Delay@{T\-D\-I\-S\-\_\-\-Time\-\_\-\-Disconnect\-\_\-\-Delay}}
+\index{T\-D\-I\-S\-\_\-\-Time\-\_\-\-Disconnect\-\_\-\-Delay@{T\-D\-I\-S\-\_\-\-Time\-\_\-\-Disconnect\-\_\-\-Delay}!TPS238x_Timing_Configuration_Register_t@{T\-P\-S238x\-\_\-\-Timing\-\_\-\-Configuration\-\_\-\-Register\-\_\-t}}
+\subsubsection[{T\-D\-I\-S\-\_\-\-Time\-\_\-\-Disconnect\-\_\-\-Delay}]{\setlength{\rightskip}{0pt plus 5cm}unsigned char T\-P\-S238x\-\_\-\-Timing\-\_\-\-Configuration\-\_\-\-Register\-\_\-t\-::\-T\-D\-I\-S\-\_\-\-Time\-\_\-\-Disconnect\-\_\-\-Delay}}\label{struct_t_p_s238x___timing___configuration___register__t_a125cc8ba8c1d5ed16d952646256c9120}
+
+
+Disconnect delay, which is the time to turn off a port once there is a disconnect condition. 
+
+\hypertarget{struct_t_p_s238x___timing___configuration___register__t_a6adbf61b88c9a0c9b6a1d108afa55e93}{\index{T\-P\-S238x\-\_\-\-Timing\-\_\-\-Configuration\-\_\-\-Register\-\_\-t@{T\-P\-S238x\-\_\-\-Timing\-\_\-\-Configuration\-\_\-\-Register\-\_\-t}!T\-I\-C\-U\-T\-\_\-\-I\-C\-U\-T\-\_\-\-Fault\-\_\-\-Timing@{T\-I\-C\-U\-T\-\_\-\-I\-C\-U\-T\-\_\-\-Fault\-\_\-\-Timing}}
+\index{T\-I\-C\-U\-T\-\_\-\-I\-C\-U\-T\-\_\-\-Fault\-\_\-\-Timing@{T\-I\-C\-U\-T\-\_\-\-I\-C\-U\-T\-\_\-\-Fault\-\_\-\-Timing}!TPS238x_Timing_Configuration_Register_t@{T\-P\-S238x\-\_\-\-Timing\-\_\-\-Configuration\-\_\-\-Register\-\_\-t}}
+\subsubsection[{T\-I\-C\-U\-T\-\_\-\-I\-C\-U\-T\-\_\-\-Fault\-\_\-\-Timing}]{\setlength{\rightskip}{0pt plus 5cm}unsigned char T\-P\-S238x\-\_\-\-Timing\-\_\-\-Configuration\-\_\-\-Register\-\_\-t\-::\-T\-I\-C\-U\-T\-\_\-\-I\-C\-U\-T\-\_\-\-Fault\-\_\-\-Timing}}\label{struct_t_p_s238x___timing___configuration___register__t_a6adbf61b88c9a0c9b6a1d108afa55e93}
+
+
+I\-C\-U\-T Fault Timing period, which is the overcurrent time duration before port turn off. 
+
+\hypertarget{struct_t_p_s238x___timing___configuration___register__t_a2635690243edb947f167f83c38c42e13}{\index{T\-P\-S238x\-\_\-\-Timing\-\_\-\-Configuration\-\_\-\-Register\-\_\-t@{T\-P\-S238x\-\_\-\-Timing\-\_\-\-Configuration\-\_\-\-Register\-\_\-t}!T\-L\-I\-M\-\_\-\-I\-L\-I\-M\-\_\-\-Fault\-\_\-\-Timing@{T\-L\-I\-M\-\_\-\-I\-L\-I\-M\-\_\-\-Fault\-\_\-\-Timing}}
+\index{T\-L\-I\-M\-\_\-\-I\-L\-I\-M\-\_\-\-Fault\-\_\-\-Timing@{T\-L\-I\-M\-\_\-\-I\-L\-I\-M\-\_\-\-Fault\-\_\-\-Timing}!TPS238x_Timing_Configuration_Register_t@{T\-P\-S238x\-\_\-\-Timing\-\_\-\-Configuration\-\_\-\-Register\-\_\-t}}
+\subsubsection[{T\-L\-I\-M\-\_\-\-I\-L\-I\-M\-\_\-\-Fault\-\_\-\-Timing}]{\setlength{\rightskip}{0pt plus 5cm}unsigned char T\-P\-S238x\-\_\-\-Timing\-\_\-\-Configuration\-\_\-\-Register\-\_\-t\-::\-T\-L\-I\-M\-\_\-\-I\-L\-I\-M\-\_\-\-Fault\-\_\-\-Timing}}\label{struct_t_p_s238x___timing___configuration___register__t_a2635690243edb947f167f83c38c42e13}
+
+
+I\-L\-I\-M fault timing, which is the foldback current time limit duration before port turn off. 
+
+\hypertarget{struct_t_p_s238x___timing___configuration___register__t_aef10bd8d63cf53434ef90a8d135e9760}{\index{T\-P\-S238x\-\_\-\-Timing\-\_\-\-Configuration\-\_\-\-Register\-\_\-t@{T\-P\-S238x\-\_\-\-Timing\-\_\-\-Configuration\-\_\-\-Register\-\_\-t}!T\-S\-T\-A\-R\-T\-\_\-\-Start\-\_\-\-Time@{T\-S\-T\-A\-R\-T\-\_\-\-Start\-\_\-\-Time}}
+\index{T\-S\-T\-A\-R\-T\-\_\-\-Start\-\_\-\-Time@{T\-S\-T\-A\-R\-T\-\_\-\-Start\-\_\-\-Time}!TPS238x_Timing_Configuration_Register_t@{T\-P\-S238x\-\_\-\-Timing\-\_\-\-Configuration\-\_\-\-Register\-\_\-t}}
+\subsubsection[{T\-S\-T\-A\-R\-T\-\_\-\-Start\-\_\-\-Time}]{\setlength{\rightskip}{0pt plus 5cm}unsigned char T\-P\-S238x\-\_\-\-Timing\-\_\-\-Configuration\-\_\-\-Register\-\_\-t\-::\-T\-S\-T\-A\-R\-T\-\_\-\-Start\-\_\-\-Time}}\label{struct_t_p_s238x___timing___configuration___register__t_aef10bd8d63cf53434ef90a8d135e9760}
+
+
+T\-S\-T\-A\-R\-T period, which is the maximum allowed overcurrent time during inrush. 
+
+
+
+The documentation for this struct was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+C\-:/\-Users/a0207881/workspace\-\_\-v5\-\_\-3/\-Power\-Over\-Ethernet/\hyperlink{_t_p_s23861_8h}{T\-P\-S23861.\-h}\end{DoxyCompactItemize}

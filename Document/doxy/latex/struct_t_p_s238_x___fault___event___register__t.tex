@@ -1,0 +1,100 @@
+\hypertarget{struct_t_p_s238_x___fault___event___register__t}{\section{T\-P\-S238\-X\-\_\-\-Fault\-\_\-\-Event\-\_\-\-Register\-\_\-t Struct Reference}
+\label{struct_t_p_s238_x___fault___event___register__t}\index{T\-P\-S238\-X\-\_\-\-Fault\-\_\-\-Event\-\_\-\-Register\-\_\-t@{T\-P\-S238\-X\-\_\-\-Fault\-\_\-\-Event\-\_\-\-Register\-\_\-t}}
+}
+
+
+{\ttfamily \#include $<$T\-P\-S23861.\-h$>$}
+
+\subsection*{Data Fields}
+\begin{DoxyCompactItemize}
+\item 
+unsigned char \hyperlink{struct_t_p_s238_x___fault___event___register__t_aba1ff937ba93983e7ecf680f0bb70b46}{I\-C\-U\-T1\-\_\-\-I\-C\-U\-T\-\_\-\-Fault\-\_\-\-Port\-\_\-1\-\_\-\-Event}\-: 1
+\begin{DoxyCompactList}\small\item\em I\-C\-U\-T fault occurred at port 1. \end{DoxyCompactList}\item 
+unsigned char \hyperlink{struct_t_p_s238_x___fault___event___register__t_ac3f16b01de8ce8e37e550e8ec6c62549}{I\-C\-U\-T2\-\_\-\-I\-C\-U\-T\-\_\-\-Fault\-\_\-\-Port\-\_\-2\-\_\-\-Event}\-: 1
+\begin{DoxyCompactList}\small\item\em I\-C\-U\-T fault occurred at port 2. \end{DoxyCompactList}\item 
+unsigned char \hyperlink{struct_t_p_s238_x___fault___event___register__t_a02f507883a5092e15ae1b75907509b5f}{I\-C\-U\-T3\-\_\-\-I\-C\-U\-T\-\_\-\-Fault\-\_\-\-Port\-\_\-3\-\_\-\-Event}\-: 1
+\begin{DoxyCompactList}\small\item\em I\-C\-U\-T fault occurred at port 3. \end{DoxyCompactList}\item 
+unsigned char \hyperlink{struct_t_p_s238_x___fault___event___register__t_a843e81075894c326ce51aad8dea1e49d}{I\-C\-U\-T4\-\_\-\-I\-C\-U\-T\-\_\-\-Fault\-\_\-\-Port\-\_\-4\-\_\-\-Event}\-: 1
+\begin{DoxyCompactList}\small\item\em I\-C\-U\-T fault occurred at port 4. \end{DoxyCompactList}\item 
+unsigned char \hyperlink{struct_t_p_s238_x___fault___event___register__t_aeb12eaacf77bd487a6fb5ce92a93d104}{D\-I\-S\-F1\-\_\-\-Disconnect\-\_\-\-Port\-\_\-1\-\_\-\-Event}\-: 1
+\begin{DoxyCompactList}\small\item\em Disconnect event occurred at port 1. \end{DoxyCompactList}\item 
+unsigned char \hyperlink{struct_t_p_s238_x___fault___event___register__t_a4b0bb76d385415279e0ab54404ed94b3}{D\-I\-S\-F2\-\_\-\-Disconnect\-\_\-\-Port\-\_\-2\-\_\-\-Event}\-: 1
+\begin{DoxyCompactList}\small\item\em Disconnect event occurred at port 2. \end{DoxyCompactList}\item 
+unsigned char \hyperlink{struct_t_p_s238_x___fault___event___register__t_ad2c936a1c686197d2f4ba88e45abcad8}{D\-I\-S\-F3\-\_\-\-Disconnect\-\_\-\-Port\-\_\-3\-\_\-\-Event}\-: 1
+\begin{DoxyCompactList}\small\item\em Disconnect event occurred at port 3. \end{DoxyCompactList}\item 
+unsigned char \hyperlink{struct_t_p_s238_x___fault___event___register__t_a5ed7129d3d20f57e4dd303ba222ec4e6}{D\-I\-S\-F4\-\_\-\-Disconnect\-\_\-\-Port\-\_\-4\-\_\-\-Event}\-: 1
+\begin{DoxyCompactList}\small\item\em Disconnect event occurred at port 4. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Fault Event Register -\/ Software A\-P\-I uses T\-P\-S238x\-\_\-\-Ports\-\_\-t; Software retrieves these events as part of tps\-\_\-\-Get\-All\-Interrupt\-Events() \par
+ Hardware -\/ Command 06h; 1 data byte; read only \par
+
+\begin{DoxyItemize}
+\item Command 07h; 1 data byte; Clear on read \par
+\par
+ I\-C\-U\-T fault and disconnect events occurred for at least one port 
+\end{DoxyItemize}
+
+\subsection{Field Documentation}
+\hypertarget{struct_t_p_s238_x___fault___event___register__t_aeb12eaacf77bd487a6fb5ce92a93d104}{\index{T\-P\-S238\-X\-\_\-\-Fault\-\_\-\-Event\-\_\-\-Register\-\_\-t@{T\-P\-S238\-X\-\_\-\-Fault\-\_\-\-Event\-\_\-\-Register\-\_\-t}!D\-I\-S\-F1\-\_\-\-Disconnect\-\_\-\-Port\-\_\-1\-\_\-\-Event@{D\-I\-S\-F1\-\_\-\-Disconnect\-\_\-\-Port\-\_\-1\-\_\-\-Event}}
+\index{D\-I\-S\-F1\-\_\-\-Disconnect\-\_\-\-Port\-\_\-1\-\_\-\-Event@{D\-I\-S\-F1\-\_\-\-Disconnect\-\_\-\-Port\-\_\-1\-\_\-\-Event}!TPS238X_Fault_Event_Register_t@{T\-P\-S238\-X\-\_\-\-Fault\-\_\-\-Event\-\_\-\-Register\-\_\-t}}
+\subsubsection[{D\-I\-S\-F1\-\_\-\-Disconnect\-\_\-\-Port\-\_\-1\-\_\-\-Event}]{\setlength{\rightskip}{0pt plus 5cm}unsigned char T\-P\-S238\-X\-\_\-\-Fault\-\_\-\-Event\-\_\-\-Register\-\_\-t\-::\-D\-I\-S\-F1\-\_\-\-Disconnect\-\_\-\-Port\-\_\-1\-\_\-\-Event}}\label{struct_t_p_s238_x___fault___event___register__t_aeb12eaacf77bd487a6fb5ce92a93d104}
+
+
+Disconnect event occurred at port 1. 
+
+\hypertarget{struct_t_p_s238_x___fault___event___register__t_a4b0bb76d385415279e0ab54404ed94b3}{\index{T\-P\-S238\-X\-\_\-\-Fault\-\_\-\-Event\-\_\-\-Register\-\_\-t@{T\-P\-S238\-X\-\_\-\-Fault\-\_\-\-Event\-\_\-\-Register\-\_\-t}!D\-I\-S\-F2\-\_\-\-Disconnect\-\_\-\-Port\-\_\-2\-\_\-\-Event@{D\-I\-S\-F2\-\_\-\-Disconnect\-\_\-\-Port\-\_\-2\-\_\-\-Event}}
+\index{D\-I\-S\-F2\-\_\-\-Disconnect\-\_\-\-Port\-\_\-2\-\_\-\-Event@{D\-I\-S\-F2\-\_\-\-Disconnect\-\_\-\-Port\-\_\-2\-\_\-\-Event}!TPS238X_Fault_Event_Register_t@{T\-P\-S238\-X\-\_\-\-Fault\-\_\-\-Event\-\_\-\-Register\-\_\-t}}
+\subsubsection[{D\-I\-S\-F2\-\_\-\-Disconnect\-\_\-\-Port\-\_\-2\-\_\-\-Event}]{\setlength{\rightskip}{0pt plus 5cm}unsigned char T\-P\-S238\-X\-\_\-\-Fault\-\_\-\-Event\-\_\-\-Register\-\_\-t\-::\-D\-I\-S\-F2\-\_\-\-Disconnect\-\_\-\-Port\-\_\-2\-\_\-\-Event}}\label{struct_t_p_s238_x___fault___event___register__t_a4b0bb76d385415279e0ab54404ed94b3}
+
+
+Disconnect event occurred at port 2. 
+
+\hypertarget{struct_t_p_s238_x___fault___event___register__t_ad2c936a1c686197d2f4ba88e45abcad8}{\index{T\-P\-S238\-X\-\_\-\-Fault\-\_\-\-Event\-\_\-\-Register\-\_\-t@{T\-P\-S238\-X\-\_\-\-Fault\-\_\-\-Event\-\_\-\-Register\-\_\-t}!D\-I\-S\-F3\-\_\-\-Disconnect\-\_\-\-Port\-\_\-3\-\_\-\-Event@{D\-I\-S\-F3\-\_\-\-Disconnect\-\_\-\-Port\-\_\-3\-\_\-\-Event}}
+\index{D\-I\-S\-F3\-\_\-\-Disconnect\-\_\-\-Port\-\_\-3\-\_\-\-Event@{D\-I\-S\-F3\-\_\-\-Disconnect\-\_\-\-Port\-\_\-3\-\_\-\-Event}!TPS238X_Fault_Event_Register_t@{T\-P\-S238\-X\-\_\-\-Fault\-\_\-\-Event\-\_\-\-Register\-\_\-t}}
+\subsubsection[{D\-I\-S\-F3\-\_\-\-Disconnect\-\_\-\-Port\-\_\-3\-\_\-\-Event}]{\setlength{\rightskip}{0pt plus 5cm}unsigned char T\-P\-S238\-X\-\_\-\-Fault\-\_\-\-Event\-\_\-\-Register\-\_\-t\-::\-D\-I\-S\-F3\-\_\-\-Disconnect\-\_\-\-Port\-\_\-3\-\_\-\-Event}}\label{struct_t_p_s238_x___fault___event___register__t_ad2c936a1c686197d2f4ba88e45abcad8}
+
+
+Disconnect event occurred at port 3. 
+
+\hypertarget{struct_t_p_s238_x___fault___event___register__t_a5ed7129d3d20f57e4dd303ba222ec4e6}{\index{T\-P\-S238\-X\-\_\-\-Fault\-\_\-\-Event\-\_\-\-Register\-\_\-t@{T\-P\-S238\-X\-\_\-\-Fault\-\_\-\-Event\-\_\-\-Register\-\_\-t}!D\-I\-S\-F4\-\_\-\-Disconnect\-\_\-\-Port\-\_\-4\-\_\-\-Event@{D\-I\-S\-F4\-\_\-\-Disconnect\-\_\-\-Port\-\_\-4\-\_\-\-Event}}
+\index{D\-I\-S\-F4\-\_\-\-Disconnect\-\_\-\-Port\-\_\-4\-\_\-\-Event@{D\-I\-S\-F4\-\_\-\-Disconnect\-\_\-\-Port\-\_\-4\-\_\-\-Event}!TPS238X_Fault_Event_Register_t@{T\-P\-S238\-X\-\_\-\-Fault\-\_\-\-Event\-\_\-\-Register\-\_\-t}}
+\subsubsection[{D\-I\-S\-F4\-\_\-\-Disconnect\-\_\-\-Port\-\_\-4\-\_\-\-Event}]{\setlength{\rightskip}{0pt plus 5cm}unsigned char T\-P\-S238\-X\-\_\-\-Fault\-\_\-\-Event\-\_\-\-Register\-\_\-t\-::\-D\-I\-S\-F4\-\_\-\-Disconnect\-\_\-\-Port\-\_\-4\-\_\-\-Event}}\label{struct_t_p_s238_x___fault___event___register__t_a5ed7129d3d20f57e4dd303ba222ec4e6}
+
+
+Disconnect event occurred at port 4. 
+
+\hypertarget{struct_t_p_s238_x___fault___event___register__t_aba1ff937ba93983e7ecf680f0bb70b46}{\index{T\-P\-S238\-X\-\_\-\-Fault\-\_\-\-Event\-\_\-\-Register\-\_\-t@{T\-P\-S238\-X\-\_\-\-Fault\-\_\-\-Event\-\_\-\-Register\-\_\-t}!I\-C\-U\-T1\-\_\-\-I\-C\-U\-T\-\_\-\-Fault\-\_\-\-Port\-\_\-1\-\_\-\-Event@{I\-C\-U\-T1\-\_\-\-I\-C\-U\-T\-\_\-\-Fault\-\_\-\-Port\-\_\-1\-\_\-\-Event}}
+\index{I\-C\-U\-T1\-\_\-\-I\-C\-U\-T\-\_\-\-Fault\-\_\-\-Port\-\_\-1\-\_\-\-Event@{I\-C\-U\-T1\-\_\-\-I\-C\-U\-T\-\_\-\-Fault\-\_\-\-Port\-\_\-1\-\_\-\-Event}!TPS238X_Fault_Event_Register_t@{T\-P\-S238\-X\-\_\-\-Fault\-\_\-\-Event\-\_\-\-Register\-\_\-t}}
+\subsubsection[{I\-C\-U\-T1\-\_\-\-I\-C\-U\-T\-\_\-\-Fault\-\_\-\-Port\-\_\-1\-\_\-\-Event}]{\setlength{\rightskip}{0pt plus 5cm}unsigned char T\-P\-S238\-X\-\_\-\-Fault\-\_\-\-Event\-\_\-\-Register\-\_\-t\-::\-I\-C\-U\-T1\-\_\-\-I\-C\-U\-T\-\_\-\-Fault\-\_\-\-Port\-\_\-1\-\_\-\-Event}}\label{struct_t_p_s238_x___fault___event___register__t_aba1ff937ba93983e7ecf680f0bb70b46}
+
+
+I\-C\-U\-T fault occurred at port 1. 
+
+\hypertarget{struct_t_p_s238_x___fault___event___register__t_ac3f16b01de8ce8e37e550e8ec6c62549}{\index{T\-P\-S238\-X\-\_\-\-Fault\-\_\-\-Event\-\_\-\-Register\-\_\-t@{T\-P\-S238\-X\-\_\-\-Fault\-\_\-\-Event\-\_\-\-Register\-\_\-t}!I\-C\-U\-T2\-\_\-\-I\-C\-U\-T\-\_\-\-Fault\-\_\-\-Port\-\_\-2\-\_\-\-Event@{I\-C\-U\-T2\-\_\-\-I\-C\-U\-T\-\_\-\-Fault\-\_\-\-Port\-\_\-2\-\_\-\-Event}}
+\index{I\-C\-U\-T2\-\_\-\-I\-C\-U\-T\-\_\-\-Fault\-\_\-\-Port\-\_\-2\-\_\-\-Event@{I\-C\-U\-T2\-\_\-\-I\-C\-U\-T\-\_\-\-Fault\-\_\-\-Port\-\_\-2\-\_\-\-Event}!TPS238X_Fault_Event_Register_t@{T\-P\-S238\-X\-\_\-\-Fault\-\_\-\-Event\-\_\-\-Register\-\_\-t}}
+\subsubsection[{I\-C\-U\-T2\-\_\-\-I\-C\-U\-T\-\_\-\-Fault\-\_\-\-Port\-\_\-2\-\_\-\-Event}]{\setlength{\rightskip}{0pt plus 5cm}unsigned char T\-P\-S238\-X\-\_\-\-Fault\-\_\-\-Event\-\_\-\-Register\-\_\-t\-::\-I\-C\-U\-T2\-\_\-\-I\-C\-U\-T\-\_\-\-Fault\-\_\-\-Port\-\_\-2\-\_\-\-Event}}\label{struct_t_p_s238_x___fault___event___register__t_ac3f16b01de8ce8e37e550e8ec6c62549}
+
+
+I\-C\-U\-T fault occurred at port 2. 
+
+\hypertarget{struct_t_p_s238_x___fault___event___register__t_a02f507883a5092e15ae1b75907509b5f}{\index{T\-P\-S238\-X\-\_\-\-Fault\-\_\-\-Event\-\_\-\-Register\-\_\-t@{T\-P\-S238\-X\-\_\-\-Fault\-\_\-\-Event\-\_\-\-Register\-\_\-t}!I\-C\-U\-T3\-\_\-\-I\-C\-U\-T\-\_\-\-Fault\-\_\-\-Port\-\_\-3\-\_\-\-Event@{I\-C\-U\-T3\-\_\-\-I\-C\-U\-T\-\_\-\-Fault\-\_\-\-Port\-\_\-3\-\_\-\-Event}}
+\index{I\-C\-U\-T3\-\_\-\-I\-C\-U\-T\-\_\-\-Fault\-\_\-\-Port\-\_\-3\-\_\-\-Event@{I\-C\-U\-T3\-\_\-\-I\-C\-U\-T\-\_\-\-Fault\-\_\-\-Port\-\_\-3\-\_\-\-Event}!TPS238X_Fault_Event_Register_t@{T\-P\-S238\-X\-\_\-\-Fault\-\_\-\-Event\-\_\-\-Register\-\_\-t}}
+\subsubsection[{I\-C\-U\-T3\-\_\-\-I\-C\-U\-T\-\_\-\-Fault\-\_\-\-Port\-\_\-3\-\_\-\-Event}]{\setlength{\rightskip}{0pt plus 5cm}unsigned char T\-P\-S238\-X\-\_\-\-Fault\-\_\-\-Event\-\_\-\-Register\-\_\-t\-::\-I\-C\-U\-T3\-\_\-\-I\-C\-U\-T\-\_\-\-Fault\-\_\-\-Port\-\_\-3\-\_\-\-Event}}\label{struct_t_p_s238_x___fault___event___register__t_a02f507883a5092e15ae1b75907509b5f}
+
+
+I\-C\-U\-T fault occurred at port 3. 
+
+\hypertarget{struct_t_p_s238_x___fault___event___register__t_a843e81075894c326ce51aad8dea1e49d}{\index{T\-P\-S238\-X\-\_\-\-Fault\-\_\-\-Event\-\_\-\-Register\-\_\-t@{T\-P\-S238\-X\-\_\-\-Fault\-\_\-\-Event\-\_\-\-Register\-\_\-t}!I\-C\-U\-T4\-\_\-\-I\-C\-U\-T\-\_\-\-Fault\-\_\-\-Port\-\_\-4\-\_\-\-Event@{I\-C\-U\-T4\-\_\-\-I\-C\-U\-T\-\_\-\-Fault\-\_\-\-Port\-\_\-4\-\_\-\-Event}}
+\index{I\-C\-U\-T4\-\_\-\-I\-C\-U\-T\-\_\-\-Fault\-\_\-\-Port\-\_\-4\-\_\-\-Event@{I\-C\-U\-T4\-\_\-\-I\-C\-U\-T\-\_\-\-Fault\-\_\-\-Port\-\_\-4\-\_\-\-Event}!TPS238X_Fault_Event_Register_t@{T\-P\-S238\-X\-\_\-\-Fault\-\_\-\-Event\-\_\-\-Register\-\_\-t}}
+\subsubsection[{I\-C\-U\-T4\-\_\-\-I\-C\-U\-T\-\_\-\-Fault\-\_\-\-Port\-\_\-4\-\_\-\-Event}]{\setlength{\rightskip}{0pt plus 5cm}unsigned char T\-P\-S238\-X\-\_\-\-Fault\-\_\-\-Event\-\_\-\-Register\-\_\-t\-::\-I\-C\-U\-T4\-\_\-\-I\-C\-U\-T\-\_\-\-Fault\-\_\-\-Port\-\_\-4\-\_\-\-Event}}\label{struct_t_p_s238_x___fault___event___register__t_a843e81075894c326ce51aad8dea1e49d}
+
+
+I\-C\-U\-T fault occurred at port 4. 
+
+
+
+The documentation for this struct was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+C\-:/\-Users/a0207881/workspace\-\_\-v5\-\_\-3/\-Power\-Over\-Ethernet/\hyperlink{_t_p_s23861_8h}{T\-P\-S23861.\-h}\end{DoxyCompactItemize}

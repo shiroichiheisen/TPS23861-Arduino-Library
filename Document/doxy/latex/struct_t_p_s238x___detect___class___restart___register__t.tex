@@ -1,0 +1,96 @@
+\hypertarget{struct_t_p_s238x___detect___class___restart___register__t}{\section{T\-P\-S238x\-\_\-\-Detect\-\_\-\-Class\-\_\-\-Restart\-\_\-\-Register\-\_\-t Struct Reference}
+\label{struct_t_p_s238x___detect___class___restart___register__t}\index{T\-P\-S238x\-\_\-\-Detect\-\_\-\-Class\-\_\-\-Restart\-\_\-\-Register\-\_\-t@{T\-P\-S238x\-\_\-\-Detect\-\_\-\-Class\-\_\-\-Restart\-\_\-\-Register\-\_\-t}}
+}
+
+
+{\ttfamily \#include $<$T\-P\-S23861.\-h$>$}
+
+\subsection*{Data Fields}
+\begin{DoxyCompactItemize}
+\item 
+unsigned char \hyperlink{struct_t_p_s238x___detect___class___restart___register__t_af5753eb1d15bae041b21b7ca6b46d937}{R\-D\-E\-T1\-\_\-\-Restart\-\_\-\-Detection\-\_\-\-Port\-\_\-1}\-: 1
+\begin{DoxyCompactList}\small\item\em Restart Detection Port 1. \end{DoxyCompactList}\item 
+unsigned char \hyperlink{struct_t_p_s238x___detect___class___restart___register__t_aa485e72bc733bbb0b1af3ea8dfb22031}{R\-D\-E\-T2\-\_\-\-Restart\-\_\-\-Detection\-\_\-\-Port\-\_\-2}\-: 1
+\begin{DoxyCompactList}\small\item\em Restart Detection Port 2. \end{DoxyCompactList}\item 
+unsigned char \hyperlink{struct_t_p_s238x___detect___class___restart___register__t_a852a35ff46f0f8ab137ece2ee0b9e806}{R\-D\-E\-T3\-\_\-\-Restart\-\_\-\-Detection\-\_\-\-Port\-\_\-3}\-: 1
+\begin{DoxyCompactList}\small\item\em Restart Detection Port 3. \end{DoxyCompactList}\item 
+unsigned char \hyperlink{struct_t_p_s238x___detect___class___restart___register__t_a3e1cd9de9840b5982e356eabdbed284f}{R\-D\-E\-T4\-\_\-\-Restart\-\_\-\-Detection\-\_\-\-Port\-\_\-4}\-: 1
+\begin{DoxyCompactList}\small\item\em Restart Detection Port 4. \end{DoxyCompactList}\item 
+unsigned char \hyperlink{struct_t_p_s238x___detect___class___restart___register__t_a74d7ce95b9258dfa72f633ad19680060}{R\-C\-L1\-\_\-\-Restart\-\_\-\-Classification\-\_\-\-Port\-\_\-1}\-: 1
+\begin{DoxyCompactList}\small\item\em Restart Classification Port 1. \end{DoxyCompactList}\item 
+unsigned char \hyperlink{struct_t_p_s238x___detect___class___restart___register__t_a7264ab49fa6014314c5adb6884151eed}{R\-C\-L2\-\_\-\-Restart\-\_\-\-Classification\-\_\-\-Port\-\_\-2}\-: 1
+\begin{DoxyCompactList}\small\item\em Restart Classification Port 2. \end{DoxyCompactList}\item 
+unsigned char \hyperlink{struct_t_p_s238x___detect___class___restart___register__t_a89a38687600402ad01745dd4d1c5cf53}{R\-C\-L3\-\_\-\-Restart\-\_\-\-Classification\-\_\-\-Port\-\_\-3}\-: 1
+\begin{DoxyCompactList}\small\item\em Restart Classification Port 3. \end{DoxyCompactList}\item 
+unsigned char \hyperlink{struct_t_p_s238x___detect___class___restart___register__t_ae5bc0d4dbf6d98b1a65ab37d7d595d47}{R\-C\-L4\-\_\-\-Restart\-\_\-\-Classification\-\_\-\-Port\-\_\-4}\-: 1
+\begin{DoxyCompactList}\small\item\em Restart Classification Port 4. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Detect/\-Class Restart Register -\/ Software A\-P\-I uses T\-P\-S238x\-\_\-\-Ports\-\_\-t; Configured in tps\-\_\-\-Restart\-Detection(), \hyperlink{_t_p_s23861_8c_a840d271905d539b9c28fb4bbcc10313e}{tps\-\_\-\-Restart\-Port\-Detection()}, tps\-\_\-\-Restart\-Classification(), \hyperlink{_t_p_s23861_8c_abee472a6cce083fa8990b8ac57b8d58f}{tps\-\_\-\-Restart\-Port\-Classification()}, and tps\-\_\-\-Restart\-Detect\-Class() Hardware -\/ Command 18h; 1 data byte; write only In manual mode, the indicated ports will restart detection/classification. In auto mode, action is dependant on the ports operating mode \begin{DoxyNote}{Note}
+During a cool down period following a fault condition, this command will be accepted, but deferrred until the cool down timer expires. 
+\end{DoxyNote}
+
+
+\subsection{Field Documentation}
+\hypertarget{struct_t_p_s238x___detect___class___restart___register__t_a74d7ce95b9258dfa72f633ad19680060}{\index{T\-P\-S238x\-\_\-\-Detect\-\_\-\-Class\-\_\-\-Restart\-\_\-\-Register\-\_\-t@{T\-P\-S238x\-\_\-\-Detect\-\_\-\-Class\-\_\-\-Restart\-\_\-\-Register\-\_\-t}!R\-C\-L1\-\_\-\-Restart\-\_\-\-Classification\-\_\-\-Port\-\_\-1@{R\-C\-L1\-\_\-\-Restart\-\_\-\-Classification\-\_\-\-Port\-\_\-1}}
+\index{R\-C\-L1\-\_\-\-Restart\-\_\-\-Classification\-\_\-\-Port\-\_\-1@{R\-C\-L1\-\_\-\-Restart\-\_\-\-Classification\-\_\-\-Port\-\_\-1}!TPS238x_Detect_Class_Restart_Register_t@{T\-P\-S238x\-\_\-\-Detect\-\_\-\-Class\-\_\-\-Restart\-\_\-\-Register\-\_\-t}}
+\subsubsection[{R\-C\-L1\-\_\-\-Restart\-\_\-\-Classification\-\_\-\-Port\-\_\-1}]{\setlength{\rightskip}{0pt plus 5cm}unsigned char T\-P\-S238x\-\_\-\-Detect\-\_\-\-Class\-\_\-\-Restart\-\_\-\-Register\-\_\-t\-::\-R\-C\-L1\-\_\-\-Restart\-\_\-\-Classification\-\_\-\-Port\-\_\-1}}\label{struct_t_p_s238x___detect___class___restart___register__t_a74d7ce95b9258dfa72f633ad19680060}
+
+
+Restart Classification Port 1. 
+
+\hypertarget{struct_t_p_s238x___detect___class___restart___register__t_a7264ab49fa6014314c5adb6884151eed}{\index{T\-P\-S238x\-\_\-\-Detect\-\_\-\-Class\-\_\-\-Restart\-\_\-\-Register\-\_\-t@{T\-P\-S238x\-\_\-\-Detect\-\_\-\-Class\-\_\-\-Restart\-\_\-\-Register\-\_\-t}!R\-C\-L2\-\_\-\-Restart\-\_\-\-Classification\-\_\-\-Port\-\_\-2@{R\-C\-L2\-\_\-\-Restart\-\_\-\-Classification\-\_\-\-Port\-\_\-2}}
+\index{R\-C\-L2\-\_\-\-Restart\-\_\-\-Classification\-\_\-\-Port\-\_\-2@{R\-C\-L2\-\_\-\-Restart\-\_\-\-Classification\-\_\-\-Port\-\_\-2}!TPS238x_Detect_Class_Restart_Register_t@{T\-P\-S238x\-\_\-\-Detect\-\_\-\-Class\-\_\-\-Restart\-\_\-\-Register\-\_\-t}}
+\subsubsection[{R\-C\-L2\-\_\-\-Restart\-\_\-\-Classification\-\_\-\-Port\-\_\-2}]{\setlength{\rightskip}{0pt plus 5cm}unsigned char T\-P\-S238x\-\_\-\-Detect\-\_\-\-Class\-\_\-\-Restart\-\_\-\-Register\-\_\-t\-::\-R\-C\-L2\-\_\-\-Restart\-\_\-\-Classification\-\_\-\-Port\-\_\-2}}\label{struct_t_p_s238x___detect___class___restart___register__t_a7264ab49fa6014314c5adb6884151eed}
+
+
+Restart Classification Port 2. 
+
+\hypertarget{struct_t_p_s238x___detect___class___restart___register__t_a89a38687600402ad01745dd4d1c5cf53}{\index{T\-P\-S238x\-\_\-\-Detect\-\_\-\-Class\-\_\-\-Restart\-\_\-\-Register\-\_\-t@{T\-P\-S238x\-\_\-\-Detect\-\_\-\-Class\-\_\-\-Restart\-\_\-\-Register\-\_\-t}!R\-C\-L3\-\_\-\-Restart\-\_\-\-Classification\-\_\-\-Port\-\_\-3@{R\-C\-L3\-\_\-\-Restart\-\_\-\-Classification\-\_\-\-Port\-\_\-3}}
+\index{R\-C\-L3\-\_\-\-Restart\-\_\-\-Classification\-\_\-\-Port\-\_\-3@{R\-C\-L3\-\_\-\-Restart\-\_\-\-Classification\-\_\-\-Port\-\_\-3}!TPS238x_Detect_Class_Restart_Register_t@{T\-P\-S238x\-\_\-\-Detect\-\_\-\-Class\-\_\-\-Restart\-\_\-\-Register\-\_\-t}}
+\subsubsection[{R\-C\-L3\-\_\-\-Restart\-\_\-\-Classification\-\_\-\-Port\-\_\-3}]{\setlength{\rightskip}{0pt plus 5cm}unsigned char T\-P\-S238x\-\_\-\-Detect\-\_\-\-Class\-\_\-\-Restart\-\_\-\-Register\-\_\-t\-::\-R\-C\-L3\-\_\-\-Restart\-\_\-\-Classification\-\_\-\-Port\-\_\-3}}\label{struct_t_p_s238x___detect___class___restart___register__t_a89a38687600402ad01745dd4d1c5cf53}
+
+
+Restart Classification Port 3. 
+
+\hypertarget{struct_t_p_s238x___detect___class___restart___register__t_ae5bc0d4dbf6d98b1a65ab37d7d595d47}{\index{T\-P\-S238x\-\_\-\-Detect\-\_\-\-Class\-\_\-\-Restart\-\_\-\-Register\-\_\-t@{T\-P\-S238x\-\_\-\-Detect\-\_\-\-Class\-\_\-\-Restart\-\_\-\-Register\-\_\-t}!R\-C\-L4\-\_\-\-Restart\-\_\-\-Classification\-\_\-\-Port\-\_\-4@{R\-C\-L4\-\_\-\-Restart\-\_\-\-Classification\-\_\-\-Port\-\_\-4}}
+\index{R\-C\-L4\-\_\-\-Restart\-\_\-\-Classification\-\_\-\-Port\-\_\-4@{R\-C\-L4\-\_\-\-Restart\-\_\-\-Classification\-\_\-\-Port\-\_\-4}!TPS238x_Detect_Class_Restart_Register_t@{T\-P\-S238x\-\_\-\-Detect\-\_\-\-Class\-\_\-\-Restart\-\_\-\-Register\-\_\-t}}
+\subsubsection[{R\-C\-L4\-\_\-\-Restart\-\_\-\-Classification\-\_\-\-Port\-\_\-4}]{\setlength{\rightskip}{0pt plus 5cm}unsigned char T\-P\-S238x\-\_\-\-Detect\-\_\-\-Class\-\_\-\-Restart\-\_\-\-Register\-\_\-t\-::\-R\-C\-L4\-\_\-\-Restart\-\_\-\-Classification\-\_\-\-Port\-\_\-4}}\label{struct_t_p_s238x___detect___class___restart___register__t_ae5bc0d4dbf6d98b1a65ab37d7d595d47}
+
+
+Restart Classification Port 4. 
+
+\hypertarget{struct_t_p_s238x___detect___class___restart___register__t_af5753eb1d15bae041b21b7ca6b46d937}{\index{T\-P\-S238x\-\_\-\-Detect\-\_\-\-Class\-\_\-\-Restart\-\_\-\-Register\-\_\-t@{T\-P\-S238x\-\_\-\-Detect\-\_\-\-Class\-\_\-\-Restart\-\_\-\-Register\-\_\-t}!R\-D\-E\-T1\-\_\-\-Restart\-\_\-\-Detection\-\_\-\-Port\-\_\-1@{R\-D\-E\-T1\-\_\-\-Restart\-\_\-\-Detection\-\_\-\-Port\-\_\-1}}
+\index{R\-D\-E\-T1\-\_\-\-Restart\-\_\-\-Detection\-\_\-\-Port\-\_\-1@{R\-D\-E\-T1\-\_\-\-Restart\-\_\-\-Detection\-\_\-\-Port\-\_\-1}!TPS238x_Detect_Class_Restart_Register_t@{T\-P\-S238x\-\_\-\-Detect\-\_\-\-Class\-\_\-\-Restart\-\_\-\-Register\-\_\-t}}
+\subsubsection[{R\-D\-E\-T1\-\_\-\-Restart\-\_\-\-Detection\-\_\-\-Port\-\_\-1}]{\setlength{\rightskip}{0pt plus 5cm}unsigned char T\-P\-S238x\-\_\-\-Detect\-\_\-\-Class\-\_\-\-Restart\-\_\-\-Register\-\_\-t\-::\-R\-D\-E\-T1\-\_\-\-Restart\-\_\-\-Detection\-\_\-\-Port\-\_\-1}}\label{struct_t_p_s238x___detect___class___restart___register__t_af5753eb1d15bae041b21b7ca6b46d937}
+
+
+Restart Detection Port 1. 
+
+\hypertarget{struct_t_p_s238x___detect___class___restart___register__t_aa485e72bc733bbb0b1af3ea8dfb22031}{\index{T\-P\-S238x\-\_\-\-Detect\-\_\-\-Class\-\_\-\-Restart\-\_\-\-Register\-\_\-t@{T\-P\-S238x\-\_\-\-Detect\-\_\-\-Class\-\_\-\-Restart\-\_\-\-Register\-\_\-t}!R\-D\-E\-T2\-\_\-\-Restart\-\_\-\-Detection\-\_\-\-Port\-\_\-2@{R\-D\-E\-T2\-\_\-\-Restart\-\_\-\-Detection\-\_\-\-Port\-\_\-2}}
+\index{R\-D\-E\-T2\-\_\-\-Restart\-\_\-\-Detection\-\_\-\-Port\-\_\-2@{R\-D\-E\-T2\-\_\-\-Restart\-\_\-\-Detection\-\_\-\-Port\-\_\-2}!TPS238x_Detect_Class_Restart_Register_t@{T\-P\-S238x\-\_\-\-Detect\-\_\-\-Class\-\_\-\-Restart\-\_\-\-Register\-\_\-t}}
+\subsubsection[{R\-D\-E\-T2\-\_\-\-Restart\-\_\-\-Detection\-\_\-\-Port\-\_\-2}]{\setlength{\rightskip}{0pt plus 5cm}unsigned char T\-P\-S238x\-\_\-\-Detect\-\_\-\-Class\-\_\-\-Restart\-\_\-\-Register\-\_\-t\-::\-R\-D\-E\-T2\-\_\-\-Restart\-\_\-\-Detection\-\_\-\-Port\-\_\-2}}\label{struct_t_p_s238x___detect___class___restart___register__t_aa485e72bc733bbb0b1af3ea8dfb22031}
+
+
+Restart Detection Port 2. 
+
+\hypertarget{struct_t_p_s238x___detect___class___restart___register__t_a852a35ff46f0f8ab137ece2ee0b9e806}{\index{T\-P\-S238x\-\_\-\-Detect\-\_\-\-Class\-\_\-\-Restart\-\_\-\-Register\-\_\-t@{T\-P\-S238x\-\_\-\-Detect\-\_\-\-Class\-\_\-\-Restart\-\_\-\-Register\-\_\-t}!R\-D\-E\-T3\-\_\-\-Restart\-\_\-\-Detection\-\_\-\-Port\-\_\-3@{R\-D\-E\-T3\-\_\-\-Restart\-\_\-\-Detection\-\_\-\-Port\-\_\-3}}
+\index{R\-D\-E\-T3\-\_\-\-Restart\-\_\-\-Detection\-\_\-\-Port\-\_\-3@{R\-D\-E\-T3\-\_\-\-Restart\-\_\-\-Detection\-\_\-\-Port\-\_\-3}!TPS238x_Detect_Class_Restart_Register_t@{T\-P\-S238x\-\_\-\-Detect\-\_\-\-Class\-\_\-\-Restart\-\_\-\-Register\-\_\-t}}
+\subsubsection[{R\-D\-E\-T3\-\_\-\-Restart\-\_\-\-Detection\-\_\-\-Port\-\_\-3}]{\setlength{\rightskip}{0pt plus 5cm}unsigned char T\-P\-S238x\-\_\-\-Detect\-\_\-\-Class\-\_\-\-Restart\-\_\-\-Register\-\_\-t\-::\-R\-D\-E\-T3\-\_\-\-Restart\-\_\-\-Detection\-\_\-\-Port\-\_\-3}}\label{struct_t_p_s238x___detect___class___restart___register__t_a852a35ff46f0f8ab137ece2ee0b9e806}
+
+
+Restart Detection Port 3. 
+
+\hypertarget{struct_t_p_s238x___detect___class___restart___register__t_a3e1cd9de9840b5982e356eabdbed284f}{\index{T\-P\-S238x\-\_\-\-Detect\-\_\-\-Class\-\_\-\-Restart\-\_\-\-Register\-\_\-t@{T\-P\-S238x\-\_\-\-Detect\-\_\-\-Class\-\_\-\-Restart\-\_\-\-Register\-\_\-t}!R\-D\-E\-T4\-\_\-\-Restart\-\_\-\-Detection\-\_\-\-Port\-\_\-4@{R\-D\-E\-T4\-\_\-\-Restart\-\_\-\-Detection\-\_\-\-Port\-\_\-4}}
+\index{R\-D\-E\-T4\-\_\-\-Restart\-\_\-\-Detection\-\_\-\-Port\-\_\-4@{R\-D\-E\-T4\-\_\-\-Restart\-\_\-\-Detection\-\_\-\-Port\-\_\-4}!TPS238x_Detect_Class_Restart_Register_t@{T\-P\-S238x\-\_\-\-Detect\-\_\-\-Class\-\_\-\-Restart\-\_\-\-Register\-\_\-t}}
+\subsubsection[{R\-D\-E\-T4\-\_\-\-Restart\-\_\-\-Detection\-\_\-\-Port\-\_\-4}]{\setlength{\rightskip}{0pt plus 5cm}unsigned char T\-P\-S238x\-\_\-\-Detect\-\_\-\-Class\-\_\-\-Restart\-\_\-\-Register\-\_\-t\-::\-R\-D\-E\-T4\-\_\-\-Restart\-\_\-\-Detection\-\_\-\-Port\-\_\-4}}\label{struct_t_p_s238x___detect___class___restart___register__t_a3e1cd9de9840b5982e356eabdbed284f}
+
+
+Restart Detection Port 4. 
+
+
+
+The documentation for this struct was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+C\-:/\-Users/a0207881/workspace\-\_\-v5\-\_\-3/\-Power\-Over\-Ethernet/\hyperlink{_t_p_s23861_8h}{T\-P\-S23861.\-h}\end{DoxyCompactItemize}

@@ -1,0 +1,21 @@
+var searchData=
+[
+  ['cl5en1_5fclass_5f5_5fenable_5fport_5f1',['CL5EN1_Class_5_Enable_Port_1',['../struct_t_p_s238x___class__5___enable___timer___register__t.html#adda0a59e6072df361b48a697607fa9a1',1,'TPS238x_Class_5_Enable_Timer_Register_t']]],
+  ['cl5en2_5fclass_5f5_5fenable_5fport_5f2',['CL5EN2_Class_5_Enable_Port_2',['../struct_t_p_s238x___class__5___enable___timer___register__t.html#a54608dd3e8e3780fbc3ae3050ec9ef02',1,'TPS238x_Class_5_Enable_Timer_Register_t']]],
+  ['cl5en3_5fclass_5f5_5fenable_5fport_5f3',['CL5EN3_Class_5_Enable_Port_3',['../struct_t_p_s238x___class__5___enable___timer___register__t.html#ae31416f8a5eebf1e654054340dc521a5',1,'TPS238x_Class_5_Enable_Timer_Register_t']]],
+  ['cl5en4_5fclass_5f5_5fenable_5fport_5f4',['CL5EN4_Class_5_Enable_Port_4',['../struct_t_p_s238x___class__5___enable___timer___register__t.html#a2307507a542fe542038cf803beddde85',1,'TPS238x_Class_5_Enable_Timer_Register_t']]],
+  ['clasc_5fclassification_5fcycle',['CLASC_Classification_Cycle',['../struct_t_p_s238_x___interrupt___register__t.html#a17ba691abbe4fda85cf405a0bb8af962',1,'TPS238X_Interrupt_Register_t']]],
+  ['class',['Class',['../struct_t_p_s238_x___port___status___register__t.html#af715401a9c923aa942341d91ae57bc5b',1,'TPS238X_Port_Status_Register_t']]],
+  ['cldn_5ffault_5fcool_5fdown_5ftimer',['CLDN_Fault_Cool_Down_Timer',['../struct_t_p_s238x___cool___down___gate___drive___register__t.html#a6aded84bda25360ffdf3a1b82a299de4',1,'TPS238x_Cool_Down_Gate_Drive_Register_t']]],
+  ['cle1_5fclassification_5fenable_5fport_5f1',['CLE1_Classification_Enable_Port_1',['../struct_t_p_s238x___detect___classification___enable___register__t.html#a1515f49bb40c304d2c60d5b2d7cb9997',1,'TPS238x_Detect_Classification_Enable_Register_t']]],
+  ['cle2_5fclassification_5fenable_5fport_5f2',['CLE2_Classification_Enable_Port_2',['../struct_t_p_s238x___detect___classification___enable___register__t.html#ab8a6cd70cba3506667363b0863afb14c',1,'TPS238x_Detect_Classification_Enable_Register_t']]],
+  ['cle3_5fclassification_5fenable_5fport_5f3',['CLE3_Classification_Enable_Port_3',['../struct_t_p_s238x___detect___classification___enable___register__t.html#a12fc84c5940eb1236125bde36f6c0895',1,'TPS238x_Detect_Classification_Enable_Register_t']]],
+  ['cle4_5fclassification_5fenable_5fport_5f4',['CLE4_Classification_Enable_Port_4',['../struct_t_p_s238x___detect___classification___enable___register__t.html#ad1efcac7c9fab4012689abadffdce167',1,'TPS238x_Detect_Classification_Enable_Register_t']]],
+  ['clinp_5fclear_5finterrupt_5fpin',['CLINP_Clear_Interrupt_Pin',['../struct_t_p_s238x___reset___register__t.html#a549bf7bbecaa4cde4bd183948a6580a6',1,'TPS238x_Reset_Register_t']]],
+  ['clmsk_5fclassificiation_5fcycle_5funmask',['CLMSK_Classificiation_Cycle_Unmask',['../struct_t_p_s238_x___interrupt___mask___register__t.html#a6ba099867a733b5d3f19a9cff6092571',1,'TPS238X_Interrupt_Mask_Register_t']]],
+  ['clrain_5fclear_5finterrupt_5fbits',['CLRAIN_Clear_Interrupt_Bits',['../struct_t_p_s238x___reset___register__t.html#ab752db3abb368003735ed08064993e74',1,'TPS238x_Reset_Register_t']]],
+  ['clsc1_5fclassification_5fcycle_5fport_5f1_5fevent',['CLSC1_Classification_Cycle_Port_1_Event',['../struct_t_p_s238_x___detection___event___register__t.html#a2a502b29ff4533fccf5f2276141a6791',1,'TPS238X_Detection_Event_Register_t']]],
+  ['clsc2_5fclassification_5fcycle_5fport_5f2_5fevent',['CLSC2_Classification_Cycle_Port_2_Event',['../struct_t_p_s238_x___detection___event___register__t.html#aa30d16f88685ec04c3b2732dd6087d3b',1,'TPS238X_Detection_Event_Register_t']]],
+  ['clsc3_5fclassification_5fcycle_5fport_5f3_5fevent',['CLSC3_Classification_Cycle_Port_3_Event',['../struct_t_p_s238_x___detection___event___register__t.html#a336c681e10cf5d2703a4a5447e776808',1,'TPS238X_Detection_Event_Register_t']]],
+  ['clsc4_5fclassification_5fcycle_5fport_5f4_5fevent',['CLSC4_Classification_Cycle_Port_4_Event',['../struct_t_p_s238_x___detection___event___register__t.html#a544064aea682e303b2ac89e604e4c069',1,'TPS238X_Detection_Event_Register_t']]]
+];

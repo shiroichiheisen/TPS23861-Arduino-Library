@@ -1,0 +1,47 @@
+\hypertarget{struct_t_p_s238x___cool___down___gate___drive___register__t}{\section{T\-P\-S238x\-\_\-\-Cool\-\_\-\-Down\-\_\-\-Gate\-\_\-\-Drive\-\_\-\-Register\-\_\-t Struct Reference}
+\label{struct_t_p_s238x___cool___down___gate___drive___register__t}\index{T\-P\-S238x\-\_\-\-Cool\-\_\-\-Down\-\_\-\-Gate\-\_\-\-Drive\-\_\-\-Register\-\_\-t@{T\-P\-S238x\-\_\-\-Cool\-\_\-\-Down\-\_\-\-Gate\-\_\-\-Drive\-\_\-\-Register\-\_\-t}}
+}
+
+
+{\ttfamily \#include $<$T\-P\-S23861.\-h$>$}
+
+\subsection*{Data Fields}
+\begin{DoxyCompactItemize}
+\item 
+unsigned char \hyperlink{struct_t_p_s238x___cool___down___gate___drive___register__t_ae9f0d451d6ad80a30efbf93d1e2d0a24}{Reserved\-\_\-20}\-: 5
+\item 
+unsigned char \hyperlink{struct_t_p_s238x___cool___down___gate___drive___register__t_a846ef11bf527739347db521db4327098}{I\-G\-A\-T\-E\-\_\-\-Gate\-\_\-\-Pullup\-\_\-\-Current}\-: 1
+\begin{DoxyCompactList}\small\item\em 0=50u\-A; 1=25u\-A \end{DoxyCompactList}\item 
+unsigned char \hyperlink{struct_t_p_s238x___cool___down___gate___drive___register__t_a6aded84bda25360ffdf3a1b82a299de4}{C\-L\-D\-N\-\_\-\-Fault\-\_\-\-Cool\-\_\-\-Down\-\_\-\-Timer}\-: 2
+\begin{DoxyCompactList}\small\item\em Use T\-P\-S238x\-\_\-\-Cool\-\_\-\-Down\-\_\-\-Timing\-\_\-t values. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Cool Down -\/ Gate Drive Register -\/ Software configures this in tps\-\_\-\-Set\-Timing() \par
+ Hardware -\/ Command 45h; 1 data byte; read/write \par
+\par
+ Fault cool down timer and Gate Pullup Current 
+
+\subsection{Field Documentation}
+\hypertarget{struct_t_p_s238x___cool___down___gate___drive___register__t_a6aded84bda25360ffdf3a1b82a299de4}{\index{T\-P\-S238x\-\_\-\-Cool\-\_\-\-Down\-\_\-\-Gate\-\_\-\-Drive\-\_\-\-Register\-\_\-t@{T\-P\-S238x\-\_\-\-Cool\-\_\-\-Down\-\_\-\-Gate\-\_\-\-Drive\-\_\-\-Register\-\_\-t}!C\-L\-D\-N\-\_\-\-Fault\-\_\-\-Cool\-\_\-\-Down\-\_\-\-Timer@{C\-L\-D\-N\-\_\-\-Fault\-\_\-\-Cool\-\_\-\-Down\-\_\-\-Timer}}
+\index{C\-L\-D\-N\-\_\-\-Fault\-\_\-\-Cool\-\_\-\-Down\-\_\-\-Timer@{C\-L\-D\-N\-\_\-\-Fault\-\_\-\-Cool\-\_\-\-Down\-\_\-\-Timer}!TPS238x_Cool_Down_Gate_Drive_Register_t@{T\-P\-S238x\-\_\-\-Cool\-\_\-\-Down\-\_\-\-Gate\-\_\-\-Drive\-\_\-\-Register\-\_\-t}}
+\subsubsection[{C\-L\-D\-N\-\_\-\-Fault\-\_\-\-Cool\-\_\-\-Down\-\_\-\-Timer}]{\setlength{\rightskip}{0pt plus 5cm}unsigned char T\-P\-S238x\-\_\-\-Cool\-\_\-\-Down\-\_\-\-Gate\-\_\-\-Drive\-\_\-\-Register\-\_\-t\-::\-C\-L\-D\-N\-\_\-\-Fault\-\_\-\-Cool\-\_\-\-Down\-\_\-\-Timer}}\label{struct_t_p_s238x___cool___down___gate___drive___register__t_a6aded84bda25360ffdf3a1b82a299de4}
+
+
+Use T\-P\-S238x\-\_\-\-Cool\-\_\-\-Down\-\_\-\-Timing\-\_\-t values. 
+
+\hypertarget{struct_t_p_s238x___cool___down___gate___drive___register__t_a846ef11bf527739347db521db4327098}{\index{T\-P\-S238x\-\_\-\-Cool\-\_\-\-Down\-\_\-\-Gate\-\_\-\-Drive\-\_\-\-Register\-\_\-t@{T\-P\-S238x\-\_\-\-Cool\-\_\-\-Down\-\_\-\-Gate\-\_\-\-Drive\-\_\-\-Register\-\_\-t}!I\-G\-A\-T\-E\-\_\-\-Gate\-\_\-\-Pullup\-\_\-\-Current@{I\-G\-A\-T\-E\-\_\-\-Gate\-\_\-\-Pullup\-\_\-\-Current}}
+\index{I\-G\-A\-T\-E\-\_\-\-Gate\-\_\-\-Pullup\-\_\-\-Current@{I\-G\-A\-T\-E\-\_\-\-Gate\-\_\-\-Pullup\-\_\-\-Current}!TPS238x_Cool_Down_Gate_Drive_Register_t@{T\-P\-S238x\-\_\-\-Cool\-\_\-\-Down\-\_\-\-Gate\-\_\-\-Drive\-\_\-\-Register\-\_\-t}}
+\subsubsection[{I\-G\-A\-T\-E\-\_\-\-Gate\-\_\-\-Pullup\-\_\-\-Current}]{\setlength{\rightskip}{0pt plus 5cm}unsigned char T\-P\-S238x\-\_\-\-Cool\-\_\-\-Down\-\_\-\-Gate\-\_\-\-Drive\-\_\-\-Register\-\_\-t\-::\-I\-G\-A\-T\-E\-\_\-\-Gate\-\_\-\-Pullup\-\_\-\-Current}}\label{struct_t_p_s238x___cool___down___gate___drive___register__t_a846ef11bf527739347db521db4327098}
+
+
+0=50u\-A; 1=25u\-A 
+
+\hypertarget{struct_t_p_s238x___cool___down___gate___drive___register__t_ae9f0d451d6ad80a30efbf93d1e2d0a24}{\index{T\-P\-S238x\-\_\-\-Cool\-\_\-\-Down\-\_\-\-Gate\-\_\-\-Drive\-\_\-\-Register\-\_\-t@{T\-P\-S238x\-\_\-\-Cool\-\_\-\-Down\-\_\-\-Gate\-\_\-\-Drive\-\_\-\-Register\-\_\-t}!Reserved\-\_\-20@{Reserved\-\_\-20}}
+\index{Reserved\-\_\-20@{Reserved\-\_\-20}!TPS238x_Cool_Down_Gate_Drive_Register_t@{T\-P\-S238x\-\_\-\-Cool\-\_\-\-Down\-\_\-\-Gate\-\_\-\-Drive\-\_\-\-Register\-\_\-t}}
+\subsubsection[{Reserved\-\_\-20}]{\setlength{\rightskip}{0pt plus 5cm}unsigned char T\-P\-S238x\-\_\-\-Cool\-\_\-\-Down\-\_\-\-Gate\-\_\-\-Drive\-\_\-\-Register\-\_\-t\-::\-Reserved\-\_\-20}}\label{struct_t_p_s238x___cool___down___gate___drive___register__t_ae9f0d451d6ad80a30efbf93d1e2d0a24}
+
+
+The documentation for this struct was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+C\-:/\-Users/a0207881/workspace\-\_\-v5\-\_\-3/\-Power\-Over\-Ethernet/\hyperlink{_t_p_s23861_8h}{T\-P\-S23861.\-h}\end{DoxyCompactItemize}

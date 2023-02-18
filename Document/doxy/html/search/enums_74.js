@@ -1,0 +1,21 @@
+var searchData=
+[
+  ['tps238x_5fclassification_5fstatus_5ft',['TPS238x_Classification_Status_t',['../_t_p_s23861_8h.html#aeeaaf194391402961a88c7cbde7d64b8',1,'TPS23861.h']]],
+  ['tps238x_5fcool_5fdown_5ftiming_5ft',['TPS238x_Cool_Down_Timing_t',['../_t_p_s23861_8h.html#ace0b914c1b2a64fd95edf1fb6a57d97a',1,'TPS23861.h']]],
+  ['tps238x_5fdetect_5fresistance_5fstatus_5ft',['TPS238x_Detect_Resistance_Status_t',['../_t_p_s23861_8h.html#a55dd346f17afadb454e1061dfa8c543c',1,'TPS23861.h']]],
+  ['tps238x_5fdetect_5fvoltage_5fdifference_5fstatus_5ft',['TPS238x_Detect_Voltage_Difference_Status_t',['../_t_p_s23861_8h.html#a65599a8ba36a478f64cd5b49fc3f3f55',1,'TPS23861.h']]],
+  ['tps238x_5fdetection_5fstatus_5ft',['TPS238x_Detection_Status_t',['../_t_p_s23861_8h.html#ab6fa5f8cd7a208353d06ad7c05038d01',1,'TPS23861.h']]],
+  ['tps238x_5fdisconnect_5fthreshold_5ft',['TPS238x_Disconnect_Threshold_t',['../_t_p_s23861_8h.html#afb075a8d4b785528790395f11a9d0e52',1,'TPS23861.h']]],
+  ['tps238x_5ffour_5fpair_5ft',['TPS238x_Four_Pair_t',['../_t_p_s23861_8h.html#ab5ad8210580f5f305565408e30006b8d',1,'TPS23861.h']]],
+  ['tps238x_5ficut_5fconfig_5ft',['TPS238x_ICUT_Config_t',['../_t_p_s23861_8h.html#a58ee6965af45675d7d9b100262ac2e18',1,'TPS23861.h']]],
+  ['tps238x_5filim_5ftiming_5ft',['TPS238x_ILIM_Timing_t',['../_t_p_s23861_8h.html#a6cfe0a509020ed4d4c0287f071b80fe6',1,'TPS23861.h']]],
+  ['tps238x_5flegacy_5fdetect_5ft',['TPS238x_Legacy_Detect_t',['../_t_p_s23861_8h.html#a00bd08591e39dadf3a5f95ebd7d5732d',1,'TPS23861.h']]],
+  ['tps238x_5fon_5foff_5ft',['TPS238x_On_Off_t',['../_t_p_s23861_8h.html#a576aa30c046f6cbb76387fd4f0333e8e',1,'TPS23861.h']]],
+  ['tps238x_5foperating_5fmodes_5ft',['TPS238x_Operating_Modes_t',['../_t_p_s23861_8h.html#a255db017782647db3c794734876cc904',1,'TPS23861.h']]],
+  ['tps238x_5fpoe_5fplus_5ffoldback_5ft',['TPS238x_POE_Plus_Foldback_t',['../_t_p_s23861_8h.html#a24fbde755fac6f922bd6cb9c19f86eb1',1,'TPS23861.h']]],
+  ['tps238x_5fportnum_5ft',['TPS238x_PortNum_t',['../_t_p_s23861_8h.html#aa39b69aefe1747a2913f52404265f49d',1,'TPS23861.h']]],
+  ['tps238x_5ftdis_5ftiming_5ft',['TPS238x_TDIS_Timing_t',['../_t_p_s23861_8h.html#a2dbccad1192725f663c94d3e54b907de',1,'TPS23861.h']]],
+  ['tps238x_5fticut_5ftiming_5ft',['TPS238x_TICUT_Timing_t',['../_t_p_s23861_8h.html#a892032eb3193850e84a99a4c283b084b',1,'TPS23861.h']]],
+  ['tps238x_5ftstart_5ftiming_5ft',['TPS238x_TStart_Timing_t',['../_t_p_s23861_8h.html#a737628e63b64324a7f6e0d33d647cca2',1,'TPS23861.h']]],
+  ['tps238x_5ftwo_5fevent_5ft',['TPS238x_Two_Event_t',['../_t_p_s23861_8h.html#a8d51a712aa99ad4f572ca273b9d2c406',1,'TPS23861.h']]]
+];

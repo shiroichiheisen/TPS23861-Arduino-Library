@@ -1,0 +1,99 @@
+\hypertarget{struct_t_p_s238_x___interrupt___register__t}{\section{T\-P\-S238\-X\-\_\-\-Interrupt\-\_\-\-Register\-\_\-t Struct Reference}
+\label{struct_t_p_s238_x___interrupt___register__t}\index{T\-P\-S238\-X\-\_\-\-Interrupt\-\_\-\-Register\-\_\-t@{T\-P\-S238\-X\-\_\-\-Interrupt\-\_\-\-Register\-\_\-t}}
+}
+
+
+{\ttfamily \#include $<$T\-P\-S23861.\-h$>$}
+
+\subsection*{Data Fields}
+\begin{DoxyCompactItemize}
+\item 
+unsigned char \hyperlink{struct_t_p_s238_x___interrupt___register__t_a6e4b4f46b19373a34ad76db49cffc6ac}{P\-E\-C\-\_\-\-Power\-\_\-\-Enable\-\_\-\-Change}\-: 1
+\begin{DoxyCompactList}\small\item\em Indicates a power enable status change occurred on at least one port. \end{DoxyCompactList}\item 
+unsigned char \hyperlink{struct_t_p_s238_x___interrupt___register__t_ad83f0d6ea0a21a760e7953480db37a1b}{P\-G\-C\-\_\-\-Power\-\_\-\-Good\-\_\-\-Change}\-: 1
+\begin{DoxyCompactList}\small\item\em Indicates a power good change occurred on at least one port. \end{DoxyCompactList}\item 
+unsigned char \hyperlink{struct_t_p_s238_x___interrupt___register__t_a2abebe5c5f281ae29eee15814cfd236e}{D\-I\-S\-F\-\_\-\-Disconnect\-\_\-\-Event}\-: 1
+\begin{DoxyCompactList}\small\item\em Indicates a disconnect event occurred on at least one port. \end{DoxyCompactList}\item 
+unsigned char \hyperlink{struct_t_p_s238_x___interrupt___register__t_accb9d25faba48fe00a0a4d9b5d4e544b}{D\-E\-T\-C\-\_\-\-Detection\-\_\-\-Cycle}\-: 1
+\begin{DoxyCompactList}\small\item\em Indicates at least one detection cycle occurred on at least one port. \end{DoxyCompactList}\item 
+unsigned char \hyperlink{struct_t_p_s238_x___interrupt___register__t_a17ba691abbe4fda85cf405a0bb8af962}{C\-L\-A\-S\-C\-\_\-\-Classification\-\_\-\-Cycle}\-: 1
+\begin{DoxyCompactList}\small\item\em Indicates at least one classification cycle occurred on at least one port. \end{DoxyCompactList}\item 
+unsigned char \hyperlink{struct_t_p_s238_x___interrupt___register__t_a98089a33f7d51df0d5ddfc66a14db4a9}{I\-F\-A\-U\-L\-T\-\_\-\-I\-C\-U\-T\-\_\-\-I\-L\-I\-M\-\_\-\-Fault}\-: 1
+\begin{DoxyCompactList}\small\item\em Indicates that an I\-C\-U\-T or I\-L\-I\-M fault occurred on at least one port. \end{DoxyCompactList}\item 
+unsigned char \hyperlink{struct_t_p_s238_x___interrupt___register__t_a59a57f6f8ac9084ac4a1787791bab499}{I\-N\-R\-F\-\_\-\-Inrush\-\_\-\-Fault}\-: 1
+\begin{DoxyCompactList}\small\item\em Indicates that an Inrush fault occurred on at least one port. \end{DoxyCompactList}\item 
+unsigned char \hyperlink{struct_t_p_s238_x___interrupt___register__t_aa574718bff2df2bd05f6a8922eb10f38}{S\-U\-P\-F\-\_\-\-Supply\-\_\-\-Event\-\_\-\-Fault}\-: 1
+\begin{DoxyCompactList}\small\item\em Indicates that a supply event fault occurred. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Interrupt Register -\/ used in tps\-\_\-\-Get\-Interrupt\-Status() to return events \par
+ Hardware Command 00h; 1 data byte; read only \par
+\par
+ Provides the faults and events that are currently active. \begin{DoxyNote}{Note}
+The interrupt status flag may be active for events or faults that are masked. No interrupt will be generated, but the status may be present along side of another event which is allowed to generate an interrupt. 
+\end{DoxyNote}
+
+
+\subsection{Field Documentation}
+\hypertarget{struct_t_p_s238_x___interrupt___register__t_a17ba691abbe4fda85cf405a0bb8af962}{\index{T\-P\-S238\-X\-\_\-\-Interrupt\-\_\-\-Register\-\_\-t@{T\-P\-S238\-X\-\_\-\-Interrupt\-\_\-\-Register\-\_\-t}!C\-L\-A\-S\-C\-\_\-\-Classification\-\_\-\-Cycle@{C\-L\-A\-S\-C\-\_\-\-Classification\-\_\-\-Cycle}}
+\index{C\-L\-A\-S\-C\-\_\-\-Classification\-\_\-\-Cycle@{C\-L\-A\-S\-C\-\_\-\-Classification\-\_\-\-Cycle}!TPS238X_Interrupt_Register_t@{T\-P\-S238\-X\-\_\-\-Interrupt\-\_\-\-Register\-\_\-t}}
+\subsubsection[{C\-L\-A\-S\-C\-\_\-\-Classification\-\_\-\-Cycle}]{\setlength{\rightskip}{0pt plus 5cm}unsigned char T\-P\-S238\-X\-\_\-\-Interrupt\-\_\-\-Register\-\_\-t\-::\-C\-L\-A\-S\-C\-\_\-\-Classification\-\_\-\-Cycle}}\label{struct_t_p_s238_x___interrupt___register__t_a17ba691abbe4fda85cf405a0bb8af962}
+
+
+Indicates at least one classification cycle occurred on at least one port. 
+
+\hypertarget{struct_t_p_s238_x___interrupt___register__t_accb9d25faba48fe00a0a4d9b5d4e544b}{\index{T\-P\-S238\-X\-\_\-\-Interrupt\-\_\-\-Register\-\_\-t@{T\-P\-S238\-X\-\_\-\-Interrupt\-\_\-\-Register\-\_\-t}!D\-E\-T\-C\-\_\-\-Detection\-\_\-\-Cycle@{D\-E\-T\-C\-\_\-\-Detection\-\_\-\-Cycle}}
+\index{D\-E\-T\-C\-\_\-\-Detection\-\_\-\-Cycle@{D\-E\-T\-C\-\_\-\-Detection\-\_\-\-Cycle}!TPS238X_Interrupt_Register_t@{T\-P\-S238\-X\-\_\-\-Interrupt\-\_\-\-Register\-\_\-t}}
+\subsubsection[{D\-E\-T\-C\-\_\-\-Detection\-\_\-\-Cycle}]{\setlength{\rightskip}{0pt plus 5cm}unsigned char T\-P\-S238\-X\-\_\-\-Interrupt\-\_\-\-Register\-\_\-t\-::\-D\-E\-T\-C\-\_\-\-Detection\-\_\-\-Cycle}}\label{struct_t_p_s238_x___interrupt___register__t_accb9d25faba48fe00a0a4d9b5d4e544b}
+
+
+Indicates at least one detection cycle occurred on at least one port. 
+
+\hypertarget{struct_t_p_s238_x___interrupt___register__t_a2abebe5c5f281ae29eee15814cfd236e}{\index{T\-P\-S238\-X\-\_\-\-Interrupt\-\_\-\-Register\-\_\-t@{T\-P\-S238\-X\-\_\-\-Interrupt\-\_\-\-Register\-\_\-t}!D\-I\-S\-F\-\_\-\-Disconnect\-\_\-\-Event@{D\-I\-S\-F\-\_\-\-Disconnect\-\_\-\-Event}}
+\index{D\-I\-S\-F\-\_\-\-Disconnect\-\_\-\-Event@{D\-I\-S\-F\-\_\-\-Disconnect\-\_\-\-Event}!TPS238X_Interrupt_Register_t@{T\-P\-S238\-X\-\_\-\-Interrupt\-\_\-\-Register\-\_\-t}}
+\subsubsection[{D\-I\-S\-F\-\_\-\-Disconnect\-\_\-\-Event}]{\setlength{\rightskip}{0pt plus 5cm}unsigned char T\-P\-S238\-X\-\_\-\-Interrupt\-\_\-\-Register\-\_\-t\-::\-D\-I\-S\-F\-\_\-\-Disconnect\-\_\-\-Event}}\label{struct_t_p_s238_x___interrupt___register__t_a2abebe5c5f281ae29eee15814cfd236e}
+
+
+Indicates a disconnect event occurred on at least one port. 
+
+\hypertarget{struct_t_p_s238_x___interrupt___register__t_a98089a33f7d51df0d5ddfc66a14db4a9}{\index{T\-P\-S238\-X\-\_\-\-Interrupt\-\_\-\-Register\-\_\-t@{T\-P\-S238\-X\-\_\-\-Interrupt\-\_\-\-Register\-\_\-t}!I\-F\-A\-U\-L\-T\-\_\-\-I\-C\-U\-T\-\_\-\-I\-L\-I\-M\-\_\-\-Fault@{I\-F\-A\-U\-L\-T\-\_\-\-I\-C\-U\-T\-\_\-\-I\-L\-I\-M\-\_\-\-Fault}}
+\index{I\-F\-A\-U\-L\-T\-\_\-\-I\-C\-U\-T\-\_\-\-I\-L\-I\-M\-\_\-\-Fault@{I\-F\-A\-U\-L\-T\-\_\-\-I\-C\-U\-T\-\_\-\-I\-L\-I\-M\-\_\-\-Fault}!TPS238X_Interrupt_Register_t@{T\-P\-S238\-X\-\_\-\-Interrupt\-\_\-\-Register\-\_\-t}}
+\subsubsection[{I\-F\-A\-U\-L\-T\-\_\-\-I\-C\-U\-T\-\_\-\-I\-L\-I\-M\-\_\-\-Fault}]{\setlength{\rightskip}{0pt plus 5cm}unsigned char T\-P\-S238\-X\-\_\-\-Interrupt\-\_\-\-Register\-\_\-t\-::\-I\-F\-A\-U\-L\-T\-\_\-\-I\-C\-U\-T\-\_\-\-I\-L\-I\-M\-\_\-\-Fault}}\label{struct_t_p_s238_x___interrupt___register__t_a98089a33f7d51df0d5ddfc66a14db4a9}
+
+
+Indicates that an I\-C\-U\-T or I\-L\-I\-M fault occurred on at least one port. 
+
+\hypertarget{struct_t_p_s238_x___interrupt___register__t_a59a57f6f8ac9084ac4a1787791bab499}{\index{T\-P\-S238\-X\-\_\-\-Interrupt\-\_\-\-Register\-\_\-t@{T\-P\-S238\-X\-\_\-\-Interrupt\-\_\-\-Register\-\_\-t}!I\-N\-R\-F\-\_\-\-Inrush\-\_\-\-Fault@{I\-N\-R\-F\-\_\-\-Inrush\-\_\-\-Fault}}
+\index{I\-N\-R\-F\-\_\-\-Inrush\-\_\-\-Fault@{I\-N\-R\-F\-\_\-\-Inrush\-\_\-\-Fault}!TPS238X_Interrupt_Register_t@{T\-P\-S238\-X\-\_\-\-Interrupt\-\_\-\-Register\-\_\-t}}
+\subsubsection[{I\-N\-R\-F\-\_\-\-Inrush\-\_\-\-Fault}]{\setlength{\rightskip}{0pt plus 5cm}unsigned char T\-P\-S238\-X\-\_\-\-Interrupt\-\_\-\-Register\-\_\-t\-::\-I\-N\-R\-F\-\_\-\-Inrush\-\_\-\-Fault}}\label{struct_t_p_s238_x___interrupt___register__t_a59a57f6f8ac9084ac4a1787791bab499}
+
+
+Indicates that an Inrush fault occurred on at least one port. 
+
+\hypertarget{struct_t_p_s238_x___interrupt___register__t_a6e4b4f46b19373a34ad76db49cffc6ac}{\index{T\-P\-S238\-X\-\_\-\-Interrupt\-\_\-\-Register\-\_\-t@{T\-P\-S238\-X\-\_\-\-Interrupt\-\_\-\-Register\-\_\-t}!P\-E\-C\-\_\-\-Power\-\_\-\-Enable\-\_\-\-Change@{P\-E\-C\-\_\-\-Power\-\_\-\-Enable\-\_\-\-Change}}
+\index{P\-E\-C\-\_\-\-Power\-\_\-\-Enable\-\_\-\-Change@{P\-E\-C\-\_\-\-Power\-\_\-\-Enable\-\_\-\-Change}!TPS238X_Interrupt_Register_t@{T\-P\-S238\-X\-\_\-\-Interrupt\-\_\-\-Register\-\_\-t}}
+\subsubsection[{P\-E\-C\-\_\-\-Power\-\_\-\-Enable\-\_\-\-Change}]{\setlength{\rightskip}{0pt plus 5cm}unsigned char T\-P\-S238\-X\-\_\-\-Interrupt\-\_\-\-Register\-\_\-t\-::\-P\-E\-C\-\_\-\-Power\-\_\-\-Enable\-\_\-\-Change}}\label{struct_t_p_s238_x___interrupt___register__t_a6e4b4f46b19373a34ad76db49cffc6ac}
+
+
+Indicates a power enable status change occurred on at least one port. 
+
+\hypertarget{struct_t_p_s238_x___interrupt___register__t_ad83f0d6ea0a21a760e7953480db37a1b}{\index{T\-P\-S238\-X\-\_\-\-Interrupt\-\_\-\-Register\-\_\-t@{T\-P\-S238\-X\-\_\-\-Interrupt\-\_\-\-Register\-\_\-t}!P\-G\-C\-\_\-\-Power\-\_\-\-Good\-\_\-\-Change@{P\-G\-C\-\_\-\-Power\-\_\-\-Good\-\_\-\-Change}}
+\index{P\-G\-C\-\_\-\-Power\-\_\-\-Good\-\_\-\-Change@{P\-G\-C\-\_\-\-Power\-\_\-\-Good\-\_\-\-Change}!TPS238X_Interrupt_Register_t@{T\-P\-S238\-X\-\_\-\-Interrupt\-\_\-\-Register\-\_\-t}}
+\subsubsection[{P\-G\-C\-\_\-\-Power\-\_\-\-Good\-\_\-\-Change}]{\setlength{\rightskip}{0pt plus 5cm}unsigned char T\-P\-S238\-X\-\_\-\-Interrupt\-\_\-\-Register\-\_\-t\-::\-P\-G\-C\-\_\-\-Power\-\_\-\-Good\-\_\-\-Change}}\label{struct_t_p_s238_x___interrupt___register__t_ad83f0d6ea0a21a760e7953480db37a1b}
+
+
+Indicates a power good change occurred on at least one port. 
+
+\hypertarget{struct_t_p_s238_x___interrupt___register__t_aa574718bff2df2bd05f6a8922eb10f38}{\index{T\-P\-S238\-X\-\_\-\-Interrupt\-\_\-\-Register\-\_\-t@{T\-P\-S238\-X\-\_\-\-Interrupt\-\_\-\-Register\-\_\-t}!S\-U\-P\-F\-\_\-\-Supply\-\_\-\-Event\-\_\-\-Fault@{S\-U\-P\-F\-\_\-\-Supply\-\_\-\-Event\-\_\-\-Fault}}
+\index{S\-U\-P\-F\-\_\-\-Supply\-\_\-\-Event\-\_\-\-Fault@{S\-U\-P\-F\-\_\-\-Supply\-\_\-\-Event\-\_\-\-Fault}!TPS238X_Interrupt_Register_t@{T\-P\-S238\-X\-\_\-\-Interrupt\-\_\-\-Register\-\_\-t}}
+\subsubsection[{S\-U\-P\-F\-\_\-\-Supply\-\_\-\-Event\-\_\-\-Fault}]{\setlength{\rightskip}{0pt plus 5cm}unsigned char T\-P\-S238\-X\-\_\-\-Interrupt\-\_\-\-Register\-\_\-t\-::\-S\-U\-P\-F\-\_\-\-Supply\-\_\-\-Event\-\_\-\-Fault}}\label{struct_t_p_s238_x___interrupt___register__t_aa574718bff2df2bd05f6a8922eb10f38}
+
+
+Indicates that a supply event fault occurred. 
+
+
+
+The documentation for this struct was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+C\-:/\-Users/a0207881/workspace\-\_\-v5\-\_\-3/\-Power\-Over\-Ethernet/\hyperlink{_t_p_s23861_8h}{T\-P\-S23861.\-h}\end{DoxyCompactItemize}

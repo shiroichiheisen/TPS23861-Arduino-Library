@@ -1,0 +1,99 @@
+\hypertarget{struct_t_p_s238_x___interrupt___mask___register__t}{\section{T\-P\-S238\-X\-\_\-\-Interrupt\-\_\-\-Mask\-\_\-\-Register\-\_\-t Struct Reference}
+\label{struct_t_p_s238_x___interrupt___mask___register__t}\index{T\-P\-S238\-X\-\_\-\-Interrupt\-\_\-\-Mask\-\_\-\-Register\-\_\-t@{T\-P\-S238\-X\-\_\-\-Interrupt\-\_\-\-Mask\-\_\-\-Register\-\_\-t}}
+}
+
+
+{\ttfamily \#include $<$T\-P\-S23861.\-h$>$}
+
+\subsection*{Data Fields}
+\begin{DoxyCompactItemize}
+\item 
+unsigned char \hyperlink{struct_t_p_s238_x___interrupt___mask___register__t_a46b9c1686cf168305e084943e4eeea0a}{P\-E\-M\-S\-K\-\_\-\-Power\-\_\-\-Enable\-\_\-\-Unmask}\-: 1
+\begin{DoxyCompactList}\small\item\em Enable power enable interrupts. \end{DoxyCompactList}\item 
+unsigned char \hyperlink{struct_t_p_s238_x___interrupt___mask___register__t_afe7ccff05d817d01188c24e49641a563}{P\-G\-M\-S\-K\-\_\-\-Power\-\_\-\-Good\-\_\-\-Unmask}\-: 1
+\begin{DoxyCompactList}\small\item\em Enable power good interrupts. \end{DoxyCompactList}\item 
+unsigned char \hyperlink{struct_t_p_s238_x___interrupt___mask___register__t_a43d19b300476b679579cf167815c790d}{D\-I\-M\-S\-K\-\_\-\-Disconnect\-\_\-\-Unmask}\-: 1
+\begin{DoxyCompactList}\small\item\em Enable disconnect event interrupts. \end{DoxyCompactList}\item 
+unsigned char \hyperlink{struct_t_p_s238_x___interrupt___mask___register__t_a7be273480b317c84a8cdffdd06893be5}{D\-E\-M\-S\-K\-\_\-\-Detection\-\_\-\-Cycle\-\_\-\-Unmask}\-: 1
+\begin{DoxyCompactList}\small\item\em Enable detection cycle event interrupts. \end{DoxyCompactList}\item 
+unsigned char \hyperlink{struct_t_p_s238_x___interrupt___mask___register__t_a6ba099867a733b5d3f19a9cff6092571}{C\-L\-M\-S\-K\-\_\-\-Classificiation\-\_\-\-Cycle\-\_\-\-Unmask}\-: 1
+\begin{DoxyCompactList}\small\item\em Enable classification cycle event interrupts. \end{DoxyCompactList}\item 
+unsigned char \hyperlink{struct_t_p_s238_x___interrupt___mask___register__t_a219b299138bcac44e2eed4da0eda1512}{I\-F\-M\-S\-K\-\_\-\-I\-F\-A\-U\-L\-T\-\_\-\-Unmask}\-: 1
+\begin{DoxyCompactList}\small\item\em Enable I\-C\-U\-T or O\-L\-I\-M fault interrupts. \end{DoxyCompactList}\item 
+unsigned char \hyperlink{struct_t_p_s238_x___interrupt___mask___register__t_a9a6ba5767eb3a7cb2bf5738b22cc6cb7}{I\-N\-M\-S\-K\-\_\-\-Inrush\-\_\-\-Fault\-\_\-\-Unmask}\-: 1
+\begin{DoxyCompactList}\small\item\em Enable Inrush fault interrupts. \end{DoxyCompactList}\item 
+unsigned char \hyperlink{struct_t_p_s238_x___interrupt___mask___register__t_a85c1d4453b3757e2311c4e4ece90e095}{S\-U\-M\-S\-K\-\_\-\-Supply\-\_\-\-Event\-\_\-\-Fault\-\_\-\-Unmask}\-: 1
+\begin{DoxyCompactList}\small\item\em Enable supply event fault interrupts. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Interrupt Mask Register -\/ Used in tps\-\_\-\-Get\-Interrupt\-Mask() and tps\-\_\-\-Set\-Interrupt\-Mask() \par
+ Hardware -\/ Command 01h; 1 data byte; read/write \par
+\par
+ Enables the various events and faults to generate interrupts \begin{DoxyNote}{Note}
+that writing a 0 masks the events. Writing a 1 to the bit unmasks the interrupt 
+\end{DoxyNote}
+
+
+\subsection{Field Documentation}
+\hypertarget{struct_t_p_s238_x___interrupt___mask___register__t_a6ba099867a733b5d3f19a9cff6092571}{\index{T\-P\-S238\-X\-\_\-\-Interrupt\-\_\-\-Mask\-\_\-\-Register\-\_\-t@{T\-P\-S238\-X\-\_\-\-Interrupt\-\_\-\-Mask\-\_\-\-Register\-\_\-t}!C\-L\-M\-S\-K\-\_\-\-Classificiation\-\_\-\-Cycle\-\_\-\-Unmask@{C\-L\-M\-S\-K\-\_\-\-Classificiation\-\_\-\-Cycle\-\_\-\-Unmask}}
+\index{C\-L\-M\-S\-K\-\_\-\-Classificiation\-\_\-\-Cycle\-\_\-\-Unmask@{C\-L\-M\-S\-K\-\_\-\-Classificiation\-\_\-\-Cycle\-\_\-\-Unmask}!TPS238X_Interrupt_Mask_Register_t@{T\-P\-S238\-X\-\_\-\-Interrupt\-\_\-\-Mask\-\_\-\-Register\-\_\-t}}
+\subsubsection[{C\-L\-M\-S\-K\-\_\-\-Classificiation\-\_\-\-Cycle\-\_\-\-Unmask}]{\setlength{\rightskip}{0pt plus 5cm}unsigned char T\-P\-S238\-X\-\_\-\-Interrupt\-\_\-\-Mask\-\_\-\-Register\-\_\-t\-::\-C\-L\-M\-S\-K\-\_\-\-Classificiation\-\_\-\-Cycle\-\_\-\-Unmask}}\label{struct_t_p_s238_x___interrupt___mask___register__t_a6ba099867a733b5d3f19a9cff6092571}
+
+
+Enable classification cycle event interrupts. 
+
+\hypertarget{struct_t_p_s238_x___interrupt___mask___register__t_a7be273480b317c84a8cdffdd06893be5}{\index{T\-P\-S238\-X\-\_\-\-Interrupt\-\_\-\-Mask\-\_\-\-Register\-\_\-t@{T\-P\-S238\-X\-\_\-\-Interrupt\-\_\-\-Mask\-\_\-\-Register\-\_\-t}!D\-E\-M\-S\-K\-\_\-\-Detection\-\_\-\-Cycle\-\_\-\-Unmask@{D\-E\-M\-S\-K\-\_\-\-Detection\-\_\-\-Cycle\-\_\-\-Unmask}}
+\index{D\-E\-M\-S\-K\-\_\-\-Detection\-\_\-\-Cycle\-\_\-\-Unmask@{D\-E\-M\-S\-K\-\_\-\-Detection\-\_\-\-Cycle\-\_\-\-Unmask}!TPS238X_Interrupt_Mask_Register_t@{T\-P\-S238\-X\-\_\-\-Interrupt\-\_\-\-Mask\-\_\-\-Register\-\_\-t}}
+\subsubsection[{D\-E\-M\-S\-K\-\_\-\-Detection\-\_\-\-Cycle\-\_\-\-Unmask}]{\setlength{\rightskip}{0pt plus 5cm}unsigned char T\-P\-S238\-X\-\_\-\-Interrupt\-\_\-\-Mask\-\_\-\-Register\-\_\-t\-::\-D\-E\-M\-S\-K\-\_\-\-Detection\-\_\-\-Cycle\-\_\-\-Unmask}}\label{struct_t_p_s238_x___interrupt___mask___register__t_a7be273480b317c84a8cdffdd06893be5}
+
+
+Enable detection cycle event interrupts. 
+
+\hypertarget{struct_t_p_s238_x___interrupt___mask___register__t_a43d19b300476b679579cf167815c790d}{\index{T\-P\-S238\-X\-\_\-\-Interrupt\-\_\-\-Mask\-\_\-\-Register\-\_\-t@{T\-P\-S238\-X\-\_\-\-Interrupt\-\_\-\-Mask\-\_\-\-Register\-\_\-t}!D\-I\-M\-S\-K\-\_\-\-Disconnect\-\_\-\-Unmask@{D\-I\-M\-S\-K\-\_\-\-Disconnect\-\_\-\-Unmask}}
+\index{D\-I\-M\-S\-K\-\_\-\-Disconnect\-\_\-\-Unmask@{D\-I\-M\-S\-K\-\_\-\-Disconnect\-\_\-\-Unmask}!TPS238X_Interrupt_Mask_Register_t@{T\-P\-S238\-X\-\_\-\-Interrupt\-\_\-\-Mask\-\_\-\-Register\-\_\-t}}
+\subsubsection[{D\-I\-M\-S\-K\-\_\-\-Disconnect\-\_\-\-Unmask}]{\setlength{\rightskip}{0pt plus 5cm}unsigned char T\-P\-S238\-X\-\_\-\-Interrupt\-\_\-\-Mask\-\_\-\-Register\-\_\-t\-::\-D\-I\-M\-S\-K\-\_\-\-Disconnect\-\_\-\-Unmask}}\label{struct_t_p_s238_x___interrupt___mask___register__t_a43d19b300476b679579cf167815c790d}
+
+
+Enable disconnect event interrupts. 
+
+\hypertarget{struct_t_p_s238_x___interrupt___mask___register__t_a219b299138bcac44e2eed4da0eda1512}{\index{T\-P\-S238\-X\-\_\-\-Interrupt\-\_\-\-Mask\-\_\-\-Register\-\_\-t@{T\-P\-S238\-X\-\_\-\-Interrupt\-\_\-\-Mask\-\_\-\-Register\-\_\-t}!I\-F\-M\-S\-K\-\_\-\-I\-F\-A\-U\-L\-T\-\_\-\-Unmask@{I\-F\-M\-S\-K\-\_\-\-I\-F\-A\-U\-L\-T\-\_\-\-Unmask}}
+\index{I\-F\-M\-S\-K\-\_\-\-I\-F\-A\-U\-L\-T\-\_\-\-Unmask@{I\-F\-M\-S\-K\-\_\-\-I\-F\-A\-U\-L\-T\-\_\-\-Unmask}!TPS238X_Interrupt_Mask_Register_t@{T\-P\-S238\-X\-\_\-\-Interrupt\-\_\-\-Mask\-\_\-\-Register\-\_\-t}}
+\subsubsection[{I\-F\-M\-S\-K\-\_\-\-I\-F\-A\-U\-L\-T\-\_\-\-Unmask}]{\setlength{\rightskip}{0pt plus 5cm}unsigned char T\-P\-S238\-X\-\_\-\-Interrupt\-\_\-\-Mask\-\_\-\-Register\-\_\-t\-::\-I\-F\-M\-S\-K\-\_\-\-I\-F\-A\-U\-L\-T\-\_\-\-Unmask}}\label{struct_t_p_s238_x___interrupt___mask___register__t_a219b299138bcac44e2eed4da0eda1512}
+
+
+Enable I\-C\-U\-T or O\-L\-I\-M fault interrupts. 
+
+\hypertarget{struct_t_p_s238_x___interrupt___mask___register__t_a9a6ba5767eb3a7cb2bf5738b22cc6cb7}{\index{T\-P\-S238\-X\-\_\-\-Interrupt\-\_\-\-Mask\-\_\-\-Register\-\_\-t@{T\-P\-S238\-X\-\_\-\-Interrupt\-\_\-\-Mask\-\_\-\-Register\-\_\-t}!I\-N\-M\-S\-K\-\_\-\-Inrush\-\_\-\-Fault\-\_\-\-Unmask@{I\-N\-M\-S\-K\-\_\-\-Inrush\-\_\-\-Fault\-\_\-\-Unmask}}
+\index{I\-N\-M\-S\-K\-\_\-\-Inrush\-\_\-\-Fault\-\_\-\-Unmask@{I\-N\-M\-S\-K\-\_\-\-Inrush\-\_\-\-Fault\-\_\-\-Unmask}!TPS238X_Interrupt_Mask_Register_t@{T\-P\-S238\-X\-\_\-\-Interrupt\-\_\-\-Mask\-\_\-\-Register\-\_\-t}}
+\subsubsection[{I\-N\-M\-S\-K\-\_\-\-Inrush\-\_\-\-Fault\-\_\-\-Unmask}]{\setlength{\rightskip}{0pt plus 5cm}unsigned char T\-P\-S238\-X\-\_\-\-Interrupt\-\_\-\-Mask\-\_\-\-Register\-\_\-t\-::\-I\-N\-M\-S\-K\-\_\-\-Inrush\-\_\-\-Fault\-\_\-\-Unmask}}\label{struct_t_p_s238_x___interrupt___mask___register__t_a9a6ba5767eb3a7cb2bf5738b22cc6cb7}
+
+
+Enable Inrush fault interrupts. 
+
+\hypertarget{struct_t_p_s238_x___interrupt___mask___register__t_a46b9c1686cf168305e084943e4eeea0a}{\index{T\-P\-S238\-X\-\_\-\-Interrupt\-\_\-\-Mask\-\_\-\-Register\-\_\-t@{T\-P\-S238\-X\-\_\-\-Interrupt\-\_\-\-Mask\-\_\-\-Register\-\_\-t}!P\-E\-M\-S\-K\-\_\-\-Power\-\_\-\-Enable\-\_\-\-Unmask@{P\-E\-M\-S\-K\-\_\-\-Power\-\_\-\-Enable\-\_\-\-Unmask}}
+\index{P\-E\-M\-S\-K\-\_\-\-Power\-\_\-\-Enable\-\_\-\-Unmask@{P\-E\-M\-S\-K\-\_\-\-Power\-\_\-\-Enable\-\_\-\-Unmask}!TPS238X_Interrupt_Mask_Register_t@{T\-P\-S238\-X\-\_\-\-Interrupt\-\_\-\-Mask\-\_\-\-Register\-\_\-t}}
+\subsubsection[{P\-E\-M\-S\-K\-\_\-\-Power\-\_\-\-Enable\-\_\-\-Unmask}]{\setlength{\rightskip}{0pt plus 5cm}unsigned char T\-P\-S238\-X\-\_\-\-Interrupt\-\_\-\-Mask\-\_\-\-Register\-\_\-t\-::\-P\-E\-M\-S\-K\-\_\-\-Power\-\_\-\-Enable\-\_\-\-Unmask}}\label{struct_t_p_s238_x___interrupt___mask___register__t_a46b9c1686cf168305e084943e4eeea0a}
+
+
+Enable power enable interrupts. 
+
+\hypertarget{struct_t_p_s238_x___interrupt___mask___register__t_afe7ccff05d817d01188c24e49641a563}{\index{T\-P\-S238\-X\-\_\-\-Interrupt\-\_\-\-Mask\-\_\-\-Register\-\_\-t@{T\-P\-S238\-X\-\_\-\-Interrupt\-\_\-\-Mask\-\_\-\-Register\-\_\-t}!P\-G\-M\-S\-K\-\_\-\-Power\-\_\-\-Good\-\_\-\-Unmask@{P\-G\-M\-S\-K\-\_\-\-Power\-\_\-\-Good\-\_\-\-Unmask}}
+\index{P\-G\-M\-S\-K\-\_\-\-Power\-\_\-\-Good\-\_\-\-Unmask@{P\-G\-M\-S\-K\-\_\-\-Power\-\_\-\-Good\-\_\-\-Unmask}!TPS238X_Interrupt_Mask_Register_t@{T\-P\-S238\-X\-\_\-\-Interrupt\-\_\-\-Mask\-\_\-\-Register\-\_\-t}}
+\subsubsection[{P\-G\-M\-S\-K\-\_\-\-Power\-\_\-\-Good\-\_\-\-Unmask}]{\setlength{\rightskip}{0pt plus 5cm}unsigned char T\-P\-S238\-X\-\_\-\-Interrupt\-\_\-\-Mask\-\_\-\-Register\-\_\-t\-::\-P\-G\-M\-S\-K\-\_\-\-Power\-\_\-\-Good\-\_\-\-Unmask}}\label{struct_t_p_s238_x___interrupt___mask___register__t_afe7ccff05d817d01188c24e49641a563}
+
+
+Enable power good interrupts. 
+
+\hypertarget{struct_t_p_s238_x___interrupt___mask___register__t_a85c1d4453b3757e2311c4e4ece90e095}{\index{T\-P\-S238\-X\-\_\-\-Interrupt\-\_\-\-Mask\-\_\-\-Register\-\_\-t@{T\-P\-S238\-X\-\_\-\-Interrupt\-\_\-\-Mask\-\_\-\-Register\-\_\-t}!S\-U\-M\-S\-K\-\_\-\-Supply\-\_\-\-Event\-\_\-\-Fault\-\_\-\-Unmask@{S\-U\-M\-S\-K\-\_\-\-Supply\-\_\-\-Event\-\_\-\-Fault\-\_\-\-Unmask}}
+\index{S\-U\-M\-S\-K\-\_\-\-Supply\-\_\-\-Event\-\_\-\-Fault\-\_\-\-Unmask@{S\-U\-M\-S\-K\-\_\-\-Supply\-\_\-\-Event\-\_\-\-Fault\-\_\-\-Unmask}!TPS238X_Interrupt_Mask_Register_t@{T\-P\-S238\-X\-\_\-\-Interrupt\-\_\-\-Mask\-\_\-\-Register\-\_\-t}}
+\subsubsection[{S\-U\-M\-S\-K\-\_\-\-Supply\-\_\-\-Event\-\_\-\-Fault\-\_\-\-Unmask}]{\setlength{\rightskip}{0pt plus 5cm}unsigned char T\-P\-S238\-X\-\_\-\-Interrupt\-\_\-\-Mask\-\_\-\-Register\-\_\-t\-::\-S\-U\-M\-S\-K\-\_\-\-Supply\-\_\-\-Event\-\_\-\-Fault\-\_\-\-Unmask}}\label{struct_t_p_s238_x___interrupt___mask___register__t_a85c1d4453b3757e2311c4e4ece90e095}
+
+
+Enable supply event fault interrupts. 
+
+
+
+The documentation for this struct was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+C\-:/\-Users/a0207881/workspace\-\_\-v5\-\_\-3/\-Power\-Over\-Ethernet/\hyperlink{_t_p_s23861_8h}{T\-P\-S23861.\-h}\end{DoxyCompactItemize}

@@ -1,0 +1,19 @@
+var searchData=
+[
+  ['legacy_5fdetect_5fdisabled',['LEGACY_DETECT_DISABLED',['../_t_p_s23861_8h.html#a00bd08591e39dadf3a5f95ebd7d5732da04962d335ff80c0b911a7053349970d8',1,'TPS23861.h']]],
+  ['legacy_5fdetect_5fonly',['LEGACY_DETECT_ONLY',['../_t_p_s23861_8h.html#a00bd08591e39dadf3a5f95ebd7d5732da06b10e2bd12a97a9da410402ba6abf2b',1,'TPS23861.h']]],
+  ['legacy_5fdetect_5fstandard_5fthen_5flegacy',['LEGACY_DETECT_STANDARD_THEN_LEGACY',['../_t_p_s23861_8h.html#a00bd08591e39dadf3a5f95ebd7d5732da6a71860972afd121cf87f44fbda94f61',1,'TPS23861.h']]],
+  ['legacy_5fmode_5fmask',['LEGACY_MODE_MASK',['../_t_p_s23861_8h.html#ade20f81528e673a7da22ccbf1fcafea6',1,'TPS23861.h']]],
+  ['legmod1',['LEGMOD1',['../_t_p_s23861_8h.html#af48b6156cdb5110e692213fa64df6b35',1,'TPS23861.h']]],
+  ['legmod1_5flegacy_5fdetect_5fport_5f1',['LEGMOD1_Legacy_Detect_Port_1',['../struct_t_p_s238x___legacy___detect___register__t.html#ad94e0297bc8ebfad0329c43a2a9cb78a',1,'TPS238x_Legacy_Detect_Register_t']]],
+  ['legmod1_5fshift',['LEGMOD1_SHIFT',['../_t_p_s23861_8h.html#a88fff9686618b862e3d73c3275cf02ec',1,'TPS23861.h']]],
+  ['legmod2',['LEGMOD2',['../_t_p_s23861_8h.html#accc5b89b3b22061e1404b71eee0c6513',1,'TPS23861.h']]],
+  ['legmod2_5flegacy_5fdetect_5fport_5f2',['LEGMOD2_Legacy_Detect_Port_2',['../struct_t_p_s238x___legacy___detect___register__t.html#a909aa93edfd901520efdec0cf68d229c',1,'TPS238x_Legacy_Detect_Register_t']]],
+  ['legmod2_5fshift',['LEGMOD2_SHIFT',['../_t_p_s23861_8h.html#adda9e2762b7de2f7dd85aec4c81b092f',1,'TPS23861.h']]],
+  ['legmod3',['LEGMOD3',['../_t_p_s23861_8h.html#ab624c69ce03d6ad1531c6846cc3463ad',1,'TPS23861.h']]],
+  ['legmod3_5flegacy_5fdetect_5fport_5f3',['LEGMOD3_Legacy_Detect_Port_3',['../struct_t_p_s238x___legacy___detect___register__t.html#a6b80e1e553d2a514fa74657eb4336b7c',1,'TPS238x_Legacy_Detect_Register_t']]],
+  ['legmod3_5fshift',['LEGMOD3_SHIFT',['../_t_p_s23861_8h.html#ae979252bda7a5c7b836583b82c1a38b9',1,'TPS23861.h']]],
+  ['legmod4',['LEGMOD4',['../_t_p_s23861_8h.html#ace5bfee3cd2fe3264fb46db6f41e4d00',1,'TPS23861.h']]],
+  ['legmod4_5flegacy_5fdetect_5fport_5f4',['LEGMOD4_Legacy_Detect_Port_4',['../struct_t_p_s238x___legacy___detect___register__t.html#a8413d8a277d91edc53da8b44c7ea6691',1,'TPS238x_Legacy_Detect_Register_t']]],
+  ['legmod4_5fshift',['LEGMOD4_SHIFT',['../_t_p_s23861_8h.html#a0b8e2d8f04f0945f28d5a99f8e4d65f9',1,'TPS23861.h']]]
+];

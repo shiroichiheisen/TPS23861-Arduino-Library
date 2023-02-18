@@ -1,0 +1,49 @@
+\hypertarget{union_t_p_s238x___port___voltage___register__u}{\section{T\-P\-S238x\-\_\-\-Port\-\_\-\-Voltage\-\_\-\-Register\-\_\-u Union Reference}
+\label{union_t_p_s238x___port___voltage___register__u}\index{T\-P\-S238x\-\_\-\-Port\-\_\-\-Voltage\-\_\-\-Register\-\_\-u@{T\-P\-S238x\-\_\-\-Port\-\_\-\-Voltage\-\_\-\-Register\-\_\-u}}
+}
+
+
+{\ttfamily \#include $<$T\-P\-S23861.\-h$>$}
+
+\subsection*{Data Structures}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{struct_t_p_s238x___port___voltage___register__u_1_1_port___voltage___char__t}{Port\-\_\-\-Voltage\-\_\-\-Char\-\_\-t}
+\item 
+struct \hyperlink{struct_t_p_s238x___port___voltage___register__u_1_1_port___voltage___short__t}{Port\-\_\-\-Voltage\-\_\-\-Short\-\_\-t}
+\end{DoxyCompactItemize}
+\subsection*{Data Fields}
+\begin{DoxyCompactItemize}
+\item 
+struct \\*
+\hyperlink{struct_t_p_s238x___port___voltage___register__u_1_1_port___voltage___short__t}{T\-P\-S238x\-\_\-\-Port\-\_\-\-Voltage\-\_\-\-Register\-\_\-u\-::\-Port\-\_\-\-Voltage\-\_\-\-Short\-\_\-t} \hyperlink{union_t_p_s238x___port___voltage___register__u_a8c0eeae1c50b8c3360666a533d106f62}{Port\-\_\-\-Voltage\-\_\-\-Short}
+\item 
+struct \\*
+\hyperlink{struct_t_p_s238x___port___voltage___register__u_1_1_port___voltage___char__t}{T\-P\-S238x\-\_\-\-Port\-\_\-\-Voltage\-\_\-\-Register\-\_\-u\-::\-Port\-\_\-\-Voltage\-\_\-\-Char\-\_\-t} \hyperlink{union_t_p_s238x___port___voltage___register__u_ae920d8ac08c3423d500ecf2e4f285b27}{Port\-\_\-\-Voltage\-\_\-\-Char}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Port 1 Voltage Register -\/ Software gets this value using \hyperlink{_t_p_s23861_8c_aea33e295bb735809ad2edf78ed8b2543}{tps\-\_\-\-Get\-Port\-Measurements()} \par
+ Hardware -\/ Command 32h; 2 data byte (L\-S\-B followed by M\-S\-B); read only \par
+ Port 2 Voltage Register \par
+ Hardware -\/ Command 36h; 2 data byte (L\-S\-B followed by M\-S\-B); read only \par
+ Port 3 Voltage Register \par
+ Hardware -\/ Command 3\-Ah; 2 data byte (L\-S\-B followed by M\-S\-B); read only \par
+ Port 4 Voltage Register \par
+ Hardware -\/ Command 3\-Eh; 2 data byte (L\-S\-B followed by M\-S\-B); read only \par
+\par
+ 14 bit data conversion result of the voltage for the port. The L\-S\-B is 3.\-662m\-V 
+
+\subsection{Field Documentation}
+\hypertarget{union_t_p_s238x___port___voltage___register__u_ae920d8ac08c3423d500ecf2e4f285b27}{\index{T\-P\-S238x\-\_\-\-Port\-\_\-\-Voltage\-\_\-\-Register\-\_\-u@{T\-P\-S238x\-\_\-\-Port\-\_\-\-Voltage\-\_\-\-Register\-\_\-u}!Port\-\_\-\-Voltage\-\_\-\-Char@{Port\-\_\-\-Voltage\-\_\-\-Char}}
+\index{Port\-\_\-\-Voltage\-\_\-\-Char@{Port\-\_\-\-Voltage\-\_\-\-Char}!TPS238x_Port_Voltage_Register_u@{T\-P\-S238x\-\_\-\-Port\-\_\-\-Voltage\-\_\-\-Register\-\_\-u}}
+\subsubsection[{Port\-\_\-\-Voltage\-\_\-\-Char}]{\setlength{\rightskip}{0pt plus 5cm}struct {\bf T\-P\-S238x\-\_\-\-Port\-\_\-\-Voltage\-\_\-\-Register\-\_\-u\-::\-Port\-\_\-\-Voltage\-\_\-\-Char\-\_\-t}  T\-P\-S238x\-\_\-\-Port\-\_\-\-Voltage\-\_\-\-Register\-\_\-u\-::\-Port\-\_\-\-Voltage\-\_\-\-Char}}\label{union_t_p_s238x___port___voltage___register__u_ae920d8ac08c3423d500ecf2e4f285b27}
+\hypertarget{union_t_p_s238x___port___voltage___register__u_a8c0eeae1c50b8c3360666a533d106f62}{\index{T\-P\-S238x\-\_\-\-Port\-\_\-\-Voltage\-\_\-\-Register\-\_\-u@{T\-P\-S238x\-\_\-\-Port\-\_\-\-Voltage\-\_\-\-Register\-\_\-u}!Port\-\_\-\-Voltage\-\_\-\-Short@{Port\-\_\-\-Voltage\-\_\-\-Short}}
+\index{Port\-\_\-\-Voltage\-\_\-\-Short@{Port\-\_\-\-Voltage\-\_\-\-Short}!TPS238x_Port_Voltage_Register_u@{T\-P\-S238x\-\_\-\-Port\-\_\-\-Voltage\-\_\-\-Register\-\_\-u}}
+\subsubsection[{Port\-\_\-\-Voltage\-\_\-\-Short}]{\setlength{\rightskip}{0pt plus 5cm}struct {\bf T\-P\-S238x\-\_\-\-Port\-\_\-\-Voltage\-\_\-\-Register\-\_\-u\-::\-Port\-\_\-\-Voltage\-\_\-\-Short\-\_\-t}  T\-P\-S238x\-\_\-\-Port\-\_\-\-Voltage\-\_\-\-Register\-\_\-u\-::\-Port\-\_\-\-Voltage\-\_\-\-Short}}\label{union_t_p_s238x___port___voltage___register__u_a8c0eeae1c50b8c3360666a533d106f62}
+
+
+The documentation for this union was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+C\-:/\-Users/a0207881/workspace\-\_\-v5\-\_\-3/\-Power\-Over\-Ethernet/\hyperlink{_t_p_s23861_8h}{T\-P\-S23861.\-h}\end{DoxyCompactItemize}

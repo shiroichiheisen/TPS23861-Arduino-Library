@@ -1,0 +1,1767 @@
+\hypertarget{_t_p_s23861_8c}{\section{C\-:/\-Users/a0207881/workspace\-\_\-v5\-\_\-3/\-Power\-Over\-Ethernet/\-T\-P\-S23861.c File Reference}
+\label{_t_p_s23861_8c}\index{C\-:/\-Users/a0207881/workspace\-\_\-v5\-\_\-3/\-Power\-Over\-Ethernet/\-T\-P\-S23861.\-c@{C\-:/\-Users/a0207881/workspace\-\_\-v5\-\_\-3/\-Power\-Over\-Ethernet/\-T\-P\-S23861.\-c}}
+}
+
+
+Functions that configure and control the T\-P\-S23861 Power over Ethernet controller.  
+
+
+{\ttfamily \#include \char`\"{}msp430.\-h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}common.\-h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}T\-P\-S23861.\-h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}I2\-C\-\_\-\-Functions.\-h\char`\"{}}\\*
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+uint8\-\_\-t \hyperlink{_t_p_s23861_8c_a915cc811128c70c54ff0ac048cfbc6e7}{tps\-\_\-\-Register\-Port} (uint16\-\_\-t device\-\_\-i2c\-\_\-address, \hyperlink{_t_p_s23861_8h_aa39b69aefe1747a2913f52404265f49d}{T\-P\-S238x\-\_\-\-Port\-Num\-\_\-t} device\-Port\-Num)
+\begin{DoxyCompactList}\small\item\em Allocates a system level port number for a given T\-P\-S23861 device and it's specific port number. \end{DoxyCompactList}\item 
+uint16\-\_\-t \hyperlink{_t_p_s23861_8c_a0243e954ccba8b5347fc93821d75bc47}{tps\-\_\-\-Get\-Device\-I2\-C\-Address} (uint8\-\_\-t system\-Port\-Num)
+\begin{DoxyCompactList}\small\item\em Get the T\-P\-S23861 I2\-C Address associated with a registered System Port Number. \end{DoxyCompactList}\item 
+\hyperlink{_t_p_s23861_8h_aa39b69aefe1747a2913f52404265f49d}{T\-P\-S238x\-\_\-\-Port\-Num\-\_\-t} \hyperlink{_t_p_s23861_8c_aaa8a6d568f29315525ade471e8836a6b}{tps\-\_\-\-Get\-Device\-Port\-Num} (uint8\-\_\-t system\-Port\-Num)
+\begin{DoxyCompactList}\small\item\em Get the T\-P\-S23861 I2\-C Address associated with a registered System Port Number. \end{DoxyCompactList}\item 
+uint8\-\_\-t \hyperlink{_t_p_s23861_8c_af18db7c9a50d6916fa895f8eb86642aa}{tps\-\_\-\-Get\-System\-Port\-Number} (uint16\-\_\-t device\-\_\-i2c\-\_\-address, \hyperlink{_t_p_s23861_8h_aa39b69aefe1747a2913f52404265f49d}{T\-P\-S238x\-\_\-\-Port\-Num\-\_\-t} device\-Port\-Num)
+\begin{DoxyCompactList}\small\item\em Returns the handle already allocated for the given T\-P\-S23861 and device port number. \end{DoxyCompactList}\item 
+uint8\-\_\-t \hyperlink{_t_p_s23861_8c_a0039fc214b60c4d3c249b33453cf6065}{tps\-\_\-\-Set\-I2\-C\-Addresses} (uint8\-\_\-t temp\-\_\-i2c\-Address, uint8\-\_\-t num\-Devices, uint8\-\_\-t $\ast$list\-\_\-of\-Addresses, \hyperlink{_t_p_s23861_8h_a576aa30c046f6cbb76387fd4f0333e8e}{T\-P\-S238x\-\_\-\-On\-\_\-\-Off\-\_\-t} $\ast$list\-\_\-of\-Auto\-Mode)
+\begin{DoxyCompactList}\small\item\em Allows a set of T\-P\-S23861 to be configured with unique I2\-C addresses. \end{DoxyCompactList}\item 
+uint8\-\_\-t \hyperlink{_t_p_s23861_8c_adc05242f0647636b8afc9e11217d2ef2}{tps\-\_\-\-Set\-Device\-Interrupt\-Mask} (uint8\-\_\-t device\-\_\-i2c\-\_\-address, \hyperlink{struct_t_p_s238_x___interrupt___mask___register__t}{T\-P\-S238\-X\-\_\-\-Interrupt\-\_\-\-Mask\-\_\-\-Register\-\_\-t} int\-Mask, uint8\-\_\-t int\-Delay\-Time)
+\begin{DoxyCompactList}\small\item\em Set the interrupt mask register. \end{DoxyCompactList}\item 
+uint8\-\_\-t \hyperlink{_t_p_s23861_8c_a722b88304f003809bbfd4dabdd25f65e}{tps\-\_\-\-Get\-Device\-Interrupt\-Mask} (uint8\-\_\-t device\-\_\-i2c\-\_\-address, \hyperlink{struct_t_p_s238_x___interrupt___mask___register__t}{T\-P\-S238\-X\-\_\-\-Interrupt\-\_\-\-Mask\-\_\-\-Register\-\_\-t} $\ast$int\-Mask, uint8\-\_\-t $\ast$int\-Delay\-Time)
+\begin{DoxyCompactList}\small\item\em Get the current setting of the interrupt mask register. \end{DoxyCompactList}\item 
+uint8\-\_\-t \hyperlink{_t_p_s23861_8c_a7d92a16660cdfa091dc9c6983f201798}{tps\-\_\-\-Get\-Device\-Interrupt\-Status} (uint8\-\_\-t device\-\_\-i2c\-\_\-address, \hyperlink{struct_t_p_s238_x___interrupt___register__t}{T\-P\-S238\-X\-\_\-\-Interrupt\-\_\-\-Register\-\_\-t} $\ast$status)
+\begin{DoxyCompactList}\small\item\em Get the current interrupt status for the indicated T\-P\-S23861 part. \end{DoxyCompactList}\item 
+uint8\-\_\-t \hyperlink{_t_p_s23861_8c_a9ed3aca04ebe30dc02a02b2f8fe6ebc0}{tps\-\_\-\-Get\-Device\-All\-Interrupt\-Events} (uint8\-\_\-t device\-\_\-i2c\-\_\-address, \hyperlink{_t_p_s23861_8h_a576aa30c046f6cbb76387fd4f0333e8e}{T\-P\-S238x\-\_\-\-On\-\_\-\-Off\-\_\-t} clear\-Event, \hyperlink{_t_p_s23861_8h_a91f4ed8872375fd08e799e865ac33710}{T\-P\-S238x\-\_\-\-Ports\-\_\-t} $\ast$power\-Enable\-Port\-Events, \hyperlink{_t_p_s23861_8h_a91f4ed8872375fd08e799e865ac33710}{T\-P\-S238x\-\_\-\-Ports\-\_\-t} $\ast$power\-Good\-Port\-Events, \hyperlink{_t_p_s23861_8h_a91f4ed8872375fd08e799e865ac33710}{T\-P\-S238x\-\_\-\-Ports\-\_\-t} $\ast$detection\-Port\-Events, \hyperlink{_t_p_s23861_8h_a91f4ed8872375fd08e799e865ac33710}{T\-P\-S238x\-\_\-\-Ports\-\_\-t} $\ast$classification\-Port\-Events, \hyperlink{_t_p_s23861_8h_a91f4ed8872375fd08e799e865ac33710}{T\-P\-S238x\-\_\-\-Ports\-\_\-t} $\ast$icut\-Port\-Events, \hyperlink{_t_p_s23861_8h_a91f4ed8872375fd08e799e865ac33710}{T\-P\-S238x\-\_\-\-Ports\-\_\-t} $\ast$disconnect\-Port\-Events, \hyperlink{_t_p_s23861_8h_a91f4ed8872375fd08e799e865ac33710}{T\-P\-S238x\-\_\-\-Ports\-\_\-t} $\ast$inrush\-Port\-Events, \hyperlink{_t_p_s23861_8h_a91f4ed8872375fd08e799e865ac33710}{T\-P\-S238x\-\_\-\-Ports\-\_\-t} $\ast$ilim\-Port\-Events, \hyperlink{struct_t_p_s238_x___supply___event___register__t}{T\-P\-S238\-X\-\_\-\-Supply\-\_\-\-Event\-\_\-\-Register\-\_\-t} $\ast$supply\-Events)
+\begin{DoxyCompactList}\small\item\em Returns all of the individual event/fault registers that generated a T\-P\-S23861 interrupt. \end{DoxyCompactList}\item 
+uint8\-\_\-t \hyperlink{_t_p_s23861_8c_a9c32dd5ccbc70a19734d8123654013bc}{tps\-\_\-\-Get\-Port\-Detect\-Class\-Status} (uint8\-\_\-t system\-Port\-Num, \hyperlink{_t_p_s23861_8h_ab6fa5f8cd7a208353d06ad7c05038d01}{T\-P\-S238x\-\_\-\-Detection\-\_\-\-Status\-\_\-t} $\ast$detection\-Status, \hyperlink{_t_p_s23861_8h_aeeaaf194391402961a88c7cbde7d64b8}{T\-P\-S238x\-\_\-\-Classification\-\_\-\-Status\-\_\-t} $\ast$classification\-Status)
+\begin{DoxyCompactList}\small\item\em Returns the detection and classification status of the specified port. \end{DoxyCompactList}\item 
+uint8\-\_\-t \hyperlink{_t_p_s23861_8c_a65536a0909a55f871abfff25444e6458}{tps\-\_\-\-Get\-Port\-Detection\-Status} (uint8\-\_\-t system\-Port\-Num, \hyperlink{_t_p_s23861_8h_ab6fa5f8cd7a208353d06ad7c05038d01}{T\-P\-S238x\-\_\-\-Detection\-\_\-\-Status\-\_\-t} $\ast$detection\-Status)
+\begin{DoxyCompactList}\small\item\em Returns the detection status of the specified port. \end{DoxyCompactList}\item 
+uint8\-\_\-t \hyperlink{_t_p_s23861_8c_ae20f4c6505b8f56c976e87e0a5727e36}{tps\-\_\-\-Get\-Port\-Classification\-Status} (uint8\-\_\-t system\-Port\-Num, \hyperlink{_t_p_s23861_8h_aeeaaf194391402961a88c7cbde7d64b8}{T\-P\-S238x\-\_\-\-Classification\-\_\-\-Status\-\_\-t} $\ast$classification\-Status)
+\begin{DoxyCompactList}\small\item\em Returns the classification status of the specified port. \end{DoxyCompactList}\item 
+uint8\-\_\-t \hyperlink{_t_p_s23861_8c_a20e5c761a1db4451c4a506791f684a9a}{tps\-\_\-\-Get\-Device\-Power\-Status} (uint8\-\_\-t device\-\_\-i2c\-\_\-address, \hyperlink{_t_p_s23861_8h_a91f4ed8872375fd08e799e865ac33710}{T\-P\-S238x\-\_\-\-Ports\-\_\-t} $\ast$power\-Enable\-Ports, \hyperlink{_t_p_s23861_8h_a91f4ed8872375fd08e799e865ac33710}{T\-P\-S238x\-\_\-\-Ports\-\_\-t} $\ast$power\-Good\-Ports)
+\begin{DoxyCompactList}\small\item\em Returns the power enable and power good status of the 4 ports in the T\-P\-S23861. \end{DoxyCompactList}\item 
+uint8\-\_\-t \hyperlink{_t_p_s23861_8c_afa44d49c28bdd6601086860d929a07f3}{tps\-\_\-\-Get\-Device\-Power\-Enable\-Status} (uint8\-\_\-t device\-\_\-i2c\-\_\-address, \hyperlink{_t_p_s23861_8h_a91f4ed8872375fd08e799e865ac33710}{T\-P\-S238x\-\_\-\-Ports\-\_\-t} $\ast$power\-Enable\-Ports)
+\begin{DoxyCompactList}\small\item\em Returns the power enable status of the 4 ports in the T\-P\-S23861. \end{DoxyCompactList}\item 
+uint8\-\_\-t \hyperlink{_t_p_s23861_8c_a0ce2a3f1794d186acd9e8bc0269d4cc6}{tps\-\_\-\-Get\-Port\-Power\-Enable\-Status} (uint8\-\_\-t system\-Port\-Num)
+\begin{DoxyCompactList}\small\item\em Returns the power enable status of one of the 4 ports in the T\-P\-S23861. \end{DoxyCompactList}\item 
+uint8\-\_\-t \hyperlink{_t_p_s23861_8c_a78b13097d2a8f69f9a64f6fb26740b5e}{tps\-\_\-\-Get\-Device\-Power\-Good\-Status} (uint8\-\_\-t device\-\_\-i2c\-\_\-address, \hyperlink{_t_p_s23861_8h_a91f4ed8872375fd08e799e865ac33710}{T\-P\-S238x\-\_\-\-Ports\-\_\-t} $\ast$power\-Good\-Ports)
+\begin{DoxyCompactList}\small\item\em Returns the power good status of the 4 ports in the T\-P\-S23861. \end{DoxyCompactList}\item 
+uint8\-\_\-t \hyperlink{_t_p_s23861_8c_aa31f15e881550f24b879985596083fa6}{tps\-\_\-\-Get\-Port\-Power\-Good\-Status} (uint8\-\_\-t system\-Port\-Num)
+\begin{DoxyCompactList}\small\item\em Returns the power good status of one of the 4 ports in the T\-P\-S23861. \end{DoxyCompactList}\item 
+uint8\-\_\-t \hyperlink{_t_p_s23861_8c_ab4a8ca2fe81c8c8cb6764cf445015e33}{tps\-\_\-\-Set\-Device\-Power\-On} (uint8\-\_\-t device\-\_\-i2c\-\_\-address, \hyperlink{_t_p_s23861_8h_a91f4ed8872375fd08e799e865ac33710}{T\-P\-S238x\-\_\-\-Ports\-\_\-t} ports\-Powered\-On)
+\begin{DoxyCompactList}\small\item\em Configures the power on state for each of the device ports on a specific T\-P\-S23861. \end{DoxyCompactList}\item 
+uint8\-\_\-t \hyperlink{_t_p_s23861_8c_a8d12e59cc4e942314c3b01218280f533}{tps\-\_\-\-Set\-Device\-Power\-Off} (uint8\-\_\-t device\-\_\-i2c\-\_\-address, \hyperlink{_t_p_s23861_8h_a91f4ed8872375fd08e799e865ac33710}{T\-P\-S238x\-\_\-\-Ports\-\_\-t} ports\-Powered\-Off)
+\begin{DoxyCompactList}\small\item\em Configures the power down (off) state for each of the device ports on a specific T\-P\-S23861. \end{DoxyCompactList}\item 
+uint8\-\_\-t \hyperlink{_t_p_s23861_8c_a72f33364aa90d7c7845f8d82538e41e6}{tps\-\_\-\-Set\-Port\-Power} (uint8\-\_\-t system\-Port\-Num, \hyperlink{_t_p_s23861_8h_a576aa30c046f6cbb76387fd4f0333e8e}{T\-P\-S238x\-\_\-\-On\-\_\-\-Off\-\_\-t} on\-\_\-off)
+\begin{DoxyCompactList}\small\item\em Power on or off a single specified system port. \end{DoxyCompactList}\item 
+uint8\-\_\-t \hyperlink{_t_p_s23861_8c_ae0904a0acd41277ef053d8d7777958a0}{tps\-\_\-\-Get\-Device\-Detection\-Enable} (uint8\-\_\-t device\-\_\-i2c\-\_\-address, \hyperlink{_t_p_s23861_8h_a91f4ed8872375fd08e799e865ac33710}{T\-P\-S238x\-\_\-\-Ports\-\_\-t} $\ast$detect\-Ports)
+\begin{DoxyCompactList}\small\item\em Returns the device ports that are enabled for detection operation on the specific T\-P\-S23861. \end{DoxyCompactList}\item 
+uint8\-\_\-t \hyperlink{_t_p_s23861_8c_ad52bbba38c5543cf5c0c4f9d1126322c}{tps\-\_\-\-Get\-Port\-Detection\-Enable} (uint8\-\_\-t system\-Port\-Num)
+\begin{DoxyCompactList}\small\item\em Returns whether the indicated system port is enabled for detection operation. \end{DoxyCompactList}\item 
+uint8\-\_\-t \hyperlink{_t_p_s23861_8c_af42c2ca5f1558cdbf2473e3a3c0319ea}{tps\-\_\-\-Get\-Device\-Classification\-Enable} (uint8\-\_\-t device\-\_\-i2c\-\_\-address, \hyperlink{_t_p_s23861_8h_a91f4ed8872375fd08e799e865ac33710}{T\-P\-S238x\-\_\-\-Ports\-\_\-t} $\ast$class\-Ports)
+\begin{DoxyCompactList}\small\item\em Returns the device ports that are enabled for classification operation for a specific T\-P\-S23861 device. \end{DoxyCompactList}\item 
+uint8\-\_\-t \hyperlink{_t_p_s23861_8c_a32cdc156b4b35e5dd7b79ff25e681514}{tps\-\_\-\-Get\-Port\-Classification\-Enable} (uint8\-\_\-t system\-Port\-Num)
+\begin{DoxyCompactList}\small\item\em Returns whether the indicated system port is enabled for classification operation. \end{DoxyCompactList}\item 
+uint8\-\_\-t \hyperlink{_t_p_s23861_8c_afe44db79bfa47f26ff169c1387e843d7}{tps\-\_\-\-Get\-Device\-Detect\-Class\-Enable} (uint8\-\_\-t device\-\_\-i2c\-\_\-address, \hyperlink{_t_p_s23861_8h_a91f4ed8872375fd08e799e865ac33710}{T\-P\-S238x\-\_\-\-Ports\-\_\-t} $\ast$detect\-Ports, \hyperlink{_t_p_s23861_8h_a91f4ed8872375fd08e799e865ac33710}{T\-P\-S238x\-\_\-\-Ports\-\_\-t} $\ast$class\-Ports)
+\begin{DoxyCompactList}\small\item\em Returns the device ports that are enabled for detection and classification operation on the specified T\-P\-S23861. \end{DoxyCompactList}\item 
+uint8\-\_\-t \hyperlink{_t_p_s23861_8c_a6e689c5d9b77810865bd4b80657012a5}{tps\-\_\-\-Set\-Device\-Detect\-Class\-Enable} (uint8\-\_\-t device\-\_\-i2c\-\_\-address, \hyperlink{_t_p_s23861_8h_a91f4ed8872375fd08e799e865ac33710}{T\-P\-S238x\-\_\-\-Ports\-\_\-t} detect\-Ports, \hyperlink{_t_p_s23861_8h_a91f4ed8872375fd08e799e865ac33710}{T\-P\-S238x\-\_\-\-Ports\-\_\-t} class\-Ports)
+\begin{DoxyCompactList}\small\item\em Configures the device ports that are enabled for detection and classification operation for a specified T\-P\-S23861. \end{DoxyCompactList}\item 
+uint8\-\_\-t \hyperlink{_t_p_s23861_8c_a60e64452aad48caf62d2e2e590471666}{tps\-\_\-\-Set\-Port\-Detect\-Class\-Enable} (uint8\-\_\-t system\-Port\-Num, \hyperlink{_t_p_s23861_8h_a576aa30c046f6cbb76387fd4f0333e8e}{T\-P\-S238x\-\_\-\-On\-\_\-\-Off\-\_\-t} on\-\_\-off\-\_\-detect, \hyperlink{_t_p_s23861_8h_a576aa30c046f6cbb76387fd4f0333e8e}{T\-P\-S238x\-\_\-\-On\-\_\-\-Off\-\_\-t} on\-\_\-off\-\_\-class)
+\begin{DoxyCompactList}\small\item\em Configures a single port to enable or disable the detection and classification operation. \end{DoxyCompactList}\item 
+uint8\-\_\-t \hyperlink{_t_p_s23861_8c_a2d95cddf597e82edb7c11390c2d18193}{tps\-\_\-\-Get\-Device\-Disconnect\-Enable} (uint8\-\_\-t device\-\_\-i2c\-\_\-address, \hyperlink{_t_p_s23861_8h_a91f4ed8872375fd08e799e865ac33710}{T\-P\-S238x\-\_\-\-Ports\-\_\-t} $\ast$disconnect\-Ports)
+\begin{DoxyCompactList}\small\item\em Returns the ports that are enabled for 2 pair disconnection operation. \end{DoxyCompactList}\item 
+uint8\-\_\-t \hyperlink{_t_p_s23861_8c_a8b1565bcc24973f92353ce165332f1c2}{tps\-\_\-\-Set\-Device\-Disconnect\-Enable} (uint8\-\_\-t device\-\_\-i2c\-\_\-address, \hyperlink{_t_p_s23861_8h_a91f4ed8872375fd08e799e865ac33710}{T\-P\-S238x\-\_\-\-Ports\-\_\-t} disconnect\-Ports, \hyperlink{_t_p_s23861_8h_afb075a8d4b785528790395f11a9d0e52}{T\-P\-S238x\-\_\-\-Disconnect\-\_\-\-Threshold\-\_\-t} disconnect\-Threshold1, \hyperlink{_t_p_s23861_8h_afb075a8d4b785528790395f11a9d0e52}{T\-P\-S238x\-\_\-\-Disconnect\-\_\-\-Threshold\-\_\-t} disconnect\-Threshold2, \hyperlink{_t_p_s23861_8h_afb075a8d4b785528790395f11a9d0e52}{T\-P\-S238x\-\_\-\-Disconnect\-\_\-\-Threshold\-\_\-t} disconnect\-Threshold3, \hyperlink{_t_p_s23861_8h_afb075a8d4b785528790395f11a9d0e52}{T\-P\-S238x\-\_\-\-Disconnect\-\_\-\-Threshold\-\_\-t} disconnect\-Threshold4)
+\begin{DoxyCompactList}\small\item\em Configures the ports to configure those that are enabled for 2 pair disconnection operation. \end{DoxyCompactList}\item 
+uint8\-\_\-t \hyperlink{_t_p_s23861_8c_a7d110496e25b21006c33874d7930528d}{tps\-\_\-\-Set\-Port\-Disconnect\-Enable} (uint8\-\_\-t system\-Port\-Num, \hyperlink{_t_p_s23861_8h_a576aa30c046f6cbb76387fd4f0333e8e}{T\-P\-S238x\-\_\-\-On\-\_\-\-Off\-\_\-t} on\-\_\-off, \hyperlink{_t_p_s23861_8h_afb075a8d4b785528790395f11a9d0e52}{T\-P\-S238x\-\_\-\-Disconnect\-\_\-\-Threshold\-\_\-t} disconnect\-Threshold)
+\begin{DoxyCompactList}\small\item\em Configures a single port to enable or disable the 2 pair disconnection operation. \end{DoxyCompactList}\item 
+uint8\-\_\-t \hyperlink{_t_p_s23861_8c_ad9319af09f1461888aefa7d1439986a2}{tps\-\_\-\-Set\-Device\-Timing} (uint8\-\_\-t device\-\_\-i2c\-\_\-address, \hyperlink{_t_p_s23861_8h_a6cfe0a509020ed4d4c0287f071b80fe6}{T\-P\-S238x\-\_\-\-I\-L\-I\-M\-\_\-\-Timing\-\_\-t} ilim\-Timing, \hyperlink{_t_p_s23861_8h_a737628e63b64324a7f6e0d33d647cca2}{T\-P\-S238x\-\_\-\-T\-Start\-\_\-\-Timing\-\_\-t} start\-Timing, \hyperlink{_t_p_s23861_8h_a892032eb3193850e84a99a4c283b084b}{T\-P\-S238x\-\_\-\-T\-I\-C\-U\-T\-\_\-\-Timing\-\_\-t} icut\-Timing, \hyperlink{_t_p_s23861_8h_a2dbccad1192725f663c94d3e54b907de}{T\-P\-S238x\-\_\-\-T\-D\-I\-S\-\_\-\-Timing\-\_\-t} disconnect\-Timing, \hyperlink{_t_p_s23861_8h_ace0b914c1b2a64fd95edf1fb6a57d97a}{T\-P\-S238x\-\_\-\-Cool\-\_\-\-Down\-\_\-\-Timing\-\_\-t} cool\-Down\-Fault\-Timing)
+\begin{DoxyCompactList}\small\item\em Configures the timing of the various current limits and disconnection determinations for a given device in the system. \end{DoxyCompactList}\item 
+uint8\-\_\-t \hyperlink{_t_p_s23861_8c_a68fb568e3c883330f142ba22839597cc}{tps\-\_\-\-Fast\-Shutdown\-Device\-Enable} (uint8\-\_\-t device\-\_\-i2c\-\_\-address, \hyperlink{_t_p_s23861_8h_a91f4ed8872375fd08e799e865ac33710}{T\-P\-S238x\-\_\-\-Ports\-\_\-t} ports)
+\begin{DoxyCompactList}\small\item\em Configures the fast shutdown enable for each of the ports on the T\-P\-S23861. \end{DoxyCompactList}\item 
+uint8\-\_\-t \hyperlink{_t_p_s23861_8c_aaef19dd4ca0b5ac7070e255075383a51}{tps\-\_\-\-Fast\-Shutdown\-Port\-Enable} (uint8\-\_\-t system\-Port\-Num, \hyperlink{_t_p_s23861_8h_a576aa30c046f6cbb76387fd4f0333e8e}{T\-P\-S238x\-\_\-\-On\-\_\-\-Off\-\_\-t} on\-\_\-off)
+\begin{DoxyCompactList}\small\item\em Configures the fast shutdown enable for a specific port on the T\-P\-S23861. \end{DoxyCompactList}\item 
+uint8\-\_\-t \hyperlink{_t_p_s23861_8c_a2b787818ef7e374af218c952d3ca8a08}{tps\-\_\-\-Config\-Port} (uint8\-\_\-t system\-Port\-Num, \hyperlink{_t_p_s23861_8h_a255db017782647db3c794734876cc904}{T\-P\-S238x\-\_\-\-Operating\-\_\-\-Modes\-\_\-t} operating\-Mode, \hyperlink{_t_p_s23861_8h_a00bd08591e39dadf3a5f95ebd7d5732d}{T\-P\-S238x\-\_\-\-Legacy\-\_\-\-Detect\-\_\-t} legacy\-Detect, \hyperlink{_t_p_s23861_8h_a8d51a712aa99ad4f572ca273b9d2c406}{T\-P\-S238x\-\_\-\-Two\-\_\-\-Event\-\_\-t} two\-Event, \hyperlink{_t_p_s23861_8h_a576aa30c046f6cbb76387fd4f0333e8e}{T\-P\-S238x\-\_\-\-On\-\_\-\-Off\-\_\-t} class5\-Enable, \hyperlink{_t_p_s23861_8h_afb075a8d4b785528790395f11a9d0e52}{T\-P\-S238x\-\_\-\-Disconnect\-\_\-\-Threshold\-\_\-t} disconnect\-Threshold, \hyperlink{_t_p_s23861_8h_a58ee6965af45675d7d9b100262ac2e18}{T\-P\-S238x\-\_\-\-I\-C\-U\-T\-\_\-\-Config\-\_\-t} icut\-Current\-Threshold, \hyperlink{_t_p_s23861_8h_a24fbde755fac6f922bd6cb9c19f86eb1}{T\-P\-S238x\-\_\-\-P\-O\-E\-\_\-\-Plus\-\_\-\-Foldback\-\_\-t} poep\-Foldback\-Curve)
+\begin{DoxyCompactList}\small\item\em Configures the current thresholds and operating modes for the specified port. \end{DoxyCompactList}\item 
+uint8\-\_\-t \hyperlink{_t_p_s23861_8c_ad50108944471b1be06ae3be4239da51a}{tps\-\_\-\-Config\-Device4\-Pair} (uint8\-\_\-t device\-\_\-i2c\-\_\-address, \hyperlink{_t_p_s23861_8h_a576aa30c046f6cbb76387fd4f0333e8e}{T\-P\-S238x\-\_\-\-On\-\_\-\-Off\-\_\-t} on\-\_\-off\-\_\-\-Port12, \hyperlink{_t_p_s23861_8h_ab5ad8210580f5f305565408e30006b8d}{T\-P\-S238x\-\_\-\-Four\-\_\-\-Pair\-\_\-t} disconnect\-Mode\-Port12, \hyperlink{_t_p_s23861_8h_a576aa30c046f6cbb76387fd4f0333e8e}{T\-P\-S238x\-\_\-\-On\-\_\-\-Off\-\_\-t} on\-\_\-off\-\_\-\-Port34, \hyperlink{_t_p_s23861_8h_ab5ad8210580f5f305565408e30006b8d}{T\-P\-S238x\-\_\-\-Four\-\_\-\-Pair\-\_\-t} disconnect\-Mode\-Port34)
+\begin{DoxyCompactList}\small\item\em Configures two ports to be used together as 4 pair operation. \end{DoxyCompactList}\item 
+uint8\-\_\-t \hyperlink{_t_p_s23861_8c_a332fff774e594fb3c785e5fc02a7a6b5}{tps\-\_\-\-Set\-Port\-Op\-Mode} (uint8\-\_\-t system\-Port\-Num, \hyperlink{_t_p_s23861_8h_a255db017782647db3c794734876cc904}{T\-P\-S238x\-\_\-\-Operating\-\_\-\-Modes\-\_\-t} operating\-Mode)
+\begin{DoxyCompactList}\small\item\em Set the Operating Mode of a single port. \end{DoxyCompactList}\item 
+uint8\-\_\-t \hyperlink{_t_p_s23861_8c_a9ab370c355c225bd9c7f24b11a2cff47}{tps\-\_\-\-Set\-Device\-Op\-Mode} (uint8\-\_\-t device\-\_\-i2c\-\_\-address, \hyperlink{_t_p_s23861_8h_a255db017782647db3c794734876cc904}{T\-P\-S238x\-\_\-\-Operating\-\_\-\-Modes\-\_\-t} operating\-Mode1, \hyperlink{_t_p_s23861_8h_a255db017782647db3c794734876cc904}{T\-P\-S238x\-\_\-\-Operating\-\_\-\-Modes\-\_\-t} operating\-Mode2, \hyperlink{_t_p_s23861_8h_a255db017782647db3c794734876cc904}{T\-P\-S238x\-\_\-\-Operating\-\_\-\-Modes\-\_\-t} operating\-Mode3, \hyperlink{_t_p_s23861_8h_a255db017782647db3c794734876cc904}{T\-P\-S238x\-\_\-\-Operating\-\_\-\-Modes\-\_\-t} operating\-Mode4)
+\begin{DoxyCompactList}\small\item\em Set the Operating Mode for all of the ports on the T\-P\-S23861. \end{DoxyCompactList}\item 
+uint8\-\_\-t \hyperlink{_t_p_s23861_8c_ab2de2e5671acce886d77f6d1f8a9f0fe}{tps\-\_\-\-Restart\-Device\-Detection} (uint8\-\_\-t device\-\_\-i2c\-\_\-address, \hyperlink{_t_p_s23861_8h_a91f4ed8872375fd08e799e865ac33710}{T\-P\-S238x\-\_\-\-Ports\-\_\-t} detect\-Ports)
+\begin{DoxyCompactList}\small\item\em Forces a restart of the detection process on the indicated ports on a given T\-P\-S23861 in the system. \end{DoxyCompactList}\item 
+uint8\-\_\-t \hyperlink{_t_p_s23861_8c_a840d271905d539b9c28fb4bbcc10313e}{tps\-\_\-\-Restart\-Port\-Detection} (uint8\-\_\-t system\-Port\-Num)
+\begin{DoxyCompactList}\small\item\em Forces a restart of the detection process on the indicated device ports for a given T\-P\-S23861. \end{DoxyCompactList}\item 
+uint8\-\_\-t \hyperlink{_t_p_s23861_8c_a1b3575f034d444c5f7b74af8f78b825e}{tps\-\_\-\-Restart\-Device\-Classification} (uint8\-\_\-t device\-\_\-i2c\-\_\-address, \hyperlink{_t_p_s23861_8h_a91f4ed8872375fd08e799e865ac33710}{T\-P\-S238x\-\_\-\-Ports\-\_\-t} class\-Ports)
+\begin{DoxyCompactList}\small\item\em Forces a restart of the classification process on the indicated ports. \end{DoxyCompactList}\item 
+uint8\-\_\-t \hyperlink{_t_p_s23861_8c_abee472a6cce083fa8990b8ac57b8d58f}{tps\-\_\-\-Restart\-Port\-Classification} (uint8\-\_\-t system\-Port\-Num)
+\begin{DoxyCompactList}\small\item\em Forces a restart of the classification process on the single indicated port. \end{DoxyCompactList}\item 
+uint8\-\_\-t \hyperlink{_t_p_s23861_8c_adeb57cf85cac47965f594d9e0faa4fae}{tps\-\_\-\-Restart\-Device\-Detect\-Class} (uint8\-\_\-t device\-\_\-i2c\-\_\-address, \hyperlink{_t_p_s23861_8h_a91f4ed8872375fd08e799e865ac33710}{T\-P\-S238x\-\_\-\-Ports\-\_\-t} detect\-Ports, \hyperlink{_t_p_s23861_8h_a91f4ed8872375fd08e799e865ac33710}{T\-P\-S238x\-\_\-\-Ports\-\_\-t} class\-Ports)
+\begin{DoxyCompactList}\small\item\em Forces a restart both the classification and detection processes on the indicated ports. \end{DoxyCompactList}\item 
+uint8\-\_\-t \hyperlink{_t_p_s23861_8c_ac44e3919dbb03d11e802893bc82c78f5}{tps\-\_\-\-Reset\-Device\-Port} (uint8\-\_\-t system\-Port\-Num)
+\begin{DoxyCompactList}\small\item\em Forces a reset of the indicated device ports on the indicated T\-P\-S23861 device. \end{DoxyCompactList}\item 
+uint8\-\_\-t \hyperlink{_t_p_s23861_8c_a67d54410671804cb8499e86fd091aac7}{tps\-\_\-\-Reset\-Port} (uint8\-\_\-t system\-Port\-Num)
+\begin{DoxyCompactList}\small\item\em Forces a reset of the single specified system port number identifying a single port on a specific registered T\-P\-S23861. \end{DoxyCompactList}\item 
+uint8\-\_\-t \hyperlink{_t_p_s23861_8c_aea33e295bb735809ad2edf78ed8b2543}{tps\-\_\-\-Get\-Port\-Measurements} (uint8\-\_\-t system\-Port\-Num, uint16\-\_\-t $\ast$voltage, uint16\-\_\-t $\ast$current)
+\begin{DoxyCompactList}\small\item\em Returns the voltage and current of the registered system port. \end{DoxyCompactList}\item 
+uint8\-\_\-t \hyperlink{_t_p_s23861_8c_a7d2c54f06da3e8ef3f7367c37ad8d728}{tps\-\_\-\-Get\-Device\-Input\-Voltage} (uint8\-\_\-t device\-\_\-i2c\-\_\-address, uint16\-\_\-t $\ast$voltage)
+\begin{DoxyCompactList}\small\item\em Returns the input voltage of the specified T\-P\-S23861. \end{DoxyCompactList}\item 
+uint8\-\_\-t \hyperlink{_t_p_s23861_8c_accc2312ce106747a2e7cc9b95eef3aca}{tps\-\_\-\-Get\-Device\-Temperature} (uint8\-\_\-t device\-\_\-i2c\-\_\-address, uint8\-\_\-t $\ast$temperature)
+\begin{DoxyCompactList}\small\item\em Returns the temperature of the specified T\-P\-S23861. \end{DoxyCompactList}\item 
+uint8\-\_\-t \hyperlink{_t_p_s23861_8c_a3a408ea6efad3e1fd06e5949027dcda5}{tps\-\_\-\-Get\-Port\-Detect\-Resistance} (uint8\-\_\-t system\-Port\-Num, uint16\-\_\-t $\ast$detect\-Resistance, \hyperlink{_t_p_s23861_8h_a55dd346f17afadb454e1061dfa8c543c}{T\-P\-S238x\-\_\-\-Detect\-\_\-\-Resistance\-\_\-\-Status\-\_\-t} $\ast$detect\-Resistance\-Status)
+\begin{DoxyCompactList}\small\item\em Returns the detection resistance value for the registered system port number on a specific T\-P\-S23861. \end{DoxyCompactList}\item 
+uint8\-\_\-t \hyperlink{_t_p_s23861_8c_a1a705cbee0d106474710dcf7d0538d3a}{tps\-\_\-\-Get\-Port\-Detect\-Voltage\-Difference} (uint8\-\_\-t system\-Port\-Num, uint16\-\_\-t $\ast$detect\-Voltage\-Diff, \hyperlink{_t_p_s23861_8h_a65599a8ba36a478f64cd5b49fc3f3f55}{T\-P\-S238x\-\_\-\-Detect\-\_\-\-Voltage\-\_\-\-Difference\-\_\-\-Status\-\_\-t} $\ast$detect\-Voltage\-Diff\-Status)
+\begin{DoxyCompactList}\small\item\em Returns the voltage difference for the indicated system port number on one of the T\-P\-S23861 in the system. \end{DoxyCompactList}\item 
+uint8\-\_\-t \hyperlink{_t_p_s23861_8c_a7bbd5303c28c5707897b511954b1ecea}{tps\-\_\-\-Release\-Port} (uint8\-\_\-t system\-Port\-Num)
+\begin{DoxyCompactList}\small\item\em Releases a register system port number from the port mapping table. \end{DoxyCompactList}\item 
+uint8\-\_\-t \hyperlink{_t_p_s23861_8c_a4e9862e87cf8e42b295a7b6b596c77c4}{tps\-\_\-\-Reset\-Interrupt\-Pin} (uint8\-\_\-t device\-\_\-i2c\-\_\-address)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Functions that configure and control the T\-P\-S23861 Power over Ethernet controller. \begin{DoxyDate}{Date}
+January 2013
+\end{DoxyDate}
+These software application programming interface functions will allow the user to configure and control the T\-P\-S23861 Po\-E controller.
+
+These functions are written in C programming language. In order to support numerous processors and hardware systems, the hardware interfaces are all abstracted with functions located in the T\-P\-S238x\-\_\-\-Glue.\-c file. The T\-P\-S2387 functions will reference a generic I2\-C read and write function, which the user will convert in the glue layer functions into a specific I2\-C function for the hardware and O\-S in use by the user solution.
+
+\begin{DoxyNote}{Note}
+that the functions in this file are not re-\/entrant. It is the user's responsibility to assure that these functions are not called until the previous function has completed. 
+\end{DoxyNote}
+
+
+\subsection{Function Documentation}
+\hypertarget{_t_p_s23861_8c_ad50108944471b1be06ae3be4239da51a}{\index{T\-P\-S23861.\-c@{T\-P\-S23861.\-c}!tps\-\_\-\-Config\-Device4\-Pair@{tps\-\_\-\-Config\-Device4\-Pair}}
+\index{tps\-\_\-\-Config\-Device4\-Pair@{tps\-\_\-\-Config\-Device4\-Pair}!TPS23861.c@{T\-P\-S23861.\-c}}
+\subsubsection[{tps\-\_\-\-Config\-Device4\-Pair}]{\setlength{\rightskip}{0pt plus 5cm}uint8\-\_\-t tps\-\_\-\-Config\-Device4\-Pair (
+\begin{DoxyParamCaption}
+\item[{uint8\-\_\-t}]{device\-\_\-i2c\-\_\-address, }
+\item[{{\bf T\-P\-S238x\-\_\-\-On\-\_\-\-Off\-\_\-t}}]{on\-\_\-off\-\_\-\-Port12, }
+\item[{{\bf T\-P\-S238x\-\_\-\-Four\-\_\-\-Pair\-\_\-t}}]{disconnect\-Mode\-Port12, }
+\item[{{\bf T\-P\-S238x\-\_\-\-On\-\_\-\-Off\-\_\-t}}]{on\-\_\-off\-\_\-\-Port34, }
+\item[{{\bf T\-P\-S238x\-\_\-\-Four\-\_\-\-Pair\-\_\-t}}]{disconnect\-Mode\-Port34}
+\end{DoxyParamCaption}
+)}}\label{_t_p_s23861_8c_ad50108944471b1be06ae3be4239da51a}
+
+
+Configures two ports to be used together as 4 pair operation. 
+
+The T\-P\-S23861 allows ports 1 \& 2 or ports 3 \& 4 to operate together to perform 4 pair P\-S\-E. There a a number of different disconnect modes that can be applied to a 4-\/pair port set. This function allows the user to enable the 4-\/pair port sets and define the disconnection mode to be used.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em device\-\_\-i2c\-\_\-address} & 7 bit I2\-C address of the T\-P\-S238x part being controlled (do not included R/\-W bit) \\
+\hline
+\mbox{\tt in}  & {\em on\-\_\-off\-\_\-\-Port12} & Enables ports 1 \& 2 to operate in 4-\/pair mode (T\-P\-S\-\_\-\-O\-N) \\
+\hline
+\mbox{\tt in}  & {\em disconnect\-Mode\-Port12} & Disconnection mode for the 4-\/pair port set using ports 1 and 2 \mbox{[}F\-O\-U\-R\-\_\-\-P\-A\-I\-R\-\_\-\-D\-I\-S\-C\-O\-N\-N\-E\-C\-T\-\_\-\-D\-I\-S\-A\-B\-L\-E\-D, F\-O\-U\-R\-\_\-\-P\-A\-I\-R\-\_\-\-D\-I\-S\-C\-O\-N\-N\-E\-C\-T\-\_\-\-B\-A\-S\-E\-D\-\_\-\-O\-N\-\_\-\-L\-O\-W\-E\-R\-\_\-\-P\-O\-R\-T, F\-O\-U\-R\-\_\-\-P\-A\-I\-R\-\_\-\-D\-I\-S\-C\-O\-N\-N\-E\-C\-T\-\_\-\-B\-A\-S\-E\-D\-\_\-\-O\-N\-\_\-\-H\-I\-G\-H\-E\-R\-\_\-\-P\-O\-R\-T, F\-O\-U\-R\-\_\-\-P\-A\-I\-R\-\_\-\-D\-I\-S\-C\-O\-N\-N\-E\-C\-T\-\_\-\-B\-A\-S\-E\-D\-\_\-\-O\-N\-\_\-\-E\-I\-T\-H\-E\-R\-\_\-\-P\-O\-R\-T, or F\-O\-U\-R\-\_\-\-P\-A\-I\-R\-\_\-\-D\-I\-S\-C\-O\-N\-N\-E\-C\-T\-\_\-\-B\-A\-S\-E\-D\-\_\-\-O\-N\-\_\-\-B\-O\-T\-H\-\_\-\-P\-O\-R\-T\-S\mbox{]} \\
+\hline
+\mbox{\tt in}  & {\em on\-\_\-off\-\_\-\-Port34} & Enables ports 3 \& 4 to operate in 4-\/pair mode (T\-P\-S\-\_\-\-O\-N) \\
+\hline
+\mbox{\tt in}  & {\em disconnect\-Mode\-Port34} & Disconnection mode for the 4-\/pair port set using ports 3 and 4 \mbox{[}F\-O\-U\-R\-\_\-\-P\-A\-I\-R\-\_\-\-D\-I\-S\-C\-O\-N\-N\-E\-C\-T\-\_\-\-D\-I\-S\-A\-B\-L\-E\-D, F\-O\-U\-R\-\_\-\-P\-A\-I\-R\-\_\-\-D\-I\-S\-C\-O\-N\-N\-E\-C\-T\-\_\-\-B\-A\-S\-E\-D\-\_\-\-O\-N\-\_\-\-L\-O\-W\-E\-R\-\_\-\-P\-O\-R\-T, F\-O\-U\-R\-\_\-\-P\-A\-I\-R\-\_\-\-D\-I\-S\-C\-O\-N\-N\-E\-C\-T\-\_\-\-B\-A\-S\-E\-D\-\_\-\-O\-N\-\_\-\-H\-I\-G\-H\-E\-R\-\_\-\-P\-O\-R\-T, F\-O\-U\-R\-\_\-\-P\-A\-I\-R\-\_\-\-D\-I\-S\-C\-O\-N\-N\-E\-C\-T\-\_\-\-B\-A\-S\-E\-D\-\_\-\-O\-N\-\_\-\-E\-I\-T\-H\-E\-R\-\_\-\-P\-O\-R\-T, or F\-O\-U\-R\-\_\-\-P\-A\-I\-R\-\_\-\-D\-I\-S\-C\-O\-N\-N\-E\-C\-T\-\_\-\-B\-A\-S\-E\-D\-\_\-\-O\-N\-\_\-\-B\-O\-T\-H\-\_\-\-P\-O\-R\-T\-S\mbox{]}\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+uint8\-\_\-t (I2\-C\-\_\-\-S\-U\-C\-C\-E\-S\-S\-F\-U\-L or I2\-C error status)
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{See Also}
+\hyperlink{_t_p_s23861_8h_a2b787818ef7e374af218c952d3ca8a08}{tps\-\_\-\-Config\-Port} () 
+\end{DoxySeeAlso}
+\hypertarget{_t_p_s23861_8c_a2b787818ef7e374af218c952d3ca8a08}{\index{T\-P\-S23861.\-c@{T\-P\-S23861.\-c}!tps\-\_\-\-Config\-Port@{tps\-\_\-\-Config\-Port}}
+\index{tps\-\_\-\-Config\-Port@{tps\-\_\-\-Config\-Port}!TPS23861.c@{T\-P\-S23861.\-c}}
+\subsubsection[{tps\-\_\-\-Config\-Port}]{\setlength{\rightskip}{0pt plus 5cm}uint8\-\_\-t tps\-\_\-\-Config\-Port (
+\begin{DoxyParamCaption}
+\item[{uint8\-\_\-t}]{system\-Port\-Num, }
+\item[{{\bf T\-P\-S238x\-\_\-\-Operating\-\_\-\-Modes\-\_\-t}}]{operating\-Mode, }
+\item[{{\bf T\-P\-S238x\-\_\-\-Legacy\-\_\-\-Detect\-\_\-t}}]{legacy\-Detect, }
+\item[{{\bf T\-P\-S238x\-\_\-\-Two\-\_\-\-Event\-\_\-t}}]{two\-Event, }
+\item[{{\bf T\-P\-S238x\-\_\-\-On\-\_\-\-Off\-\_\-t}}]{class5\-Enable, }
+\item[{{\bf T\-P\-S238x\-\_\-\-Disconnect\-\_\-\-Threshold\-\_\-t}}]{disconnect\-Threshold, }
+\item[{{\bf T\-P\-S238x\-\_\-\-I\-C\-U\-T\-\_\-\-Config\-\_\-t}}]{icut\-Current\-Threshold, }
+\item[{{\bf T\-P\-S238x\-\_\-\-P\-O\-E\-\_\-\-Plus\-\_\-\-Foldback\-\_\-t}}]{poep\-Foldback\-Curve}
+\end{DoxyParamCaption}
+)}}\label{_t_p_s23861_8c_a2b787818ef7e374af218c952d3ca8a08}
+
+
+Configures the current thresholds and operating modes for the specified port. 
+
+The T\-P\-S23861 has a number of the threshold values and operating modes that determine the characteristic capabilities of a given port. This includes whether the port can detect class 5 devices or operate in legacy detection modes. This function allows the user to configure the characteristics for a given port.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em system\-Port\-Num} & Port Number Value returned from the port registration function, \hyperlink{_t_p_s23861_8c_a915cc811128c70c54ff0ac048cfbc6e7}{tps\-\_\-\-Register\-Port()} \\
+\hline
+\mbox{\tt in}  & {\em operating\-Mode} & Define the operating mode for the port \mbox{[}O\-P\-E\-R\-A\-T\-I\-N\-G\-\_\-\-M\-O\-D\-E\-\_\-\-O\-F\-F, O\-P\-E\-R\-A\-T\-I\-N\-G\-\_\-\-M\-O\-D\-E\-\_\-\-M\-A\-N\-U\-A\-L, O\-P\-E\-R\-A\-T\-I\-N\-G\-\_\-\-M\-O\-D\-E\-\_\-\-S\-E\-M\-I\-\_\-\-A\-U\-T\-O, or O\-P\-E\-R\-A\-T\-I\-N\-G\-\_\-\-M\-O\-D\-E\-\_\-\-A\-U\-T\-O\mbox{]} \\
+\hline
+\mbox{\tt in}  & {\em legacy\-Detect} & The system can perform combinations of standard and legacy detections \mbox{[}L\-E\-G\-A\-C\-Y\-\_\-\-D\-E\-T\-E\-C\-T\-\_\-\-D\-I\-S\-A\-B\-L\-E\-D, L\-E\-G\-A\-C\-Y\-\_\-\-D\-E\-T\-E\-C\-T\-\_\-\-O\-N\-L\-Y, or L\-E\-G\-A\-C\-Y\-\_\-\-D\-E\-T\-E\-C\-T\-\_\-\-S\-T\-A\-N\-D\-A\-R\-D\-\_\-\-T\-H\-E\-N\-\_\-\-L\-E\-G\-A\-C\-Y\mbox{]} \\
+\hline
+\mbox{\tt in}  & {\em two\-Event} & The system can attempt two event physical layer classifications when a class 4 or class 5 P\-D is found \mbox{[}T\-W\-O\-\_\-\-E\-V\-E\-N\-T\-\_\-\-D\-I\-S\-A\-B\-L\-E, T\-W\-O\-\_\-\-E\-V\-E\-N\-T\-\_\-\-A\-F\-T\-E\-R\-\_\-\-C\-L\-A\-S\-S\-\_\-4, T\-W\-O\-\_\-\-E\-V\-E\-N\-T\-\_\-\-A\-F\-T\-E\-R\-\_\-\-C\-L\-A\-S\-S\-\_\-5, or T\-W\-O\-\_\-\-E\-V\-E\-N\-T\-\_\-\-A\-F\-T\-E\-R\-\_\-\-C\-L\-A\-S\-S\-\_\-4\-\_\-\-O\-R\-\_\-5\mbox{]} \\
+\hline
+\mbox{\tt in}  & {\em class5\-Enable} & Allows the system to attempt Class 5 current levels \mbox{[}T\-P\-S\-\_\-\-O\-N or T\-P\-S\-\_\-\-O\-F\-F\mbox{]} \\
+\hline
+\mbox{\tt in}  & {\em disconnect\-Threshold} & Current threshold for disconnection \mbox{[}D\-C\-T\-H\-\_\-7\-\_\-5\-\_\-\-M\-I\-L\-L\-I\-A\-M\-P, D\-C\-T\-H\-\_\-15\-\_\-\-M\-I\-L\-L\-I\-A\-M\-P, D\-C\-T\-H\-\_\-30\-\_\-\-M\-I\-L\-L\-I\-A\-M\-P, or D\-C\-T\-H\-\_\-50\-\_\-\-M\-I\-L\-L\-I\-A\-M\-P\mbox{]} \\
+\hline
+\mbox{\tt in}  & {\em icut\-Current\-Threshold} & I\-C\-U\-T Current threshold \mbox{[}I\-C\-U\-T\-\_\-110\-\_\-\-M\-I\-L\-L\-I\-A\-M\-P, I\-C\-U\-T\-\_\-204\-\_\-\-M\-I\-L\-L\-I\-A\-M\-P, I\-C\-U\-T\-\_\-374\-\_\-\-M\-I\-L\-L\-I\-A\-M\-P, I\-C\-U\-T\-\_\-592\-\_\-\-M\-I\-L\-L\-I\-A\-M\-P, I\-C\-U\-T\-\_\-686\-\_\-\-M\-I\-L\-L\-I\-A\-M\-P, I\-C\-U\-T\-\_\-754\-\_\-\-M\-I\-L\-L\-I\-A\-M\-P, or I\-C\-U\-T\-\_\-920\-\_\-\-M\-I\-L\-L\-I\-A\-M\-P\mbox{]} \\
+\hline
+\mbox{\tt in}  & {\em poep\-Foldback\-Curve} & Defines the foldback curve applied to a port when it is turned on \mbox{[}\-\_\-1\-X\-\_\-\-I\-L\-I\-M\-\_\-\-F\-O\-L\-D\-B\-A\-C\-K\-\_\-\-C\-U\-R\-V\-E or \-\_\-2\-X\-\_\-\-I\-L\-I\-M\-\_\-\-F\-O\-L\-D\-B\-A\-C\-K\-\_\-\-C\-U\-R\-V\-E\mbox{]}\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+uint8\-\_\-t (I2\-C\-\_\-\-S\-U\-C\-C\-E\-S\-S\-F\-U\-L or I2\-C error status)
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{See Also}
+\hyperlink{_t_p_s23861_8h_ad50108944471b1be06ae3be4239da51a}{tps\-\_\-\-Config\-Device4\-Pair} () 
+\end{DoxySeeAlso}
+\hypertarget{_t_p_s23861_8c_a68fb568e3c883330f142ba22839597cc}{\index{T\-P\-S23861.\-c@{T\-P\-S23861.\-c}!tps\-\_\-\-Fast\-Shutdown\-Device\-Enable@{tps\-\_\-\-Fast\-Shutdown\-Device\-Enable}}
+\index{tps\-\_\-\-Fast\-Shutdown\-Device\-Enable@{tps\-\_\-\-Fast\-Shutdown\-Device\-Enable}!TPS23861.c@{T\-P\-S23861.\-c}}
+\subsubsection[{tps\-\_\-\-Fast\-Shutdown\-Device\-Enable}]{\setlength{\rightskip}{0pt plus 5cm}uint8\-\_\-t tps\-\_\-\-Fast\-Shutdown\-Device\-Enable (
+\begin{DoxyParamCaption}
+\item[{uint8\-\_\-t}]{device\-\_\-i2c\-\_\-address, }
+\item[{{\bf T\-P\-S238x\-\_\-\-Ports\-\_\-t}}]{ports}
+\end{DoxyParamCaption}
+)}}\label{_t_p_s23861_8c_a68fb568e3c883330f142ba22839597cc}
+
+
+Configures the fast shutdown enable for each of the ports on the T\-P\-S23861. 
+
+This function will enable or disable the fast shutdown on each of the ports of the T\-P\-S23861
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em device\-\_\-i2c\-\_\-address} & 7 bit I2\-C address of the T\-P\-S238x part being controlled (do not included R/\-W bit) \\
+\hline
+\mbox{\tt in}  & {\em ports} & A T\-P\-S238x\-\_\-\-Ports\-\_\-t variable that identifies the ports that will be enabled for fast shutdown\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+uint8\-\_\-t (I2\-C\-\_\-\-S\-U\-C\-C\-E\-S\-S\-F\-U\-L or I2\-C error status)
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{See Also}
+\hyperlink{_t_p_s23861_8h_aaef19dd4ca0b5ac7070e255075383a51}{tps\-\_\-\-Fast\-Shutdown\-Port\-Enable} () 
+\end{DoxySeeAlso}
+\hypertarget{_t_p_s23861_8c_aaef19dd4ca0b5ac7070e255075383a51}{\index{T\-P\-S23861.\-c@{T\-P\-S23861.\-c}!tps\-\_\-\-Fast\-Shutdown\-Port\-Enable@{tps\-\_\-\-Fast\-Shutdown\-Port\-Enable}}
+\index{tps\-\_\-\-Fast\-Shutdown\-Port\-Enable@{tps\-\_\-\-Fast\-Shutdown\-Port\-Enable}!TPS23861.c@{T\-P\-S23861.\-c}}
+\subsubsection[{tps\-\_\-\-Fast\-Shutdown\-Port\-Enable}]{\setlength{\rightskip}{0pt plus 5cm}uint8\-\_\-t tps\-\_\-\-Fast\-Shutdown\-Port\-Enable (
+\begin{DoxyParamCaption}
+\item[{uint8\-\_\-t}]{system\-Port\-Num, }
+\item[{{\bf T\-P\-S238x\-\_\-\-On\-\_\-\-Off\-\_\-t}}]{on\-\_\-off}
+\end{DoxyParamCaption}
+)}}\label{_t_p_s23861_8c_aaef19dd4ca0b5ac7070e255075383a51}
+
+
+Configures the fast shutdown enable for a specific port on the T\-P\-S23861. 
+
+This function will enable or disable the fast shutdown on a specific port of the T\-P\-S23861
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em system\-Port\-Num} & Port Number Value returned from the port registration function, \hyperlink{_t_p_s23861_8c_a915cc811128c70c54ff0ac048cfbc6e7}{tps\-\_\-\-Register\-Port()} \\
+\hline
+\mbox{\tt in}  & {\em on\-\_\-off} & Enable (T\-P\-S\-\_\-\-O\-N) or disable (T\-P\-S\-\_\-\-O\-F\-F) the fast shutdown for the indicated port\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+uint8\-\_\-t (I2\-C\-\_\-\-S\-U\-C\-C\-E\-S\-S\-F\-U\-L or I2\-C error status)
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{See Also}
+\hyperlink{_t_p_s23861_8h_a68fb568e3c883330f142ba22839597cc}{tps\-\_\-\-Fast\-Shutdown\-Device\-Enable} () 
+\end{DoxySeeAlso}
+\hypertarget{_t_p_s23861_8c_a9ed3aca04ebe30dc02a02b2f8fe6ebc0}{\index{T\-P\-S23861.\-c@{T\-P\-S23861.\-c}!tps\-\_\-\-Get\-Device\-All\-Interrupt\-Events@{tps\-\_\-\-Get\-Device\-All\-Interrupt\-Events}}
+\index{tps\-\_\-\-Get\-Device\-All\-Interrupt\-Events@{tps\-\_\-\-Get\-Device\-All\-Interrupt\-Events}!TPS23861.c@{T\-P\-S23861.\-c}}
+\subsubsection[{tps\-\_\-\-Get\-Device\-All\-Interrupt\-Events}]{\setlength{\rightskip}{0pt plus 5cm}uint8\-\_\-t tps\-\_\-\-Get\-Device\-All\-Interrupt\-Events (
+\begin{DoxyParamCaption}
+\item[{uint8\-\_\-t}]{device\-\_\-i2c\-\_\-address, }
+\item[{{\bf T\-P\-S238x\-\_\-\-On\-\_\-\-Off\-\_\-t}}]{clear\-Event, }
+\item[{{\bf T\-P\-S238x\-\_\-\-Ports\-\_\-t} $\ast$}]{power\-Enable\-Port\-Events, }
+\item[{{\bf T\-P\-S238x\-\_\-\-Ports\-\_\-t} $\ast$}]{power\-Good\-Port\-Events, }
+\item[{{\bf T\-P\-S238x\-\_\-\-Ports\-\_\-t} $\ast$}]{detection\-Port\-Events, }
+\item[{{\bf T\-P\-S238x\-\_\-\-Ports\-\_\-t} $\ast$}]{classification\-Port\-Events, }
+\item[{{\bf T\-P\-S238x\-\_\-\-Ports\-\_\-t} $\ast$}]{icut\-Port\-Events, }
+\item[{{\bf T\-P\-S238x\-\_\-\-Ports\-\_\-t} $\ast$}]{disconnect\-Port\-Events, }
+\item[{{\bf T\-P\-S238x\-\_\-\-Ports\-\_\-t} $\ast$}]{inrush\-Port\-Events, }
+\item[{{\bf T\-P\-S238x\-\_\-\-Ports\-\_\-t} $\ast$}]{ilim\-Port\-Events, }
+\item[{{\bf T\-P\-S238\-X\-\_\-\-Supply\-\_\-\-Event\-\_\-\-Register\-\_\-t} $\ast$}]{supply\-Events}
+\end{DoxyParamCaption}
+)}}\label{_t_p_s23861_8c_a9ed3aca04ebe30dc02a02b2f8fe6ebc0}
+
+
+Returns all of the individual event/fault registers that generated a T\-P\-S23861 interrupt. 
+
+There are a number of events and faults that can generate an interrupt. This function returns the individual indicators for each of the interruptable event/fault conditions.
+
+Calling this function will clear the interrupts associated with these events/faults, so the user should process all indicators present.
+
+There are individual functions that return the event/fault status for an individual register.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em device\-\_\-i2c\-\_\-address} & 7 bit I2\-C address of the T\-P\-S238x part being controlled (do not included R/\-W bit) \\
+\hline
+\mbox{\tt in}  & {\em clear\-Event} & T\-P\-S\-\_\-\-O\-N will cause the events to be cleared in the hardware, T\-P\-S\-\_\-\-O\-F\-F will just read the current value of the events \\
+\hline
+\mbox{\tt out}  & {\em $\ast$power\-Enable\-Port\-Events} & Address of a T\-P\-S238x\-\_\-\-Ports\-\_\-t variable that will receive the ports containing a power enable status change \\
+\hline
+\mbox{\tt out}  & {\em $\ast$power\-Good\-Port\-Events} & Address of a T\-P\-S238x\-\_\-\-Ports\-\_\-t variable that will receive the ports containing a power good status change \\
+\hline
+\mbox{\tt out}  & {\em $\ast$detection\-Port\-Events} & Address of a T\-P\-S238x\-\_\-\-Ports\-\_\-t variable that will receive the ports that had a detection cycle \\
+\hline
+\mbox{\tt out}  & {\em $\ast$classification\-Port\-Events} & Address of a T\-P\-S238x\-\_\-\-Ports\-\_\-t variable that will receive the ports that had a classification cycle \\
+\hline
+\mbox{\tt out}  & {\em $\ast$icut\-Port\-Events} & Address of a T\-P\-S238x\-\_\-\-Ports\-\_\-t variable that will receive the ports that had a I\-C\-U\-T fault \\
+\hline
+\mbox{\tt out}  & {\em $\ast$disconnect\-Port\-Events} & Address of a T\-P\-S238x\-\_\-\-Ports\-\_\-t variable that will receive the ports that had a disconnect event \\
+\hline
+\mbox{\tt out}  & {\em $\ast$inrush\-Port\-Events} & Address of a T\-P\-S238x\-\_\-\-Ports\-\_\-t variable that will receive the ports that had a inrush fault at port turn on \\
+\hline
+\mbox{\tt out}  & {\em $\ast$ilim\-Port\-Events} & Address of a T\-P\-S238x\-\_\-\-Ports\-\_\-t variable that will receive the ports that had a I\-L\-I\-M fault occurred \\
+\hline
+\mbox{\tt out}  & {\em $\ast$supply\-Events} & Address of a \hyperlink{struct_t_p_s238_x___supply___event___register__t}{T\-P\-S238\-X\-\_\-\-Supply\-\_\-\-Event\-\_\-\-Register\-\_\-t} variable that will receive the supply event faults V\-P\-U\-V\-\_\-\-V\-Power\-\_\-\-Undervoltage\-\_\-\-Event V\-D\-U\-V\-\_\-\-Vdd\-\_\-\-U\-V\-L\-O\-\_\-\-Event T\-S\-D\-\_\-\-Thermal\-\_\-\-Shutdown\-\_\-\-Event\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+uint8\-\_\-t (I2\-C\-\_\-\-S\-U\-C\-C\-E\-S\-S\-F\-U\-L or I2\-C error status)
+\end{DoxyReturn}
+\begin{DoxyNote}{Note}
+Since the individual hardware registers contain more than one status in them, event status cannot be processed individually.
+\end{DoxyNote}
+\begin{DoxySeeAlso}{See Also}
+\hyperlink{_t_p_s23861_8h_adc05242f0647636b8afc9e11217d2ef2}{tps\-\_\-\-Set\-Device\-Interrupt\-Mask} () 
+
+\hyperlink{_t_p_s23861_8h_a722b88304f003809bbfd4dabdd25f65e}{tps\-\_\-\-Get\-Device\-Interrupt\-Mask} () 
+
+\hyperlink{_t_p_s23861_8h_a7d92a16660cdfa091dc9c6983f201798}{tps\-\_\-\-Get\-Device\-Interrupt\-Status} () 
+
+\hyperlink{_t_p_s23861_8h_a518a15e801cfaf1abeebe609a324cb04}{tps\-\_\-\-Get\-System\-Port\-Number} () 
+\end{DoxySeeAlso}
+\hypertarget{_t_p_s23861_8c_af42c2ca5f1558cdbf2473e3a3c0319ea}{\index{T\-P\-S23861.\-c@{T\-P\-S23861.\-c}!tps\-\_\-\-Get\-Device\-Classification\-Enable@{tps\-\_\-\-Get\-Device\-Classification\-Enable}}
+\index{tps\-\_\-\-Get\-Device\-Classification\-Enable@{tps\-\_\-\-Get\-Device\-Classification\-Enable}!TPS23861.c@{T\-P\-S23861.\-c}}
+\subsubsection[{tps\-\_\-\-Get\-Device\-Classification\-Enable}]{\setlength{\rightskip}{0pt plus 5cm}uint8\-\_\-t tps\-\_\-\-Get\-Device\-Classification\-Enable (
+\begin{DoxyParamCaption}
+\item[{uint8\-\_\-t}]{device\-\_\-i2c\-\_\-address, }
+\item[{{\bf T\-P\-S238x\-\_\-\-Ports\-\_\-t} $\ast$}]{class\-Ports}
+\end{DoxyParamCaption}
+)}}\label{_t_p_s23861_8c_af42c2ca5f1558cdbf2473e3a3c0319ea}
+
+
+Returns the device ports that are enabled for classification operation for a specific T\-P\-S23861 device. 
+
+This function will return the ports that are configured for classification operations.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em device\-\_\-i2c\-\_\-address} & 7 bit I2\-C address of the T\-P\-S238x part being controlled (do not included R/\-W bit) \\
+\hline
+\mbox{\tt out}  & {\em $\ast$class\-Ports} & Address of a T\-P\-S238x\-\_\-\-Ports\-\_\-t variable that will receive the ports that are enabled for classification with one bit for each port in classification enabled state.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+uint8\-\_\-t (I2\-C\-\_\-\-S\-U\-C\-C\-E\-S\-S\-F\-U\-L or I2\-C error status)
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{See Also}
+\hyperlink{_t_p_s23861_8h_a32cdc156b4b35e5dd7b79ff25e681514}{tps\-\_\-\-Get\-Port\-Classification\-Enable} () 
+
+\hyperlink{_t_p_s23861_8h_ae0904a0acd41277ef053d8d7777958a0}{tps\-\_\-\-Get\-Device\-Detection\-Enable} () 
+
+\hyperlink{_t_p_s23861_8h_afe44db79bfa47f26ff169c1387e843d7}{tps\-\_\-\-Get\-Device\-Detect\-Class\-Enable} () 
+
+\hyperlink{_t_p_s23861_8h_a6e689c5d9b77810865bd4b80657012a5}{tps\-\_\-\-Set\-Device\-Detect\-Class\-Enable} () 
+
+\hyperlink{_t_p_s23861_8h_a518a15e801cfaf1abeebe609a324cb04}{tps\-\_\-\-Get\-System\-Port\-Number} () 
+\end{DoxySeeAlso}
+\hypertarget{_t_p_s23861_8c_afe44db79bfa47f26ff169c1387e843d7}{\index{T\-P\-S23861.\-c@{T\-P\-S23861.\-c}!tps\-\_\-\-Get\-Device\-Detect\-Class\-Enable@{tps\-\_\-\-Get\-Device\-Detect\-Class\-Enable}}
+\index{tps\-\_\-\-Get\-Device\-Detect\-Class\-Enable@{tps\-\_\-\-Get\-Device\-Detect\-Class\-Enable}!TPS23861.c@{T\-P\-S23861.\-c}}
+\subsubsection[{tps\-\_\-\-Get\-Device\-Detect\-Class\-Enable}]{\setlength{\rightskip}{0pt plus 5cm}uint8\-\_\-t tps\-\_\-\-Get\-Device\-Detect\-Class\-Enable (
+\begin{DoxyParamCaption}
+\item[{uint8\-\_\-t}]{device\-\_\-i2c\-\_\-address, }
+\item[{{\bf T\-P\-S238x\-\_\-\-Ports\-\_\-t} $\ast$}]{detect\-Ports, }
+\item[{{\bf T\-P\-S238x\-\_\-\-Ports\-\_\-t} $\ast$}]{class\-Ports}
+\end{DoxyParamCaption}
+)}}\label{_t_p_s23861_8c_afe44db79bfa47f26ff169c1387e843d7}
+
+
+Returns the device ports that are enabled for detection and classification operation on the specified T\-P\-S23861. 
+
+This function will return the device ports that are configured for detection and classification operations.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em device\-\_\-i2c\-\_\-address} & 7 bit I2\-C address of the T\-P\-S238x part being controlled (do not included R/\-W bit) \\
+\hline
+\mbox{\tt out}  & {\em $\ast$detect\-Ports} & Address of a T\-P\-S238x\-\_\-\-Ports\-\_\-t variable that will receive the ports that are enabled for detection with one bit for each port in detection enabled state. \\
+\hline
+\mbox{\tt out}  & {\em $\ast$class\-Ports} & Address of a T\-P\-S238x\-\_\-\-Ports\-\_\-t variable that will receive the ports that are enabled for classification with one bit for each port in classification enabled state.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+uint8\-\_\-t (I2\-C\-\_\-\-S\-U\-C\-C\-E\-S\-S\-F\-U\-L or I2\-C error status)
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{See Also}
+\hyperlink{_t_p_s23861_8h_af42c2ca5f1558cdbf2473e3a3c0319ea}{tps\-\_\-\-Get\-Device\-Classification\-Enable} () 
+
+\hyperlink{_t_p_s23861_8h_ae0904a0acd41277ef053d8d7777958a0}{tps\-\_\-\-Get\-Device\-Detection\-Enable} () 
+
+\hyperlink{_t_p_s23861_8h_a6e689c5d9b77810865bd4b80657012a5}{tps\-\_\-\-Set\-Device\-Detect\-Class\-Enable} () 
+
+\hyperlink{_t_p_s23861_8h_a518a15e801cfaf1abeebe609a324cb04}{tps\-\_\-\-Get\-System\-Port\-Number} () 
+\end{DoxySeeAlso}
+\hypertarget{_t_p_s23861_8c_ae0904a0acd41277ef053d8d7777958a0}{\index{T\-P\-S23861.\-c@{T\-P\-S23861.\-c}!tps\-\_\-\-Get\-Device\-Detection\-Enable@{tps\-\_\-\-Get\-Device\-Detection\-Enable}}
+\index{tps\-\_\-\-Get\-Device\-Detection\-Enable@{tps\-\_\-\-Get\-Device\-Detection\-Enable}!TPS23861.c@{T\-P\-S23861.\-c}}
+\subsubsection[{tps\-\_\-\-Get\-Device\-Detection\-Enable}]{\setlength{\rightskip}{0pt plus 5cm}uint8\-\_\-t tps\-\_\-\-Get\-Device\-Detection\-Enable (
+\begin{DoxyParamCaption}
+\item[{uint8\-\_\-t}]{device\-\_\-i2c\-\_\-address, }
+\item[{{\bf T\-P\-S238x\-\_\-\-Ports\-\_\-t} $\ast$}]{detect\-Ports}
+\end{DoxyParamCaption}
+)}}\label{_t_p_s23861_8c_ae0904a0acd41277ef053d8d7777958a0}
+
+
+Returns the device ports that are enabled for detection operation on the specific T\-P\-S23861. 
+
+This function will return the ports that are configured for detection operations.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em device\-\_\-i2c\-\_\-address} & 7 bit I2\-C address of the T\-P\-S238x part being controlled (do not included R/\-W bit) \\
+\hline
+\mbox{\tt out}  & {\em $\ast$detect\-Ports} & Address of a T\-P\-S238x\-\_\-\-Ports\-\_\-t variable that will receive the device ports that are enabled for detection with one bit for each port in detection enabled state.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+uint8\-\_\-t (I2\-C\-\_\-\-S\-U\-C\-C\-E\-S\-S\-F\-U\-L or I2\-C error status)
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{See Also}
+\hyperlink{_t_p_s23861_8h_ad52bbba38c5543cf5c0c4f9d1126322c}{tps\-\_\-\-Get\-Port\-Detection\-Enable} () 
+
+\hyperlink{_t_p_s23861_8h_af42c2ca5f1558cdbf2473e3a3c0319ea}{tps\-\_\-\-Get\-Device\-Classification\-Enable} () 
+
+\hyperlink{_t_p_s23861_8h_afe44db79bfa47f26ff169c1387e843d7}{tps\-\_\-\-Get\-Device\-Detect\-Class\-Enable} () 
+
+\hyperlink{_t_p_s23861_8h_a6e689c5d9b77810865bd4b80657012a5}{tps\-\_\-\-Set\-Device\-Detect\-Class\-Enable} () 
+
+\hyperlink{_t_p_s23861_8h_a518a15e801cfaf1abeebe609a324cb04}{tps\-\_\-\-Get\-System\-Port\-Number} () 
+\end{DoxySeeAlso}
+\hypertarget{_t_p_s23861_8c_a2d95cddf597e82edb7c11390c2d18193}{\index{T\-P\-S23861.\-c@{T\-P\-S23861.\-c}!tps\-\_\-\-Get\-Device\-Disconnect\-Enable@{tps\-\_\-\-Get\-Device\-Disconnect\-Enable}}
+\index{tps\-\_\-\-Get\-Device\-Disconnect\-Enable@{tps\-\_\-\-Get\-Device\-Disconnect\-Enable}!TPS23861.c@{T\-P\-S23861.\-c}}
+\subsubsection[{tps\-\_\-\-Get\-Device\-Disconnect\-Enable}]{\setlength{\rightskip}{0pt plus 5cm}uint8\-\_\-t tps\-\_\-\-Get\-Device\-Disconnect\-Enable (
+\begin{DoxyParamCaption}
+\item[{uint8\-\_\-t}]{device\-\_\-i2c\-\_\-address, }
+\item[{{\bf T\-P\-S238x\-\_\-\-Ports\-\_\-t} $\ast$}]{disconnect\-Ports}
+\end{DoxyParamCaption}
+)}}\label{_t_p_s23861_8c_a2d95cddf597e82edb7c11390c2d18193}
+
+
+Returns the ports that are enabled for 2 pair disconnection operation. 
+
+This function will return the ports that are configured for 2 pair disconnect operations. Disconnect operation consists of measuring the port current at the S\-E\-Nn pin, starting the T\-D\-I\-S timer when the current drops below the threshold, and turning the port off if the timer times out.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em device\-\_\-i2c\-\_\-address} & 7 bit I2\-C address of the T\-P\-S238x part being controlled (do not included R/\-W bit) \\
+\hline
+\mbox{\tt out}  & {\em $\ast$disconnect\-Ports} & Address of a T\-P\-S238x\-\_\-\-Ports\-\_\-t variable that will receive the ports that are enabled for 2 pair disconnection with one bit for each port in disconnect enabled state.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+uint8\-\_\-t (I2\-C\-\_\-\-S\-U\-C\-C\-E\-S\-S\-F\-U\-L or I2\-C error status)
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{See Also}
+\hyperlink{_t_p_s23861_8h_a7d110496e25b21006c33874d7930528d}{tps\-\_\-\-Set\-Port\-Disconnect\-Enable} () 
+
+\hyperlink{_t_p_s23861_8h_a8b1565bcc24973f92353ce165332f1c2}{tps\-\_\-\-Set\-Device\-Disconnect\-Enable} () 
+
+\hyperlink{_t_p_s23861_8h_a518a15e801cfaf1abeebe609a324cb04}{tps\-\_\-\-Get\-System\-Port\-Number} () 
+\end{DoxySeeAlso}
+\hypertarget{_t_p_s23861_8c_a0243e954ccba8b5347fc93821d75bc47}{\index{T\-P\-S23861.\-c@{T\-P\-S23861.\-c}!tps\-\_\-\-Get\-Device\-I2\-C\-Address@{tps\-\_\-\-Get\-Device\-I2\-C\-Address}}
+\index{tps\-\_\-\-Get\-Device\-I2\-C\-Address@{tps\-\_\-\-Get\-Device\-I2\-C\-Address}!TPS23861.c@{T\-P\-S23861.\-c}}
+\subsubsection[{tps\-\_\-\-Get\-Device\-I2\-C\-Address}]{\setlength{\rightskip}{0pt plus 5cm}uint16\-\_\-t tps\-\_\-\-Get\-Device\-I2\-C\-Address (
+\begin{DoxyParamCaption}
+\item[{uint8\-\_\-t}]{system\-Port\-Num}
+\end{DoxyParamCaption}
+)}}\label{_t_p_s23861_8c_a0243e954ccba8b5347fc93821d75bc47}
+
+
+Get the T\-P\-S23861 I2\-C Address associated with a registered System Port Number. 
+
+This function returns the I2\-C address for the T\-P\-S23861 device registered for a given System Port Number
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em system\-Port\-Num} & Port Number Value returned from the port registration function, \hyperlink{_t_p_s23861_8c_a915cc811128c70c54ff0ac048cfbc6e7}{tps\-\_\-\-Register\-Port()}\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+uint16\-\_\-t I2\-C Address number associated with this specific port. 
+
+T\-P\-S\-\_\-\-P\-O\-R\-T\-\_\-\-N\-O\-T\-\_\-\-R\-E\-G\-I\-S\-T\-E\-R\-E\-D\-\_\-\-V\-A\-L\-U\-E -\/ Indicates no port associated.
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{See Also}
+\hyperlink{_t_p_s23861_8h_a915cc811128c70c54ff0ac048cfbc6e7}{tps\-\_\-\-Register\-Port} () 
+
+\hyperlink{_t_p_s23861_8h_aaa8a6d568f29315525ade471e8836a6b}{tps\-\_\-\-Get\-Device\-Port\-Num} () 
+\end{DoxySeeAlso}
+\hypertarget{_t_p_s23861_8c_a7d2c54f06da3e8ef3f7367c37ad8d728}{\index{T\-P\-S23861.\-c@{T\-P\-S23861.\-c}!tps\-\_\-\-Get\-Device\-Input\-Voltage@{tps\-\_\-\-Get\-Device\-Input\-Voltage}}
+\index{tps\-\_\-\-Get\-Device\-Input\-Voltage@{tps\-\_\-\-Get\-Device\-Input\-Voltage}!TPS23861.c@{T\-P\-S23861.\-c}}
+\subsubsection[{tps\-\_\-\-Get\-Device\-Input\-Voltage}]{\setlength{\rightskip}{0pt plus 5cm}uint8\-\_\-t tps\-\_\-\-Get\-Device\-Input\-Voltage (
+\begin{DoxyParamCaption}
+\item[{uint8\-\_\-t}]{device\-\_\-i2c\-\_\-address, }
+\item[{uint16\-\_\-t $\ast$}]{voltage}
+\end{DoxyParamCaption}
+)}}\label{_t_p_s23861_8c_a7d2c54f06da3e8ef3f7367c37ad8d728}
+
+
+Returns the input voltage of the specified T\-P\-S23861. 
+
+This function will return the input voltage of the specified T\-P\-S23861.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em device\-\_\-i2c\-\_\-address} & 7 bit I2\-C address of the T\-P\-S238x part being controlled (do not included R/\-W bit) \\
+\hline
+\mbox{\tt out}  & {\em $\ast$voltage} & The address of a uint16\-\_\-t variable where the input voltage of the T\-P\-S23861. The voltage will be a scaled integer with an L\-S\-B of 3.\-662 m\-Volts\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+uint8\-\_\-t (I2\-C\-\_\-\-S\-U\-C\-C\-E\-S\-S\-F\-U\-L or I2\-C error status)
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{See Also}
+\hyperlink{_t_p_s23861_8h_aea33e295bb735809ad2edf78ed8b2543}{tps\-\_\-\-Get\-Port\-Measurements} () 
+\end{DoxySeeAlso}
+\hypertarget{_t_p_s23861_8c_a722b88304f003809bbfd4dabdd25f65e}{\index{T\-P\-S23861.\-c@{T\-P\-S23861.\-c}!tps\-\_\-\-Get\-Device\-Interrupt\-Mask@{tps\-\_\-\-Get\-Device\-Interrupt\-Mask}}
+\index{tps\-\_\-\-Get\-Device\-Interrupt\-Mask@{tps\-\_\-\-Get\-Device\-Interrupt\-Mask}!TPS23861.c@{T\-P\-S23861.\-c}}
+\subsubsection[{tps\-\_\-\-Get\-Device\-Interrupt\-Mask}]{\setlength{\rightskip}{0pt plus 5cm}uint8\-\_\-t tps\-\_\-\-Get\-Device\-Interrupt\-Mask (
+\begin{DoxyParamCaption}
+\item[{uint8\-\_\-t}]{device\-\_\-i2c\-\_\-address, }
+\item[{{\bf T\-P\-S238\-X\-\_\-\-Interrupt\-\_\-\-Mask\-\_\-\-Register\-\_\-t} $\ast$}]{int\-Mask, }
+\item[{uint8\-\_\-t $\ast$}]{int\-Delay\-Time}
+\end{DoxyParamCaption}
+)}}\label{_t_p_s23861_8c_a722b88304f003809bbfd4dabdd25f65e}
+
+
+Get the current setting of the interrupt mask register. 
+
+The function returns the T\-P\-S23861 events/faults that are able to generate interrupts (unmasked).
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em device\-\_\-i2c\-\_\-address} & 7 bit I2\-C address of the T\-P\-S238x part being controlled (do not included R/\-W bit) \\
+\hline
+\mbox{\tt out}  & {\em $\ast$int\-Mask} & Address of a \hyperlink{struct_t_p_s238_x___interrupt___mask___register__t}{T\-P\-S238\-X\-\_\-\-Interrupt\-\_\-\-Mask\-\_\-\-Register\-\_\-t} variable that will the current events that can generate interrupts P\-E\-M\-S\-K\-\_\-\-Power\-\_\-\-Enable\-\_\-\-Unmask P\-G\-M\-S\-K\-\_\-\-Power\-\_\-\-Good\-\_\-\-Unmask D\-I\-M\-S\-K\-\_\-\-Disconnect\-\_\-\-Unmask D\-E\-M\-S\-K\-\_\-\-Detection\-\_\-\-Cycle\-\_\-\-Unmask C\-L\-M\-S\-K\-\_\-\-Classificiation\-\_\-\-Cycle\-\_\-\-Unmask I\-F\-M\-S\-K\-\_\-\-I\-F\-A\-U\-L\-T\-\_\-\-Unmask I\-N\-M\-S\-K\-\_\-\-Inrush\-\_\-\-Fault\-\_\-\-Unmask S\-U\-M\-S\-K\-\_\-\-Supply\-\_\-\-Event\-\_\-\-Fault\-\_\-\-Unmask \\
+\hline
+\mbox{\tt out}  & {\em $\ast$int\-Delay\-Time} & Address of a uint8\-\_\-t variable that will indicate the amount of defer time, with a 10ms lsb, of non-\/critical interrupts.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+uint8\-\_\-t (I2\-C\-\_\-\-S\-U\-C\-C\-E\-S\-S\-F\-U\-L or I2\-C error status)
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{See Also}
+\hyperlink{_t_p_s23861_8h_adc05242f0647636b8afc9e11217d2ef2}{tps\-\_\-\-Set\-Device\-Interrupt\-Mask} () 
+
+\hyperlink{_t_p_s23861_8h_a7d92a16660cdfa091dc9c6983f201798}{tps\-\_\-\-Get\-Device\-Interrupt\-Status} () 
+
+\hyperlink{_t_p_s23861_8h_a9ed3aca04ebe30dc02a02b2f8fe6ebc0}{tps\-\_\-\-Get\-Device\-All\-Interrupt\-Events} () 
+
+\hyperlink{_t_p_s23861_8h_a518a15e801cfaf1abeebe609a324cb04}{tps\-\_\-\-Get\-System\-Port\-Number} () 
+\end{DoxySeeAlso}
+\hypertarget{_t_p_s23861_8c_a7d92a16660cdfa091dc9c6983f201798}{\index{T\-P\-S23861.\-c@{T\-P\-S23861.\-c}!tps\-\_\-\-Get\-Device\-Interrupt\-Status@{tps\-\_\-\-Get\-Device\-Interrupt\-Status}}
+\index{tps\-\_\-\-Get\-Device\-Interrupt\-Status@{tps\-\_\-\-Get\-Device\-Interrupt\-Status}!TPS23861.c@{T\-P\-S23861.\-c}}
+\subsubsection[{tps\-\_\-\-Get\-Device\-Interrupt\-Status}]{\setlength{\rightskip}{0pt plus 5cm}uint8\-\_\-t tps\-\_\-\-Get\-Device\-Interrupt\-Status (
+\begin{DoxyParamCaption}
+\item[{uint8\-\_\-t}]{device\-\_\-i2c\-\_\-address, }
+\item[{{\bf T\-P\-S238\-X\-\_\-\-Interrupt\-\_\-\-Register\-\_\-t} $\ast$}]{status}
+\end{DoxyParamCaption}
+)}}\label{_t_p_s23861_8c_a7d92a16660cdfa091dc9c6983f201798}
+
+
+Get the current interrupt status for the indicated T\-P\-S23861 part. 
+
+The function returns a variable that has a one bit indicator for each of the interrupts in the T\-P\-S23861.
+
+The interrupt mask register identifies which events/faults will generate an interrupt. The status register will still indicate events/faults that are masked and would not generate an interrupt. If the user wants to only process unmasked interrupts, the results from this function must be combined with the interrupt mask (tps\-\_\-\-Get\-Interrupt\-Mask)
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em device\-\_\-i2c\-\_\-address} & 7 bit I2\-C address of the T\-P\-S238x part being controlled (do not included R/\-W bit) \\
+\hline
+\mbox{\tt out}  & {\em $\ast$status} & Address of a \hyperlink{struct_t_p_s238_x___interrupt___register__t}{T\-P\-S238\-X\-\_\-\-Interrupt\-\_\-\-Register\-\_\-t} variable that will receive the current interrupt status P\-E\-C\-\_\-\-Power\-\_\-\-Enable\-\_\-\-Change P\-G\-C\-\_\-\-Power\-\_\-\-Good\-\_\-\-Change D\-I\-S\-F\-\_\-\-Disconnect\-\_\-\-Event D\-E\-T\-C\-\_\-\-Detection\-\_\-\-Cycle C\-L\-A\-S\-C\-\_\-\-Classification\-\_\-\-Cycle I\-F\-A\-U\-L\-T\-\_\-\-I\-C\-U\-T\-\_\-\-I\-L\-I\-M\-\_\-\-Fault I\-N\-R\-F\-\_\-\-Inrush\-\_\-\-Fault S\-U\-P\-F\-\_\-\-Supply\-\_\-\-Event\-\_\-\-Fault\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+uint8\-\_\-t (I2\-C\-\_\-\-S\-U\-C\-C\-E\-S\-S\-F\-U\-L or I2\-C error status)
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{See Also}
+\hyperlink{_t_p_s23861_8h_a9ed3aca04ebe30dc02a02b2f8fe6ebc0}{tps\-\_\-\-Get\-Device\-All\-Interrupt\-Events} () 
+
+\hyperlink{_t_p_s23861_8h_adc05242f0647636b8afc9e11217d2ef2}{tps\-\_\-\-Set\-Device\-Interrupt\-Mask} () 
+
+\hyperlink{_t_p_s23861_8h_a722b88304f003809bbfd4dabdd25f65e}{tps\-\_\-\-Get\-Device\-Interrupt\-Mask} () 
+
+\hyperlink{_t_p_s23861_8h_a518a15e801cfaf1abeebe609a324cb04}{tps\-\_\-\-Get\-System\-Port\-Number} () 
+\end{DoxySeeAlso}
+\hypertarget{_t_p_s23861_8c_aaa8a6d568f29315525ade471e8836a6b}{\index{T\-P\-S23861.\-c@{T\-P\-S23861.\-c}!tps\-\_\-\-Get\-Device\-Port\-Num@{tps\-\_\-\-Get\-Device\-Port\-Num}}
+\index{tps\-\_\-\-Get\-Device\-Port\-Num@{tps\-\_\-\-Get\-Device\-Port\-Num}!TPS23861.c@{T\-P\-S23861.\-c}}
+\subsubsection[{tps\-\_\-\-Get\-Device\-Port\-Num}]{\setlength{\rightskip}{0pt plus 5cm}{\bf T\-P\-S238x\-\_\-\-Port\-Num\-\_\-t} tps\-\_\-\-Get\-Device\-Port\-Num (
+\begin{DoxyParamCaption}
+\item[{uint8\-\_\-t}]{system\-Port\-Num}
+\end{DoxyParamCaption}
+)}}\label{_t_p_s23861_8c_aaa8a6d568f29315525ade471e8836a6b}
+
+
+Get the T\-P\-S23861 I2\-C Address associated with a registered System Port Number. 
+
+This function returns the I2\-C address for the T\-P\-S23861 device registered for a given System Port Number
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em system\-Port\-Num} & Port Number Value returned from the port registration function, \hyperlink{_t_p_s23861_8c_a915cc811128c70c54ff0ac048cfbc6e7}{tps\-\_\-\-Register\-Port()}\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+uint16\-\_\-t Device Port Number associated with this specific System Port Number. 
+
+T\-P\-S\-\_\-\-P\-O\-R\-T\-\_\-\-N\-O\-T\-\_\-\-R\-E\-G\-I\-S\-T\-E\-R\-E\-D\-\_\-\-V\-A\-L\-U\-E -\/ Indicates no port associated.
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{See Also}
+\hyperlink{_t_p_s23861_8h_a915cc811128c70c54ff0ac048cfbc6e7}{tps\-\_\-\-Register\-Port} () 
+
+\hyperlink{_t_p_s23861_8h_a0243e954ccba8b5347fc93821d75bc47}{tps\-\_\-\-Get\-Device\-I2\-C\-Address} () 
+\end{DoxySeeAlso}
+\hypertarget{_t_p_s23861_8c_afa44d49c28bdd6601086860d929a07f3}{\index{T\-P\-S23861.\-c@{T\-P\-S23861.\-c}!tps\-\_\-\-Get\-Device\-Power\-Enable\-Status@{tps\-\_\-\-Get\-Device\-Power\-Enable\-Status}}
+\index{tps\-\_\-\-Get\-Device\-Power\-Enable\-Status@{tps\-\_\-\-Get\-Device\-Power\-Enable\-Status}!TPS23861.c@{T\-P\-S23861.\-c}}
+\subsubsection[{tps\-\_\-\-Get\-Device\-Power\-Enable\-Status}]{\setlength{\rightskip}{0pt plus 5cm}uint8\-\_\-t tps\-\_\-\-Get\-Device\-Power\-Enable\-Status (
+\begin{DoxyParamCaption}
+\item[{uint8\-\_\-t}]{device\-\_\-i2c\-\_\-address, }
+\item[{{\bf T\-P\-S238x\-\_\-\-Ports\-\_\-t} $\ast$}]{power\-Enable\-Ports}
+\end{DoxyParamCaption}
+)}}\label{_t_p_s23861_8c_afa44d49c28bdd6601086860d929a07f3}
+
+
+Returns the power enable status of the 4 ports in the T\-P\-S23861. 
+
+This function will return the power good state of each port.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em device\-\_\-i2c\-\_\-address} & 7 bit I2\-C address of the T\-P\-S238x part being controlled (do not included R/\-W bit) \\
+\hline
+\mbox{\tt out}  & {\em $\ast$power\-Enable\-Ports} & Address of a T\-P\-S238x\-\_\-\-Ports\-\_\-t variable that will receive the power enable status with one bit for each port in power enabled state.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+uint8\-\_\-t (I2\-C\-\_\-\-S\-U\-C\-C\-E\-S\-S\-F\-U\-L or I2\-C error status)
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{See Also}
+\hyperlink{_t_p_s23861_8h_a0ce2a3f1794d186acd9e8bc0269d4cc6}{tps\-\_\-\-Get\-Port\-Power\-Enable\-Status} () 
+
+\hyperlink{_t_p_s23861_8h_a78b13097d2a8f69f9a64f6fb26740b5e}{tps\-\_\-\-Get\-Device\-Power\-Good\-Status} () 
+
+\hyperlink{_t_p_s23861_8h_aa31f15e881550f24b879985596083fa6}{tps\-\_\-\-Get\-Port\-Power\-Good\-Status} () 
+
+\hyperlink{_t_p_s23861_8h_a20e5c761a1db4451c4a506791f684a9a}{tps\-\_\-\-Get\-Device\-Power\-Status} () 
+
+\hyperlink{_t_p_s23861_8h_a518a15e801cfaf1abeebe609a324cb04}{tps\-\_\-\-Get\-System\-Port\-Number} () 
+\end{DoxySeeAlso}
+\hypertarget{_t_p_s23861_8c_a78b13097d2a8f69f9a64f6fb26740b5e}{\index{T\-P\-S23861.\-c@{T\-P\-S23861.\-c}!tps\-\_\-\-Get\-Device\-Power\-Good\-Status@{tps\-\_\-\-Get\-Device\-Power\-Good\-Status}}
+\index{tps\-\_\-\-Get\-Device\-Power\-Good\-Status@{tps\-\_\-\-Get\-Device\-Power\-Good\-Status}!TPS23861.c@{T\-P\-S23861.\-c}}
+\subsubsection[{tps\-\_\-\-Get\-Device\-Power\-Good\-Status}]{\setlength{\rightskip}{0pt plus 5cm}uint8\-\_\-t tps\-\_\-\-Get\-Device\-Power\-Good\-Status (
+\begin{DoxyParamCaption}
+\item[{uint8\-\_\-t}]{device\-\_\-i2c\-\_\-address, }
+\item[{{\bf T\-P\-S238x\-\_\-\-Ports\-\_\-t} $\ast$}]{power\-Good\-Ports}
+\end{DoxyParamCaption}
+)}}\label{_t_p_s23861_8c_a78b13097d2a8f69f9a64f6fb26740b5e}
+
+
+Returns the power good status of the 4 ports in the T\-P\-S23861. 
+
+This function will return the power good state of each port.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em device\-\_\-i2c\-\_\-address} & 7 bit I2\-C address of the T\-P\-S238x part being controlled (do not included R/\-W bit) \\
+\hline
+\mbox{\tt out}  & {\em $\ast$power\-Good\-Ports} & Address of a T\-P\-S238x\-\_\-\-Ports\-\_\-t variable that will receive the power good status with one bit for each port in power good state.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+uint8\-\_\-t (I2\-C\-\_\-\-S\-U\-C\-C\-E\-S\-S\-F\-U\-L or I2\-C error status)
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{See Also}
+\hyperlink{_t_p_s23861_8h_aa31f15e881550f24b879985596083fa6}{tps\-\_\-\-Get\-Port\-Power\-Good\-Status} () 
+
+\hyperlink{_t_p_s23861_8h_afa44d49c28bdd6601086860d929a07f3}{tps\-\_\-\-Get\-Device\-Power\-Enable\-Status} () 
+
+\hyperlink{_t_p_s23861_8h_a0ce2a3f1794d186acd9e8bc0269d4cc6}{tps\-\_\-\-Get\-Port\-Power\-Enable\-Status} () 
+
+\hyperlink{_t_p_s23861_8h_a20e5c761a1db4451c4a506791f684a9a}{tps\-\_\-\-Get\-Device\-Power\-Status} () 
+
+\hyperlink{_t_p_s23861_8h_a518a15e801cfaf1abeebe609a324cb04}{tps\-\_\-\-Get\-System\-Port\-Number} () 
+\end{DoxySeeAlso}
+\hypertarget{_t_p_s23861_8c_a20e5c761a1db4451c4a506791f684a9a}{\index{T\-P\-S23861.\-c@{T\-P\-S23861.\-c}!tps\-\_\-\-Get\-Device\-Power\-Status@{tps\-\_\-\-Get\-Device\-Power\-Status}}
+\index{tps\-\_\-\-Get\-Device\-Power\-Status@{tps\-\_\-\-Get\-Device\-Power\-Status}!TPS23861.c@{T\-P\-S23861.\-c}}
+\subsubsection[{tps\-\_\-\-Get\-Device\-Power\-Status}]{\setlength{\rightskip}{0pt plus 5cm}uint8\-\_\-t tps\-\_\-\-Get\-Device\-Power\-Status (
+\begin{DoxyParamCaption}
+\item[{uint8\-\_\-t}]{device\-\_\-i2c\-\_\-address, }
+\item[{{\bf T\-P\-S238x\-\_\-\-Ports\-\_\-t} $\ast$}]{power\-Enable\-Ports, }
+\item[{{\bf T\-P\-S238x\-\_\-\-Ports\-\_\-t} $\ast$}]{power\-Good\-Ports}
+\end{DoxyParamCaption}
+)}}\label{_t_p_s23861_8c_a20e5c761a1db4451c4a506791f684a9a}
+
+
+Returns the power enable and power good status of the 4 ports in the T\-P\-S23861. 
+
+This function will return both the power enable and the power good state of each port.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em device\-\_\-i2c\-\_\-address} & 7 bit I2\-C address of the T\-P\-S238x part being controlled (do not included R/\-W bit) \\
+\hline
+\mbox{\tt out}  & {\em $\ast$power\-Enable\-Ports} & Address of a T\-P\-S238x\-\_\-\-Ports\-\_\-t variable that will receive the power enable status with one bit for each port in power enabled state. \\
+\hline
+\mbox{\tt out}  & {\em $\ast$power\-Good\-Ports} & Address of a T\-P\-S238x\-\_\-\-Ports\-\_\-t variable that will receive the power good status with one bit for each port in power good state.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+uint8\-\_\-t (I2\-C\-\_\-\-S\-U\-C\-C\-E\-S\-S\-F\-U\-L or I2\-C error status)
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{See Also}
+\hyperlink{_t_p_s23861_8h_afa44d49c28bdd6601086860d929a07f3}{tps\-\_\-\-Get\-Device\-Power\-Enable\-Status} () 
+
+\hyperlink{_t_p_s23861_8h_a0ce2a3f1794d186acd9e8bc0269d4cc6}{tps\-\_\-\-Get\-Port\-Power\-Enable\-Status} () 
+
+\hyperlink{_t_p_s23861_8h_a78b13097d2a8f69f9a64f6fb26740b5e}{tps\-\_\-\-Get\-Device\-Power\-Good\-Status} () 
+
+\hyperlink{_t_p_s23861_8h_aa31f15e881550f24b879985596083fa6}{tps\-\_\-\-Get\-Port\-Power\-Good\-Status} () 
+
+\hyperlink{_t_p_s23861_8h_a518a15e801cfaf1abeebe609a324cb04}{tps\-\_\-\-Get\-System\-Port\-Number} () 
+\end{DoxySeeAlso}
+\hypertarget{_t_p_s23861_8c_accc2312ce106747a2e7cc9b95eef3aca}{\index{T\-P\-S23861.\-c@{T\-P\-S23861.\-c}!tps\-\_\-\-Get\-Device\-Temperature@{tps\-\_\-\-Get\-Device\-Temperature}}
+\index{tps\-\_\-\-Get\-Device\-Temperature@{tps\-\_\-\-Get\-Device\-Temperature}!TPS23861.c@{T\-P\-S23861.\-c}}
+\subsubsection[{tps\-\_\-\-Get\-Device\-Temperature}]{\setlength{\rightskip}{0pt plus 5cm}uint8\-\_\-t tps\-\_\-\-Get\-Device\-Temperature (
+\begin{DoxyParamCaption}
+\item[{uint8\-\_\-t}]{device\-\_\-i2c\-\_\-address, }
+\item[{uint8\-\_\-t $\ast$}]{temperature}
+\end{DoxyParamCaption}
+)}}\label{_t_p_s23861_8c_accc2312ce106747a2e7cc9b95eef3aca}
+
+
+Returns the temperature of the specified T\-P\-S23861. 
+
+This function will return the temperature of the specified T\-P\-S23861.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em device\-\_\-i2c\-\_\-address} & 7 bit I2\-C address of the T\-P\-S238x part being controlled (do not included R/\-W bit) \\
+\hline
+\mbox{\tt out}  & {\em $\ast$temperature} & The address of a uint8\-\_\-t variable where the temperature of the T\-P\-S23861. The temperature will be a scaled integer with an L\-S\-B of 0.\-652 degrees Celsius\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+uint8\-\_\-t (I2\-C\-\_\-\-S\-U\-C\-C\-E\-S\-S\-F\-U\-L or I2\-C error status) 
+\end{DoxyReturn}
+\hypertarget{_t_p_s23861_8c_a32cdc156b4b35e5dd7b79ff25e681514}{\index{T\-P\-S23861.\-c@{T\-P\-S23861.\-c}!tps\-\_\-\-Get\-Port\-Classification\-Enable@{tps\-\_\-\-Get\-Port\-Classification\-Enable}}
+\index{tps\-\_\-\-Get\-Port\-Classification\-Enable@{tps\-\_\-\-Get\-Port\-Classification\-Enable}!TPS23861.c@{T\-P\-S23861.\-c}}
+\subsubsection[{tps\-\_\-\-Get\-Port\-Classification\-Enable}]{\setlength{\rightskip}{0pt plus 5cm}uint8\-\_\-t tps\-\_\-\-Get\-Port\-Classification\-Enable (
+\begin{DoxyParamCaption}
+\item[{uint8\-\_\-t}]{system\-Port\-Num}
+\end{DoxyParamCaption}
+)}}\label{_t_p_s23861_8c_a32cdc156b4b35e5dd7b79ff25e681514}
+
+
+Returns whether the indicated system port is enabled for classification operation. 
+
+This function will return whether the indicated system port is configured for classification operations.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em system\-Port\-Num} & Port Number Value returned from the port registration function, \hyperlink{_t_p_s23861_8c_a915cc811128c70c54ff0ac048cfbc6e7}{tps\-\_\-\-Register\-Port()}\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+uint8\-\_\-t T\-P\-S\-\_\-\-O\-N -\/ Port is enabled for classification T\-P\-S\-\_\-\-O\-F\-F -\/ Port is N\-O\-T enabled for classification
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{See Also}
+\hyperlink{_t_p_s23861_8h_af42c2ca5f1558cdbf2473e3a3c0319ea}{tps\-\_\-\-Get\-Device\-Classification\-Enable} () 
+
+\hyperlink{_t_p_s23861_8h_ad52bbba38c5543cf5c0c4f9d1126322c}{tps\-\_\-\-Get\-Port\-Detection\-Enable} () 
+
+\hyperlink{_t_p_s23861_8h_a60e64452aad48caf62d2e2e590471666}{tps\-\_\-\-Set\-Port\-Detect\-Class\-Enable} () 
+\end{DoxySeeAlso}
+\hypertarget{_t_p_s23861_8c_ae20f4c6505b8f56c976e87e0a5727e36}{\index{T\-P\-S23861.\-c@{T\-P\-S23861.\-c}!tps\-\_\-\-Get\-Port\-Classification\-Status@{tps\-\_\-\-Get\-Port\-Classification\-Status}}
+\index{tps\-\_\-\-Get\-Port\-Classification\-Status@{tps\-\_\-\-Get\-Port\-Classification\-Status}!TPS23861.c@{T\-P\-S23861.\-c}}
+\subsubsection[{tps\-\_\-\-Get\-Port\-Classification\-Status}]{\setlength{\rightskip}{0pt plus 5cm}uint8\-\_\-t tps\-\_\-\-Get\-Port\-Classification\-Status (
+\begin{DoxyParamCaption}
+\item[{uint8\-\_\-t}]{system\-Port\-Num, }
+\item[{{\bf T\-P\-S238x\-\_\-\-Classification\-\_\-\-Status\-\_\-t} $\ast$}]{classification\-Status}
+\end{DoxyParamCaption}
+)}}\label{_t_p_s23861_8c_ae20f4c6505b8f56c976e87e0a5727e36}
+
+
+Returns the classification status of the specified port. 
+
+This function will return the most recent classification result for the indicated port on the T\-P\-S23861.
+
+The function will return a 0 (C\-L\-A\-S\-S\-\_\-\-U\-N\-K\-N\-O\-W\-N) when the port is turned off.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em system\-Port\-Num} & Port Number Value returned from the port registration function, \hyperlink{_t_p_s23861_8c_a915cc811128c70c54ff0ac048cfbc6e7}{tps\-\_\-\-Register\-Port()} \\
+\hline
+\mbox{\tt out}  & {\em $\ast$classification\-Status} & Address of a T\-P\-S238x\-\_\-\-Classification\-\_\-\-Status\-\_\-t variable that will receive the classification status for the indicated port (C\-L\-A\-S\-S\-\_\-\-U\-N\-K\-N\-O\-W\-N, C\-L\-A\-S\-S\-\_\-1, C\-L\-A\-S\-S\-\_\-2, C\-L\-A\-S\-S\-\_\-3, C\-L\-A\-S\-S\-\_\-4, C\-L\-A\-S\-S\-\_\-0, C\-L\-A\-S\-S\-\_\-\-O\-V\-E\-R\-C\-U\-R\-R\-E\-N\-T, C\-L\-A\-S\-S\-\_\-\-M\-I\-S\-M\-A\-T\-C\-H, or C\-L\-A\-S\-S\-\_\-5)\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+uint8\-\_\-t (I2\-C\-\_\-\-S\-U\-C\-C\-E\-S\-S\-F\-U\-L or I2\-C error status)
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{See Also}
+\hyperlink{_t_p_s23861_8h_a65536a0909a55f871abfff25444e6458}{tps\-\_\-\-Get\-Port\-Detection\-Status} () 
+
+\hyperlink{_t_p_s23861_8h_a9c32dd5ccbc70a19734d8123654013bc}{tps\-\_\-\-Get\-Port\-Detect\-Class\-Status} () 
+\end{DoxySeeAlso}
+\hypertarget{_t_p_s23861_8c_a9c32dd5ccbc70a19734d8123654013bc}{\index{T\-P\-S23861.\-c@{T\-P\-S23861.\-c}!tps\-\_\-\-Get\-Port\-Detect\-Class\-Status@{tps\-\_\-\-Get\-Port\-Detect\-Class\-Status}}
+\index{tps\-\_\-\-Get\-Port\-Detect\-Class\-Status@{tps\-\_\-\-Get\-Port\-Detect\-Class\-Status}!TPS23861.c@{T\-P\-S23861.\-c}}
+\subsubsection[{tps\-\_\-\-Get\-Port\-Detect\-Class\-Status}]{\setlength{\rightskip}{0pt plus 5cm}uint8\-\_\-t tps\-\_\-\-Get\-Port\-Detect\-Class\-Status (
+\begin{DoxyParamCaption}
+\item[{uint8\-\_\-t}]{system\-Port\-Num, }
+\item[{{\bf T\-P\-S238x\-\_\-\-Detection\-\_\-\-Status\-\_\-t} $\ast$}]{detection\-Status, }
+\item[{{\bf T\-P\-S238x\-\_\-\-Classification\-\_\-\-Status\-\_\-t} $\ast$}]{classification\-Status}
+\end{DoxyParamCaption}
+)}}\label{_t_p_s23861_8c_a9c32dd5ccbc70a19734d8123654013bc}
+
+
+Returns the detection and classification status of the specified port. 
+
+This function will return the most recent detection and classification result for the indicated port on the T\-P\-S23861.
+
+The function will return a 0 (C\-L\-A\-S\-S\-\_\-\-U\-N\-K\-N\-O\-W\-N) when the port is turned off.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em system\-Port\-Num} & Port Number Value returned from the port registration function, \hyperlink{_t_p_s23861_8c_a915cc811128c70c54ff0ac048cfbc6e7}{tps\-\_\-\-Register\-Port()} \\
+\hline
+\mbox{\tt out}  & {\em $\ast$detection\-Status} & Address of a T\-P\-S238x\-\_\-\-Detection\-\_\-\-Status\-\_\-t variable that will receive the detecttion status for the indicated port (D\-E\-T\-E\-C\-T\-\_\-\-U\-N\-K\-N\-O\-W\-N, D\-E\-T\-E\-C\-T\-\_\-\-S\-H\-O\-R\-T\-\_\-\-C\-I\-R\-C\-U\-I\-T, D\-E\-T\-E\-C\-T\-\_\-\-R\-E\-S\-I\-S\-T\-\_\-\-L\-O\-W, D\-E\-T\-E\-C\-T\-\_\-\-R\-E\-S\-I\-S\-T\-\_\-\-V\-A\-L\-I\-D, D\-E\-T\-E\-C\-T\-\_\-\-R\-E\-S\-I\-S\-T\-\_\-\-H\-I\-G\-H, D\-E\-T\-E\-C\-T\-\_\-\-O\-P\-E\-N\-\_\-\-C\-I\-R\-C\-U\-I\-T, D\-E\-T\-E\-C\-T\-\_\-\-M\-O\-S\-F\-E\-T\-\_\-\-F\-A\-U\-L\-T, D\-E\-T\-E\-C\-T\-\_\-\-L\-E\-G\-A\-C\-Y, D\-E\-T\-E\-C\-T\-\_\-\-C\-A\-P\-\_\-\-I\-N\-V\-A\-L\-I\-D\-\_\-\-C\-L\-A\-M\-P\-\_\-\-V\-O\-L\-T\-A\-G\-E, D\-E\-T\-E\-C\-T\-\_\-\-C\-A\-P\-\_\-\-I\-N\-V\-A\-L\-I\-D\-\_\-\-D\-E\-L\-T\-A\-\_\-\-V, or D\-E\-T\-E\-C\-T\-\_\-\-C\-A\-P\-\_\-\-V\-A\-L\-I\-D\-\_\-\-L\-E\-G\-A\-C\-Y\-\_\-\-R\-A\-N\-G\-E) \\
+\hline
+\mbox{\tt out}  & {\em $\ast$classification\-Status} & Address of a T\-P\-S238x\-\_\-\-Classification\-\_\-\-Status\-\_\-t variable that will receive the classification status for the indicated port (C\-L\-A\-S\-S\-\_\-\-U\-N\-K\-N\-O\-W\-N, C\-L\-A\-S\-S\-\_\-1, C\-L\-A\-S\-S\-\_\-2, C\-L\-A\-S\-S\-\_\-3, C\-L\-A\-S\-S\-\_\-4, C\-L\-A\-S\-S\-\_\-0, C\-L\-A\-S\-S\-\_\-\-O\-V\-E\-R\-C\-U\-R\-R\-E\-N\-T, C\-L\-A\-S\-S\-\_\-\-M\-I\-S\-M\-A\-T\-C\-H, or C\-L\-A\-S\-S\-\_\-5)\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+uint8\-\_\-t (I2\-C\-\_\-\-S\-U\-C\-C\-E\-S\-S\-F\-U\-L or I2\-C error status)
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{See Also}
+\hyperlink{_t_p_s23861_8h_a65536a0909a55f871abfff25444e6458}{tps\-\_\-\-Get\-Port\-Detection\-Status} () 
+
+\hyperlink{_t_p_s23861_8h_ae20f4c6505b8f56c976e87e0a5727e36}{tps\-\_\-\-Get\-Port\-Classification\-Status} () 
+\end{DoxySeeAlso}
+\hypertarget{_t_p_s23861_8c_ad52bbba38c5543cf5c0c4f9d1126322c}{\index{T\-P\-S23861.\-c@{T\-P\-S23861.\-c}!tps\-\_\-\-Get\-Port\-Detection\-Enable@{tps\-\_\-\-Get\-Port\-Detection\-Enable}}
+\index{tps\-\_\-\-Get\-Port\-Detection\-Enable@{tps\-\_\-\-Get\-Port\-Detection\-Enable}!TPS23861.c@{T\-P\-S23861.\-c}}
+\subsubsection[{tps\-\_\-\-Get\-Port\-Detection\-Enable}]{\setlength{\rightskip}{0pt plus 5cm}uint8\-\_\-t tps\-\_\-\-Get\-Port\-Detection\-Enable (
+\begin{DoxyParamCaption}
+\item[{uint8\-\_\-t}]{system\-Port\-Num}
+\end{DoxyParamCaption}
+)}}\label{_t_p_s23861_8c_ad52bbba38c5543cf5c0c4f9d1126322c}
+
+
+Returns whether the indicated system port is enabled for detection operation. 
+
+This function will return a T\-P\-S\-\_\-\-O\-N or T\-P\-S\-\_\-\-O\-F\-F to indicate that the specific system port is enabled for detection or not
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em system\-Port\-Num} & Port Number Value returned from the port registration function, \hyperlink{_t_p_s23861_8c_a915cc811128c70c54ff0ac048cfbc6e7}{tps\-\_\-\-Register\-Port()}\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+uint8\-\_\-t T\-P\-S\-\_\-\-O\-N -\/ Port is enabled for detection T\-P\-S\-\_\-\-O\-F\-F -\/ Port is N\-O\-T enabled for detection
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{See Also}
+\hyperlink{_t_p_s23861_8h_ae0904a0acd41277ef053d8d7777958a0}{tps\-\_\-\-Get\-Device\-Detection\-Enable} () 
+
+\hyperlink{_t_p_s23861_8h_a32cdc156b4b35e5dd7b79ff25e681514}{tps\-\_\-\-Get\-Port\-Classification\-Enable} () 
+
+\hyperlink{_t_p_s23861_8h_a60e64452aad48caf62d2e2e590471666}{tps\-\_\-\-Set\-Port\-Detect\-Class\-Enable} () 
+\end{DoxySeeAlso}
+\hypertarget{_t_p_s23861_8c_a65536a0909a55f871abfff25444e6458}{\index{T\-P\-S23861.\-c@{T\-P\-S23861.\-c}!tps\-\_\-\-Get\-Port\-Detection\-Status@{tps\-\_\-\-Get\-Port\-Detection\-Status}}
+\index{tps\-\_\-\-Get\-Port\-Detection\-Status@{tps\-\_\-\-Get\-Port\-Detection\-Status}!TPS23861.c@{T\-P\-S23861.\-c}}
+\subsubsection[{tps\-\_\-\-Get\-Port\-Detection\-Status}]{\setlength{\rightskip}{0pt plus 5cm}uint8\-\_\-t tps\-\_\-\-Get\-Port\-Detection\-Status (
+\begin{DoxyParamCaption}
+\item[{uint8\-\_\-t}]{system\-Port\-Num, }
+\item[{{\bf T\-P\-S238x\-\_\-\-Detection\-\_\-\-Status\-\_\-t} $\ast$}]{detection\-Status}
+\end{DoxyParamCaption}
+)}}\label{_t_p_s23861_8c_a65536a0909a55f871abfff25444e6458}
+
+
+Returns the detection status of the specified port. 
+
+This function will return the most recent detection result for the indicated port on the T\-P\-S23861.
+
+The function will return a 0 (C\-L\-A\-S\-S\-\_\-\-U\-N\-K\-N\-O\-W\-N) when the port is turned off.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em system\-Port\-Num} & Port Number Value returned from the port registration function, \hyperlink{_t_p_s23861_8c_a915cc811128c70c54ff0ac048cfbc6e7}{tps\-\_\-\-Register\-Port()} \\
+\hline
+\mbox{\tt out}  & {\em $\ast$detection\-Status} & Address of a T\-P\-S238x\-\_\-\-Detection\-\_\-\-Status\-\_\-t variable that will receive the detecttion status for the indicated port (D\-E\-T\-E\-C\-T\-\_\-\-U\-N\-K\-N\-O\-W\-N, D\-E\-T\-E\-C\-T\-\_\-\-S\-H\-O\-R\-T\-\_\-\-C\-I\-R\-C\-U\-I\-T, D\-E\-T\-E\-C\-T\-\_\-\-R\-E\-S\-I\-S\-T\-\_\-\-L\-O\-W, D\-E\-T\-E\-C\-T\-\_\-\-R\-E\-S\-I\-S\-T\-\_\-\-V\-A\-L\-I\-D, D\-E\-T\-E\-C\-T\-\_\-\-R\-E\-S\-I\-S\-T\-\_\-\-H\-I\-G\-H, D\-E\-T\-E\-C\-T\-\_\-\-O\-P\-E\-N\-\_\-\-C\-I\-R\-C\-U\-I\-T, D\-E\-T\-E\-C\-T\-\_\-\-M\-O\-S\-F\-E\-T\-\_\-\-F\-A\-U\-L\-T, D\-E\-T\-E\-C\-T\-\_\-\-L\-E\-G\-A\-C\-Y, D\-E\-T\-E\-C\-T\-\_\-\-C\-A\-P\-\_\-\-I\-N\-V\-A\-L\-I\-D\-\_\-\-C\-L\-A\-M\-P\-\_\-\-V\-O\-L\-T\-A\-G\-E, D\-E\-T\-E\-C\-T\-\_\-\-C\-A\-P\-\_\-\-I\-N\-V\-A\-L\-I\-D\-\_\-\-D\-E\-L\-T\-A\-\_\-\-V, or D\-E\-T\-E\-C\-T\-\_\-\-C\-A\-P\-\_\-\-I\-N\-V\-A\-L\-I\-D\-\_\-\-L\-E\-G\-A\-C\-Y\-\_\-\-R\-A\-N\-G\-E)\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+uint8\-\_\-t (I2\-C\-\_\-\-S\-U\-C\-C\-E\-S\-S\-F\-U\-L or I2\-C error status)
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{See Also}
+\hyperlink{_t_p_s23861_8h_ae20f4c6505b8f56c976e87e0a5727e36}{tps\-\_\-\-Get\-Port\-Classification\-Status} () 
+
+\hyperlink{_t_p_s23861_8h_a9c32dd5ccbc70a19734d8123654013bc}{tps\-\_\-\-Get\-Port\-Detect\-Class\-Status} () 
+\end{DoxySeeAlso}
+\hypertarget{_t_p_s23861_8c_a3a408ea6efad3e1fd06e5949027dcda5}{\index{T\-P\-S23861.\-c@{T\-P\-S23861.\-c}!tps\-\_\-\-Get\-Port\-Detect\-Resistance@{tps\-\_\-\-Get\-Port\-Detect\-Resistance}}
+\index{tps\-\_\-\-Get\-Port\-Detect\-Resistance@{tps\-\_\-\-Get\-Port\-Detect\-Resistance}!TPS23861.c@{T\-P\-S23861.\-c}}
+\subsubsection[{tps\-\_\-\-Get\-Port\-Detect\-Resistance}]{\setlength{\rightskip}{0pt plus 5cm}uint8\-\_\-t tps\-\_\-\-Get\-Port\-Detect\-Resistance (
+\begin{DoxyParamCaption}
+\item[{uint8\-\_\-t}]{system\-Port\-Num, }
+\item[{uint16\-\_\-t $\ast$}]{detect\-Resistance, }
+\item[{{\bf T\-P\-S238x\-\_\-\-Detect\-\_\-\-Resistance\-\_\-\-Status\-\_\-t} $\ast$}]{detect\-Resistance\-Status}
+\end{DoxyParamCaption}
+)}}\label{_t_p_s23861_8c_a3a408ea6efad3e1fd06e5949027dcda5}
+
+
+Returns the detection resistance value for the registered system port number on a specific T\-P\-S23861. 
+
+This function will return the detection resistance and detection status for the registered system port on a T\-P\-S23861.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em system\-Port\-Num} & Port Number Value returned from the port registration function, \hyperlink{_t_p_s23861_8c_a915cc811128c70c54ff0ac048cfbc6e7}{tps\-\_\-\-Register\-Port()} \\
+\hline
+\mbox{\tt out}  & {\em $\ast$detect\-Resistance} & The address of a uint16\-\_\-t variable where the detection resistance of the port. The detection resistance will be a scaled integer with an L\-S\-B of 11.\-0966 ohms. \\
+\hline
+\mbox{\tt out}  & {\em $\ast$detect\-Resistance\-Status} & The address of a T\-P\-S238x\-\_\-\-Detect\-\_\-\-Resistance\-\_\-\-Status\-\_\-t variable for the most recent detection result status \mbox{[}R\-S\-\_\-\-S\-T\-A\-T\-U\-S\-\_\-\-G\-O\-O\-D, R\-S\-\_\-\-S\-T\-A\-T\-U\-S\-\_\-\-S\-H\-O\-R\-T\-\_\-\-C\-I\-R\-C\-U\-I\-T, R\-S\-\_\-\-S\-T\-A\-T\-U\-S\-\_\-\-O\-P\-E\-N\-\_\-\-C\-I\-R\-C\-U\-I\-T, or R\-S\-\_\-\-S\-T\-A\-T\-U\-S\-\_\-\-M\-O\-S\-F\-E\-T\-\_\-\-S\-H\-O\-R\-T\-\_\-\-F\-A\-U\-L\-T\mbox{]}\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+uint8\-\_\-t (I2\-C\-\_\-\-S\-U\-C\-C\-E\-S\-S\-F\-U\-L or I2\-C error status)
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{See Also}
+\hyperlink{_t_p_s23861_8h_a1a705cbee0d106474710dcf7d0538d3a}{tps\-\_\-\-Get\-Port\-Detect\-Voltage\-Difference} () 
+\end{DoxySeeAlso}
+\hypertarget{_t_p_s23861_8c_a1a705cbee0d106474710dcf7d0538d3a}{\index{T\-P\-S23861.\-c@{T\-P\-S23861.\-c}!tps\-\_\-\-Get\-Port\-Detect\-Voltage\-Difference@{tps\-\_\-\-Get\-Port\-Detect\-Voltage\-Difference}}
+\index{tps\-\_\-\-Get\-Port\-Detect\-Voltage\-Difference@{tps\-\_\-\-Get\-Port\-Detect\-Voltage\-Difference}!TPS23861.c@{T\-P\-S23861.\-c}}
+\subsubsection[{tps\-\_\-\-Get\-Port\-Detect\-Voltage\-Difference}]{\setlength{\rightskip}{0pt plus 5cm}uint8\-\_\-t tps\-\_\-\-Get\-Port\-Detect\-Voltage\-Difference (
+\begin{DoxyParamCaption}
+\item[{uint8\-\_\-t}]{system\-Port\-Num, }
+\item[{uint16\-\_\-t $\ast$}]{detect\-Voltage\-Diff, }
+\item[{{\bf T\-P\-S238x\-\_\-\-Detect\-\_\-\-Voltage\-\_\-\-Difference\-\_\-\-Status\-\_\-t} $\ast$}]{detect\-Voltage\-Diff\-Status}
+\end{DoxyParamCaption}
+)}}\label{_t_p_s23861_8c_a1a705cbee0d106474710dcf7d0538d3a}
+
+
+Returns the voltage difference for the indicated system port number on one of the T\-P\-S23861 in the system. 
+
+The system will attempt to determine a legacy P\-D by measuring the P\-D input capacitance on the P\-I. A fixed charge is injected into the P\-I and the resulting voltage difference is reported. The reported voltage difference is only usable when the status indicates a valid measurement.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em system\-Port\-Num} & Port Number Value returned from the port registration function, \hyperlink{_t_p_s23861_8c_a915cc811128c70c54ff0ac048cfbc6e7}{tps\-\_\-\-Register\-Port()} \\
+\hline
+\mbox{\tt out}  & {\em $\ast$detect\-Voltage\-Diff} & The address of a uint16\-\_\-t variable where the detection resistance of the port. The detection resistance will be a scaled integer with an L\-S\-B of 11.\-0966 ohms. \\
+\hline
+\mbox{\tt out}  & {\em $\ast$detect\-Voltage\-Diff\-Status} & The address of a T\-P\-S238x\-\_\-\-Detect\-\_\-\-Voltage\-\_\-\-Difference\-\_\-\-Status\-\_\-t variable for the most recent detect voltage difference result status \mbox{[}V\-D\-S\-\_\-\-S\-T\-A\-T\-U\-S\-\_\-\-P\-O\-W\-E\-R\-\_\-\-O\-N\-\_\-\-R\-E\-S\-E\-T, V\-D\-S\-\_\-\-S\-T\-A\-T\-U\-S\-\_\-\-V\-A\-L\-I\-D\-\_\-\-M\-E\-A\-S\-U\-R\-E\-M\-E\-N\-T, V\-D\-S\-\_\-\-S\-T\-A\-T\-U\-S\-\_\-\-T\-I\-M\-E\-O\-U\-T, V\-D\-S\-\_\-\-S\-T\-A\-T\-U\-S\-\_\-\-F\-I\-R\-S\-T\-\_\-\-M\-E\-A\-S\-U\-R\-E\-M\-E\-N\-T\-\_\-\-E\-X\-C\-E\-S\-S, V\-D\-S\-\_\-\-S\-T\-A\-T\-U\-S\-\_\-\-S\-E\-C\-O\-N\-D\-\_\-\-M\-E\-A\-S\-U\-R\-E\-M\-E\-N\-T\-\_\-\-E\-X\-C\-E\-S\-S, or V\-D\-S\-\_\-\-S\-T\-A\-T\-U\-S\-\_\-\-I\-N\-S\-U\-F\-F\-I\-C\-I\-E\-N\-T\-\_\-\-S\-I\-G\-N\-A\-L\mbox{]}\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+uint8\-\_\-t (I2\-C\-\_\-\-S\-U\-C\-C\-E\-S\-S\-F\-U\-L or I2\-C error status)
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{See Also}
+\hyperlink{_t_p_s23861_8h_a3a408ea6efad3e1fd06e5949027dcda5}{tps\-\_\-\-Get\-Port\-Detect\-Resistance} () 
+\end{DoxySeeAlso}
+\hypertarget{_t_p_s23861_8c_aea33e295bb735809ad2edf78ed8b2543}{\index{T\-P\-S23861.\-c@{T\-P\-S23861.\-c}!tps\-\_\-\-Get\-Port\-Measurements@{tps\-\_\-\-Get\-Port\-Measurements}}
+\index{tps\-\_\-\-Get\-Port\-Measurements@{tps\-\_\-\-Get\-Port\-Measurements}!TPS23861.c@{T\-P\-S23861.\-c}}
+\subsubsection[{tps\-\_\-\-Get\-Port\-Measurements}]{\setlength{\rightskip}{0pt plus 5cm}uint8\-\_\-t tps\-\_\-\-Get\-Port\-Measurements (
+\begin{DoxyParamCaption}
+\item[{uint8\-\_\-t}]{system\-Port\-Num, }
+\item[{uint16\-\_\-t $\ast$}]{voltage, }
+\item[{uint16\-\_\-t $\ast$}]{current}
+\end{DoxyParamCaption}
+)}}\label{_t_p_s23861_8c_aea33e295bb735809ad2edf78ed8b2543}
+
+
+Returns the voltage and current of the registered system port. 
+
+This function will return the voltage and current on the registered port on a specific T\-P\-S23861.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em system\-Port\-Num} & Port Number Value returned from the port registration function, \hyperlink{_t_p_s23861_8c_a915cc811128c70c54ff0ac048cfbc6e7}{tps\-\_\-\-Register\-Port()} \\
+\hline
+\mbox{\tt out}  & {\em $\ast$voltage} & The address of a uint16\-\_\-t variable where the voltage of the indicated port will be placed. The voltage will be a scaled integer with an L\-S\-B of 3.\-662 m\-Volts \\
+\hline
+\mbox{\tt out}  & {\em $\ast$current} & The address of a uint16\-\_\-t variable where the current of the indicated port will be placed. The current will be a scaled integer with an L\-S\-B that is dependent on the current-\/sense resistor. For a 250 m\-Ohm resistor, the L\-S\-B will be 62.\-260 micro-\/\-Amps. For a 255 m\-Ohm resistor, the L\-S\-B will be 61.\-039 micro-\/\-Amps.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+uint8\-\_\-t (I2\-C\-\_\-\-S\-U\-C\-C\-E\-S\-S\-F\-U\-L or I2\-C error status)
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{See Also}
+\hyperlink{_t_p_s23861_8h_a7d2c54f06da3e8ef3f7367c37ad8d728}{tps\-\_\-\-Get\-Device\-Input\-Voltage} () 
+\end{DoxySeeAlso}
+\hypertarget{_t_p_s23861_8c_a0ce2a3f1794d186acd9e8bc0269d4cc6}{\index{T\-P\-S23861.\-c@{T\-P\-S23861.\-c}!tps\-\_\-\-Get\-Port\-Power\-Enable\-Status@{tps\-\_\-\-Get\-Port\-Power\-Enable\-Status}}
+\index{tps\-\_\-\-Get\-Port\-Power\-Enable\-Status@{tps\-\_\-\-Get\-Port\-Power\-Enable\-Status}!TPS23861.c@{T\-P\-S23861.\-c}}
+\subsubsection[{tps\-\_\-\-Get\-Port\-Power\-Enable\-Status}]{\setlength{\rightskip}{0pt plus 5cm}uint8\-\_\-t tps\-\_\-\-Get\-Port\-Power\-Enable\-Status (
+\begin{DoxyParamCaption}
+\item[{uint8\-\_\-t}]{system\-Port\-Num}
+\end{DoxyParamCaption}
+)}}\label{_t_p_s23861_8c_a0ce2a3f1794d186acd9e8bc0269d4cc6}
+
+
+Returns the power enable status of one of the 4 ports in the T\-P\-S23861. 
+
+This function will return the power enable state of the indicated port.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em system\-Port\-Num} & Port Number Value returned from the port registration function, \hyperlink{_t_p_s23861_8c_a915cc811128c70c54ff0ac048cfbc6e7}{tps\-\_\-\-Register\-Port()}\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+uint8\-\_\-t T\-P\-S\-\_\-\-O\-N if Power Enabled T\-P\-S\-\_\-\-O\-F\-F is Power is N\-O\-T enabled, T\-P\-S\-\_\-\-E\-R\-R\-\_\-\-I2\-C\-\_\-\-E\-R\-R\-O\-R on I2\-C error status
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{See Also}
+\hyperlink{_t_p_s23861_8h_afa44d49c28bdd6601086860d929a07f3}{tps\-\_\-\-Get\-Device\-Power\-Enable\-Status} () 
+
+\hyperlink{_t_p_s23861_8h_a78b13097d2a8f69f9a64f6fb26740b5e}{tps\-\_\-\-Get\-Device\-Power\-Good\-Status} () 
+
+\hyperlink{_t_p_s23861_8h_aa31f15e881550f24b879985596083fa6}{tps\-\_\-\-Get\-Port\-Power\-Good\-Status} () 
+
+\hyperlink{_t_p_s23861_8h_a20e5c761a1db4451c4a506791f684a9a}{tps\-\_\-\-Get\-Device\-Power\-Status} () 
+
+\hyperlink{_t_p_s23861_8h_a518a15e801cfaf1abeebe609a324cb04}{tps\-\_\-\-Get\-System\-Port\-Number} () 
+\end{DoxySeeAlso}
+\hypertarget{_t_p_s23861_8c_aa31f15e881550f24b879985596083fa6}{\index{T\-P\-S23861.\-c@{T\-P\-S23861.\-c}!tps\-\_\-\-Get\-Port\-Power\-Good\-Status@{tps\-\_\-\-Get\-Port\-Power\-Good\-Status}}
+\index{tps\-\_\-\-Get\-Port\-Power\-Good\-Status@{tps\-\_\-\-Get\-Port\-Power\-Good\-Status}!TPS23861.c@{T\-P\-S23861.\-c}}
+\subsubsection[{tps\-\_\-\-Get\-Port\-Power\-Good\-Status}]{\setlength{\rightskip}{0pt plus 5cm}uint8\-\_\-t tps\-\_\-\-Get\-Port\-Power\-Good\-Status (
+\begin{DoxyParamCaption}
+\item[{uint8\-\_\-t}]{system\-Port\-Num}
+\end{DoxyParamCaption}
+)}}\label{_t_p_s23861_8c_aa31f15e881550f24b879985596083fa6}
+
+
+Returns the power good status of one of the 4 ports in the T\-P\-S23861. 
+
+This function will return the power good state of the indicated port.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em system\-Port\-Num} & Port Number Value returned from the port registration function, \hyperlink{_t_p_s23861_8c_a915cc811128c70c54ff0ac048cfbc6e7}{tps\-\_\-\-Register\-Port()}\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+uint8\-\_\-t T\-P\-S\-\_\-\-O\-N if Power Good T\-P\-S\-\_\-\-O\-F\-F is Power is N\-O\-T good, T\-P\-S\-\_\-\-E\-R\-R\-\_\-\-I2\-C\-\_\-\-E\-R\-R\-O\-R on I2\-C error status
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{See Also}
+\hyperlink{_t_p_s23861_8h_a78b13097d2a8f69f9a64f6fb26740b5e}{tps\-\_\-\-Get\-Device\-Power\-Good\-Status} () 
+
+\hyperlink{_t_p_s23861_8h_afa44d49c28bdd6601086860d929a07f3}{tps\-\_\-\-Get\-Device\-Power\-Enable\-Status} () 
+
+\hyperlink{_t_p_s23861_8h_a0ce2a3f1794d186acd9e8bc0269d4cc6}{tps\-\_\-\-Get\-Port\-Power\-Enable\-Status} () 
+
+\hyperlink{_t_p_s23861_8h_a20e5c761a1db4451c4a506791f684a9a}{tps\-\_\-\-Get\-Device\-Power\-Status} () 
+
+\hyperlink{_t_p_s23861_8h_a518a15e801cfaf1abeebe609a324cb04}{tps\-\_\-\-Get\-System\-Port\-Number} () 
+\end{DoxySeeAlso}
+\hypertarget{_t_p_s23861_8c_af18db7c9a50d6916fa895f8eb86642aa}{\index{T\-P\-S23861.\-c@{T\-P\-S23861.\-c}!tps\-\_\-\-Get\-System\-Port\-Number@{tps\-\_\-\-Get\-System\-Port\-Number}}
+\index{tps\-\_\-\-Get\-System\-Port\-Number@{tps\-\_\-\-Get\-System\-Port\-Number}!TPS23861.c@{T\-P\-S23861.\-c}}
+\subsubsection[{tps\-\_\-\-Get\-System\-Port\-Number}]{\setlength{\rightskip}{0pt plus 5cm}uint8\-\_\-t tps\-\_\-\-Get\-System\-Port\-Number (
+\begin{DoxyParamCaption}
+\item[{uint16\-\_\-t}]{device\-\_\-i2c\-\_\-address, }
+\item[{{\bf T\-P\-S238x\-\_\-\-Port\-Num\-\_\-t}}]{device\-Port\-Num}
+\end{DoxyParamCaption}
+)}}\label{_t_p_s23861_8c_af18db7c9a50d6916fa895f8eb86642aa}
+
+
+Returns the handle already allocated for the given T\-P\-S23861 and device port number. 
+
+This function can be used if the System Port Number returned in the \hyperlink{_t_p_s23861_8c_a915cc811128c70c54ff0ac048cfbc6e7}{tps\-\_\-\-Register\-Port()} function is lost or not maintained.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em device\-\_\-i2c\-\_\-address} & 7 bit I2\-C address of the T\-P\-S238x part being controlled (do not included R/\-W bit) \\
+\hline
+\mbox{\tt in}  & {\em device\-Port\-Num} & T\-P\-S238\-X\-\_\-\-P\-O\-R\-T\-\_\-1 -\/ T\-P\-S238\-X\-\_\-\-P\-O\-R\-T\-\_\-4, The port number O\-N T\-H\-E S\-P\-E\-C\-I\-F\-I\-C T\-P\-S23861 device\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+uint8\-\_\-t system\-Port\-Num Unique handle that will be used to refer to this device and port number in future function calls. 
+
+T\-P\-S\-\_\-\-P\-O\-R\-T\-\_\-\-N\-O\-T\-\_\-\-R\-E\-G\-I\-S\-T\-E\-R\-E\-D\-\_\-\-V\-A\-L\-U\-E This combination of device and port number was not registered
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{See Also}
+\hyperlink{_t_p_s23861_8h_a915cc811128c70c54ff0ac048cfbc6e7}{tps\-\_\-\-Register\-Port} () 
+\end{DoxySeeAlso}
+\hypertarget{_t_p_s23861_8c_a915cc811128c70c54ff0ac048cfbc6e7}{\index{T\-P\-S23861.\-c@{T\-P\-S23861.\-c}!tps\-\_\-\-Register\-Port@{tps\-\_\-\-Register\-Port}}
+\index{tps\-\_\-\-Register\-Port@{tps\-\_\-\-Register\-Port}!TPS23861.c@{T\-P\-S23861.\-c}}
+\subsubsection[{tps\-\_\-\-Register\-Port}]{\setlength{\rightskip}{0pt plus 5cm}uint8\-\_\-t tps\-\_\-\-Register\-Port (
+\begin{DoxyParamCaption}
+\item[{uint16\-\_\-t}]{device\-\_\-i2c\-\_\-address, }
+\item[{{\bf T\-P\-S238x\-\_\-\-Port\-Num\-\_\-t}}]{device\-Port\-Num}
+\end{DoxyParamCaption}
+)}}\label{_t_p_s23861_8c_a915cc811128c70c54ff0ac048cfbc6e7}
+
+
+Allocates a system level port number for a given T\-P\-S23861 device and it's specific port number. 
+
+It is easier for users to maintain a system with 4 T\-P\-S23861 with 4 ports each, when each port has a unique number. By registering each of the 16 individual ports (in this example), the user can work with ports 0-\/15, rather than have to maintain device 1 -\/ port 0, through device 4 -\/ port 3.
+
+This function must be called prior to any function call that has a system\-Port\-Num as an input. The current logic has room for T\-P\-S\-\_\-\-M\-A\-X\-\_\-\-S\-Y\-S\-T\-E\-M\-\_\-\-P\-O\-R\-T\-S (64) ports. The T\-P\-S\-\_\-\-Port\-Map\mbox{[}\mbox{]} variable can be modified to support more ports (or save some memory by supporting fewer).
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em device\-\_\-i2c\-\_\-address} & 7 bit I2\-C address of the T\-P\-S238x part being controlled (do not included R/\-W bit) \\
+\hline
+\mbox{\tt in}  & {\em device\-Port\-Num} & T\-P\-S238\-X\-\_\-\-P\-O\-R\-T\-\_\-1 -\/ T\-P\-S238\-X\-\_\-\-P\-O\-R\-T\-\_\-4, The port number O\-N T\-H\-E S\-P\-E\-C\-I\-F\-I\-C T\-P\-S23861 device\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+uint8\-\_\-t system\-Port\-Num Unique handle that will be used to refer to this device and port number in future function calls. 
+
+T\-P\-S\-\_\-\-E\-R\-R\-\_\-\-N\-O\-\_\-\-P\-O\-R\-T\-\_\-\-A\-V\-A\-I\-L\-A\-B\-L\-E No port number available, all are in use
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{See Also}
+\hyperlink{_t_p_s23861_8h_a7bbd5303c28c5707897b511954b1ecea}{tps\-\_\-\-Release\-Port} () 
+\end{DoxySeeAlso}
+\hypertarget{_t_p_s23861_8c_a7bbd5303c28c5707897b511954b1ecea}{\index{T\-P\-S23861.\-c@{T\-P\-S23861.\-c}!tps\-\_\-\-Release\-Port@{tps\-\_\-\-Release\-Port}}
+\index{tps\-\_\-\-Release\-Port@{tps\-\_\-\-Release\-Port}!TPS23861.c@{T\-P\-S23861.\-c}}
+\subsubsection[{tps\-\_\-\-Release\-Port}]{\setlength{\rightskip}{0pt plus 5cm}uint8\-\_\-t tps\-\_\-\-Release\-Port (
+\begin{DoxyParamCaption}
+\item[{uint8\-\_\-t}]{system\-Port\-Num}
+\end{DoxyParamCaption}
+)}}\label{_t_p_s23861_8c_a7bbd5303c28c5707897b511954b1ecea}
+
+
+Releases a register system port number from the port mapping table. 
+
+This function would undo the registration performed in \hyperlink{_t_p_s23861_8c_a915cc811128c70c54ff0ac048cfbc6e7}{tps\-\_\-\-Register\-Port()}.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em system\-Port\-Num} & Port Number Value returned from the port registration function, \hyperlink{_t_p_s23861_8c_a915cc811128c70c54ff0ac048cfbc6e7}{tps\-\_\-\-Register\-Port()}\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+uint8\-\_\-t T\-P\-S\-\_\-\-S\-U\-C\-C\-E\-S\-S\-F\-U\-L or T\-P\-S\-\_\-\-E\-R\-R\-\_\-\-P\-O\-R\-T\-\_\-\-N\-O\-T\-\_\-\-I\-N\-\_\-\-U\-S\-E
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{See Also}
+\hyperlink{_t_p_s23861_8h_a915cc811128c70c54ff0ac048cfbc6e7}{tps\-\_\-\-Register\-Port} () 
+\end{DoxySeeAlso}
+\hypertarget{_t_p_s23861_8c_ac44e3919dbb03d11e802893bc82c78f5}{\index{T\-P\-S23861.\-c@{T\-P\-S23861.\-c}!tps\-\_\-\-Reset\-Device\-Port@{tps\-\_\-\-Reset\-Device\-Port}}
+\index{tps\-\_\-\-Reset\-Device\-Port@{tps\-\_\-\-Reset\-Device\-Port}!TPS23861.c@{T\-P\-S23861.\-c}}
+\subsubsection[{tps\-\_\-\-Reset\-Device\-Port}]{\setlength{\rightskip}{0pt plus 5cm}uint8\-\_\-t tps\-\_\-\-Reset\-Device\-Port (
+\begin{DoxyParamCaption}
+\item[{uint8\-\_\-t}]{system\-Port\-Num}
+\end{DoxyParamCaption}
+)}}\label{_t_p_s23861_8c_ac44e3919dbb03d11e802893bc82c78f5}
+
+
+Forces a reset of the indicated device ports on the indicated T\-P\-S23861 device. 
+
+This function will reset the indicated device ports on the identified T\-P\-S23861.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em system\-Port\-Num} & Port Number Value returned from the port registration function, \hyperlink{_t_p_s23861_8c_a915cc811128c70c54ff0ac048cfbc6e7}{tps\-\_\-\-Register\-Port()}\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+uint8\-\_\-t (I2\-C\-\_\-\-S\-U\-C\-C\-E\-S\-S\-F\-U\-L or I2\-C error status)
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{See Also}
+\hyperlink{_t_p_s23861_8h_a67d54410671804cb8499e86fd091aac7}{tps\-\_\-\-Reset\-Port} () 
+\end{DoxySeeAlso}
+\hypertarget{_t_p_s23861_8c_a4e9862e87cf8e42b295a7b6b596c77c4}{\index{T\-P\-S23861.\-c@{T\-P\-S23861.\-c}!tps\-\_\-\-Reset\-Interrupt\-Pin@{tps\-\_\-\-Reset\-Interrupt\-Pin}}
+\index{tps\-\_\-\-Reset\-Interrupt\-Pin@{tps\-\_\-\-Reset\-Interrupt\-Pin}!TPS23861.c@{T\-P\-S23861.\-c}}
+\subsubsection[{tps\-\_\-\-Reset\-Interrupt\-Pin}]{\setlength{\rightskip}{0pt plus 5cm}uint8\-\_\-t tps\-\_\-\-Reset\-Interrupt\-Pin (
+\begin{DoxyParamCaption}
+\item[{uint8\-\_\-t}]{device\-\_\-i2c\-\_\-address}
+\end{DoxyParamCaption}
+)}}\label{_t_p_s23861_8c_a4e9862e87cf8e42b295a7b6b596c77c4}
+\hypertarget{_t_p_s23861_8c_a67d54410671804cb8499e86fd091aac7}{\index{T\-P\-S23861.\-c@{T\-P\-S23861.\-c}!tps\-\_\-\-Reset\-Port@{tps\-\_\-\-Reset\-Port}}
+\index{tps\-\_\-\-Reset\-Port@{tps\-\_\-\-Reset\-Port}!TPS23861.c@{T\-P\-S23861.\-c}}
+\subsubsection[{tps\-\_\-\-Reset\-Port}]{\setlength{\rightskip}{0pt plus 5cm}uint8\-\_\-t tps\-\_\-\-Reset\-Port (
+\begin{DoxyParamCaption}
+\item[{uint8\-\_\-t}]{system\-Port\-Num}
+\end{DoxyParamCaption}
+)}}\label{_t_p_s23861_8c_a67d54410671804cb8499e86fd091aac7}
+
+
+Forces a reset of the single specified system port number identifying a single port on a specific registered T\-P\-S23861. 
+
+This function will reset the single specified port registered with the system for a given T\-P\-S23861.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em system\-Port\-Num} & Port Number Value returned from the port registration function, \hyperlink{_t_p_s23861_8c_a915cc811128c70c54ff0ac048cfbc6e7}{tps\-\_\-\-Register\-Port()}\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+uint8\-\_\-t (I2\-C\-\_\-\-S\-U\-C\-C\-E\-S\-S\-F\-U\-L or I2\-C error status)
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{See Also}
+\hyperlink{_t_p_s23861_8h_ac44e3919dbb03d11e802893bc82c78f5}{tps\-\_\-\-Reset\-Device\-Port} () 
+\end{DoxySeeAlso}
+\hypertarget{_t_p_s23861_8c_a1b3575f034d444c5f7b74af8f78b825e}{\index{T\-P\-S23861.\-c@{T\-P\-S23861.\-c}!tps\-\_\-\-Restart\-Device\-Classification@{tps\-\_\-\-Restart\-Device\-Classification}}
+\index{tps\-\_\-\-Restart\-Device\-Classification@{tps\-\_\-\-Restart\-Device\-Classification}!TPS23861.c@{T\-P\-S23861.\-c}}
+\subsubsection[{tps\-\_\-\-Restart\-Device\-Classification}]{\setlength{\rightskip}{0pt plus 5cm}uint8\-\_\-t tps\-\_\-\-Restart\-Device\-Classification (
+\begin{DoxyParamCaption}
+\item[{uint8\-\_\-t}]{device\-\_\-i2c\-\_\-address, }
+\item[{{\bf T\-P\-S238x\-\_\-\-Ports\-\_\-t}}]{class\-Ports}
+\end{DoxyParamCaption}
+)}}\label{_t_p_s23861_8c_a1b3575f034d444c5f7b74af8f78b825e}
+
+
+Forces a restart of the classification process on the indicated ports. 
+
+This function will restart the classification process on the indicated ports on the T\-P\-S23861.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em device\-\_\-i2c\-\_\-address} & 7 bit I2\-C address of the T\-P\-S238x part being controlled (do not included R/\-W bit) \\
+\hline
+\mbox{\tt in}  & {\em class\-Ports} & A T\-P\-S238x\-\_\-\-Ports\-\_\-t variable that identifies the ports that will be restarted for classification with one bit for each port restarted.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+uint8\-\_\-t (I2\-C\-\_\-\-S\-U\-C\-C\-E\-S\-S\-F\-U\-L or I2\-C error status)
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{See Also}
+\hyperlink{_t_p_s23861_8h_abee472a6cce083fa8990b8ac57b8d58f}{tps\-\_\-\-Restart\-Port\-Classification} () 
+
+\hyperlink{_t_p_s23861_8h_ab2de2e5671acce886d77f6d1f8a9f0fe}{tps\-\_\-\-Restart\-Device\-Detection} () 
+
+\hyperlink{_t_p_s23861_8h_adeb57cf85cac47965f594d9e0faa4fae}{tps\-\_\-\-Restart\-Device\-Detect\-Class} () 
+\end{DoxySeeAlso}
+\hypertarget{_t_p_s23861_8c_adeb57cf85cac47965f594d9e0faa4fae}{\index{T\-P\-S23861.\-c@{T\-P\-S23861.\-c}!tps\-\_\-\-Restart\-Device\-Detect\-Class@{tps\-\_\-\-Restart\-Device\-Detect\-Class}}
+\index{tps\-\_\-\-Restart\-Device\-Detect\-Class@{tps\-\_\-\-Restart\-Device\-Detect\-Class}!TPS23861.c@{T\-P\-S23861.\-c}}
+\subsubsection[{tps\-\_\-\-Restart\-Device\-Detect\-Class}]{\setlength{\rightskip}{0pt plus 5cm}uint8\-\_\-t tps\-\_\-\-Restart\-Device\-Detect\-Class (
+\begin{DoxyParamCaption}
+\item[{uint8\-\_\-t}]{device\-\_\-i2c\-\_\-address, }
+\item[{{\bf T\-P\-S238x\-\_\-\-Ports\-\_\-t}}]{detect\-Ports, }
+\item[{{\bf T\-P\-S238x\-\_\-\-Ports\-\_\-t}}]{class\-Ports}
+\end{DoxyParamCaption}
+)}}\label{_t_p_s23861_8c_adeb57cf85cac47965f594d9e0faa4fae}
+
+
+Forces a restart both the classification and detection processes on the indicated ports. 
+
+This function will restart both the classification and detection process on the indicated ports on the T\-P\-S23861.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em device\-\_\-i2c\-\_\-address} & 7 bit I2\-C address of the T\-P\-S238x part being controlled (do not included R/\-W bit) \\
+\hline
+\mbox{\tt in}  & {\em detect\-Ports} & A T\-P\-S238x\-\_\-\-Ports\-\_\-t variable that identifies the ports that will be restarted for detection with one bit for each port restarted. \\
+\hline
+\mbox{\tt in}  & {\em class\-Ports} & A T\-P\-S238x\-\_\-\-Ports\-\_\-t variable that identifies the ports that will be restarted for classification with one bit for each port restarted.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+uint8\-\_\-t (I2\-C\-\_\-\-S\-U\-C\-C\-E\-S\-S\-F\-U\-L or I2\-C error status)
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{See Also}
+\hyperlink{_t_p_s23861_8h_a1b3575f034d444c5f7b74af8f78b825e}{tps\-\_\-\-Restart\-Device\-Classification} () 
+
+\hyperlink{_t_p_s23861_8h_ab2de2e5671acce886d77f6d1f8a9f0fe}{tps\-\_\-\-Restart\-Device\-Detection} () 
+\end{DoxySeeAlso}
+\hypertarget{_t_p_s23861_8c_ab2de2e5671acce886d77f6d1f8a9f0fe}{\index{T\-P\-S23861.\-c@{T\-P\-S23861.\-c}!tps\-\_\-\-Restart\-Device\-Detection@{tps\-\_\-\-Restart\-Device\-Detection}}
+\index{tps\-\_\-\-Restart\-Device\-Detection@{tps\-\_\-\-Restart\-Device\-Detection}!TPS23861.c@{T\-P\-S23861.\-c}}
+\subsubsection[{tps\-\_\-\-Restart\-Device\-Detection}]{\setlength{\rightskip}{0pt plus 5cm}uint8\-\_\-t tps\-\_\-\-Restart\-Device\-Detection (
+\begin{DoxyParamCaption}
+\item[{uint8\-\_\-t}]{device\-\_\-i2c\-\_\-address, }
+\item[{{\bf T\-P\-S238x\-\_\-\-Ports\-\_\-t}}]{detect\-Ports}
+\end{DoxyParamCaption}
+)}}\label{_t_p_s23861_8c_ab2de2e5671acce886d77f6d1f8a9f0fe}
+
+
+Forces a restart of the detection process on the indicated ports on a given T\-P\-S23861 in the system. 
+
+This function will restart the detection process on the indicated ports on the specified T\-P\-S23861.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em device\-\_\-i2c\-\_\-address} & 7 bit I2\-C address of the T\-P\-S238x part being controlled (do not included R/\-W bit) \\
+\hline
+\mbox{\tt in}  & {\em detect\-Ports} & A T\-P\-S238x\-\_\-\-Ports\-\_\-t variable that identifies the ports that will be restarted for detection with one bit for each port restarted.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+uint8\-\_\-t (I2\-C\-\_\-\-S\-U\-C\-C\-E\-S\-S\-F\-U\-L or I2\-C error status)
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{See Also}
+\hyperlink{_t_p_s23861_8h_a840d271905d539b9c28fb4bbcc10313e}{tps\-\_\-\-Restart\-Port\-Detection} () 
+
+\hyperlink{_t_p_s23861_8h_a1b3575f034d444c5f7b74af8f78b825e}{tps\-\_\-\-Restart\-Device\-Classification} () 
+
+\hyperlink{_t_p_s23861_8h_adeb57cf85cac47965f594d9e0faa4fae}{tps\-\_\-\-Restart\-Device\-Detect\-Class} () 
+
+\hyperlink{_t_p_s23861_8h_a518a15e801cfaf1abeebe609a324cb04}{tps\-\_\-\-Get\-System\-Port\-Number} () 
+\end{DoxySeeAlso}
+\hypertarget{_t_p_s23861_8c_abee472a6cce083fa8990b8ac57b8d58f}{\index{T\-P\-S23861.\-c@{T\-P\-S23861.\-c}!tps\-\_\-\-Restart\-Port\-Classification@{tps\-\_\-\-Restart\-Port\-Classification}}
+\index{tps\-\_\-\-Restart\-Port\-Classification@{tps\-\_\-\-Restart\-Port\-Classification}!TPS23861.c@{T\-P\-S23861.\-c}}
+\subsubsection[{tps\-\_\-\-Restart\-Port\-Classification}]{\setlength{\rightskip}{0pt plus 5cm}uint8\-\_\-t tps\-\_\-\-Restart\-Port\-Classification (
+\begin{DoxyParamCaption}
+\item[{uint8\-\_\-t}]{system\-Port\-Num}
+\end{DoxyParamCaption}
+)}}\label{_t_p_s23861_8c_abee472a6cce083fa8990b8ac57b8d58f}
+
+
+Forces a restart of the classification process on the single indicated port. 
+
+This function will restart the classification process on the specified port on the T\-P\-S23861.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em system\-Port\-Num} & Port Number Value returned from the port registration function, \hyperlink{_t_p_s23861_8c_a915cc811128c70c54ff0ac048cfbc6e7}{tps\-\_\-\-Register\-Port()}\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+uint8\-\_\-t (I2\-C\-\_\-\-S\-U\-C\-C\-E\-S\-S\-F\-U\-L or I2\-C error status)
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{See Also}
+\hyperlink{_t_p_s23861_8h_a1b3575f034d444c5f7b74af8f78b825e}{tps\-\_\-\-Restart\-Device\-Classification} () 
+
+\hyperlink{_t_p_s23861_8h_a840d271905d539b9c28fb4bbcc10313e}{tps\-\_\-\-Restart\-Port\-Detection} () 
+\end{DoxySeeAlso}
+\hypertarget{_t_p_s23861_8c_a840d271905d539b9c28fb4bbcc10313e}{\index{T\-P\-S23861.\-c@{T\-P\-S23861.\-c}!tps\-\_\-\-Restart\-Port\-Detection@{tps\-\_\-\-Restart\-Port\-Detection}}
+\index{tps\-\_\-\-Restart\-Port\-Detection@{tps\-\_\-\-Restart\-Port\-Detection}!TPS23861.c@{T\-P\-S23861.\-c}}
+\subsubsection[{tps\-\_\-\-Restart\-Port\-Detection}]{\setlength{\rightskip}{0pt plus 5cm}uint8\-\_\-t tps\-\_\-\-Restart\-Port\-Detection (
+\begin{DoxyParamCaption}
+\item[{uint8\-\_\-t}]{system\-Port\-Num}
+\end{DoxyParamCaption}
+)}}\label{_t_p_s23861_8c_a840d271905d539b9c28fb4bbcc10313e}
+
+
+Forces a restart of the detection process on the indicated device ports for a given T\-P\-S23861. 
+
+This function will restart the detection process on the indicated device ports on the given T\-P\-S23861.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em system\-Port\-Num} & Port Number Value returned from the port registration function, \hyperlink{_t_p_s23861_8c_a915cc811128c70c54ff0ac048cfbc6e7}{tps\-\_\-\-Register\-Port()}\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+uint8\-\_\-t (I2\-C\-\_\-\-S\-U\-C\-C\-E\-S\-S\-F\-U\-L or I2\-C error status)
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{See Also}
+\hyperlink{_t_p_s23861_8h_abee472a6cce083fa8990b8ac57b8d58f}{tps\-\_\-\-Restart\-Port\-Classification} () 
+
+\hyperlink{_t_p_s23861_8h_ab2de2e5671acce886d77f6d1f8a9f0fe}{tps\-\_\-\-Restart\-Device\-Detection} () 
+
+\hyperlink{_t_p_s23861_8h_ab2de2e5671acce886d77f6d1f8a9f0fe}{tps\-\_\-\-Restart\-Device\-Detection} () 
+\end{DoxySeeAlso}
+\hypertarget{_t_p_s23861_8c_a6e689c5d9b77810865bd4b80657012a5}{\index{T\-P\-S23861.\-c@{T\-P\-S23861.\-c}!tps\-\_\-\-Set\-Device\-Detect\-Class\-Enable@{tps\-\_\-\-Set\-Device\-Detect\-Class\-Enable}}
+\index{tps\-\_\-\-Set\-Device\-Detect\-Class\-Enable@{tps\-\_\-\-Set\-Device\-Detect\-Class\-Enable}!TPS23861.c@{T\-P\-S23861.\-c}}
+\subsubsection[{tps\-\_\-\-Set\-Device\-Detect\-Class\-Enable}]{\setlength{\rightskip}{0pt plus 5cm}uint8\-\_\-t tps\-\_\-\-Set\-Device\-Detect\-Class\-Enable (
+\begin{DoxyParamCaption}
+\item[{uint8\-\_\-t}]{device\-\_\-i2c\-\_\-address, }
+\item[{{\bf T\-P\-S238x\-\_\-\-Ports\-\_\-t}}]{detect\-Ports, }
+\item[{{\bf T\-P\-S238x\-\_\-\-Ports\-\_\-t}}]{class\-Ports}
+\end{DoxyParamCaption}
+)}}\label{_t_p_s23861_8c_a6e689c5d9b77810865bd4b80657012a5}
+
+
+Configures the device ports that are enabled for detection and classification operation for a specified T\-P\-S23861. 
+
+This function will set the detection and classification operations for all of the ports on a specific T\-P\-S23861.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em device\-\_\-i2c\-\_\-address} & 7 bit I2\-C address of the T\-P\-S238x part being controlled (do not included R/\-W bit) \\
+\hline
+\mbox{\tt in}  & {\em detect\-Ports} & A T\-P\-S238x\-\_\-\-Ports\-\_\-t variable that identifies the ports that will be enabled for detection with one bit for each port in detection enabled state. \\
+\hline
+\mbox{\tt in}  & {\em class\-Ports} & A T\-P\-S238x\-\_\-\-Ports\-\_\-t variable that identifies the ports that will be enabled for classification with one bit for each port in classification enabled state.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+uint8\-\_\-t (I2\-C\-\_\-\-S\-U\-C\-C\-E\-S\-S\-F\-U\-L or I2\-C error status)
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{See Also}
+\hyperlink{_t_p_s23861_8h_a60e64452aad48caf62d2e2e590471666}{tps\-\_\-\-Set\-Port\-Detect\-Class\-Enable} () 
+
+\hyperlink{_t_p_s23861_8h_af42c2ca5f1558cdbf2473e3a3c0319ea}{tps\-\_\-\-Get\-Device\-Classification\-Enable} () 
+
+\hyperlink{_t_p_s23861_8h_ae0904a0acd41277ef053d8d7777958a0}{tps\-\_\-\-Get\-Device\-Detection\-Enable} () 
+
+\hyperlink{_t_p_s23861_8h_afe44db79bfa47f26ff169c1387e843d7}{tps\-\_\-\-Get\-Device\-Detect\-Class\-Enable} () 
+\end{DoxySeeAlso}
+\hypertarget{_t_p_s23861_8c_a8b1565bcc24973f92353ce165332f1c2}{\index{T\-P\-S23861.\-c@{T\-P\-S23861.\-c}!tps\-\_\-\-Set\-Device\-Disconnect\-Enable@{tps\-\_\-\-Set\-Device\-Disconnect\-Enable}}
+\index{tps\-\_\-\-Set\-Device\-Disconnect\-Enable@{tps\-\_\-\-Set\-Device\-Disconnect\-Enable}!TPS23861.c@{T\-P\-S23861.\-c}}
+\subsubsection[{tps\-\_\-\-Set\-Device\-Disconnect\-Enable}]{\setlength{\rightskip}{0pt plus 5cm}uint8\-\_\-t tps\-\_\-\-Set\-Device\-Disconnect\-Enable (
+\begin{DoxyParamCaption}
+\item[{uint8\-\_\-t}]{device\-\_\-i2c\-\_\-address, }
+\item[{{\bf T\-P\-S238x\-\_\-\-Ports\-\_\-t}}]{disconnect\-Ports, }
+\item[{{\bf T\-P\-S238x\-\_\-\-Disconnect\-\_\-\-Threshold\-\_\-t}}]{disconnect\-Threshold1, }
+\item[{{\bf T\-P\-S238x\-\_\-\-Disconnect\-\_\-\-Threshold\-\_\-t}}]{disconnect\-Threshold2, }
+\item[{{\bf T\-P\-S238x\-\_\-\-Disconnect\-\_\-\-Threshold\-\_\-t}}]{disconnect\-Threshold3, }
+\item[{{\bf T\-P\-S238x\-\_\-\-Disconnect\-\_\-\-Threshold\-\_\-t}}]{disconnect\-Threshold4}
+\end{DoxyParamCaption}
+)}}\label{_t_p_s23861_8c_a8b1565bcc24973f92353ce165332f1c2}
+
+
+Configures the ports to configure those that are enabled for 2 pair disconnection operation. 
+
+This function will configure all four ports to identify which ones support disconnection operations. If the user wishes to configure a single port, the \hyperlink{_t_p_s23861_8c_a7d110496e25b21006c33874d7930528d}{tps\-\_\-\-Set\-Port\-Disconnect\-Enable()} is used.
+
+Disconnect operation consists of measuring the port current at the S\-E\-Nn pin, starting the T\-D\-I\-S timer when the current drops below the threshold, and turning the port off if the timer times out.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em device\-\_\-i2c\-\_\-address} & 7 bit I2\-C address of the T\-P\-S238x part being controlled (do not included R/\-W bit) \\
+\hline
+\mbox{\tt in}  & {\em disconnect\-Ports} & A T\-P\-S238x\-\_\-\-Ports\-\_\-t variable that contains the ports that will be enabled for 2 pair disconnection with one bit for each port. \\
+\hline
+\mbox{\tt in}  & {\em disconnect\-Threshold1} & Disconnection threshold for port 1 \mbox{[}D\-C\-T\-H\-\_\-7\-\_\-5\-\_\-\-M\-I\-L\-L\-I\-A\-M\-P, D\-C\-T\-H\-\_\-15\-\_\-\-M\-I\-L\-L\-I\-A\-M\-P, D\-C\-T\-H\-\_\-30\-\_\-\-M\-I\-L\-L\-I\-A\-M\-P or D\-C\-T\-H\-\_\-50\-\_\-\-M\-I\-L\-L\-I\-A\-M\-P\mbox{]} \\
+\hline
+\mbox{\tt in}  & {\em disconnect\-Threshold2} & Disconnection threshold for port 2 \mbox{[}D\-C\-T\-H\-\_\-7\-\_\-5\-\_\-\-M\-I\-L\-L\-I\-A\-M\-P, D\-C\-T\-H\-\_\-15\-\_\-\-M\-I\-L\-L\-I\-A\-M\-P, D\-C\-T\-H\-\_\-30\-\_\-\-M\-I\-L\-L\-I\-A\-M\-P or D\-C\-T\-H\-\_\-50\-\_\-\-M\-I\-L\-L\-I\-A\-M\-P\mbox{]} \\
+\hline
+\mbox{\tt in}  & {\em disconnect\-Threshold3} & Disconnection threshold for port 3 \mbox{[}D\-C\-T\-H\-\_\-7\-\_\-5\-\_\-\-M\-I\-L\-L\-I\-A\-M\-P, D\-C\-T\-H\-\_\-15\-\_\-\-M\-I\-L\-L\-I\-A\-M\-P, D\-C\-T\-H\-\_\-30\-\_\-\-M\-I\-L\-L\-I\-A\-M\-P or D\-C\-T\-H\-\_\-50\-\_\-\-M\-I\-L\-L\-I\-A\-M\-P\mbox{]} \\
+\hline
+\mbox{\tt in}  & {\em disconnect\-Threshold4} & Disconnection threshold for port 4 \mbox{[}D\-C\-T\-H\-\_\-7\-\_\-5\-\_\-\-M\-I\-L\-L\-I\-A\-M\-P, D\-C\-T\-H\-\_\-15\-\_\-\-M\-I\-L\-L\-I\-A\-M\-P, D\-C\-T\-H\-\_\-30\-\_\-\-M\-I\-L\-L\-I\-A\-M\-P or D\-C\-T\-H\-\_\-50\-\_\-\-M\-I\-L\-L\-I\-A\-M\-P\mbox{]}\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+uint8\-\_\-t (I2\-C\-\_\-\-S\-U\-C\-C\-E\-S\-S\-F\-U\-L or I2\-C error status)
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{See Also}
+\hyperlink{_t_p_s23861_8h_a7d110496e25b21006c33874d7930528d}{tps\-\_\-\-Set\-Port\-Disconnect\-Enable} () 
+
+\hyperlink{_t_p_s23861_8h_a2d95cddf597e82edb7c11390c2d18193}{tps\-\_\-\-Get\-Device\-Disconnect\-Enable} () 
+\end{DoxySeeAlso}
+\hypertarget{_t_p_s23861_8c_adc05242f0647636b8afc9e11217d2ef2}{\index{T\-P\-S23861.\-c@{T\-P\-S23861.\-c}!tps\-\_\-\-Set\-Device\-Interrupt\-Mask@{tps\-\_\-\-Set\-Device\-Interrupt\-Mask}}
+\index{tps\-\_\-\-Set\-Device\-Interrupt\-Mask@{tps\-\_\-\-Set\-Device\-Interrupt\-Mask}!TPS23861.c@{T\-P\-S23861.\-c}}
+\subsubsection[{tps\-\_\-\-Set\-Device\-Interrupt\-Mask}]{\setlength{\rightskip}{0pt plus 5cm}uint8\-\_\-t tps\-\_\-\-Set\-Device\-Interrupt\-Mask (
+\begin{DoxyParamCaption}
+\item[{uint8\-\_\-t}]{device\-\_\-i2c\-\_\-address, }
+\item[{{\bf T\-P\-S238\-X\-\_\-\-Interrupt\-\_\-\-Mask\-\_\-\-Register\-\_\-t}}]{int\-Mask, }
+\item[{uint8\-\_\-t}]{int\-Delay\-Time}
+\end{DoxyParamCaption}
+)}}\label{_t_p_s23861_8c_adc05242f0647636b8afc9e11217d2ef2}
+
+
+Set the interrupt mask register. 
+
+The function sets which T\-P\-S23861 events/faults are allowed to generate interrupts (unmasked).
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em device\-\_\-i2c\-\_\-address} & 7 bit I2\-C address of the T\-P\-S238x part being controlled (do not included R/\-W bit) \\
+\hline
+\mbox{\tt in}  & {\em int\-Mask} & \hyperlink{struct_t_p_s238_x___interrupt___mask___register__t}{T\-P\-S238\-X\-\_\-\-Interrupt\-\_\-\-Mask\-\_\-\-Register\-\_\-t} variable that contains the conditions that are allowed to generate interrupts P\-E\-M\-S\-K\-\_\-\-Power\-\_\-\-Enable\-\_\-\-Unmask P\-G\-M\-S\-K\-\_\-\-Power\-\_\-\-Good\-\_\-\-Unmask D\-I\-M\-S\-K\-\_\-\-Disconnect\-\_\-\-Unmask D\-E\-M\-S\-K\-\_\-\-Detection\-\_\-\-Cycle\-\_\-\-Unmask C\-L\-M\-S\-K\-\_\-\-Classificiation\-\_\-\-Cycle\-\_\-\-Unmask I\-F\-M\-S\-K\-\_\-\-I\-F\-A\-U\-L\-T\-\_\-\-Unmask I\-N\-M\-S\-K\-\_\-\-Inrush\-\_\-\-Fault\-\_\-\-Unmask S\-U\-M\-S\-K\-\_\-\-Supply\-\_\-\-Event\-\_\-\-Fault\-\_\-\-Unmask \\
+\hline
+\mbox{\tt in}  & {\em int\-Delay\-Time} & Amount of time, with a 10ms lsb, to defer non-\/critical interrupts. Allows for \char`\"{}grouping\char`\"{} of events\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+uint8\-\_\-t (I2\-C\-\_\-\-S\-U\-C\-C\-E\-S\-S\-F\-U\-L or I2\-C error status)
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{See Also}
+\hyperlink{_t_p_s23861_8h_a722b88304f003809bbfd4dabdd25f65e}{tps\-\_\-\-Get\-Device\-Interrupt\-Mask} () 
+
+\hyperlink{_t_p_s23861_8h_a7d92a16660cdfa091dc9c6983f201798}{tps\-\_\-\-Get\-Device\-Interrupt\-Status} () 
+
+\hyperlink{_t_p_s23861_8h_a9ed3aca04ebe30dc02a02b2f8fe6ebc0}{tps\-\_\-\-Get\-Device\-All\-Interrupt\-Events} () 
+\end{DoxySeeAlso}
+\hypertarget{_t_p_s23861_8c_a9ab370c355c225bd9c7f24b11a2cff47}{\index{T\-P\-S23861.\-c@{T\-P\-S23861.\-c}!tps\-\_\-\-Set\-Device\-Op\-Mode@{tps\-\_\-\-Set\-Device\-Op\-Mode}}
+\index{tps\-\_\-\-Set\-Device\-Op\-Mode@{tps\-\_\-\-Set\-Device\-Op\-Mode}!TPS23861.c@{T\-P\-S23861.\-c}}
+\subsubsection[{tps\-\_\-\-Set\-Device\-Op\-Mode}]{\setlength{\rightskip}{0pt plus 5cm}uint8\-\_\-t tps\-\_\-\-Set\-Device\-Op\-Mode (
+\begin{DoxyParamCaption}
+\item[{uint8\-\_\-t}]{device\-\_\-i2c\-\_\-address, }
+\item[{{\bf T\-P\-S238x\-\_\-\-Operating\-\_\-\-Modes\-\_\-t}}]{operating\-Mode1, }
+\item[{{\bf T\-P\-S238x\-\_\-\-Operating\-\_\-\-Modes\-\_\-t}}]{operating\-Mode2, }
+\item[{{\bf T\-P\-S238x\-\_\-\-Operating\-\_\-\-Modes\-\_\-t}}]{operating\-Mode3, }
+\item[{{\bf T\-P\-S238x\-\_\-\-Operating\-\_\-\-Modes\-\_\-t}}]{operating\-Mode4}
+\end{DoxyParamCaption}
+)}}\label{_t_p_s23861_8c_a9ab370c355c225bd9c7f24b11a2cff47}
+
+
+Set the Operating Mode for all of the ports on the T\-P\-S23861. 
+
+The T\-P\-S23861 has a number of operating modes that determine the characteristic capabilities of a given port. This function allows the user to configure the operating for all of the ports.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em device\-\_\-i2c\-\_\-address} & 7 bit I2\-C address of the T\-P\-S238x part being controlled (do not included R/\-W bit) \\
+\hline
+\mbox{\tt in}  & {\em operating\-Mode1} & Define the operating mode for port 1 \mbox{[}O\-P\-E\-R\-A\-T\-I\-N\-G\-\_\-\-M\-O\-D\-E\-\_\-\-O\-F\-F, O\-P\-E\-R\-A\-T\-I\-N\-G\-\_\-\-M\-O\-D\-E\-\_\-\-M\-A\-N\-U\-A\-L, O\-P\-E\-R\-A\-T\-I\-N\-G\-\_\-\-M\-O\-D\-E\-\_\-\-S\-E\-M\-I\-\_\-\-A\-U\-T\-O, or O\-P\-E\-R\-A\-T\-I\-N\-G\-\_\-\-M\-O\-D\-E\-\_\-\-A\-U\-T\-O\mbox{]} \\
+\hline
+\mbox{\tt in}  & {\em operating\-Mode2} & Define the operating mode for port 2 \mbox{[}O\-P\-E\-R\-A\-T\-I\-N\-G\-\_\-\-M\-O\-D\-E\-\_\-\-O\-F\-F, O\-P\-E\-R\-A\-T\-I\-N\-G\-\_\-\-M\-O\-D\-E\-\_\-\-M\-A\-N\-U\-A\-L, O\-P\-E\-R\-A\-T\-I\-N\-G\-\_\-\-M\-O\-D\-E\-\_\-\-S\-E\-M\-I\-\_\-\-A\-U\-T\-O, or O\-P\-E\-R\-A\-T\-I\-N\-G\-\_\-\-M\-O\-D\-E\-\_\-\-A\-U\-T\-O\mbox{]} \\
+\hline
+\mbox{\tt in}  & {\em operating\-Mode3} & Define the operating mode for port 3 \mbox{[}O\-P\-E\-R\-A\-T\-I\-N\-G\-\_\-\-M\-O\-D\-E\-\_\-\-O\-F\-F, O\-P\-E\-R\-A\-T\-I\-N\-G\-\_\-\-M\-O\-D\-E\-\_\-\-M\-A\-N\-U\-A\-L, O\-P\-E\-R\-A\-T\-I\-N\-G\-\_\-\-M\-O\-D\-E\-\_\-\-S\-E\-M\-I\-\_\-\-A\-U\-T\-O, or O\-P\-E\-R\-A\-T\-I\-N\-G\-\_\-\-M\-O\-D\-E\-\_\-\-A\-U\-T\-O\mbox{]} \\
+\hline
+\mbox{\tt in}  & {\em operating\-Mode4} & Define the operating mode for port 4 \mbox{[}O\-P\-E\-R\-A\-T\-I\-N\-G\-\_\-\-M\-O\-D\-E\-\_\-\-O\-F\-F, O\-P\-E\-R\-A\-T\-I\-N\-G\-\_\-\-M\-O\-D\-E\-\_\-\-M\-A\-N\-U\-A\-L, O\-P\-E\-R\-A\-T\-I\-N\-G\-\_\-\-M\-O\-D\-E\-\_\-\-S\-E\-M\-I\-\_\-\-A\-U\-T\-O, or O\-P\-E\-R\-A\-T\-I\-N\-G\-\_\-\-M\-O\-D\-E\-\_\-\-A\-U\-T\-O\mbox{]}\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+uint8\-\_\-t (I2\-C\-\_\-\-S\-U\-C\-C\-E\-S\-S\-F\-U\-L or I2\-C error status)
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{See Also}
+\hyperlink{_t_p_s23861_8h_a332fff774e594fb3c785e5fc02a7a6b5}{tps\-\_\-\-Set\-Port\-Op\-Mode} () 
+
+\hyperlink{_t_p_s23861_8h_a2b787818ef7e374af218c952d3ca8a08}{tps\-\_\-\-Config\-Port} () 
+\end{DoxySeeAlso}
+\hypertarget{_t_p_s23861_8c_a8d12e59cc4e942314c3b01218280f533}{\index{T\-P\-S23861.\-c@{T\-P\-S23861.\-c}!tps\-\_\-\-Set\-Device\-Power\-Off@{tps\-\_\-\-Set\-Device\-Power\-Off}}
+\index{tps\-\_\-\-Set\-Device\-Power\-Off@{tps\-\_\-\-Set\-Device\-Power\-Off}!TPS23861.c@{T\-P\-S23861.\-c}}
+\subsubsection[{tps\-\_\-\-Set\-Device\-Power\-Off}]{\setlength{\rightskip}{0pt plus 5cm}uint8\-\_\-t tps\-\_\-\-Set\-Device\-Power\-Off (
+\begin{DoxyParamCaption}
+\item[{uint8\-\_\-t}]{device\-\_\-i2c\-\_\-address, }
+\item[{{\bf T\-P\-S238x\-\_\-\-Ports\-\_\-t}}]{ports\-Powered\-Off}
+\end{DoxyParamCaption}
+)}}\label{_t_p_s23861_8c_a8d12e59cc4e942314c3b01218280f533}
+
+
+Configures the power down (off) state for each of the device ports on a specific T\-P\-S23861. 
+
+This function will power down (off) multiple ports at the same time. Each of the ports indicated in the T\-P\-S23861 will be powered off.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em device\-\_\-i2c\-\_\-address} & 7 bit I2\-C address of the T\-P\-S238x part being controlled (do not included R/\-W bit) \\
+\hline
+\mbox{\tt in}  & {\em ports\-Powered\-Off} & A T\-P\-S238x\-\_\-\-Ports\-\_\-t variable that identifies the ports that will be powered off.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+uint8\-\_\-t (I2\-C\-\_\-\-S\-U\-C\-C\-E\-S\-S\-F\-U\-L or I2\-C error status)
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{See Also}
+\hyperlink{_t_p_s23861_8h_ab4a8ca2fe81c8c8cb6764cf445015e33}{tps\-\_\-\-Set\-Device\-Power\-On} () 
+
+\hyperlink{_t_p_s23861_8h_a72f33364aa90d7c7845f8d82538e41e6}{tps\-\_\-\-Set\-Port\-Power} () 
+
+\hyperlink{_t_p_s23861_8h_a518a15e801cfaf1abeebe609a324cb04}{tps\-\_\-\-Get\-System\-Port\-Number} () 
+\end{DoxySeeAlso}
+\hypertarget{_t_p_s23861_8c_ab4a8ca2fe81c8c8cb6764cf445015e33}{\index{T\-P\-S23861.\-c@{T\-P\-S23861.\-c}!tps\-\_\-\-Set\-Device\-Power\-On@{tps\-\_\-\-Set\-Device\-Power\-On}}
+\index{tps\-\_\-\-Set\-Device\-Power\-On@{tps\-\_\-\-Set\-Device\-Power\-On}!TPS23861.c@{T\-P\-S23861.\-c}}
+\subsubsection[{tps\-\_\-\-Set\-Device\-Power\-On}]{\setlength{\rightskip}{0pt plus 5cm}uint8\-\_\-t tps\-\_\-\-Set\-Device\-Power\-On (
+\begin{DoxyParamCaption}
+\item[{uint8\-\_\-t}]{device\-\_\-i2c\-\_\-address, }
+\item[{{\bf T\-P\-S238x\-\_\-\-Ports\-\_\-t}}]{ports\-Powered\-On}
+\end{DoxyParamCaption}
+)}}\label{_t_p_s23861_8c_ab4a8ca2fe81c8c8cb6764cf445015e33}
+
+
+Configures the power on state for each of the device ports on a specific T\-P\-S23861. 
+
+This function will power on multiple ports at the same time. Each of the ports indicated in the T\-P\-S23861 will be powered on.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em device\-\_\-i2c\-\_\-address} & 7 bit I2\-C address of the T\-P\-S238x part being controlled (do not included R/\-W bit) \\
+\hline
+\mbox{\tt in}  & {\em ports\-Powered\-On} & A T\-P\-S238x\-\_\-\-Ports\-\_\-t variable that identifies the ports that will be powered on.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+uint8\-\_\-t (I2\-C\-\_\-\-S\-U\-C\-C\-E\-S\-S\-F\-U\-L or I2\-C error status)
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{See Also}
+\hyperlink{_t_p_s23861_8h_a8d12e59cc4e942314c3b01218280f533}{tps\-\_\-\-Set\-Device\-Power\-Off} () 
+
+\hyperlink{_t_p_s23861_8h_a72f33364aa90d7c7845f8d82538e41e6}{tps\-\_\-\-Set\-Port\-Power} () 
+
+\hyperlink{_t_p_s23861_8h_a518a15e801cfaf1abeebe609a324cb04}{tps\-\_\-\-Get\-System\-Port\-Number} () 
+\end{DoxySeeAlso}
+\hypertarget{_t_p_s23861_8c_ad9319af09f1461888aefa7d1439986a2}{\index{T\-P\-S23861.\-c@{T\-P\-S23861.\-c}!tps\-\_\-\-Set\-Device\-Timing@{tps\-\_\-\-Set\-Device\-Timing}}
+\index{tps\-\_\-\-Set\-Device\-Timing@{tps\-\_\-\-Set\-Device\-Timing}!TPS23861.c@{T\-P\-S23861.\-c}}
+\subsubsection[{tps\-\_\-\-Set\-Device\-Timing}]{\setlength{\rightskip}{0pt plus 5cm}uint8\-\_\-t tps\-\_\-\-Set\-Device\-Timing (
+\begin{DoxyParamCaption}
+\item[{uint8\-\_\-t}]{device\-\_\-i2c\-\_\-address, }
+\item[{{\bf T\-P\-S238x\-\_\-\-I\-L\-I\-M\-\_\-\-Timing\-\_\-t}}]{ilim\-Timing, }
+\item[{{\bf T\-P\-S238x\-\_\-\-T\-Start\-\_\-\-Timing\-\_\-t}}]{start\-Timing, }
+\item[{{\bf T\-P\-S238x\-\_\-\-T\-I\-C\-U\-T\-\_\-\-Timing\-\_\-t}}]{icut\-Timing, }
+\item[{{\bf T\-P\-S238x\-\_\-\-T\-D\-I\-S\-\_\-\-Timing\-\_\-t}}]{disconnect\-Timing, }
+\item[{{\bf T\-P\-S238x\-\_\-\-Cool\-\_\-\-Down\-\_\-\-Timing\-\_\-t}}]{cool\-Down\-Fault\-Timing}
+\end{DoxyParamCaption}
+)}}\label{_t_p_s23861_8c_ad9319af09f1461888aefa7d1439986a2}
+
+
+Configures the timing of the various current limits and disconnection determinations for a given device in the system. 
+
+The T\-P\-S23861 has three levels of overcurrent protections, disconnection detection, and time out after fault conditions. In order to prevent glitches or transients from causing unnecessary shutdowns or faults, the system uses various timers to define the amount of time required over the threshold level before a fault or shutdown is declared.
+
+This function sets up the various timing parameters used in the system. These timings are applicable on all active ports.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em device\-\_\-i2c\-\_\-address} & 7 bit I2\-C address of the T\-P\-S238x part being controlled (do not included R/\-W bit) \\
+\hline
+\mbox{\tt in}  & {\em ilim\-Timing} & The I\-L\-I\-M Fault Timing which is the foldback current time limit before port turn off \mbox{[}T\-L\-I\-M\-\_\-60\-\_\-\-M\-S, T\-L\-I\-M\-\_\-30\-\_\-\-M\-S, T\-L\-I\-M\-\_\-15\-\_\-\-M\-S, or T\-L\-I\-M\-\_\-10\-\_\-\-M\-S\mbox{]} \\
+\hline
+\mbox{\tt in}  & {\em start\-Timing} & The length of the T\-S\-T\-A\-R\-T period, which is the maximum amount of allowed overcurrent time during inrush \mbox{[}T\-S\-T\-A\-R\-T\-\_\-30\-\_\-\-M\-S, T\-S\-T\-A\-R\-T\-\_\-60\-\_\-\-M\-S, or T\-S\-T\-A\-R\-T\-\_\-120\-\_\-\-M\-S\mbox{]} \\
+\hline
+\mbox{\tt in}  & {\em icut\-Timing} & I\-C\-U\-T Fault timing, which is the overcurrent time duration before port turn off \mbox{[}T\-I\-C\-U\-T\-\_\-30\-\_\-\-M\-S, T\-I\-C\-U\-T\-\_\-60\-\_\-\-M\-S, T\-I\-C\-U\-T\-\_\-120\-\_\-\-M\-S, or T\-I\-C\-U\-T\-\_\-240\-\_\-\-M\-S\mbox{]} \\
+\hline
+\mbox{\tt in}  & {\em disconnect\-Timing} & Disconnect delay, which is the time to turn off a port once there is a disconnect condition \mbox{[}T\-D\-I\-S\-\_\-90\-\_\-\-M\-S, T\-D\-I\-S\-\_\-180\-\_\-\-M\-S, T\-D\-I\-S\-\_\-360\-\_\-\-M\-S, or T\-D\-I\-S\-\_\-720\-\_\-\-M\-S\mbox{]} \\
+\hline
+\mbox{\tt in}  & {\em cool\-Down\-Fault\-Timing} & Amount of time before a port can turn back on after fault \mbox{[}C\-O\-O\-L\-\_\-\-D\-O\-W\-N\-\_\-1\-\_\-\-S\-E\-C, C\-O\-O\-L\-\_\-\-D\-O\-W\-N\-\_\-2\-\_\-\-S\-E\-C, or C\-O\-O\-L\-\_\-\-D\-O\-W\-N\-\_\-4\-\_\-\-S\-E\-C\mbox{]}\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+uint8\-\_\-t (I2\-C\-\_\-\-S\-U\-C\-C\-E\-S\-S\-F\-U\-L or I2\-C error status)
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{See Also}
+\hyperlink{_t_p_s23861_8h_a2b787818ef7e374af218c952d3ca8a08}{tps\-\_\-\-Config\-Port} () 
+
+\hyperlink{_t_p_s23861_8h_ad50108944471b1be06ae3be4239da51a}{tps\-\_\-\-Config\-Device4\-Pair} () 
+\end{DoxySeeAlso}
+\hypertarget{_t_p_s23861_8c_a0039fc214b60c4d3c249b33453cf6065}{\index{T\-P\-S23861.\-c@{T\-P\-S23861.\-c}!tps\-\_\-\-Set\-I2\-C\-Addresses@{tps\-\_\-\-Set\-I2\-C\-Addresses}}
+\index{tps\-\_\-\-Set\-I2\-C\-Addresses@{tps\-\_\-\-Set\-I2\-C\-Addresses}!TPS23861.c@{T\-P\-S23861.\-c}}
+\subsubsection[{tps\-\_\-\-Set\-I2\-C\-Addresses}]{\setlength{\rightskip}{0pt plus 5cm}uint8\-\_\-t tps\-\_\-\-Set\-I2\-C\-Addresses (
+\begin{DoxyParamCaption}
+\item[{uint8\-\_\-t}]{temp\-\_\-i2c\-Address, }
+\item[{uint8\-\_\-t}]{num\-Devices, }
+\item[{uint8\-\_\-t $\ast$}]{list\-\_\-of\-Addresses, }
+\item[{{\bf T\-P\-S238x\-\_\-\-On\-\_\-\-Off\-\_\-t} $\ast$}]{list\-\_\-of\-Auto\-Mode}
+\end{DoxyParamCaption}
+)}}\label{_t_p_s23861_8c_a0039fc214b60c4d3c249b33453cf6065}
+
+
+Allows a set of T\-P\-S23861 to be configured with unique I2\-C addresses. 
+
+The system is designed so a number of T\-P\-S23861 can be placed on the same I2\-C bus. For this to work, each device must have a unique I2\-C address to allow them to be individually commanded. This function will program a set of T\-P\-S23861 devices on the same I2\-C bus with different addresses. The new I2\-C address will be stored in non-\/volatile memory and become the new I2\-C address for the specific part, even after power off.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em temp\-\_\-i2c\-Address} & A temporary 7 bit I2\-C address that will be used during the address programming of the T\-P\-S238x parts (do not included R/\-W bit) \\
+\hline
+\mbox{\tt in}  & {\em num\-Devices} & Number of T\-P\-S23861 devices on the I2\-C bus \\
+\hline
+\mbox{\tt in}  & {\em list\-\_\-of\-Addresses} & A pointer to a list of uint8\-\_\-t 7 bit I2\-C addresses for each of the T\-P\-S23861 parts on the I2\-C bus (do not included R/\-W bit) \\
+\hline
+\mbox{\tt in}  & {\em list\-\_\-of\-Auto\-Mode} & A pointer to a list of T\-P\-S\-\_\-\-On\-\_\-\-Off\-\_\-t values that contain T\-P\-S\-\_\-\-O\-N for the devices that operate in A\-U\-T\-O mode and T\-P\-S\-\_\-\-O\-F\-F for those that do not operate in A\-U\-T\-O mode\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+uint8\-\_\-t (I2\-C\-\_\-\-S\-U\-C\-C\-E\-S\-S\-F\-U\-L or I2\-C error status) 
+\end{DoxyReturn}
+\hypertarget{_t_p_s23861_8c_a60e64452aad48caf62d2e2e590471666}{\index{T\-P\-S23861.\-c@{T\-P\-S23861.\-c}!tps\-\_\-\-Set\-Port\-Detect\-Class\-Enable@{tps\-\_\-\-Set\-Port\-Detect\-Class\-Enable}}
+\index{tps\-\_\-\-Set\-Port\-Detect\-Class\-Enable@{tps\-\_\-\-Set\-Port\-Detect\-Class\-Enable}!TPS23861.c@{T\-P\-S23861.\-c}}
+\subsubsection[{tps\-\_\-\-Set\-Port\-Detect\-Class\-Enable}]{\setlength{\rightskip}{0pt plus 5cm}uint8\-\_\-t tps\-\_\-\-Set\-Port\-Detect\-Class\-Enable (
+\begin{DoxyParamCaption}
+\item[{uint8\-\_\-t}]{system\-Port\-Num, }
+\item[{{\bf T\-P\-S238x\-\_\-\-On\-\_\-\-Off\-\_\-t}}]{on\-\_\-off\-\_\-detect, }
+\item[{{\bf T\-P\-S238x\-\_\-\-On\-\_\-\-Off\-\_\-t}}]{on\-\_\-off\-\_\-class}
+\end{DoxyParamCaption}
+)}}\label{_t_p_s23861_8c_a60e64452aad48caf62d2e2e590471666}
+
+
+Configures a single port to enable or disable the detection and classification operation. 
+
+This function will set the detection and classification operations for the selected port of the T\-P\-S23861.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em system\-Port\-Num} & Port Number Value returned from the port registration function, \hyperlink{_t_p_s23861_8c_a915cc811128c70c54ff0ac048cfbc6e7}{tps\-\_\-\-Register\-Port()} \\
+\hline
+\mbox{\tt in}  & {\em on\-\_\-off\-\_\-detect} & T\-P\-S\-\_\-\-O\-N to enable detection operations for the indicated port, T\-P\-S\-\_\-\-O\-F\-F otherwise \\
+\hline
+\mbox{\tt in}  & {\em on\-\_\-off\-\_\-class} & T\-P\-S\-\_\-\-O\-N to enable classification operations for the indicated port, T\-P\-S\-\_\-\-O\-F\-F otherwise\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+uint8\-\_\-t (I2\-C\-\_\-\-S\-U\-C\-C\-E\-S\-S\-F\-U\-L or I2\-C error status)
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{See Also}
+\hyperlink{_t_p_s23861_8h_a6e689c5d9b77810865bd4b80657012a5}{tps\-\_\-\-Set\-Device\-Detect\-Class\-Enable} () 
+
+\hyperlink{_t_p_s23861_8h_a60e64452aad48caf62d2e2e590471666}{tps\-\_\-\-Set\-Port\-Detect\-Class\-Enable} () 
+
+\hyperlink{_t_p_s23861_8h_a32cdc156b4b35e5dd7b79ff25e681514}{tps\-\_\-\-Get\-Port\-Classification\-Enable} () 
+
+\hyperlink{_t_p_s23861_8h_ad52bbba38c5543cf5c0c4f9d1126322c}{tps\-\_\-\-Get\-Port\-Detection\-Enable} () 
+\end{DoxySeeAlso}
+\hypertarget{_t_p_s23861_8c_a7d110496e25b21006c33874d7930528d}{\index{T\-P\-S23861.\-c@{T\-P\-S23861.\-c}!tps\-\_\-\-Set\-Port\-Disconnect\-Enable@{tps\-\_\-\-Set\-Port\-Disconnect\-Enable}}
+\index{tps\-\_\-\-Set\-Port\-Disconnect\-Enable@{tps\-\_\-\-Set\-Port\-Disconnect\-Enable}!TPS23861.c@{T\-P\-S23861.\-c}}
+\subsubsection[{tps\-\_\-\-Set\-Port\-Disconnect\-Enable}]{\setlength{\rightskip}{0pt plus 5cm}uint8\-\_\-t tps\-\_\-\-Set\-Port\-Disconnect\-Enable (
+\begin{DoxyParamCaption}
+\item[{uint8\-\_\-t}]{system\-Port\-Num, }
+\item[{{\bf T\-P\-S238x\-\_\-\-On\-\_\-\-Off\-\_\-t}}]{on\-\_\-off, }
+\item[{{\bf T\-P\-S238x\-\_\-\-Disconnect\-\_\-\-Threshold\-\_\-t}}]{disconnect\-Threshold}
+\end{DoxyParamCaption}
+)}}\label{_t_p_s23861_8c_a7d110496e25b21006c33874d7930528d}
+
+
+Configures a single port to enable or disable the 2 pair disconnection operation. 
+
+This function will configure one of the four ports to enable or disable disconnection operations. If the user wishes to configure a all ports at once, the tps\-\_\-\-Set\-Disconnect\-Enable() is used.
+
+Disconnect operation consists of measuring the port current at the S\-E\-Nn pin, starting the T\-D\-I\-S timer when the current drops below the threshold, and turning the port off if the timer times out.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em system\-Port\-Num} & Port Number Value returned from the port registration function, \hyperlink{_t_p_s23861_8c_a915cc811128c70c54ff0ac048cfbc6e7}{tps\-\_\-\-Register\-Port()} \\
+\hline
+\mbox{\tt in}  & {\em on\-\_\-off} & T\-P\-S\-\_\-\-O\-N to enable disconnection operations for the indicated port, T\-P\-S\-\_\-\-O\-F\-F otherwise \\
+\hline
+\mbox{\tt in}  & {\em disconnect\-Threshold} & Disconnection threshold for indicated port \mbox{[}D\-C\-T\-H\-\_\-7\-\_\-5\-\_\-\-M\-I\-L\-L\-I\-A\-M\-P, D\-C\-T\-H\-\_\-15\-\_\-\-M\-I\-L\-L\-I\-A\-M\-P, D\-C\-T\-H\-\_\-30\-\_\-\-M\-I\-L\-L\-I\-A\-M\-P or D\-C\-T\-H\-\_\-50\-\_\-\-M\-I\-L\-L\-I\-A\-M\-P\mbox{]}\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+uint8\-\_\-t (I2\-C\-\_\-\-S\-U\-C\-C\-E\-S\-S\-F\-U\-L or I2\-C error status)
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{See Also}
+\hyperlink{_t_p_s23861_8h_a8b1565bcc24973f92353ce165332f1c2}{tps\-\_\-\-Set\-Device\-Disconnect\-Enable} () 
+
+\hyperlink{_t_p_s23861_8h_a2d95cddf597e82edb7c11390c2d18193}{tps\-\_\-\-Get\-Device\-Disconnect\-Enable} () 
+\end{DoxySeeAlso}
+\hypertarget{_t_p_s23861_8c_a332fff774e594fb3c785e5fc02a7a6b5}{\index{T\-P\-S23861.\-c@{T\-P\-S23861.\-c}!tps\-\_\-\-Set\-Port\-Op\-Mode@{tps\-\_\-\-Set\-Port\-Op\-Mode}}
+\index{tps\-\_\-\-Set\-Port\-Op\-Mode@{tps\-\_\-\-Set\-Port\-Op\-Mode}!TPS23861.c@{T\-P\-S23861.\-c}}
+\subsubsection[{tps\-\_\-\-Set\-Port\-Op\-Mode}]{\setlength{\rightskip}{0pt plus 5cm}uint8\-\_\-t tps\-\_\-\-Set\-Port\-Op\-Mode (
+\begin{DoxyParamCaption}
+\item[{uint8\-\_\-t}]{system\-Port\-Num, }
+\item[{{\bf T\-P\-S238x\-\_\-\-Operating\-\_\-\-Modes\-\_\-t}}]{operating\-Mode}
+\end{DoxyParamCaption}
+)}}\label{_t_p_s23861_8c_a332fff774e594fb3c785e5fc02a7a6b5}
+
+
+Set the Operating Mode of a single port. 
+
+The T\-P\-S23861 has a number of operating modes that determine the characteristic capabilities of a given port. This function allows the user to configure the operating for a given port.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em system\-Port\-Num} & Port Number Value returned from the port registration function, \hyperlink{_t_p_s23861_8c_a915cc811128c70c54ff0ac048cfbc6e7}{tps\-\_\-\-Register\-Port()} \\
+\hline
+\mbox{\tt in}  & {\em operating\-Mode} & Define the operating mode for the port \mbox{[}O\-P\-E\-R\-A\-T\-I\-N\-G\-\_\-\-M\-O\-D\-E\-\_\-\-O\-F\-F, O\-P\-E\-R\-A\-T\-I\-N\-G\-\_\-\-M\-O\-D\-E\-\_\-\-M\-A\-N\-U\-A\-L, O\-P\-E\-R\-A\-T\-I\-N\-G\-\_\-\-M\-O\-D\-E\-\_\-\-S\-E\-M\-I\-\_\-\-A\-U\-T\-O, or O\-P\-E\-R\-A\-T\-I\-N\-G\-\_\-\-M\-O\-D\-E\-\_\-\-A\-U\-T\-O\mbox{]}\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+uint8\-\_\-t (I2\-C\-\_\-\-S\-U\-C\-C\-E\-S\-S\-F\-U\-L or I2\-C error status)
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{See Also}
+\hyperlink{_t_p_s23861_8h_a9ab370c355c225bd9c7f24b11a2cff47}{tps\-\_\-\-Set\-Device\-Op\-Mode} () 
+
+\hyperlink{_t_p_s23861_8h_a2b787818ef7e374af218c952d3ca8a08}{tps\-\_\-\-Config\-Port} () 
+\end{DoxySeeAlso}
+\hypertarget{_t_p_s23861_8c_a72f33364aa90d7c7845f8d82538e41e6}{\index{T\-P\-S23861.\-c@{T\-P\-S23861.\-c}!tps\-\_\-\-Set\-Port\-Power@{tps\-\_\-\-Set\-Port\-Power}}
+\index{tps\-\_\-\-Set\-Port\-Power@{tps\-\_\-\-Set\-Port\-Power}!TPS23861.c@{T\-P\-S23861.\-c}}
+\subsubsection[{tps\-\_\-\-Set\-Port\-Power}]{\setlength{\rightskip}{0pt plus 5cm}uint8\-\_\-t tps\-\_\-\-Set\-Port\-Power (
+\begin{DoxyParamCaption}
+\item[{uint8\-\_\-t}]{system\-Port\-Num, }
+\item[{{\bf T\-P\-S238x\-\_\-\-On\-\_\-\-Off\-\_\-t}}]{on\-\_\-off}
+\end{DoxyParamCaption}
+)}}\label{_t_p_s23861_8c_a72f33364aa90d7c7845f8d82538e41e6}
+
+
+Power on or off a single specified system port. 
+
+This function will either power on or power down (off) a single port on one of the registered T\-P\-S23861 ports in the system.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em system\-Port\-Num} & Port Number Value returned from the port registration function, \hyperlink{_t_p_s23861_8c_a915cc811128c70c54ff0ac048cfbc6e7}{tps\-\_\-\-Register\-Port()} \\
+\hline
+\mbox{\tt in}  & {\em on\-\_\-off} & Indicates whether to power on (T\-P\-S\-\_\-\-O\-N) or power off (T\-P\-S\-\_\-\-O\-F\-F) the specified port\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+uint8\-\_\-t (I2\-C\-\_\-\-S\-U\-C\-C\-E\-S\-S\-F\-U\-L or I2\-C error status)
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{See Also}
+\hyperlink{_t_p_s23861_8h_ab4a8ca2fe81c8c8cb6764cf445015e33}{tps\-\_\-\-Set\-Device\-Power\-On} () 
+
+\hyperlink{_t_p_s23861_8h_a8d12e59cc4e942314c3b01218280f533}{tps\-\_\-\-Set\-Device\-Power\-Off} () 
+\end{DoxySeeAlso}

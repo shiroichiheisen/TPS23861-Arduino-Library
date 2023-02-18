@@ -1,0 +1,49 @@
+\hypertarget{union_t_p_s238x___port___voltage___difference___register__u}{\section{T\-P\-S238x\-\_\-\-Port\-\_\-\-Voltage\-\_\-\-Difference\-\_\-\-Register\-\_\-u Union Reference}
+\label{union_t_p_s238x___port___voltage___difference___register__u}\index{T\-P\-S238x\-\_\-\-Port\-\_\-\-Voltage\-\_\-\-Difference\-\_\-\-Register\-\_\-u@{T\-P\-S238x\-\_\-\-Port\-\_\-\-Voltage\-\_\-\-Difference\-\_\-\-Register\-\_\-u}}
+}
+
+
+{\ttfamily \#include $<$T\-P\-S23861.\-h$>$}
+
+\subsection*{Data Structures}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{struct_t_p_s238x___port___voltage___difference___register__u_1_1_port___voltage___difference___char__t}{Port\-\_\-\-Voltage\-\_\-\-Difference\-\_\-\-Char\-\_\-t}
+\item 
+struct \hyperlink{struct_t_p_s238x___port___voltage___difference___register__u_1_1_port___voltage___difference___short__t}{Port\-\_\-\-Voltage\-\_\-\-Difference\-\_\-\-Short\-\_\-t}
+\end{DoxyCompactItemize}
+\subsection*{Data Fields}
+\begin{DoxyCompactItemize}
+\item 
+struct \\*
+\hyperlink{struct_t_p_s238x___port___voltage___difference___register__u_1_1_port___voltage___difference___short__t}{T\-P\-S238x\-\_\-\-Port\-\_\-\-Voltage\-\_\-\-Difference\-\_\-\-Register\-\_\-u\-::\-Port\-\_\-\-Voltage\-\_\-\-Difference\-\_\-\-Short\-\_\-t} \hyperlink{union_t_p_s238x___port___voltage___difference___register__u_ab8b9788778b3d05be0fe374834e40395}{Port\-\_\-\-Voltage\-\_\-\-Difference\-\_\-\-Short}
+\item 
+struct \\*
+\hyperlink{struct_t_p_s238x___port___voltage___difference___register__u_1_1_port___voltage___difference___char__t}{T\-P\-S238x\-\_\-\-Port\-\_\-\-Voltage\-\_\-\-Difference\-\_\-\-Register\-\_\-u\-::\-Port\-\_\-\-Voltage\-\_\-\-Difference\-\_\-\-Char\-\_\-t} \hyperlink{union_t_p_s238x___port___voltage___difference___register__u_a6ca90ba515558aff081e7c93770dea92}{Port\-\_\-\-Voltage\-\_\-\-Difference\-\_\-\-Char}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Port 1 Detect Voltage Difference Register -\/ Software reads this value using tps\-\_\-\-Get\-Detect\-Voltage\-Difference() \par
+ Hardware -\/ Command 68h; 2 data byte (L\-S\-B followed by M\-S\-B); read only \par
+ Port 2 Detect Voltage Difference Register \par
+ Hardware -\/ Command 6\-Ah; 2 data byte (L\-S\-B followed by M\-S\-B); read only \par
+ Port 3 Detect Voltage Difference Register \par
+ Hardware -\/ Command 6\-Ch; 2 data byte (L\-S\-B followed by M\-S\-B); read only \par
+ Port 4 Detect Voltage Difference Register \par
+ Hardware -\/ Command 6\-Eh; 2 data byte (L\-S\-B followed by M\-S\-B); read only \par
+\par
+ This register is used to determine the presence of a legacy P\-D by measuring the P\-D input capacitance on the P\-I. A charge is injected into the P\-I and the resulting voltage differnce is reported. The resulting 12-\/bit data conversion has an L\-S\-B of 4.\-884 m\-V, and is only valid if the status on the port is V\-D\-S\-\_\-\-S\-T\-A\-T\-U\-S\-\_\-\-V\-A\-L\-I\-D\-\_\-\-M\-E\-A\-S\-U\-R\-E\-M\-E\-N\-T. 
+
+\subsection{Field Documentation}
+\hypertarget{union_t_p_s238x___port___voltage___difference___register__u_a6ca90ba515558aff081e7c93770dea92}{\index{T\-P\-S238x\-\_\-\-Port\-\_\-\-Voltage\-\_\-\-Difference\-\_\-\-Register\-\_\-u@{T\-P\-S238x\-\_\-\-Port\-\_\-\-Voltage\-\_\-\-Difference\-\_\-\-Register\-\_\-u}!Port\-\_\-\-Voltage\-\_\-\-Difference\-\_\-\-Char@{Port\-\_\-\-Voltage\-\_\-\-Difference\-\_\-\-Char}}
+\index{Port\-\_\-\-Voltage\-\_\-\-Difference\-\_\-\-Char@{Port\-\_\-\-Voltage\-\_\-\-Difference\-\_\-\-Char}!TPS238x_Port_Voltage_Difference_Register_u@{T\-P\-S238x\-\_\-\-Port\-\_\-\-Voltage\-\_\-\-Difference\-\_\-\-Register\-\_\-u}}
+\subsubsection[{Port\-\_\-\-Voltage\-\_\-\-Difference\-\_\-\-Char}]{\setlength{\rightskip}{0pt plus 5cm}struct {\bf T\-P\-S238x\-\_\-\-Port\-\_\-\-Voltage\-\_\-\-Difference\-\_\-\-Register\-\_\-u\-::\-Port\-\_\-\-Voltage\-\_\-\-Difference\-\_\-\-Char\-\_\-t}  T\-P\-S238x\-\_\-\-Port\-\_\-\-Voltage\-\_\-\-Difference\-\_\-\-Register\-\_\-u\-::\-Port\-\_\-\-Voltage\-\_\-\-Difference\-\_\-\-Char}}\label{union_t_p_s238x___port___voltage___difference___register__u_a6ca90ba515558aff081e7c93770dea92}
+\hypertarget{union_t_p_s238x___port___voltage___difference___register__u_ab8b9788778b3d05be0fe374834e40395}{\index{T\-P\-S238x\-\_\-\-Port\-\_\-\-Voltage\-\_\-\-Difference\-\_\-\-Register\-\_\-u@{T\-P\-S238x\-\_\-\-Port\-\_\-\-Voltage\-\_\-\-Difference\-\_\-\-Register\-\_\-u}!Port\-\_\-\-Voltage\-\_\-\-Difference\-\_\-\-Short@{Port\-\_\-\-Voltage\-\_\-\-Difference\-\_\-\-Short}}
+\index{Port\-\_\-\-Voltage\-\_\-\-Difference\-\_\-\-Short@{Port\-\_\-\-Voltage\-\_\-\-Difference\-\_\-\-Short}!TPS238x_Port_Voltage_Difference_Register_u@{T\-P\-S238x\-\_\-\-Port\-\_\-\-Voltage\-\_\-\-Difference\-\_\-\-Register\-\_\-u}}
+\subsubsection[{Port\-\_\-\-Voltage\-\_\-\-Difference\-\_\-\-Short}]{\setlength{\rightskip}{0pt plus 5cm}struct {\bf T\-P\-S238x\-\_\-\-Port\-\_\-\-Voltage\-\_\-\-Difference\-\_\-\-Register\-\_\-u\-::\-Port\-\_\-\-Voltage\-\_\-\-Difference\-\_\-\-Short\-\_\-t}  T\-P\-S238x\-\_\-\-Port\-\_\-\-Voltage\-\_\-\-Difference\-\_\-\-Register\-\_\-u\-::\-Port\-\_\-\-Voltage\-\_\-\-Difference\-\_\-\-Short}}\label{union_t_p_s238x___port___voltage___difference___register__u_ab8b9788778b3d05be0fe374834e40395}
+
+
+The documentation for this union was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+C\-:/\-Users/a0207881/workspace\-\_\-v5\-\_\-3/\-Power\-Over\-Ethernet/\hyperlink{_t_p_s23861_8h}{T\-P\-S23861.\-h}\end{DoxyCompactItemize}
